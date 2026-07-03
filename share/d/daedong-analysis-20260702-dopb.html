@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>대동여주도 — 자료분석리포트 대시보드 2026-07-02</title>
+<style>
+  @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+  :root{
+    --ink:#1a2a3a; --ink2:#3d5166; --muted:#7a8d9c; --line:#dde3e8;
+    --teal:#0a8576; --teal-d:#06574d; --surface:#f0f3f7; --white:#fff;
+    --navy:#162b3d; --navy-l:#1e3a52;
+    --rH:#c74a3c; --rM-bg:#f8e4b8; --rM-tx:#7d520a; --rL-bg:#d6ecdb; --rL-tx:#287a54;
+    --ok:#287a54;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#edf0f4;color:var(--ink);
+    font-family:"Pretendard";line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:860px;margin:0 auto;padding:20px 16px 56px}
+  .stamp{font-size:11px;letter-spacing:.04em;color:var(--muted);text-align:center;margin-bottom:10px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:24px;margin-bottom:16px}
+  .card-header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-l) 100%);border-color:var(--navy)}
+  .card-header h1,.card-header .facts div{color:#fff}
+  .card-header .facts div span{color:rgba(255,255,255,.5)}
+  .card-header .sub{color:rgba(255,255,255,.55)}
+  .card-header .eyebrow{color:#5ec4b2;background:rgba(255,255,255,.1)}
+  .eyebrow{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--teal-d);
+    background:var(--surface);border-radius:999px;padding:6px 12px;letter-spacing:.02em}
+  h1{font-size:26px;font-weight:800;letter-spacing:-.02em;margin:12px 0 4px}
+  .sub{color:var(--muted);font-size:13px}
+  .facts{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 20px;margin-top:16px;font-size:13px}
+  .facts div span{color:var(--muted)}
+  h2{font-size:17px;font-weight:800;margin:0 0 14px;display:flex;align-items:center;gap:8px}
+  h2 .dot{width:8px;height:18px;background:var(--teal);border-radius:3px}
+  p.lead{font-size:14.5px;color:var(--ink2);margin:0}
+  .badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;border-radius:999px;padding:4px 12px;letter-spacing:.02em}
+  .badge-ok{background:var(--rL-bg);color:var(--rL-tx)}
+  .badge-new{background:#dbeafe;color:#1e40af}
+  .badge-risk{background:var(--rM-bg);color:var(--rM-tx)}
+  .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  .metric{background:var(--surface);border-radius:12px;padding:14px}
+  .metric .k{font-size:12px;color:var(--muted)}
+  .metric .v{font-size:26px;font-weight:800;margin-top:6px;letter-spacing:-.02em}
+  .metric .v small{font-size:13px;font-weight:600;color:var(--muted)}
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  thead th{text-align:left;font-size:12px;font-weight:700;color:var(--teal-d);background:var(--surface);padding:11px 12px}
+  thead th:first-child{border-radius:8px 0 0 8px} thead th:last-child{border-radius:0 8px 8px 0}
+  tbody td{padding:13px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  .risk{display:inline-flex;align-items:center;justify-content:center;min-width:30px;font-weight:800;font-size:12px;border-radius:7px;padding:4px 9px;letter-spacing:.02em}
+  .r-H{background:var(--rH);color:#fff} .r-M{background:var(--rM-bg);color:var(--rM-tx)} .r-L{background:var(--rL-bg);color:var(--rL-tx)}
+  .status-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .status-card{border-radius:14px;padding:18px;position:relative}
+  .status-card h3{font-size:14px;font-weight:800;margin:0 0 8px;display:flex;align-items:center;gap:8px}
+  .status-card ul{margin:0;padding-left:18px;font-size:13px;color:var(--ink2)}
+  .status-card ul li{margin:4px 0}
+  .sc-done{background:var(--rL-bg);border:1px solid #b8dac8}
+  .sc-done h3{color:var(--rL-tx)}
+  .sc-pending{background:#dbeafe;border:1px solid #a3c8f0}
+  .sc-pending h3{color:#1e40af}
+  .icon{width:20px;height:20px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;flex-shrink:0}
+  .icon-ok{background:var(--rL-tx);color:#fff}
+  .icon-wait{background:#1e40af;color:#fff}
+  .icon-num{background:var(--rM-bg);color:var(--rM-tx)}
+  .dl{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);font-size:13.5px}
+  .dl:last-child{border-bottom:0} .dl .d{font-weight:700} .dl .s{color:var(--muted);font-size:12px}
+  .disc{font-size:11.5px;color:var(--muted);line-height:1.7;margin-top:6px}
+  .risk-list{list-style:none;padding:0;margin:0}
+  .risk-list li{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:13.5px}
+  .risk-list li:last-child{border-bottom:0}
+  .risk-list li .rank{font-weight:800;font-size:12px;width:20px;color:var(--muted)}
+  .risk-list li .label{flex:1;color:var(--ink2)}
+  .pre{border-left:3px solid var(--teal);padding:4px 0 4px 14px;margin-bottom:16px;border-radius:0}
+  .pre .when{font-weight:800;font-size:13px;color:var(--teal-d);margin-bottom:6px}
+  .pre ul{margin:0;padding-left:18px} .pre li{margin:4px 0;font-size:14px;color:var(--ink2)}
+  @media (max-width:620px){
+    h1{font-size:22px}
+    .metrics{grid-template-columns:repeat(2,1fr)}
+    .facts{grid-template-columns:1fr}
+    .status-grid{grid-template-columns:1fr}
+    thead{display:none}
+    tbody td{display:block;border-bottom:0;padding:3px 0}
+    tbody tr{display:block;border-bottom:1px solid var(--line);padding:12px 0}
+    td[data-l]::before{content:attr(data-l);display:block;font-size:11px;color:var(--muted);font-weight:700;margin-bottom:2px}
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="stamp">㈜대동여주도 전용 · 변호사-의뢰인 비밀유지 특권 적용</div>
+
+  <section class="card card-header">
+    <span class="eyebrow">◎ 자료분석리포트 · 2026-07-02 ingest 기준</span>
+    <h1>대동여주도 — 자료분석리포트 대시보드</h1>
+    <div class="sub">7월 2일자 회신 자료 ingest 분석 결과 · 담당 변호사 조우성</div>
+    <div class="facts">
+      <div><span>분석 대상 </span>수원양조 용역계약 + 온지음 삼해주 공급계약</div>
+      <div><span>처리 건수 </span>2건 (해결 1건 · 신규 검토 1건)</div>
+    </div>
+  </section>
+
+  <section class="metrics">
+    <div class="metric"><div class="k">해결 (FU closed)</div><div class="v">1<small>건</small></div></div>
+    <div class="metric"><div class="k">신규 리스크 등록</div><div class="v">1<small>건</small></div></div>
+    <div class="metric"><div class="k">변호사 의견서 송부</div><div class="v">1<small>건</small></div></div>
+    <div class="metric"><div class="k">계약 체결 가능</div><div class="v">1<small>건</small></div></div>
+  </section>
+
+  <section class="card">
+    <h2><span class="dot"></span>처리 현황</h2>
+    <div class="status-grid">
+      <div class="status-card sc-done">
+        <h3><span class="icon icon-ok">✓</span> 수원양조 용역계약 — 해결</h3>
+        <ul>
+          <li>납기일 '계약 체결일로부터 4개월 이내' 확정</li>
+          <li>지연이자 연 12% 단일 명시 (상법§54 인용 삭제)</li>
+          <li>기수행 용역비 정산 기준 조항 반영</li>
+          <li><strong>계약 체결 가능</strong></li>
+        </ul>
+      </div>
+      <div class="status-card sc-pending">
+        <h3><span class="icon icon-wait">⋯</span> 온지음 삼해주 — 검토 완료</h3>
+        <ul>
+          <li>9,000만원 전액 후불 구조 리스크 식별</li>
+          <li>10개 조항 검토 + 3개 신설 권고 의견서 송부</li>
+          <li>협상 후 수정본 회신 대기 중</li>
+          <li><strong>FU-016 tracking</strong></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2><span class="dot"></span>온지음 계약 — 핵심 리스크 6순위</h2>
+    <ol class="risk-list">
+      <li><span class="rank">1</span><span class="risk r-H">H</span><span class="label">대금 미지급 — 9,000만원 전액 후불, 미지급 시 대응 수단 부재</span></li>
+      <li><span class="rank">2</span><span class="risk r-H">H</span><span class="label">납품 지연 책임 — 온지음 귀책에도 을 책임 불명확</span></li>
+      <li><span class="rank">3</span><span class="risk r-M">M</span><span class="label">하자 책임 범위 — 온지음 확정 레시피·원료 기인 하자 면책 미규정</span></li>
+      <li><span class="rank">4</span><span class="risk r-M">M</span><span class="label">사업 활동 제한 — '동일·유사 제품' 공급 금지 조항 과도</span></li>
+      <li><span class="rank">5</span><span class="risk r-M">M</span><span class="label">IP 분쟁 — OEM 과정 개발 성과 귀속 범위 불명확</span></li>
+      <li><span class="rank">6</span><span class="risk r-M">M</span><span class="label">손해배상 기준 — 협의 불성립 시 배상 기준 없음</span></li>
+    </ol>
+    <div class="disc">리스크 심각도 H(중점 관리)/M(관찰)은 현재 자료 기준 상대 평가입니다.</div>
+  </section>
+
+  <section class="card">
+    <h2><span class="dot"></span>신설 권고 조항</h2>
+    <div class="pre">
+      <div class="when">① 대금 미지급 시 납품 중단권</div>
+      <ul><li>미지급 14일 경과 시 해지 + 손해배상</li></ul>
+    </div>
+    <div class="pre">
+      <div class="when">② 온지음 귀책 하자 면책</div>
+      <ul><li>온지음이 확정한 레시피·원료 기준에서 비롯된 품질 문제 면책</li></ul>
+    </div>
+    <div class="pre">
+      <div class="when">③ 온지음 판매 부진 손해 면책</div>
+      <ul><li>판매 실패·마케팅 문제로 인한 손해를 을이 부담하지 않음</li></ul>
+    </div>
+  </section>
+
+  <div class="disc" style="text-align:center;padding:0 8px">
+    본 대시보드는 2026-07-02 ingest 자료 기준 분석 결과를 요약한 참고 자료입니다.<br>
+    개별 사안에 대한 확정적 법률 자문은 별도 의견서를 참조하시기 바랍니다.<br>
+    변호사-의뢰인 비밀유지 특권이 적용되는 법률 자문 · 외부 공개 금지
+  </div>
+</main>
+</body>
+</html>
