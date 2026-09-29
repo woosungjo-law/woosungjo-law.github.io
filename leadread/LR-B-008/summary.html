@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>합리성의 배신이 몰락을 부른다</title>
+<meta name="description" content="크리스텐슨의 《혁신기업의 딜레마》에서 뒤집히는 발견은 몰락의 원인입니다. 1등 기업은 경영을 못해서 무너지지 않았습니다. 이 구분은 옳은 결정의 눈금 주인을 묻습니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="합리성의 배신이 몰락을 부른다">
+<meta property="og:description" content="크리스텐슨의 《혁신기업의 딜레마》에서 뒤집히는 발견은 몰락의 원인입니다. 1등 기업은 경영을 못해서 무너지지 않았습니다. 이 구분은 옳은 결정의 눈금 주인을 묻습니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S3 사례형 — 딥그린 & 클레이 / 세로 타임라인 */
+:root{--bg:#f1f3ea;--ink:#1c2a22;--mute:#5d6b60;--acc:#1f4d3a;--clay:#a4552b;--line:#1f4d3a;--soft:#e4e9da;--head:"Nanum Myeongjo","Noto Serif KR",serif;--body:"Nanum Myeongjo","Noto Serif KR",serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e1913;--ink:#dfe8de;--mute:#93a598;--acc:#86c4a2;--clay:#d98d63;--line:#86c4a2;--soft:#15251c}}
+body{font-size:17.5px;line-height:1.9}
+.page{max-width:760px;padding:36px 20px 80px}
+.kicker{color:var(--clay);display:block;margin-bottom:14px}
+.headline{font-weight:800;font-size:clamp(27px,6vw,44px);line-height:1.34;letter-spacing:-.02em;color:var(--acc)}
+.hd::before{content:"";display:block;width:44px;height:4px;background:var(--clay);margin-bottom:24px}
+.lede{margin-top:22px;font-size:clamp(17px,2.4vw,19.5px);line-height:1.9;color:var(--ink);opacity:.9}
+.meta{margin-top:18px}
+.pq{margin:34px 0 0;padding:22px 24px;background:var(--soft);border-radius:2px}
+.pq p{font-weight:800;font-size:clamp(18px,3vw,23px);line-height:1.6;color:var(--acc)}
+.secs{margin:44px 0 0;position:relative}
+.secs::before{content:"";position:absolute;left:19px;top:14px;bottom:20px;width:2px;background:repeating-linear-gradient(to bottom,var(--line) 0 8px,transparent 8px 14px);opacity:.55}
+.sec{position:relative;padding:0 0 42px 62px}
+.sec:last-child{padding-bottom:6px}
+.sec .num{position:absolute;left:0;top:-2px;width:40px;height:40px;border-radius:50%;background:var(--acc);color:var(--bg);display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:700;font-size:14px;box-shadow:0 0 0 6px var(--bg)}
+.sec h2{font-weight:800;font-size:clamp(20px,3.4vw,24px);line-height:1.45;margin-bottom:10px;padding-top:4px;color:var(--ink)}
+.sec-body{font-size:17px}
+.kp{margin:40px 0 0;padding:26px 22px;border:2px solid var(--acc);border-radius:2px}
+.kp-t{font-family:var(--sans);font-size:13px;letter-spacing:.14em;font-weight:700;color:var(--clay);margin-bottom:12px}
+.kp li{display:flex;gap:14px;padding:9px 0}
+.kp-n{flex:none;font-family:var(--sans);font-weight:700;font-size:13px;color:var(--clay);padding-top:.4em}
+.kp-x{font-weight:700;line-height:1.7}
+.ft{margin-top:44px;padding-top:18px;border-top:1px solid color-mix(in srgb,var(--ink) 25%,transparent)}
+@media (min-width:820px){
+  .page{padding:72px 32px 110px}
+  .secs::before{left:23px}
+  .sec{padding-left:84px}
+  .sec .num{width:48px;height:48px;font-size:16px}
+  .sec h2{padding-top:9px}
+}
+</style>
+</head>
+<body data-tpl="S3">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"byline": "조우성", "cards": {"cards": [{"body": "클레이튼 크리스텐슨《혁신기업의 딜레마》를 읽고 정리한 연구 노트. 1등 기업의 몰락이 무능이 아님을 묻는다. 이 글이 겨누는 것은 결정이 아니라 눈금이다.", "kind": "cover", "small": "연구 노트 · 전략 · 1997", "title": "합리성의 배신이 몰락을 부른다"}, {"body": "존속적 기술은 기존 고객이 원하는 더 크고 빠른 것이고 파괴적 기술은 처음엔 작고 초라하다. 모범 답안에는 새 기술의 자리가 없다. 자리가 없으니 눈에 밟히지 않는다.", "kind": "point", "small": "개념 정의", "title": "두 기술을 나누면"}, {"body": "옳은 일을 하는 것이 곧 틀린 일이다. 최고의 고객을 살피고 수익 높은 곳에 돈을 모을수록 새 기술은 멀어진다. 모범이 눈가리개가 된다. 잘해 온 방식이 발목을 잡는다.", "kind": "quote", "small": "《혁신기업의 딜레마》(1997) · 필자 번역", "title": "저자의 한 줄"}, {"body": "합리가 문을 여는 과정은 조용하다. 회의는 질서 있게 열리고 숫자는 깔끔하게 맞는다. 그래서 더 알아채기 어렵다. 딜레마는 뒤집힌 합리에서 온다. 조용해서 어렵다.", "kind": "point", "small": "적용", "title": "조용한 파멸"}, {"body": "눈가리개를 벗는 일은 고객을 버리는 일이 아니다. 눈금을 하나 더 다는 일이다. 오늘의 손님과 내일의 손님을 함께 보는 눈금이다. 두 눈금이 함께 있어야 한다.", "kind": "point", "small": "한 걸음 더", "title": "눈금 하나 더"}, {"body": "가장 합리적이라는 결정이 누구의 눈금인지 적는다. 주인이 오늘뿐이라면 내일의 문은 어디인지 함께 적는다. 모르는 문이라도 적어 두면 살핀다. 적는 순간 발길이 바뀐다.", "kind": "close", "title": "점검 문장 하나"}], "source_line": "클레이튼 크리스텐슨 (1997) 《혁신기업의 딜레마》 The Innovator's Dilemma"}, "col_id": "LR-B-008", "col_type": "개념정의형", "date": "2026-09-30", "kicker": "연구 노트 · 전략", "summary": {"headline": "모범 답안이 눈가리개가 될 때", "keypoints": ["1등 기업은 잘못해서가 아니라 잘해서 무너진다.", "모범 답안에는 새 기술의 자리가 없다.", "합리가 파멸의 문을 여는 과정은 조용하다.", "옳음의 눈금 주인이 오늘의 손님뿐인지 적어 둔다."], "lede": "크리스텐슨의 《혁신기업의 딜레마》에서 뒤집히는 발견은 몰락의 원인입니다. 1등 기업은 경영을 못해서 무너지지 않았습니다. 이 구분은 옳은 결정의 눈금 주인을 묻습니다.", "pull_quote": "딜레마의 뿌리는 무능이 아니라 합리가 뒤집히는 데 있다.", "sections": [{"body": "존속적 기술은 기존 고객이 원하는 더 크고 빠른 것이고 파괴적 기술은 처음엔 작고 초라하다. 우량 기업은 최고의 고객을 살피고 수익 높은 곳에 돈을 모은다. 모범 답안을 따를수록 새 기술은 눈에 밟히지 않는다.", "h": "두 기술을 나누면"}, {"body": "지금의 손님은 새 기술을 원하지 않고 이익률은 낮으며 시장은 작다. 그래서 외면하는 결정은 완벽하게 합리적이다. 바로 그 합리가 파멸의 문을 연다.", "h": "합리의 문"}, {"body": "이성적인 경영의 셈법은 새 기술 앞에서 독이 된다. 기존 판의 미덕이 새 판의 눈가리개가 된다. 잘해 온 방식이 다음 판의 발목을 잡는다.", "h": "셈법의 독"}, {"body": "무엇이 옳은 결정인가가 아니라 그 옳음이 누구의 눈금인가를 묻는다. 가장 합리적이라는 결정이 누구의 눈금인지 적는다. 눈금이 바뀌면 발길도 바뀐다.", "h": "눈금의 주인"}], "sources": ["클레이튼 크리스텐슨 (1997) 《혁신기업의 딜레마》 The Innovator's Dilemma — 도서"]}, "title": "합리성의 배신이 몰락을 부른다"}</script>
+<script>
+window.TPL={"kpTitle": "이야기에서 건진 것", "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '독서·연구 노트이며 법률·투자 자문이 아닙니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
