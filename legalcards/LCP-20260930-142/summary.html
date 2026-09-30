@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>상대 도장은 받았는데 계약이 흔들린다고?, 도장 확인이 아닌 대리권 확인이 계약을 살린다</title>
+<meta name="description" content="법인인감은 선명하게 찍혔지만 위임 기한과 계약금액 한도란이 비어 있었습니다. 누가, 어떤 권한으로, 어디까지 약속할 수 있는 사람인지가 서류 어디에도 확정되어 있지 않았습니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="상대 도장은 받았는데 계약이 흔들린다고?, 도장 확인이 아닌 대리권 확인이 계약을 살린다">
+<meta property="og:description" content="법인인감은 선명하게 찍혔지만 위임 기한과 계약금액 한도란이 비어 있었습니다. 누가, 어떤 권한으로, 어디까지 약속할 수 있는 사람인지가 서류 어디에도 확정되어 있지 않았습니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;800;900&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S5 인용사색형 — 본화이트 & 와인 / 중앙 정렬·큰 여백·대형 인용 */
+:root{--bg:#f5f1ea;--ink:#2a2226;--mute:#7a6f74;--acc:#6e2b3a;--line:#c9bfb3;--head:"Noto Serif KR","Nanum Myeongjo",serif;--body:"Noto Serif KR","Nanum Myeongjo",serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#15111a;--ink:#e9e2e6;--mute:#a1949b;--acc:#d3919f;--line:#3a2f3c}}
+body{font-weight:300;font-size:17px;line-height:2}
+.page{max-width:660px;padding:56px 24px 100px;text-align:center}
+.kicker{display:block;font-weight:500}
+.headline{font-weight:400;font-size:clamp(16px,3vw,19px);line-height:1.6;color:var(--mute);letter-spacing:0;margin-top:14px}
+.meta{margin-top:10px;font-size:12px}
+.lede-x{order:3;text-align:left;margin:0 0 64px;font-size:17px;line-height:2.05;font-weight:300}
+.pq{order:2;margin:56px -4px 56px;padding:0;position:relative}
+.pq::before{content:"\201C";display:block;font-family:var(--head);font-size:96px;line-height:.7;color:var(--acc);opacity:.85;margin-bottom:14px;font-weight:400}
+.pq p{font-weight:300;font-size:clamp(23px,5.6vw,38px);line-height:1.6;letter-spacing:-.02em;color:var(--ink)}
+.pq::after{content:"";display:block;width:36px;height:1px;background:var(--acc);margin:42px auto 0}
+.secs{order:4}
+.sec{margin:0 0 56px;text-align:left}
+.sec .num{display:block;text-align:center;font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:.3em;color:var(--acc);margin-bottom:12px}
+.sec h2{text-align:center;font-weight:500;font-size:clamp(19px,3.2vw,22px);line-height:1.6;margin-bottom:16px;color:var(--ink)}
+.sec-body{font-size:16.5px;line-height:2.05}
+.sec:not(:last-child)::after{content:"";display:block;width:4px;height:4px;border-radius:50%;background:var(--acc);margin:56px auto 0;opacity:.7}
+.kp{order:5;margin:20px 0 0;padding:34px 0 0;border-top:1px solid var(--line);text-align:left}
+.kp-t{text-align:center;font-family:var(--sans);font-weight:500;font-size:11px;letter-spacing:.3em;color:var(--acc);margin-bottom:12px}
+.kp li{display:flex;gap:14px;padding:10px 0}
+.kp-n{flex:none;font-family:var(--sans);font-size:11px;letter-spacing:.1em;color:var(--acc);padding-top:.6em}
+.kp-x{font-weight:400;line-height:1.85}
+.ft{order:6;margin-top:56px;padding-top:24px;border-top:1px solid var(--line);text-align:center}
+.ft .src li{padding-left:0;text-indent:0}
+.ft .src li::before{content:""}
+@media (min-width:820px){
+  .page{padding:110px 24px 140px}
+  .pq{margin:80px -60px}
+  .pq p{font-size:40px}
+}
+</style>
+</head>
+<body data-tpl="S5">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "LCP-20260930-142", "title": "상대 도장은 받았는데 계약이 흔들린다고?, 도장 확인이 아닌 대리권 확인이 계약을 살린다", "col_type": "개념정의형", "kicker": "법률 컬럼 · 법무팀", "byline": "조우성", "date": "2026-09-30", "summary": {"headline": "상대 도장은 받았는데 계약이 흔들린다고?, 도장 확인이 아닌 대리권 확인이 계약을 살린다", "lede": "법인인감은 선명하게 찍혔지만 위임 기한과 계약금액 한도란이 비어 있었습니다. 누가, 어떤 권한으로, 어디까지 약속할 수 있는 사람인지가 서류 어디에도 확정되어 있지 않았습니다.", "sections": [{"h": "사건의 시작: 영업이사가 가져온 법인인감 계약서 한 부", "body": "여덟억 원대 철골 자재 납품계약서의 서명란에는 상대 회사의 법인인감이 찍혀 있었습니다. 협상을 이끈 영업이사는 대표이사가 해외 출장 중이라 일괄 위임받았다고 말했고 위임장 사본도 전달됐지만 위임 기한과 금액 한도란이 비어 있었습니다. 법무 담당자는 도장이 찍혔다는 사실만으로 계약이 완성됐다고 보기 어렵다고 판단하고, 서명 전에 상대방의 체결 권한부터 거꾸로 추적하기로 했습니다."}, {"h": "법이 보는 핵심: 도장이 아니라 권한이 계약을 완성한다", "body": "민법 제114조는 대리인이 본인을 위한 것임을 표시하고 권한 내에서 한 의사표시는 본인에게 직접 효력이 발생한다고 규정합니다. 반대로 대리권이 없는 사람이 체결한 계약은 본인에게 효력이 없는 것이 민법 제130조의 무권대리 원칙이며, 금액 한도 없는 포괄 위임이 없었다면 여덟억 원대 계약은 상대 회사에 효력이 미치지 않을 수 있습니다. 다만 민법 제126조의 표현대리가 성립하면 본인이 책임을 부담할 수 있는데, 권한이 있다고 믿을 만한 외관이 있었고 그 외관을 본인이 만든 데 원인이 있다면 뒤늦게 권한 없음을 주장해도 책임져야 할 수 있습니다. 명함과 직함, 법인인감의 소지 경위, 과거 같은 방식의 거래 이력이 그 재료입니다. 정리할 것은 도장의 진위가 아니라 권한의 범위와 외관 형성의 경위입니다."}, {"h": "중요한 조건과 예외: 대표이사 등기와 이사회 결의까지 본다", "body": "법인의 경우 등기부상 대표이사만 법정 대표권을 가지고 중요한 자산 처분이나 영업 양도는 이사회 결의가 필요하다는 것이 상법 제393조의 구조입니다. 체결자가 대표이사가 아니라면 등기부, 인감증명서, 위임장 원본의 순서로 권한을 좁혀가되 위임인·수임인·위임 사항·금액 한도·유효기간이 모두 적혀 있는지 봅니다. 빈칸이 하나라도 있으면 그 빈칸이 분쟁의 자리가 됩니다. 권한 요건은 구두 설명으로 채워지지 않고 무권대리 위험은 특약 한 줄로 해소되지 않으며, 표현대리도 외관 자료가 있어야 주장할 수 있습니다. 권한 확인 서류를 계약서와 함께 묶어 보관한 회사와 그렇지 않은 회사의 희비는 분쟁 단계에서 갈린다고 보는 편이 안전합니다."}, {"h": "법무팀이 해야 할 일: 체결 권한 확인을 계약 프로세스로 고정한다", "body": "해법은 계약서를 잘 쓰는 기술을 넘어섭니다. 체결 권한 확인 자체를 표준 프로세스로 고정하는 것이 법무팀의 일이며, 민법 제114조의 표시와 권한, 제130조의 무권대리 차단, 제126조의 표현대리 대비, 상법 제393조의 대표권과 결의 확인이라는 네 개의 점검축을 매 계약에 적용합니다."}], "keypoints": ["위임원본 확보: 위임장 원본에서 위임인·수임인·위임 사항·금액 한도·유효기간을 확인하고 계약서와 함께 편철합니다. 사본만으로는 민법 제114조의 권한 내 요건을 설명하기 어렵습니다.", "대표권 대조: 등기부등본과 인감증명서로 대표이사 성명과 인영을 대조하고, 체결자가 대표가 아닐 때 위임 경로를 문서로 연결합니다. 등기부상 대표이사 외의 체결은 상법 제393조의 관점에서도 다시 봅니다.", "외관 기록화: 명함·직함·인감 소지 경위·과거 동일 방식 거래 이력을 메모가 아니라 증빙으로 남깁니다. 민법 제126조의 표현대리를 주장해야 하는 날의 재료가 됩니다.", "무권대리 차단문구: 무권대리 시 본인 효력이 없다는 민법 제130조의 원칙을 전제로, 체결 권한이 없는 것으로 확인되면 계약 해제·원상회복·비용 정산 절차를 특약에 둡니다.", "결의 확인: 중요한 자산 처분이나 영업 양도 성격이 있으면 상법 제393조의 이사회 결의 여부와 결의서 사본 첨부를 요청합니다. 결의 없는 대형 처분은 체결자 개인 약속으로 흘러내릴 수 있습니다."], "pull_quote": "계약을 살리는 것은 도장의 모양이 아니라, 본인을 위한 표시와 권한 내 행동이라는 두 가지입니다.", "sources": ["민법 제114조", "민법 제126조", "민법 제130조", "상법 제393조"]}, "cards": {"cards": [{"kind": "cover", "title": "도장은 선명한데 위임장은 빈칸", "body": "여덟억 원대 계약서에 법인인감은 찍혔지만 위임 기한과 금액 한도란이 비어 있었습니다. 도장 확인이 아니라 대리권 확인이 계약을 살립니다.", "small": "법률 컬럼 · 법무팀"}, {"kind": "point", "title": "권한이 계약을 완성합니다", "body": "민법 제114조는 본인을 위한 표시와 권한 내 의사표시가 본인에게 직접 효력이 발생한다고 규정합니다. 도장의 모양이 아니라 이 두 가지가 회사 사이의 약속을 완성합니다.", "small": "권한 없는 체결은 본인에게 효력이 없습니다"}, {"kind": "compare", "title": "무권대리와 표현대리", "body": "무권대리(민법 제130조): 대리권 없는 사람의 계약은 본인에게 효력이 없음.\n표현대리(민법 제126조): 본인이 만든 믿을 만한 외관이 있으면 본인이 책임을 질 수 있음.", "small": "명함·직함·인감 경위·과거 거래 이력이 재료입니다"}, {"kind": "point", "title": "법인은 축이 하나 더", "body": "등기부상 대표이사만 법정 대표권을 가지고 중요한 자산 처분이나 영업 양도는 이사회 결의가 필요하다는 것이 상법 제393조의 구조입니다. 위임장은 원본으로, 빈칸 없이 확인합니다.", "small": "빈칸이 하나라도 있으면 그 빈칸이 분쟁이 됩니다"}, {"kind": "point", "title": "네 개의 점검축", "body": "민법 제114조의 표시와 권한, 제130조의 무권대리 차단, 제126조의 표현대리 대비, 상법 제393조의 대표권과 결의 확인. 이 네 축을 매 계약에 적용합니다.", "small": "권한 확인 서류는 계약서와 함께 편철합니다"}, {"kind": "close", "title": "프로세스로 고정합니다", "body": "체결 권한 확인 자체를 표준 프로세스로 고정하는 것이 법무팀의 일입니다. 권한 확인이 흔들리면 대금 회수부터 흔들립니다.", "small": "일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다."}], "source_line": "민법 제114조 · 제126조 · 제130조 · 상법 제393조"}}</script>
+<script>
+window.TPL={"kpTitle": "남겨 둘 문장", "splitLede": true, "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
+<!-- lgcol build-id: fb-b8db3a878b -->
