@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>컴퓨터가 승인했으니 회사는 안전하다는 통념이 아닌, 개입을 통제하는 설계가 회사를 지킨다</title>
+<meta name="description" content="자동 대출 시스템에서 승인률이 갑자기 높아졌다는 보고에 시스템은 자동 판단이라 했지만, 예외 승인에는 직원 계정과 수동 송금 기록이 남아 있었습니다. 알고리즘 오류인지 직원 개입인지 구분하지 않으면 수사와 고객 대응이 모두 흔들립니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="컴퓨터가 승인했으니 회사는 안전하다는 통념이 아닌, 개입을 통제하는 설계가 회사를 지킨다">
+<meta property="og:description" content="자동 대출 시스템에서 승인률이 갑자기 높아졌다는 보고에 시스템은 자동 판단이라 했지만, 예외 승인에는 직원 계정과 수동 송금 기록이 남아 있었습니다. 알고리즘 오류인지 직원 개입인지 구분하지 않으면 수사와 고객 대응이 모두 흔들립니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S4 체크리스트형 — 페이퍼화이트 & 틸 / 산세리프 / 체크박스 */
+:root{--bg:#fafaf6;--ink:#1a2226;--mute:#5f6b70;--acc:#0e6b6b;--line:#d9ddd6;--soft:#eef2ee;--head:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--body:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0d1416;--ink:#e5eceb;--mute:#93a3a3;--acc:#4fc0b6;--line:#26353a;--soft:#141f22}}
+body{font-size:16.5px;line-height:1.8}
+.page{max-width:780px;padding:32px 20px 80px}
+.kicker{display:inline-block;align-self:flex-start;background:var(--acc);color:var(--bg);padding:4px 10px;letter-spacing:.06em;font-size:12px;border-radius:2px;margin-bottom:16px}
+.hd{padding-bottom:26px}
+.headline{font-weight:800;font-size:clamp(26px,6vw,42px);line-height:1.3;letter-spacing:-.035em}
+.lede{margin-top:16px;font-size:clamp(16px,2.3vw,18px);color:var(--mute);line-height:1.8}
+.meta{margin-top:14px}
+.pq{order:6;margin:8px 0 0;padding:18px 0 0;border-top:1px solid var(--line)}
+.pq p{font-weight:700;font-size:18px;color:var(--acc);line-height:1.6}
+.kp{order:2;margin:0 0 34px;padding:22px 18px 10px;background:var(--soft);border:1px solid var(--line);border-top:4px solid var(--acc);border-radius:4px}
+.kp-t{font-size:15px;font-weight:800;margin-bottom:6px}
+.kp-t::after{content:" · 눌러서 확인";font-weight:500;font-size:12px;color:var(--mute)}
+.kp li{display:flex;gap:14px;align-items:flex-start;padding:13px 4px;border-top:1px solid var(--line);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.kp li:first-child{border-top:0}
+.kp li:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.kp-n{flex:none;position:relative;width:24px;height:24px;margin-top:2px;border:2px solid var(--acc);border-radius:5px;font-size:0;background:var(--bg);transition:background .15s}
+.kp-n::after{content:"";position:absolute;left:6px;top:1.5px;width:6px;height:11px;border:solid var(--bg);border-width:0 2.5px 2.5px 0;transform:rotate(45deg) scale(0);transition:transform .15s}
+.kp li[aria-checked=true] .kp-n{background:var(--acc)}
+.kp li[aria-checked=true] .kp-n::after{transform:rotate(45deg) scale(1)}
+.kp li[aria-checked=true] .kp-x{color:var(--mute)}
+.kp-x{font-weight:600;line-height:1.65}
+.secs{order:3}
+.sec{display:grid;grid-template-columns:52px 1fr;column-gap:14px;padding:22px 0;border-top:1px solid var(--line)}
+.sec .num{grid-row:1/span 2;font-weight:800;font-size:34px;line-height:1;letter-spacing:-.04em;color:var(--acc);opacity:.9;padding-top:2px}
+.sec h2{font-weight:800;font-size:clamp(18px,3vw,21px);line-height:1.45;letter-spacing:-.02em;margin-bottom:8px}
+.ft{margin-top:30px;padding-top:18px;border-top:1px solid var(--line)}
+@media (min-width:820px){
+  .page{padding:64px 32px 110px}
+  .kp{padding:28px 30px 14px}
+  .sec{grid-template-columns:76px 1fr;padding:28px 0}
+  .sec .num{font-size:48px}
+  .sec-body{font-size:17px}
+}
+</style>
+</head>
+<body data-tpl="S4">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "LCP-20260930-197", "title": "컴퓨터가 승인했으니 회사는 안전하다는 통념이 아닌, 개입을 통제하는 설계가 회사를 지킨다", "col_type": "사례형", "kicker": "법률 컬럼 · CEO", "byline": "조우성", "date": "2026-09-30", "summary": {"headline": "컴퓨터가 승인했으니 회사는 안전하다는 통념이 아닌, 개입을 통제하는 설계가 회사를 지킨다", "lede": "자동 대출 시스템에서 승인률이 갑자기 높아졌다는 보고에 시스템은 자동 판단이라 했지만, 예외 승인에는 직원 계정과 수동 송금 기록이 남아 있었습니다. 알고리즘 오류인지 직원 개입인지 구분하지 않으면 수사와 고객 대응이 모두 흔들립니다.", "sections": [{"h": "사건의 시작: 자동 대출의 예외 승인", "body": "간편결제 스타트업 대표는 자동 대출 시스템의 승인률이 갑자기 높아졌다는 보고를 받았습니다. 시스템은 자동으로 판단했다고 했지만 예외 승인에는 직원 계정과 수동 송금 기록이 남아 있었습니다. 대표는 알고리즘 오류인지 직원 개입인지 먼저 구분하지 않으면 수사와 고객 대응 모두 흔들릴 수 있다고 판단했습니다."}, {"h": "법이 보는 핵심: 사람의 착오와 컴퓨터 처리를 나누어 본다", "body": "형법 제347조 사기죄의 성립요건인 기망행위는 사람으로 하여금 착오를 일으키게 하는 것입니다. 확인할 것은 '자동이었다'는 설명이 아니라 어떤 정보가 입력되고 누가 그 결과를 확인했으며 송금이 어떻게 이루어졌는지입니다. 사람의 개입이 확인되면 형법 제347조의2의 컴퓨터등사용사기죄나 사기죄 성립 여부를 다시 검토할 수 있습니다. 이는 모든 자동 대출을 형사사건으로 보라는 뜻이 아니라 자동화 뒤의 역할을 기록하라는 경영 기준입니다."}, {"h": "중요한 조건과 예외: 속도보다 승인 경계를 정한다", "body": "입력·자동심사·예외승인·송금을 서로 다른 권한으로 나누고 예외 승인은 사유와 담당자를 남깁니다. 사고가 의심되면 로그를 먼저 보존하고 임의로 삭제하거나 다시 계산하지 않으며, 조사 결과가 나오기 전에는 형사책임을 단정하지 않습니다. 예외 승인과 송금 권한을 같은 사람에게 몰아주지 않는 원칙도 결재 기준에 넣습니다."}, {"h": "CEO가 해야 할 일: 알고리즘과 사람의 손을 함께 관리한다", "body": "자동심사 시스템 보고서에 직원 확인·승인·송금 로그를 포함시키고, 형법 제347조와 제347조의2를 검토할 법무 창구를 정합니다. 의심 사례가 나오면 원본 로그를 보존한 뒤 사실관계를 하나로 묶습니다. 자동화는 책임을 지우는 장치가 아니라 책임의 경계를 더 선명하게 기록하는 장치여야 합니다."}], "keypoints": ["권한 분리: 입력·예외승인·송금 계정을 분리한다.", "개입 기록: 형법 제347조의2 관련 직원 확인·승인·송금 시간을 남긴다.", "사실 보존: 형법 제347조 검토에 필요한 입력·고객 안내·변경 로그를 보존한다.", "중단 기준: 개입 경계가 확인되지 않는 상품은 법무와 함께 송금 절차를 점검한다."], "pull_quote": "자동화는 책임을 지우는 장치가 아니라 책임의 경계를 더 선명하게 기록하는 장치여야 합니다.", "sources": ["형법 제347조", "형법 제347조의2"]}, "cards": {"cards": [{"kind": "cover", "title": "승인률이 높아진 자동 대출", "body": "시스템은 자동 판단이라 했지만 예외 승인에는 직원 계정과 수동 송금 기록이 있었습니다. 구분 없이 대응하면 수사와 고객 안내가 모두 흔들립니다.", "small": "법률 컬럼 · CEO"}, {"kind": "point", "title": "확인 대상은 설명이 아니라 기록", "body": "형법 제347조의 기망행위는 사람으로 하여금 착오를 일으키게 하는 것입니다. '자동이었다'는 말 대신 어떤 정보가 입력되고 누가 확인했으며 송금이 어떻게 이루어졌는지를 봅니다.", "small": "개입이 확인되면 제347조의2 적용을 다시 검토"}, {"kind": "point", "title": "권한을 나누고 사유를 남깁니다", "body": "입력·자동심사·예외승인·송금을 서로 다른 권한으로 나누고 예외 승인에는 사유와 담당자를 남깁니다. 예외 승인과 송금 권한을 같은 사람에게 몰아주지 않는 원칙을 결재 기준에 넣습니다.", "small": "분기별 권한 분리 테스트 결과도 보고받습니다"}, {"kind": "compare", "title": "보고받을 지표를 바꿉니다", "body": "기존: 자동 승인률과 대출 건수만 보고받는다.\n변경: 예외 승인률, 수동 수정 건수, 송금 권한 중복, 로그 보존 실패를 함께 본다.", "small": "개입 자료가 자동으로 남는지 내부감사 항목에 넣습니다"}, {"kind": "point", "title": "로그를 다시 만들지 않습니다", "body": "수사나 민원 이후에 로그를 다시 만들어 맞추는 일은 금지합니다. 시스템 장애가 있었다면 장애 시각과 복구 조치를 그대로 남기고, 조사 결과 전에는 형사책임을 단정하지 않습니다.", "small": "사실을 빠르게 정리할수록 설명의 불일치가 줄어듭니다"}, {"kind": "close", "title": "법무 창구를 하나로 정합니다", "body": "형법 제347조와 제347조의2를 검토할 법무 창구를 정하고 의심 사례에는 원본 로그를 먼저 보존합니다. 개입 경계가 확인되지 않는 상품은 법무와 함께 송금 절차를 점검합니다.", "small": "일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다."}], "source_line": "형법 제347조 · 형법 제347조의2"}}</script>
+<script>
+window.TPL={"kpTitle": "체크리스트", "checkable": true, "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
+<!-- lgcol build-id: fb-227f42fb3c -->
