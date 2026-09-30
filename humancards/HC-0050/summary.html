@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>같은 불만이 반복되면 요구가 아니라 구조다</title>
+<meta name="description" content="반복되는 불만은 감정이 아니라 구조의 신호다. 한 번은 사건이고, 세 번은 조건이다. 비난의 형태로 감싸진 요구를 번역하는 것이 경청의 기술이다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="같은 불만이 반복되면 요구가 아니라 구조다">
+<meta property="og:description" content="반복되는 불만은 감정이 아니라 구조의 신호다. 한 번은 사건이고, 세 번은 조건이다. 비난의 형태로 감싸진 요구를 번역하는 것이 경청의 기술이다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S4 체크리스트형 — 페이퍼화이트 & 틸 / 산세리프 / 체크박스 */
+:root{--bg:#fafaf6;--ink:#1a2226;--mute:#5f6b70;--acc:#0e6b6b;--line:#d9ddd6;--soft:#eef2ee;--head:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--body:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0d1416;--ink:#e5eceb;--mute:#93a3a3;--acc:#4fc0b6;--line:#26353a;--soft:#141f22}}
+body{font-size:16.5px;line-height:1.8}
+.page{max-width:780px;padding:32px 20px 80px}
+.kicker{display:inline-block;align-self:flex-start;background:var(--acc);color:var(--bg);padding:4px 10px;letter-spacing:.06em;font-size:12px;border-radius:2px;margin-bottom:16px}
+.hd{padding-bottom:26px}
+.headline{font-weight:800;font-size:clamp(26px,6vw,42px);line-height:1.3;letter-spacing:-.035em}
+.lede{margin-top:16px;font-size:clamp(16px,2.3vw,18px);color:var(--mute);line-height:1.8}
+.meta{margin-top:14px}
+.pq{order:6;margin:8px 0 0;padding:18px 0 0;border-top:1px solid var(--line)}
+.pq p{font-weight:700;font-size:18px;color:var(--acc);line-height:1.6}
+.kp{order:2;margin:0 0 34px;padding:22px 18px 10px;background:var(--soft);border:1px solid var(--line);border-top:4px solid var(--acc);border-radius:4px}
+.kp-t{font-size:15px;font-weight:800;margin-bottom:6px}
+.kp-t::after{content:" · 눌러서 확인";font-weight:500;font-size:12px;color:var(--mute)}
+.kp li{display:flex;gap:14px;align-items:flex-start;padding:13px 4px;border-top:1px solid var(--line);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.kp li:first-child{border-top:0}
+.kp li:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.kp-n{flex:none;position:relative;width:24px;height:24px;margin-top:2px;border:2px solid var(--acc);border-radius:5px;font-size:0;background:var(--bg);transition:background .15s}
+.kp-n::after{content:"";position:absolute;left:6px;top:1.5px;width:6px;height:11px;border:solid var(--bg);border-width:0 2.5px 2.5px 0;transform:rotate(45deg) scale(0);transition:transform .15s}
+.kp li[aria-checked=true] .kp-n{background:var(--acc)}
+.kp li[aria-checked=true] .kp-n::after{transform:rotate(45deg) scale(1)}
+.kp li[aria-checked=true] .kp-x{color:var(--mute)}
+.kp-x{font-weight:600;line-height:1.65}
+.secs{order:3}
+.sec{display:grid;grid-template-columns:52px 1fr;column-gap:14px;padding:22px 0;border-top:1px solid var(--line)}
+.sec .num{grid-row:1/span 2;font-weight:800;font-size:34px;line-height:1;letter-spacing:-.04em;color:var(--acc);opacity:.9;padding-top:2px}
+.sec h2{font-weight:800;font-size:clamp(18px,3vw,21px);line-height:1.45;letter-spacing:-.02em;margin-bottom:8px}
+.ft{margin-top:30px;padding-top:18px;border-top:1px solid var(--line)}
+@media (min-width:820px){
+  .page{padding:64px 32px 110px}
+  .kp{padding:28px 30px 14px}
+  .sec{grid-template-columns:76px 1fr;padding:28px 0}
+  .sec .num{font-size:48px}
+  .sec-body{font-size:17px}
+}
+</style>
+</head>
+<body data-tpl="S4">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "HC-0050", "title": "같은 불만이 반복되면 요구가 아니라 구조다", "col_type": "체크리스트형", "kicker": "침묵과경청", "byline": "조우성", "date": "2026-09-29", "summary": {"headline": "같은 불만이 반복되면 요구가 아니라 구조다", "lede": "반복되는 불만은 감정이 아니라 구조의 신호다. 한 번은 사건이고, 세 번은 조건이다. 비난의 형태로 감싸진 요구를 번역하는 것이 경청의 기술이다.", "sections": [{"h": "한 번은 사건, 세 번은 조건", "body": "사람은 불만을 말할 때 정확한 요구를 말하지 않는다. 요구를 그대로 말하면 거절당할 수 있기 때문이다. 그래서 비난의 형태로 감싸서 내보낸다. '왜 우리만 이런 일을 하냐'는 문장 뒤에는 '이 업무를 담당에서 빼달라'가 숨어 있을 수 있다."}, {"h": "번역은 세 칸으로 한다", "body": "첫째, 사실 — 언제 무슨 일이 있었는지 한 줄로 적는다. 둘째, 조건 — 특정 요일, 특정 고객, 특정 결재 단계처럼 반복을 만드는 조건을 찾는다. 셋째, 요구 — 무엇이 바뀌면 그 문장이 다시 나오지 않는지 적는다. 세 칸 가운데 가장 자주 비는 것이 조건 칸이다."}, {"h": "기록이 근거가 된다", "body": "같은 불만이 몇 번째인지 세어 두면 그 숫자가 대화의 근거가 된다. '세 번 말씀하셨습니다'는 감정적 지적이 아니라 사실 확인이 된다. 반복 횟수가 지표가 되면 요구는 비난에서 제안으로 바뀐다."}, {"h": "번역할 것과 들어줄 것을 나눈다", "body": "한 번 나온 서운함은 들어주는 것으로 충분한 경우가 많고, 반복되는 것만 번역한다. 번역은 상대에게 들려주는 문장이 아니라 내가 정리하는 작업이다. 다만 바꿀 수 없는 예산과 규정은 정확히 바꿀 수 없다고 말하는 편이 낫다."}], "keypoints": ["반복되는 불만은 감정이 아니라 구조의 신호다 — 한 번은 사건, 세 번은 조건", "번역은 사실·조건·요구 세 칸으로 하고, 가장 자주 비는 칸은 조건이다", "'세 번 말씀하셨습니다'는 기록이 만드는 사실 확인이다", "바꿀 수 없는 것(예산·규정)은 번역 대상이 아니라 정확히 말할 대상이다", "조용해지는 순간이 더 위험하다 — 불만은 상대가 아직 포기하지 않았다는 표시다"], "pull_quote": "한 번은 사건이고, 세 번은 조건이다.", "sources": []}, "cards": {"cards": [{"kind": "cover", "title": "같은 불만이 반복되면 요구가 아니라 구조다", "body": "매달 같은 말이 돌아온다. \"여긴 원래 그래요.\" 달래고, 사정을 묻고, 다른 사람에게도 물었는데도 석 달 뒤 같은 문장이 다시 나온다. 그 말은 감정이 아니라 구조의 신호다."}, {"kind": "point", "title": "비난은 포장된 요구다", "body": "요구를 그대로 말하면 거절당할 수 있기에 비난의 형태로 감싸서 내보낸다. '왜 우리만 이런 일을 하냐' 뒤에는 '담당에서 빼달라'가 숨어 있을 수 있다.", "small": "프레임"}, {"kind": "point", "title": "번역은 세 칸으로 한다", "body": "사실 — 언제 무슨 일이 있었나. 조건 — 반복을 만드는 요일·고객·결재 단계는 무엇인가. 요구 — 무엇이 바뀌면 그 문장이 멈추는가. 가장 자주 비는 칸은 조건이다.", "small": "체크"}, {"kind": "point", "title": "승인 권한이 문제였다", "body": "보고 체계가 복잡하다는 불만에 결재 단계를 하나 줄였지만 넉 달 뒤 같은 문장이 돌아왔다. 문제는 줄어든 단계가 아니라 그 단계에 걸리는 승인 권한이었다.", "small": "사례"}, {"kind": "point", "title": "번역은 내가 정리하는 작업이다", "body": "바꿀 수 없는 예산과 규정은 서운함으로 번역하지 않는다. 들어주기만 한 관리자는 원한 대신 사람을 얻었다. 확인은 '제가 이해한 것이 맞습니까' 한 문장이면 된다.", "small": "반론"}, {"kind": "close", "title": "조용해지는 순간이 더 위험하다", "body": "불만은 상대가 아직 포기하지 않았다는 표시다. 세 번째 같은 말이 나오면 답은 그 사람이 아니라 그 자리에 있다.", "small": "개인의 해석을 담은 에세이이며 전문적 조언이 아닙니다."}], "source_line": "침묵과경청"}}</script>
+<script>
+window.TPL={"kpTitle": "체크리스트", "checkable": true, "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '개인의 해석을 담은 에세이이며 전문적 조언이 아닙니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
+<!-- hgcol build-id: hb-83294f2179 -->
