@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>인지가 없는 부자관계와 형법상 친족 면책은 법률상 관계로 나눠 본다</title>
+<meta name="description" content="가족이 관련된 형사사건 판결 분석에서 쟁점이 된 것은 감정적 가족관계가 아니라 부의 인지 여부와 가족관계등록 자료였습니다. 자연적 혈연과 법률상 친자관계, 그리고 형법상 친족 면책 요건을 세 갈래로 나눠 기록하는 법무의 순서를 정리합니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="인지가 없는 부자관계와 형법상 친족 면책은 법률상 관계로 나눠 본다">
+<meta property="og:description" content="가족이 관련된 형사사건 판결 분석에서 쟁점이 된 것은 감정적 가족관계가 아니라 부의 인지 여부와 가족관계등록 자료였습니다. 자연적 혈연과 법률상 친자관계, 그리고 형법상 친족 면책 요건을 세 갈래로 나눠 기록하는 법무의 순서를 정리합니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;800;900&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S2 개념정의형 — 딥네이비 & 골드 / 사전식 좌우 배치 */
+:root{--bg:#f3f4f7;--ink:#141f38;--mute:#5d6577;--acc:#8f6a12;--gold:#c9a24b;--navy:#0f1c3a;--head:"Noto Serif KR","Nanum Myeongjo",serif;--body:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0a1122;--ink:#e6e9f1;--mute:#9aa3b8;--acc:#d8b25e;--navy:#0f1c3a}}
+body{font-size:16.5px;line-height:1.85}
+.page{max-width:none;padding:0}
+.hd{background:var(--navy);color:#f1eee4;padding:44px 20px 40px}
+.hd>*{max-width:900px;margin-left:auto;margin-right:auto}
+.kicker{display:block;color:var(--gold);margin-bottom:16px}
+.headline{font-weight:700;font-size:clamp(26px,5.6vw,46px);line-height:1.34;letter-spacing:-.015em;color:#fff}
+.lede{margin-top:26px;padding:20px 20px 20px 22px;border-left:3px solid var(--gold);background:rgba(255,255,255,.06)}
+.lede-label{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.16em;font-weight:700;color:var(--gold);margin-bottom:8px}
+.lede p{font-size:clamp(16px,2.3vw,18.5px);line-height:1.85;color:#ece9de}
+.meta{margin-top:20px;color:#a9b2c7}
+.pq,.secs,.ft{width:100%;max-width:900px;margin-left:auto;margin-right:auto;padding-left:20px;padding-right:20px}
+.pq{margin-top:44px}
+.pq p{font-family:var(--head);font-weight:600;font-size:clamp(19px,3.2vw,26px);line-height:1.6;color:var(--ink);padding:4px 0 4px 20px;border-left:3px solid var(--gold)}
+.secs{margin-top:34px}
+.sec{padding:26px 0;border-top:1px solid color-mix(in srgb,var(--ink) 20%,transparent)}
+.sec:first-child{border-top:0}
+.sec .num{display:block;font-family:var(--sans);font-weight:700;font-size:12px;letter-spacing:.14em;color:var(--acc);margin-bottom:6px}
+.sec h2{font-family:var(--head);font-weight:700;font-size:clamp(19px,3.2vw,23px);line-height:1.45;margin-bottom:12px;color:var(--ink)}
+.kp{background:var(--navy);color:#eee;margin-top:20px;padding:34px 20px 38px}
+.kp>*{max-width:860px;margin-left:auto;margin-right:auto}
+.kp-t{font-family:var(--head);font-size:20px;font-weight:700;color:var(--gold);margin-bottom:14px}
+.kp li{display:flex;gap:14px;padding:12px 0;border-top:1px solid rgba(255,255,255,.14)}
+.kp li:first-child{border-top:0}
+.kp-n{flex:none;width:9px;height:9px;margin-top:.72em;background:var(--gold);transform:rotate(45deg);font-size:0;overflow:hidden}
+.kp-x{line-height:1.7;color:#eef0f5}
+.ft{padding-top:32px;padding-bottom:72px}
+@media (min-width:820px){
+  .hd{padding:80px 40px 64px}
+  .pq,.secs,.ft{padding-left:40px;padding-right:40px}
+  .kp{padding:52px 40px 56px}
+  .sec{display:grid;grid-template-columns:230px 1fr;column-gap:44px;padding:34px 0}
+  .sec .num{grid-column:1;grid-row:1;margin:0 0 4px;align-self:start}
+  .sec .sec-in{display:contents}
+  .sec h2{grid-column:1;grid-row:1;margin:26px 0 0}
+  .sec-body{grid-column:2;grid-row:1/span 2;font-size:17px}
+}
+</style>
+</head>
+<body data-tpl="S2">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "LCP-20260930-223", "title": "인지가 없는 부자관계와 형법상 친족 면책은 법률상 관계로 나눠 본다", "col_type": "개념정의형", "kicker": "법률 컬럼 · 법무팀", "byline": "조우성", "date": "2026-09-30", "summary": {"headline": "인지가 없는 부자관계와 형법상 친족 면책은 법률상 관계로 나눠 본다", "lede": "가족이 관련된 형사사건 판결 분석에서 쟁점이 된 것은 감정적 가족관계가 아니라 부의 인지 여부와 가족관계등록 자료였습니다. 자연적 혈연과 법률상 친자관계, 그리고 형법상 친족 면책 요건을 세 갈래로 나눠 기록하는 법무의 순서를 정리합니다.", "sections": [{"h": "사건의 시작: 가족관계라는 말이 법정 쟁점이 된 사건", "body": "법무 담당 서지호는 당사자들이 자연적 혈연이 있으니 친족으로 보아야 한다고 주장하는 판결 분석을 맡았지만, 기록의 핵심은 부의 인지 여부와 가족관계등록 자료였습니다. 그는 가족관계등록부에 표시된 관계, 인지 신고나 인지 판결의 존재, 실제 혈연을 별도 항목으로 기록하고, 인지 여부가 확인되지 않은 상태에서 형법 제151조 제2항의 면책을 전제로 의견을 쓰지 않았습니다. 어떤 자료가 확인되면 결론이 바뀌는지도 메모에 남겼습니다."}, {"h": "법이 보는 핵심: 인지와 법률상 친자관계를 구분한다", "body": "민법 제855조·제860조에 따르면 혼인 외 출생자의 모자관계는 분만으로 성립하지만, 부자관계는 부의 인지에 의해 법률상 친자관계가 발생합니다. 그래서 인지가 없는 생부와의 자연적 혈연만으로 법률상 부자관계가 완성됐다고 단정할 수 없습니다. 형법 제151조 제2항은 친족 또는 동거가족에 해당하기만 하면 일률적으로 처벌하지 않는다고 정한 적용범위 조항으로 검토되므로, 먼저 법률상 관계 성립을 확인한 뒤 면책 주장을 검토해야 합니다. 원심의 판단은 그 사건의 자료이지 복사해 쓸 면책 선언이 아닙니다."}, {"h": "중요한 조건과 예외: 판결의 이유와 적용범위를 구분한다", "body": "판결 흐름에서는 원심이 자연적 혈연관계를 이유로 형법 제151조 제2항을 유추적용해 무죄를 유지한 것으로 정리됩니다. 이 판단을 일반 원칙처럼 확장하지 말고 인지 여부, 관계 성립, 적용범위를 사건기록과 맞춥니다. 가족관계등록부, 인지 신고·판결 자료, 동거 여부, 은닉 대상 자료를 시간순으로 정리하되, 동거 자료만으로 법률상 부자관계나 면책 요건 전부가 충족됐다고 가정하지 않습니다. 검토표에는 혈연 주장, 인지 확인 자료, 동거 자료, 요건 검토를 따로 적고, 사건의 자료가 다르면 같은 결과를 약속하지 않는 문구를 씁니다."}, {"h": "법무팀이 해야 할 일: 혈연·인지·면책을 세 갈래로 기록", "body": "민법 제855조·제860조 관련 인지 자료, 형법 제151조 제2항 관련 친족·동거가족 자료, 판결문에 적힌 원심 판단과 사실관계를 따로 표로 만듭니다. 판결의 결론만 인용하지 않고, 왜 자연적 혈연과 법률상 친족이 달라지는지 관계의 발생 시점부터 설명하는 것이 분석의 질을 정합니다."}], "keypoints": ["관계 확인: 민법 제855조·제860조 관련 인지·가족관계 자료를 확보한다.", "면책 분리: 형법 제151조 제2항의 친족·동거가족 요건을 따로 확인한다.", "판결 대조: 원심의 자연적 혈연 판단과 법률상 관계를 구분한다.", "사실 배열: 인지·동거·행위·자료의 시점을 시간순으로 정리한다.", "확장 금지: 특정 판결의 이유를 확인 없이 일반 원칙으로 확대하지 않는다."], "pull_quote": "자연적 혈연과 법률상 친족을 한 문장으로 연결하지 마십시오.", "sources": ["민법 제855조", "민법 제860조", "형법 제151조"]}, "cards": {"cards": [{"kind": "cover", "title": "'가족'이라는 말이 쟁점이 되었을 때", "body": "혈연이 있으니 친족이라는 주장과, 기록 속 인지 여부와 가족관계등록 자료. 판결 분석의 출발점은 감정이 아니라 법률상 관계의 성립 여부입니다.", "small": "법률 컬럼 · 법무팀"}, {"kind": "point", "title": "인지가 없으면 부자관계는 완성되지 않는다", "body": "민법 제855조·제860조에 따르면 모자관계는 분만으로 성립하지만 부자관계는 부의 인지로 법률상 친자관계가 발생합니다. 혈연만으로 부자관계 완성을 단정할 수 없습니다.", "small": "자연적 혈연과 법률상 친자관계는 별개입니다"}, {"kind": "point", "title": "친족 면책 요건은 따로 확인한다", "body": "형법 제151조 제2항은 친족 또는 동거가족에 해당하기만 하면 일률적으로 처벌하지 않는다고 정한 적용범위 조항으로 검토됩니다. 법률상 관계 성립 확인이 먼저입니다.", "small": "면책 주장 전에 관계부터 봅니다"}, {"kind": "compare", "title": "연결하지 말 것, 나눠 적을 것", "body": "연결 금지: 혈연 주장과 법률상 부자관계 확인 자료를 나란히 두지 않는다.\n분리 기록: 혈연 주장·인지 자료·동거 자료·요건 검토를 검토표에 따로 적는다.", "small": "동거 자료만으로 요건 전부를 가정하지 않습니다"}, {"kind": "point", "title": "판결은 복사하지 않는다", "body": "원심이 자연적 혈연을 이유로 형법 제151조 제2항을 유추적용해 무죄를 유지한 것이 판결 흐름의 내용입니다. 그 사건의 자료와 다르면 같은 결과를 약속하지 않습니다.", "small": "이유와 적용범위를 구분해 읽습니다"}, {"kind": "close", "title": "세 갈래 기록이 분석의 질을 정한다", "body": "인지 자료, 친족·동거가족 자료, 판결문에 적힌 원심 판단을 따로 표로 만들고 관계의 발생 시점부터 확인합니다. 불확실한 부분은 결론이 아니라 추가 확인 목록으로 남깁니다.", "small": "일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다."}], "source_line": "민법 제855조·제860조 · 형법 제151조 제2항"}}</script>
+<script>
+window.TPL={"kpTitle": "핵심 정리", "ledeLabel": "핵심 정의", "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
+<!-- lgcol build-id: fb-7d122a574f -->
