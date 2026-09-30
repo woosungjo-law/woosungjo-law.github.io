@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>두 개의 태양은 함께 뜨지 못한다</title>
+<meta name="description" content="권한을 넘기기로 한 대표가 여전히 회의에 앉아 있으면 이 조직에는 태양이 두 개 떠 있습니다. 두 번째 태양이 뜨는 순간부터 신하들은 계산기를 두드리기 시작합니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="두 개의 태양은 함께 뜨지 못한다">
+<meta property="og:description" content="권한을 넘기기로 한 대표가 여전히 회의에 앉아 있으면 이 조직에는 태양이 두 개 떠 있습니다. 두 번째 태양이 뜨는 순간부터 신하들은 계산기를 두드리기 시작합니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;800;900&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--pbg);color:var(--pink);font-family:var(--sans);-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:anywhere}
+h1,h2,p,blockquote{margin:0;padding:0}
+.top{max-width:1120px;margin:0 auto;padding:22px 16px 6px;display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;justify-content:space-between}
+.top h1{font-size:15px;font-weight:700;line-height:1.5;flex:1 1 260px}
+.top .sub{font-size:12px;color:var(--pmute);font-weight:400;display:block}
+.btn{font:600 13px/1 var(--sans);padding:11px 16px;border-radius:6px;border:1px solid var(--pink);background:transparent;color:var(--pink);cursor:pointer}
+.btn:hover{background:var(--pink);color:var(--pbg)}
+.btn:disabled{opacity:.5;cursor:wait}
+#zip{background:var(--pink);color:var(--pbg)}
+.stack{max-width:1120px;margin:0 auto;padding:10px 16px 60px;display:flex;flex-direction:column;align-items:center;gap:28px}
+.frame{width:100%;max-width:1080px}
+.bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;font-size:12px;color:var(--pmute)}
+.vp{position:relative;overflow:hidden;box-shadow:0 1px 0 rgba(0,0,0,.05),0 12px 30px -12px rgba(0,0,0,.3);margin:0 auto}
+.vp .card{position:absolute;left:0;top:0;transform-origin:0 0}
+.empty{padding:40px;color:var(--pmute)}
+
+/* ---- 카드 공통(1080x1350) ---- */
+.card{width:1080px;height:1350px;overflow:hidden;position:relative;background:var(--cbg);color:var(--cink);font-family:var(--cfont);display:flex;flex-direction:column;padding:84px 84px 68px;line-height:1.5;word-break:keep-all;overflow-wrap:anywhere;text-align:left}
+.c-top{flex:none;display:flex;justify-content:space-between;gap:24px;font:600 24px/1.2 var(--sans);letter-spacing:.1em;color:var(--cmute);position:relative;z-index:2}
+.c-main{flex:1;min-height:0;margin:36px 0 32px;display:flex;flex-direction:column;overflow:hidden;position:relative;z-index:2}
+.blk{--s:1;margin:auto 0;width:100%}
+.tag{font:700 26px/1 var(--sans);letter-spacing:.16em;color:var(--cacc);margin-bottom:calc(30px*var(--s))}
+.t{font-family:var(--hfont);font-weight:var(--tw,800);font-size:calc(var(--t,80px)*var(--s));line-height:1.3;letter-spacing:-.02em;text-wrap:balance;color:var(--ctitle,var(--cink))}
+.b{font-size:calc(var(--b,40px)*var(--s));line-height:1.62;margin-top:calc(36px*var(--s));color:var(--cbody,var(--cink));white-space:pre-line}
+.sm{font:500 calc(28px*var(--s))/1.6 var(--sans);margin-top:calc(30px*var(--s));color:var(--cmute)}
+.c-foot{flex:none;display:flex;justify-content:space-between;align-items:flex-end;gap:36px;font:400 23px/1.5 var(--sans);color:var(--cmute);border-top:2px solid var(--cline);padding-top:24px;position:relative;z-index:2;min-height:70px}
+.c-src{flex:1;min-width:0;max-height:72px;overflow:hidden}
+.c-by{flex:none;font-weight:600;color:var(--cink);letter-spacing:.04em}
+.c-srcblock{flex:1;min-width:0}
+.c-srcblock .k{display:block;font:700 22px/1 var(--sans);letter-spacing:.16em;color:var(--cacc);margin-bottom:10px}
+.c-srcblock p{font-size:24px;line-height:1.55;max-height:112px;overflow:hidden}
+.k-cover{--t:104px;--b:46px}
+.k-point{--t:76px;--b:46px}
+.k-close{--t:74px;--b:44px}
+.k-compare{--t:62px}
+.q{font-family:var(--hfont);font-weight:var(--qw,600);font-size:calc(66px*var(--s));line-height:1.55;letter-spacing:-.02em;color:var(--cink);white-space:pre-line}
+.who{font:600 calc(30px*var(--s))/1.5 var(--sans);margin-top:calc(40px*var(--s));color:var(--cmute)}
+.cmp{margin-top:calc(46px*var(--s));display:grid;grid-template-columns:1fr 1fr;gap:0;position:relative}
+.side{padding:calc(36px*var(--s)) calc(34px*var(--s))}.sa{padding-right:calc(64px*var(--s))}.sb{padding-left:calc(64px*var(--s))}
+.lab{font:800 calc(30px*var(--s))/1.35 var(--hfont);margin-bottom:calc(20px*var(--s));color:var(--cacc)}
+.stx{font-size:calc(40px*var(--s));line-height:1.6;white-space:pre-line}
+.vs{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:88px;height:88px;border-radius:50%;background:var(--cacc);color:var(--cbg);display:flex;align-items:center;justify-content:center;font:800 26px/1 var(--sans);letter-spacing:.04em;z-index:3}
+
+/* 책 표지 */
+.book-row{flex:none;display:flex;align-items:flex-end;gap:44px;margin-top:36px;position:relative;z-index:2}
+.book{flex:none;width:250px;margin:0;box-shadow:0 20px 40px -8px rgba(0,0,0,.35),0 2px 6px rgba(0,0,0,.2)}
+.book img{display:block;width:100%;height:auto}
+.bmeta{min-width:0;font:500 29px/1.55 var(--sans);color:var(--cmute);padding-bottom:6px}
+.bmeta span{display:block}
+.bmeta .bt{font:800 36px/1.4 var(--hfont);color:var(--cink);margin-bottom:10px}
+
+/* C2 개념정의형 — 딥네이비&골드, 이중 액자 프레임 */
+:root{--pbg:#e4e8f0;--pink:#0f1c3a;--pmute:#5d6577;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+.card{--cbg:#0f1c3a;--cink:#f2efe6;--cmute:#a8b1c6;--cacc:#d7b25f;--cline:rgba(215,178,95,.55);--cfont:"Pretendard Variable",Pretendard,sans-serif;--hfont:"Noto Serif KR",serif;--tw:700;--cbody:#dfe3ee;padding:110px 112px 96px}
+.card::before{content:"";position:absolute;inset:36px;border:2px solid #d7b25f;pointer-events:none}
+.card::after{content:"";position:absolute;inset:48px;border:1px solid rgba(215,178,95,.5);pointer-events:none}
+.k-cover .blk{text-align:center}
+.k-cover .t{--t:104px;font-weight:800}
+.k-cover .t::after{content:"";display:block;width:110px;height:3px;background:#d7b25f;margin:calc(46px*var(--s)) auto 0}
+.k-cover .b{text-align:center;color:#c9d0e0}
+.k-point .tag,.k-close .tag,.k-compare .tag,.k-quote .tag{display:inline-block;border:2px solid #d7b25f;padding:9px 18px 8px;font-size:24px}
+.k-point .t{border-left:6px solid #d7b25f;padding-left:36px}
+.k-point .b{padding-left:42px}
+.k-quote .blk{border-left:6px solid #d7b25f;padding-left:44px}
+.k-quote .q{font-weight:600;font-size:calc(60px*var(--s))}
+.k-compare .t{color:#d7b25f}
+.k-compare .side{border:2px solid rgba(215,178,95,.6);background:rgba(255,255,255,.04)}
+.k-compare .sb{background:rgba(215,178,95,.12);border-color:#d7b25f}
+.k-compare .vs{background:#d7b25f;color:#0f1c3a}
+.k-close{--cbg:#0b1530}
+.k-close .t{color:#d7b25f}
+
+.book-row{justify-content:center}
+.book{border:2px solid #d7b25f;padding:10px;background:#0b1530}
+.bmeta .bt{color:#d7b25f}
+</style>
+</head>
+<body data-tpl="C2">
+<header class="top"><h1><span id="ttl"></span><span class="sub" id="sub"></span></h1><button type="button" class="btn" id="zip">전체 ZIP 저장</button></header>
+<main id="stack" class="stack"></main>
+<script id="col-data" type="application/json">{"col_id": "HC-0037", "title": "두 개의 태양은 함께 뜨지 못한다", "col_type": "개념정의형", "kicker": "퇴장과끝맺음", "byline": "조우성", "date": "2026-09-29", "summary": {"headline": "두 개의 태양은 함께 뜨지 못한다", "lede": "권한을 넘기기로 한 대표가 여전히 회의에 앉아 있으면 이 조직에는 태양이 두 개 떠 있습니다. 두 번째 태양이 뜨는 순간부터 신하들은 계산기를 두드리기 시작합니다.", "sections": [{"h": "훅 — 두 번째 태양", "body": "후임자는 결정을 내리기 전에 눈치를 보고 직원들은 보고를 두 곳에 합니다. 두 권력자가 동시에 존재하면 사람들은 어느 쪽 편에 설지를 계산하고, 일의 방향보다 사람의 방향이 빨라집니다. 능력의 문제가 아니라 설계의 문제입니다."}, {"h": "프레임 — 흔들리는 세 지점", "body": "승계가 흔들리는 지점은 대개 세 곳입니다. 떠날 시점이 흐릿하고, 후임자의 권위가 사전에 세워지지 않았고, 두 사람이 의견이 갈릴 때 누가 결정하는지 정해두지 않았습니다. 그래서 승계는 인정의 영역이 아니라 설계의 영역이 됩니다. 구두로 한 약속은 갈등 앞에서 종이 한 장만도 못합니다."}, {"h": "반론과 한계 — 절차가 서류만 늘릴 때", "body": "열 명 남짓한 회사에서 승계 절차를 문서로 만들면 서류만 늘어납니다. 이 규모에서는 담당자를 정하고 그 결정을 다시 검토하지 않겠다고 선언하는 한 문장이면 충분합니다. 가족 기업에서는 실권을 주는 시점까지, 전문 경영인을 세우는 조직에서는 보상과 평가 기준의 문서화가 먼저입니다."}, {"h": "여운 — 되돌리지 않는 연습", "body": "가장 어려운 일은 권한을 내려놓는 마음이 아니라 내려놓은 뒤에도 아무것도 하지 않는 연습입니다. 물러난 뒤에도 후임자의 결정을 되돌리면 두 번째 태양이 다시 뜹니다. 남은 사람이 물러난 사람의 눈치를 보지 않을 때 승계는 끝납니다."}], "keypoints": ["두 번째 태양이 뜨는 순간부터 사람들은 편을 계산하기 시작한다.", "언젠가 넘긴다고 말한 권한은 넘어가지 않는다.", "권위는 임명식 날 생기지 않고 그 전에 쌓인 신뢰로 만들어진다.", "후임자가 실수해도 공개적으로 되돌리지 않는 기간이 있어야 조직은 새 기준을 배운다.", "날짜는 은퇴일이 아니라 권한 이전일로 정한다."], "pull_quote": "물러난 뒤에는 후임자의 결정을 되돌리지 않는다. 되돌리는 순간 두 번째 태양이 다시 뜬다.", "sources": []}, "cards": {"cards": [{"kind": "cover", "title": "두 개의 태양은 함께 뜨지 못한다", "body": "권한을 넘기기로 한 대표가 여전히 매일 회의에 앉아 있으면 이 조직에는 태양이 두 개 떠 있습니다. 신하들은 두 번째 태양이 뜨는 순간부터 계산기를 두드리기 시작합니다.", "small": "퇴장과끝맺음"}, {"kind": "point", "title": "흔들리는 세 지점", "body": "떠날 시점이 흐릿하고, 후임자의 권위가 사전에 세워지지 않았고, 갈등을 풀 장치가 없습니다. 승계는 인정의 영역이 아니라 설계의 영역입니다. 날짜를 적고, 누가 무엇을 결정하는지 문장으로 남겨야 합니다.", "small": "프레임"}, {"kind": "point", "title": "대리 결정으로 권위 쌓기", "body": "작은 예산 집행, 채용 면접의 최종 판단, 일정 조정 권한부터 먼저 넘깁니다. 대표가 그 결정을 뒤집으면 앞선 준비가 한 번에 지워집니다. 후임자가 실수해도 공개적으로 되돌리지 않는 기간이 필요합니다.", "small": "프레임"}, {"kind": "point", "title": "작은 조직의 한 문장", "body": "열 명 남짓한 회사에서 승계 절차를 문서로 만들면 서류만 늘어납니다. 담당자를 정하고 그 결정을 다시 검토하지 않겠다고 선언하는 것으로 대신하면 충분합니다.", "small": "한계"}, {"kind": "point", "title": "물러나라는 반박에", "body": "준비가 안 됐는데 어떻게 물러나나라는 반박에는 날짜가 답입니다. 날짜는 은퇴일이 아니라 권한 이전일로 정하고, 물러난 뒤에는 후임자의 결정을 되돌리지 않습니다.", "small": "반론"}, {"kind": "close", "title": "빈자리의 기술", "body": "가장 어려운 일은 권한을 내려놓는 마음이 아니라 내려놓은 뒤에도 아무것도 하지 않는 연습입니다. 자리를 비우는 것은 물러남의 마지막 기술이고, 남은 사람이 눈치를 보지 않을 때 승계는 끝납니다.", "small": "개인의 해석을 담은 에세이이며 전문적 조언이 아닙니다."}], "source_line": "퇴장과끝맺음"}}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" crossorigin="anonymous"></script>
+<script>
+window.TPL={"labels": {"point": "개념", "quote": "인용", "compare": "구분", "close": "정리"}, "fontLoads": ["700 60px \"Noto Serif KR\"", "400 30px \"Pretendard Variable\""]};
+(function(){try{var d=JSON.parse(document.getElementById('col-data').textContent);document.getElementById('ttl').textContent=d.title||'';document.getElementById('sub').textContent=(d.col_id||'')+' · 카드 '+(((d.cards||{}).cards||[]).length)+'장 · 1080×1350';}catch(e){}})();
+(function () {
+  var CFG = window.TPL || {};
+  var stack = document.getElementById('stack');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    stack.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var W = 1080, H = 1350;
+  var COLID = D.col_id || 'card';
+  var C = D.cards || {};
+  var cards = (Array.isArray(C.cards) ? C.cards : []).filter(function (c) { return c && typeof c === 'object'; });
+  var srcLine = typeof C.source_line === 'string' ? C.source_line.trim() : '';
+  var by = D.byline || '조우성';
+  var KINDS = { cover: 1, point: 1, quote: 1, compare: 1, close: 1 };
+
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function txt(v) { return ok(v) ? v.trim() : ''; }
+
+  /* compare: body 를 두 관점으로 분해. 구분자: 줄바꿈 / || / | / " vs ". "라벨: 내용" 은 라벨 분리 */
+  function splitSide(s) {
+    s = s.trim();
+    var m = s.match(/^([^:：\n]{1,16})[:：]\s*([\s\S]+)$/);
+    return m ? { lab: m[1].trim(), text: m[2].trim() } : { lab: '', text: s };
+  }
+  function parseCompare(body) {
+    var b = txt(body);
+    if (!b) return null;
+    var parts = b.split(/\n+|\s*\|\|\s*|\s*\|\s*|\s+[vV][sS]\.?\s+/).map(function (x) { return x.trim(); }).filter(Boolean);
+    if (parts.length < 2) return null;
+    if (parts.length > 2) parts = [parts[0], parts.slice(1).join(' ')];
+    return [splitSide(parts[0]), splitSide(parts[1])];
+  }
+
+  function buildCard(c, i, n) {
+    var kind = KINDS[c.kind] ? c.kind : 'point';
+    var title = txt(c.title), body = txt(c.body), small = txt(c.small);
+    var cmp = null;
+    if (kind === 'compare') {
+      cmp = parseCompare(body);
+      if (!cmp) kind = 'point';
+    }
+    var card = el('div', 'card k-' + kind);
+    card.setAttribute('data-index', i);
+    var top = el('div', 'c-top');
+    top.appendChild(el('span', 'c-kicker', txt(D.kicker)));
+    top.appendChild(el('span', 'c-no', pad2(i + 1) + ' / ' + pad2(n)));
+    card.appendChild(top);
+
+    var main = el('div', 'c-main');
+    var blk = el('div', 'blk');
+    var label = (CFG.labels || {})[kind];
+    if (label) blk.appendChild(el('div', 'tag', label));
+
+    if (kind === 'quote') {
+      var q = body, who = title;
+      if (!q) { q = title; who = ''; }
+      else if (title && title.length > body.length && body.length <= 40) { q = title; who = body; }
+      blk.appendChild(el('blockquote', 'q', q));
+      if (who || small) blk.appendChild(el('p', 'who', who && small ? who + ' · ' + small : (who || small)));
+    } else if (kind === 'compare') {
+      if (title) blk.appendChild(el('h2', 't', title));
+      var g = el('div', 'cmp');
+      [0, 1].forEach(function (k) {
+        var s = el('div', 'side ' + (k ? 'sb' : 'sa'));
+        if (cmp[k].lab) s.appendChild(el('div', 'lab', cmp[k].lab));
+        s.appendChild(el('p', 'stx', cmp[k].text));
+        g.appendChild(s);
+        if (k === 0) g.appendChild(el('div', 'vs', 'VS'));
+      });
+      blk.appendChild(g);
+      if (small) blk.appendChild(el('p', 'sm', small));
+    } else {
+      if (title) blk.appendChild(el('h2', 't', title));
+      if (body) blk.appendChild(el('p', 'b', body));
+      if (small) blk.appendChild(el('p', 'sm', small));
+    }
+    main.appendChild(blk);
+    var cv = D.cover;
+    if (cv && typeof cv.data_uri === 'string' && cv.data_uri &&
+        ((cv.place === 'last' && i === n - 1) || (cv.place !== 'last' && i === 0))) {
+      var row = el('div', 'book-row');
+      var fig = el('figure', 'book');
+      var img = document.createElement('img');
+      img.src = cv.data_uri;
+      img.alt = cv.title ? cv.title + ' 표지' : '책 표지';
+      if (cv.w && cv.h) { img.width = cv.w; img.height = cv.h; }
+      fig.appendChild(img);
+      row.appendChild(fig);
+      var meta = el('div', 'bmeta');
+      if (cv.title) meta.appendChild(el('span', 'bt', '《' + cv.title + '》'));
+      if (cv.author) meta.appendChild(el('span', 'ba', cv.author));
+      if (cv.publisher) meta.appendChild(el('span', 'bp', cv.publisher));
+      row.appendChild(meta);
+      main.appendChild(row);
+      card.classList.add('has-book');
+    }
+    card.appendChild(main);
+
+    var foot = el('div', 'c-foot');
+    if (kind === 'close') {
+      var sb = el('div', 'c-srcblock');
+      if (srcLine) { sb.appendChild(el('span', 'k', '출처')); sb.appendChild(el('p', null, srcLine)); }
+      foot.appendChild(sb);
+      foot.appendChild(el('span', 'c-by', by));
+    } else {
+      foot.appendChild(el('span', 'c-src', srcLine));
+      foot.appendChild(el('span', 'c-by', by));
+    }
+    card.appendChild(foot);
+    return card;
+  }
+
+  /* 글자 넘침 방지: blk 의 --s 를 줄여가며 c-main 안에 맞춘다 */
+  function fit(card) {
+    var main = card.querySelector('.c-main');
+    var blk = card.querySelector('.blk');
+    if (!main || !blk) return;
+    var s = 1;
+    blk.style.setProperty('--s', s);
+    var extra = 0;
+    Array.prototype.forEach.call(main.children, function (ch) {
+      if (ch === blk) return;
+      var cs = getComputedStyle(ch);
+      extra += ch.offsetHeight + parseFloat(cs.marginTop) + parseFloat(cs.marginBottom);
+    });
+    var guard = 0;
+    while (blk.offsetHeight > main.clientHeight - extra - 2 && s > 0.42 && guard++ < 40) {
+      s = Math.round((s - 0.03) * 100) / 100;
+      blk.style.setProperty('--s', s);
+    }
+    /* 여유가 크면 살짝 키워 카드 공간을 활용(최대 1.22배) */
+    if (s === 1) {
+      var avail = main.clientHeight - extra;
+      var g = 0;
+      while (s < 1.22 && blk.offsetHeight < avail * 0.74 && g++ < 12) {
+        s = Math.round((s + 0.03) * 100) / 100;
+        blk.style.setProperty('--s', s);
+        if (blk.offsetHeight > avail * 0.9) { s = Math.round((s - 0.03) * 100) / 100; blk.style.setProperty('--s', s); break; }
+      }
+    }
+    card.setAttribute('data-fit', s);
+  }
+
+  var n = cards.length;
+  var frames = [];
+  var cardEls = [];
+  cards.forEach(function (c, i) {
+    var fr = el('section', 'frame');
+    var bar = el('div', 'bar');
+    bar.appendChild(el('span', 'bar-t', '카드 ' + pad2(i + 1) + ' · ' + (KINDS[c.kind] ? c.kind : 'point')));
+    var btn = el('button', 'btn', 'PNG 저장');
+    btn.type = 'button';
+    btn.addEventListener('click', function () { savePng(i, btn); });
+    bar.appendChild(btn);
+    fr.appendChild(bar);
+    var vp = el('div', 'vp');
+    var card = buildCard(c, i, n);
+    vp.appendChild(card);
+    fr.appendChild(vp);
+    stack.appendChild(fr);
+    frames.push(vp);
+    cardEls.push(card);
+  });
+  if (!n) stack.appendChild(el('p', 'empty', '카드 데이터가 없습니다.'));
+
+  function scaleAll() {
+    frames.forEach(function (vp, i) {
+      var avail = vp.parentNode.clientWidth;
+      var sc = Math.min(1, avail / W);
+      vp.style.width = W * sc + 'px';
+      vp.style.height = H * sc + 'px';
+      cardEls[i].style.transform = 'scale(' + sc + ')';
+    });
+  }
+  function fitAll() { cardEls.forEach(fit); }
+  fitAll();
+  scaleAll();
+  window.addEventListener('resize', scaleAll);
+  function fontsReady() { return within(fontsReady0(), 8000); }
+  function fontsReady0() {
+    var p = document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve();
+    return p.then(function () {
+      if (!document.fonts || !document.fonts.load) return;
+      var sample = document.body.innerText.slice(0, 400) || '가나다';
+      var fams = (CFG.fontLoads || []);
+      return Promise.all(fams.map(function (f) { return document.fonts.load(f, sample); })).then(function () { return document.fonts.ready; });
+    }).catch(function () {});
+  }
+  Promise.all([fontsReady(), imgsReady()]).then(function () { fitAll(); scaleAll(); document.body.setAttribute('data-ready', '1'); });
+
+  /* ---- 캡처: 축소 없는 원본 크기 복제본을 화면 밖에서 렌더 ---- */
+  function within(p, ms) {
+    return Promise.race([p, new Promise(function (res) { setTimeout(res, ms); })]);
+  }
+  function imgsReady() {
+    return within(Promise.all(Array.prototype.map.call(document.querySelectorAll('.card img'), function (im) {
+      if (im.complete && im.naturalWidth) return Promise.resolve();
+      return im.decode ? im.decode().catch(function () {}) : Promise.resolve();
+    })), 5000);
+  }
+  function capture(i) {
+    return Promise.all([fontsReady(), imgsReady()]).then(function () {
+      if (typeof html2canvas !== 'function') throw new Error('html2canvas 로드 실패');
+      var stage = document.createElement('div');
+      stage.style.cssText = 'position:fixed;left:-20000px;top:0;width:' + W + 'px;height:' + H + 'px;overflow:hidden;pointer-events:none';
+      var clone = cardEls[i].cloneNode(true);
+      clone.style.transform = 'none';
+      stage.appendChild(clone);
+      document.body.appendChild(stage);
+      return html2canvas(clone, {
+        scale: 1, width: W, height: H, windowWidth: W, windowHeight: H,
+        useCORS: true, allowTaint: false, backgroundColor: null, logging: false
+      }).then(function (cv) { stage.remove(); return cv; },
+              function (e) { stage.remove(); throw e; });
+    });
+  }
+  function blobOf(cv) { return new Promise(function (res) { cv.toBlob(res, 'image/png'); }); }
+  function fname(i) { return COLID + '_card-' + pad2(i + 1) + '.png'; }
+  function download(blob, name) {
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = name;
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 1500);
+  }
+  function busy(btn, on, label) {
+    if (!btn) return;
+    btn.disabled = on;
+    if (on) { btn.setAttribute('data-l', btn.textContent); btn.textContent = label || '생성 중…'; }
+    else btn.textContent = btn.getAttribute('data-l') || btn.textContent;
+  }
+  function savePng(i, btn) {
+    busy(btn, true);
+    capture(i).then(blobOf).then(function (b) { download(b, fname(i)); })
+      .catch(function (e) { alert('PNG 생성 실패: ' + e.message); })
+      .then(function () { busy(btn, false); });
+  }
+  function saveZip(btn) {
+    if (typeof JSZip !== 'function') { alert('JSZip 로드 실패'); return; }
+    busy(btn, true, '압축 중…');
+    var zip = new JSZip();
+    var chain = Promise.resolve();
+    cardEls.forEach(function (_, i) {
+      chain = chain.then(function () { return capture(i); }).then(blobOf).then(function (b) { zip.file(fname(i), b); });
+    });
+    chain.then(function () { return zip.generateAsync({ type: 'blob' }); })
+      .then(function (z) { download(z, COLID + '_cards.zip'); })
+      .catch(function (e) { alert('ZIP 생성 실패: ' + e.message); })
+      .then(function () { busy(btn, false); });
+  }
+  var zbtn = document.getElementById('zip');
+  if (zbtn) zbtn.addEventListener('click', function () { saveZip(zbtn); });
+
+  /* 검증용 훅: 다운로드 없이 canvas 크기 확인 */
+  window.__lrCards = {
+    count: n,
+    sizes: function () {
+      var out = [];
+      var chain = Promise.resolve();
+      cardEls.forEach(function (_, i) {
+        chain = chain.then(function () { return capture(i); }).then(function (cv) { out.push([cv.width, cv.height]); });
+      });
+      return chain.then(function () { return out; });
+    },
+    capture: capture,
+    fits: function () { return cardEls.map(function (c) { return c.getAttribute('data-fit'); }); }
+  };
+})();
+</script>
+</body>
+</html>
+<!-- hgcol build-id: hb-f68405ba2d -->

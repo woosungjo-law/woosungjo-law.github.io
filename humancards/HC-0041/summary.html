@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>리더십은 남을 다스리기 전에 내 표정을 읽는 일이다</title>
+<meta name="description" content="리더는 아무 말도 하지 않았는데 회의실의 방향이 바뀔 때가 있습니다. 리더에게 표정은 사적인 기분을 넘어 조직의 날씨입니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="리더십은 남을 다스리기 전에 내 표정을 읽는 일이다">
+<meta property="og:description" content="리더는 아무 말도 하지 않았는데 회의실의 방향이 바뀔 때가 있습니다. 리더에게 표정은 사적인 기분을 넘어 조직의 날씨입니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;800;900&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S2 개념정의형 — 딥네이비 & 골드 / 사전식 좌우 배치 */
+:root{--bg:#f3f4f7;--ink:#141f38;--mute:#5d6577;--acc:#8f6a12;--gold:#c9a24b;--navy:#0f1c3a;--head:"Noto Serif KR","Nanum Myeongjo",serif;--body:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0a1122;--ink:#e6e9f1;--mute:#9aa3b8;--acc:#d8b25e;--navy:#0f1c3a}}
+body{font-size:16.5px;line-height:1.85}
+.page{max-width:none;padding:0}
+.hd{background:var(--navy);color:#f1eee4;padding:44px 20px 40px}
+.hd>*{max-width:900px;margin-left:auto;margin-right:auto}
+.kicker{display:block;color:var(--gold);margin-bottom:16px}
+.headline{font-weight:700;font-size:clamp(26px,5.6vw,46px);line-height:1.34;letter-spacing:-.015em;color:#fff}
+.lede{margin-top:26px;padding:20px 20px 20px 22px;border-left:3px solid var(--gold);background:rgba(255,255,255,.06)}
+.lede-label{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.16em;font-weight:700;color:var(--gold);margin-bottom:8px}
+.lede p{font-size:clamp(16px,2.3vw,18.5px);line-height:1.85;color:#ece9de}
+.meta{margin-top:20px;color:#a9b2c7}
+.pq,.secs,.ft{width:100%;max-width:900px;margin-left:auto;margin-right:auto;padding-left:20px;padding-right:20px}
+.pq{margin-top:44px}
+.pq p{font-family:var(--head);font-weight:600;font-size:clamp(19px,3.2vw,26px);line-height:1.6;color:var(--ink);padding:4px 0 4px 20px;border-left:3px solid var(--gold)}
+.secs{margin-top:34px}
+.sec{padding:26px 0;border-top:1px solid color-mix(in srgb,var(--ink) 20%,transparent)}
+.sec:first-child{border-top:0}
+.sec .num{display:block;font-family:var(--sans);font-weight:700;font-size:12px;letter-spacing:.14em;color:var(--acc);margin-bottom:6px}
+.sec h2{font-family:var(--head);font-weight:700;font-size:clamp(19px,3.2vw,23px);line-height:1.45;margin-bottom:12px;color:var(--ink)}
+.kp{background:var(--navy);color:#eee;margin-top:20px;padding:34px 20px 38px}
+.kp>*{max-width:860px;margin-left:auto;margin-right:auto}
+.kp-t{font-family:var(--head);font-size:20px;font-weight:700;color:var(--gold);margin-bottom:14px}
+.kp li{display:flex;gap:14px;padding:12px 0;border-top:1px solid rgba(255,255,255,.14)}
+.kp li:first-child{border-top:0}
+.kp-n{flex:none;width:9px;height:9px;margin-top:.72em;background:var(--gold);transform:rotate(45deg);font-size:0;overflow:hidden}
+.kp-x{line-height:1.7;color:#eef0f5}
+.ft{padding-top:32px;padding-bottom:72px}
+@media (min-width:820px){
+  .hd{padding:80px 40px 64px}
+  .pq,.secs,.ft{padding-left:40px;padding-right:40px}
+  .kp{padding:52px 40px 56px}
+  .sec{display:grid;grid-template-columns:230px 1fr;column-gap:44px;padding:34px 0}
+  .sec .num{grid-column:1;grid-row:1;margin:0 0 4px;align-self:start}
+  .sec .sec-in{display:contents}
+  .sec h2{grid-column:1;grid-row:1;margin:26px 0 0}
+  .sec-body{grid-column:2;grid-row:1/span 2;font-size:17px}
+}
+</style>
+</head>
+<body data-tpl="S2">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "HC-0041", "title": "리더십은 남을 다스리기 전에 내 표정을 읽는 일이다", "col_type": "개념정의형", "kicker": "평정심과선택", "byline": "조우성", "date": "2026-09-30", "summary": {"headline": "리더십은 남을 다스리기 전에 내 표정을 읽는 일이다", "lede": "리더는 아무 말도 하지 않았는데 회의실의 방향이 바뀔 때가 있습니다. 리더에게 표정은 사적인 기분을 넘어 조직의 날씨입니다.", "sections": [{"h": "훅 — 조직의 날씨", "body": "눈썹이 잠깐 올라가고 입술이 굳고 시선이 한 사람에게 오래 머무는 것만으로도 사람들은 다음 문장을 삼킵니다. 자신은 피곤해서 무심코 지은 얼굴이어도 누군가에게는 판단의 예고나 경고의 신호가 됩니다."}, {"h": "프레임 — 반응을 한 박자 늦추기", "body": "팀원이 새로운 의견을 냈는데 리더가 발표자의 서툼에 미묘하게 웃으면 회의실은 그 의견을 안전하지 않은 것으로 분류합니다. 반대로 먼저 표정을 가라앉히고 어떤 근거에서 나온 생각인가를 묻는 리더는 의견을 보호합니다. 표정 하나를 해석하는 시간을 줄이면 문제를 설명하고 해결하는 시간이 늘어납니다."}, {"h": "반론과 한계 — 숨겨진 감정", "body": "표정을 관리한다는 이유로 감정을 지나치게 숨기면 팀은 리더가 무엇을 중요하게 여기는지 알 수 없습니다. 권력 차이가 큰 조직에서 아래 사람이 리더의 표정을 계속 해석하게 만들면 문제보다 눈치에 에너지를 쓰게 됩니다. 리더도 사람인데 늘 안정적일 수 있나라는 질문은 당연합니다."}, {"h": "여운 — 가장 가까운 얼굴", "body": "리더의 얼굴은 거울처럼 조직을 비춥니다. 그 거울이 자주 일그러지면 사람들은 현실보다 표정을 먼저 읽습니다. 남을 이끄는 힘은 때로 가장 가까운 얼굴에서 시작됩니다."}], "keypoints": ["리더에게 표정은 사적인 기분을 넘어 조직의 날씨다.", "내면을 다스린다는 것은 감정을 없애는 훈련이 아니라 자기 상태가 타인의 선택에 작용하는 힘을 알아차리는 일이다.", "자신의 반응을 한 박자 늦추는 것만으로도 팀의 시야가 넓어진다.", "안정성은 흔들리지 않는 얼굴보다 흔들린 뒤 책임 있게 설명하는 태도에 가깝다.", "평정심은 타인의 판단 공간을 지켜 주는 온도 조절이다."], "pull_quote": "남을 이끄는 힘은 때로 가장 가까운 얼굴에서 시작된다.", "sources": []}, "cards": {"cards": [{"kind": "cover", "title": "리더십은 남을 다스리기 전에 내 표정을 읽는 일이다", "body": "리더는 아무 말도 하지 않았는데 회의실의 방향이 바뀔 때가 있습니다. 눈썹이 올라가고 입술이 굳는 것만으로도 사람들은 다음 문장을 삼킵니다.", "small": "평정심과선택"}, {"kind": "point", "title": "의견을 지키는 리더", "body": "리더가 발표자의 서툼에 미묘하게 웃으면 회의실은 그 의견을 안전하지 않은 것으로 분류합니다. 먼저 표정을 가라앉히고 어떤 근거에서 나온 생각인가를 묻는 리더는 의견을 보호합니다.", "small": "사례"}, {"kind": "point", "title": "자기통치의 능력", "body": "화가 났을 때 지금 답해야 하는지, 피곤할 때 판단을 미뤄야 하는지, 웃음으로 넘길 일이 맞는지 고르는 능력이 자기통치입니다. 무표정한 카리스마를 만드는 일이 아닙니다.", "small": "프레임"}, {"kind": "point", "title": "눈치의 경제", "body": "표정을 관리한다는 이유로 감정을 지나치게 숨기면 팀은 리더가 무엇을 중요하게 여기는지 알 수 없습니다. 아래 사람이 표정을 계속 해석하게 만들면 문제보다 눈치에 에너지를 쓰게 됩니다.", "small": "한계"}, {"kind": "point", "title": "흔들린 뒤의 설명", "body": "리더도 사람인데 늘 안정적일 수 있나라는 질문은 당연합니다. 안정성은 흔들리지 않는 얼굴보다 흔들린 뒤 책임 있게 설명하는 태도에 가깝습니다.", "small": "반론"}, {"kind": "close", "title": "거울의 관리", "body": "리더의 얼굴은 거울처럼 조직을 비춥니다. 그 거울이 자주 일그러지면 사람들은 현실보다 표정을 먼저 읽습니다. 내 감정이 타인의 판단을 가리지 않게 돌보는 일에서 리더십이 시작됩니다.", "small": "개인의 해석을 담은 에세이이며 전문적 조언이 아닙니다."}], "source_line": "평정심과선택"}}</script>
+<script>
+window.TPL={"kpTitle": "핵심 정리", "ledeLabel": "핵심 정의", "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '개인의 해석을 담은 에세이이며 전문적 조언이 아닙니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
+<!-- hgcol build-id: hb-b1e7039c3d -->
