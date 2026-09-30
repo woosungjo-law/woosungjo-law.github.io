@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>회복은 상처 이전으로 돌아가는 일이 아니다</title>
+<meta name="description" content="상처가 생기면 이전으로 돌아가고 싶어집니다. 그러나 회복은 과거의 상태를 복원하는 일이 아니라, 다시 연결할 것과 거리를 둘 것을 새롭게 고르는 일입니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="회복은 상처 이전으로 돌아가는 일이 아니다">
+<meta property="og:description" content="상처가 생기면 이전으로 돌아가고 싶어집니다. 그러나 회복은 과거의 상태를 복원하는 일이 아니라, 다시 연결할 것과 거리를 둘 것을 새롭게 고르는 일입니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;800;900&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S2 개념정의형 — 딥네이비 & 골드 / 사전식 좌우 배치 */
+:root{--bg:#f3f4f7;--ink:#141f38;--mute:#5d6577;--acc:#8f6a12;--gold:#c9a24b;--navy:#0f1c3a;--head:"Noto Serif KR","Nanum Myeongjo",serif;--body:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0a1122;--ink:#e6e9f1;--mute:#9aa3b8;--acc:#d8b25e;--navy:#0f1c3a}}
+body{font-size:16.5px;line-height:1.85}
+.page{max-width:none;padding:0}
+.hd{background:var(--navy);color:#f1eee4;padding:44px 20px 40px}
+.hd>*{max-width:900px;margin-left:auto;margin-right:auto}
+.kicker{display:block;color:var(--gold);margin-bottom:16px}
+.headline{font-weight:700;font-size:clamp(26px,5.6vw,46px);line-height:1.34;letter-spacing:-.015em;color:#fff}
+.lede{margin-top:26px;padding:20px 20px 20px 22px;border-left:3px solid var(--gold);background:rgba(255,255,255,.06)}
+.lede-label{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.16em;font-weight:700;color:var(--gold);margin-bottom:8px}
+.lede p{font-size:clamp(16px,2.3vw,18.5px);line-height:1.85;color:#ece9de}
+.meta{margin-top:20px;color:#a9b2c7}
+.pq,.secs,.ft{width:100%;max-width:900px;margin-left:auto;margin-right:auto;padding-left:20px;padding-right:20px}
+.pq{margin-top:44px}
+.pq p{font-family:var(--head);font-weight:600;font-size:clamp(19px,3.2vw,26px);line-height:1.6;color:var(--ink);padding:4px 0 4px 20px;border-left:3px solid var(--gold)}
+.secs{margin-top:34px}
+.sec{padding:26px 0;border-top:1px solid color-mix(in srgb,var(--ink) 20%,transparent)}
+.sec:first-child{border-top:0}
+.sec .num{display:block;font-family:var(--sans);font-weight:700;font-size:12px;letter-spacing:.14em;color:var(--acc);margin-bottom:6px}
+.sec h2{font-family:var(--head);font-weight:700;font-size:clamp(19px,3.2vw,23px);line-height:1.45;margin-bottom:12px;color:var(--ink)}
+.kp{background:var(--navy);color:#eee;margin-top:20px;padding:34px 20px 38px}
+.kp>*{max-width:860px;margin-left:auto;margin-right:auto}
+.kp-t{font-family:var(--head);font-size:20px;font-weight:700;color:var(--gold);margin-bottom:14px}
+.kp li{display:flex;gap:14px;padding:12px 0;border-top:1px solid rgba(255,255,255,.14)}
+.kp li:first-child{border-top:0}
+.kp-n{flex:none;width:9px;height:9px;margin-top:.72em;background:var(--gold);transform:rotate(45deg);font-size:0;overflow:hidden}
+.kp-x{line-height:1.7;color:#eef0f5}
+.ft{padding-top:32px;padding-bottom:72px}
+@media (min-width:820px){
+  .hd{padding:80px 40px 64px}
+  .pq,.secs,.ft{padding-left:40px;padding-right:40px}
+  .kp{padding:52px 40px 56px}
+  .sec{display:grid;grid-template-columns:230px 1fr;column-gap:44px;padding:34px 0}
+  .sec .num{grid-column:1;grid-row:1;margin:0 0 4px;align-self:start}
+  .sec .sec-in{display:contents}
+  .sec h2{grid-column:1;grid-row:1;margin:26px 0 0}
+  .sec-body{grid-column:2;grid-row:1/span 2;font-size:17px}
+}
+</style>
+</head>
+<body data-tpl="S2">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "HC-0029", "title": "회복은 상처 이전으로 돌아가는 일이 아니다", "col_type": "대립형", "kicker": "관계와신뢰", "byline": "조우성", "date": "2026-09-30", "summary": {"headline": "회복은 상처 이전으로 돌아가는 일이 아니다", "lede": "상처가 생기면 이전으로 돌아가고 싶어집니다. 그러나 회복은 과거의 상태를 복원하는 일이 아니라, 다시 연결할 것과 거리를 둘 것을 새롭게 고르는 일입니다.", "sections": [{"h": "훅 — 사라진 돌아갈 집", "body": "아무 일도 없었던 날의 관계와 믿음을 되찾고 싶습니다. 그러나 회복은 복원이 아닙니다. 돌아갈 집이 사라졌다면 다른 재료로 안전한 집을 짓는 과정에 가깝습니다."}, {"h": "프레임 — 자기 언어로 다시 말하기", "body": "배신은 한순간의 폭발처럼 보이지만 그 전에는 작은 신호와 균열이 쌓입니다. 약속이 흐려지고 설명이 줄고 한쪽만 관계를 유지하는 시간이 길어집니다. 회복의 첫 단계는 상대를 용서하는 일이 아니라 무엇이 실제로 일어났는지 자기 언어로 다시 말하는 일입니다."}, {"h": "반론과 한계 — 재촉된 회복", "body": "모든 상처를 성장의 재료로 빨리 바꾸려 하면 이 프레임은 실패합니다. 아직 아픈 사람에게 의미를 찾으라고 재촉하면 회복은 또 다른 과제가 됩니다. 반복되는 폭력이나 착취 속에 있는 사람에게 다시 손을 내밀 용기를 강조하면 위험한 관계로 돌아가게 만들 수 있습니다."}, {"h": "여운 — 다시 선택하는 힘", "body": "상처 이전의 나로 돌아갈 필요는 없습니다. 그때 몰랐던 신호를 읽고 그때 없던 경계를 세우면 됩니다. 회복은 흔적을 지우는 기술이 아니라 흔적을 가진 채 어떤 문을 열 것인지 스스로 결정하는 용기입니다."}], "keypoints": ["회복은 과거의 상태를 복원하는 일이 아니라 다시 선택하는 일이다.", "회복의 첫 단계는 용서가 아니라 무엇이 일어났는지 자기 언어로 말하는 것이다.", "두 번째 기회는 의무가 아니라 신뢰가 다시 자랄 조건을 확인하는 판단이다.", "아픈 사람에게 의미를 찾으라고 재촉하면 회복은 또 다른 과제가 된다.", "회복은 상대와의 재결합이 아닌 자기 삶의 선택권을 되찾는 일일 수 있다."], "pull_quote": "회복은 흔적을 지우는 기술이 아니다. 흔적을 가진 채 어떤 문을 열 것인지 스스로 결정하는 용기다.", "sources": []}, "cards": {"cards": [{"kind": "cover", "title": "회복은 상처 이전으로 돌아가는 일이 아니다", "body": "상처가 생기면 이전으로 돌아가고 싶어집니다. 그러나 돌아갈 집이 사라졌다면 다른 재료로 안전한 집을 짓는 과정에 가깝습니다. 회복은 복원이 아닙니다.", "small": "관계와신뢰"}, {"kind": "point", "title": "쌓인 신호와 균열", "body": "배신은 대개 한순간의 폭발처럼 보이지만 그 전에는 약속이 흐려지고 설명이 줄고 한쪽만 관계를 유지하는 시간이 길어졌습니다. 이 과정을 살피면 모든 책임이 자기에게 있다는 단정에서 벗어날 수 있습니다.", "small": "프레임"}, {"kind": "point", "title": "의무가 아닌 판단", "body": "두 번째 기회는 사과를 받은 사람의 의무가 아닙니다. 책임을 인정하는가, 행동이 바뀌는가, 경계를 존중하는가, 문제가 생겼을 때 대화를 피하지 않는가를 천천히 살피는 판단입니다.", "small": "프레임"}, {"kind": "point", "title": "재촉된 회복", "body": "아직 아픈 사람에게 의미를 찾으라고 재촉하면 회복은 또 다른 과제가 됩니다. 반복되는 폭력이나 착취 속에 있는 사람에게 다시 손을 내밀 용기를 강조하면 위험한 관계로 돌아가게 만들 수 있습니다.", "small": "한계"}, {"kind": "point", "title": "고립으로 굳는 보호", "body": "경계를 세운 뒤에도 모든 관계를 영원히 닫으면 보호는 고립으로 굳을 수 있습니다. 혼자서도 안전하다고 느끼는 시간을 낭비라 부르지 마십시오. 자기 감각을 회복한 사람만이 상대의 사과와 자기 욕구를 구분해 들을 수 있습니다.", "small": "반론"}, {"kind": "close", "title": "다시 선택하는 힘", "body": "상처 이전의 나로 돌아갈 필요는 없습니다. 그때 몰랐던 신호를 읽고 그때 없던 경계를 세우십시오. 다시 손을 내미는 일은 잊는 일이 아니라 선택하는 일이고, 회복은 다시 선택할 수 있게 되는 힘입니다.", "small": "개인의 해석을 담은 에세이이며 전문적 조언이 아닙니다."}], "source_line": "관계와신뢰"}}</script>
+<script>
+window.TPL={"kpTitle": "핵심 정리", "ledeLabel": "핵심 정의", "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '개인의 해석을 담은 에세이이며 전문적 조언이 아닙니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
+<!-- hgcol build-id: hb-635a7d3e22 -->
