@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>매듭보다 그물이 더 많이 건진다</title>
+<meta name="description" content="매듭은 물의 흐름을 막고 자신을 옭아매지만, 그물은 물을 흘려보내면서도 그 안의 생명을 오롯이 건져 올린다. 소통이 막히는 조직에는 대개 매듭이 너무 많다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="매듭보다 그물이 더 많이 건진다">
+<meta property="og:description" content="매듭은 물의 흐름을 막고 자신을 옭아매지만, 그물은 물을 흘려보내면서도 그 안의 생명을 오롯이 건져 올린다. 소통이 막히는 조직에는 대개 매듭이 너무 많다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S3 사례형 — 딥그린 & 클레이 / 세로 타임라인 */
+:root{--bg:#f1f3ea;--ink:#1c2a22;--mute:#5d6b60;--acc:#1f4d3a;--clay:#a4552b;--line:#1f4d3a;--soft:#e4e9da;--head:"Nanum Myeongjo","Noto Serif KR",serif;--body:"Nanum Myeongjo","Noto Serif KR",serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e1913;--ink:#dfe8de;--mute:#93a598;--acc:#86c4a2;--clay:#d98d63;--line:#86c4a2;--soft:#15251c}}
+body{font-size:17.5px;line-height:1.9}
+.page{max-width:760px;padding:36px 20px 80px}
+.kicker{color:var(--clay);display:block;margin-bottom:14px}
+.headline{font-weight:800;font-size:clamp(27px,6vw,44px);line-height:1.34;letter-spacing:-.02em;color:var(--acc)}
+.hd::before{content:"";display:block;width:44px;height:4px;background:var(--clay);margin-bottom:24px}
+.lede{margin-top:22px;font-size:clamp(17px,2.4vw,19.5px);line-height:1.9;color:var(--ink);opacity:.9}
+.meta{margin-top:18px}
+.pq{margin:34px 0 0;padding:22px 24px;background:var(--soft);border-radius:2px}
+.pq p{font-weight:800;font-size:clamp(18px,3vw,23px);line-height:1.6;color:var(--acc)}
+.secs{margin:44px 0 0;position:relative}
+.secs::before{content:"";position:absolute;left:19px;top:14px;bottom:20px;width:2px;background:repeating-linear-gradient(to bottom,var(--line) 0 8px,transparent 8px 14px);opacity:.55}
+.sec{position:relative;padding:0 0 42px 62px}
+.sec:last-child{padding-bottom:6px}
+.sec .num{position:absolute;left:0;top:-2px;width:40px;height:40px;border-radius:50%;background:var(--acc);color:var(--bg);display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:700;font-size:14px;box-shadow:0 0 0 6px var(--bg)}
+.sec h2{font-weight:800;font-size:clamp(20px,3.4vw,24px);line-height:1.45;margin-bottom:10px;padding-top:4px;color:var(--ink)}
+.sec-body{font-size:17px}
+.kp{margin:40px 0 0;padding:26px 22px;border:2px solid var(--acc);border-radius:2px}
+.kp-t{font-family:var(--sans);font-size:13px;letter-spacing:.14em;font-weight:700;color:var(--clay);margin-bottom:12px}
+.kp li{display:flex;gap:14px;padding:9px 0}
+.kp-n{flex:none;font-family:var(--sans);font-weight:700;font-size:13px;color:var(--clay);padding-top:.4em}
+.kp-x{font-weight:700;line-height:1.7}
+.ft{margin-top:44px;padding-top:18px;border-top:1px solid color-mix(in srgb,var(--ink) 25%,transparent)}
+@media (min-width:820px){
+  .page{padding:72px 32px 110px}
+  .secs::before{left:23px}
+  .sec{padding-left:84px}
+  .sec .num{width:48px;height:48px;font-size:16px}
+  .sec h2{padding-top:9px}
+}
+</style>
+</head>
+<body data-tpl="S3">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "HC-0057", "title": "매듭보다 그물이 더 많이 건진다", "col_type": "대립형", "kicker": "관계와신뢰", "byline": "조우성", "date": "2026-09-29", "summary": {"headline": "매듭보다 그물이 더 많이 건진다", "lede": "매듭은 물의 흐름을 막고 자신을 옭아매지만, 그물은 물을 흘려보내면서도 그 안의 생명을 오롯이 건져 올린다. 소통이 막히는 조직에는 대개 매듭이 너무 많다.", "sections": [{"h": "소통이 막히는 세 지점", "body": "첫째, 입장과 이익을 오독하는 자리. 상대가 왜 그 말을 하는지 묻지 않고 말의 표면만 받는 곳에서 막힌다. 둘째, 말과 사람을 분별하지 못하는 자리. 메시지가 마음에 안 든다고 메신저까지 미워하면 다음 메시지는 오지 않는다. 셋째, 느슨한 그물이 없는 자리. 모든 관계가 빽빽한 업무 그물로만 짜여 있으면 물이 흐르지 않아 고인다."}, {"h": "그물코를 넓히는 작은 실험", "body": "알고리즘의 감금이 반대편에 있다. 추천은 취향에 맞는 것만 보여주고, 맞는 것만 보다 보면 그물이 아니라 방이 된다. 방에서는 물이 흐르지 않는다. 평소에 안 보는 보고서를 읽고, 평소에 안 만나는 사람과 점심을 먹는다. 그물코 하나를 넓히는 작은 실험이다."}, {"h": "매듭과 그물의 배합", "body": "확인할 사람을 줄이는 대신 만나는 사람을 늘리고, 결재 단계를 늘리는 대신 잡담의 자리를 늘린다. 통제는 매듭으로 하고 소통은 그물로 한다. 돈이 오가는 곳은 매듭으로, 아이디어가 오가는 곳은 그물로 짠다. 둘을 같은 방식으로 짜면 둘 다 망한다."}, {"h": "느슨함의 두 함정", "body": "그물코가 너무 성기면 건져야 할 것도 빠져나간다. 중요한 결정이 잡담으로만 떠돌다 책임지는 사람이 없어지는 조직이 그렇다. '자유롭게 소통하자'가 '아무도 책임지지 않는다'로 번역되는 곳에서는 누가 마지막에 결정하는지만큼은 먼저 단단히 묶어야 한다. 나머지를 흘려보내도 되는 것은 그 매듭이 있기 때문이다."}], "keypoints": ["사이의 관계는 꽉 조여진 매듭보다 느슨한 그물을 닮아야 한다", "소통은 입장 오독, 말과 사람의 혼동, 그물 부재의 세 지점에서 막힌다", "통제는 매듭으로, 소통은 그물로 — 배합이 핵심이다", "느슨함은 방향이 있어야 하고, 방향이 없으면 그물은 그냥 구멍이다", "잠가야 할 계절(보안 사고 수습·감사 시즌)에는 매듭이 먼저다"], "pull_quote": "묶는 것이 능사가 아니다. 건지는 것이 목적이다.", "sources": []}, "cards": {"cards": [{"kind": "cover", "title": "매듭보다 그물이 더 많이 건진다", "body": "매듭은 물의 흐름을 막고 자신을 옭아매지만, 그물은 물을 흘려보내면서도 그 안의 생명을 오롯이 건져 올린다. 소통이 막히는 조직을 보면 대개 매듭이 너무 많다."}, {"kind": "point", "title": "소통이 막히는 세 지점", "body": "입장과 이익을 오독하는 자리, 말과 사람을 분별하지 못하는 자리, 느슨한 그물이 없는 자리. 보고 라인, 결재 단계, 확인할 사람 — 촘촘하게 묶을수록 빠져나가는 것이 많아진다.", "small": "프레임"}, {"kind": "point", "title": "그물코를 넓히는 실험", "body": "취향에 맞는 것만 보다 보면 그물이 아니라 방이 된다. 평소에 안 보는 보고서를 읽고, 평소에 안 만나는 사람과 점심을 먹는다. 그물코 하나를 넓히는 작은 실험이다.", "small": "사례"}, {"kind": "compare", "title": "매듭과 그물의 배합", "body": "매듭: 통제와 돈이 오가는 곳 — 누가 마지막에 결정하는지 분명히 한다.\n그물: 소통과 아이디어가 오가는 곳 — 만나는 사람과 잡담의 자리를 늘린다.", "small": "핵심"}, {"kind": "point", "title": "느슨함의 두 함정", "body": "그물코가 너무 성기면 건져야 할 것도 빠져나간다. '자유롭게 소통하자'가 '아무도 책임지지 않는다'로 번역되는 곳에서는 누가 마지막에 결정하는지만큼은 먼저 묶는다.", "small": "반론"}, {"kind": "close", "title": "풀어도 되는 매듭 찾기", "body": "묶는 것이 능사가 아니라 건지는 것이 목적이다. 내 조직의 매듭 중에서 풀어도 되는 것은 무엇인가. 그물코 하나를 넓히는 일부터 시작한다. 점심 한 끼, 보고서 한 편, 질문 하나.", "small": "개인의 해석을 담은 에세이이며 전문적 조언이 아닙니다."}], "source_line": "관계와신뢰"}}</script>
+<script>
+window.TPL={"kpTitle": "이야기에서 건진 것", "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '개인의 해석을 담은 에세이이며 전문적 조언이 아닙니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
+<!-- hgcol build-id: hb-e200cc94d0 -->
