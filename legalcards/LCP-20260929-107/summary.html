@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>담보가 있다는 보고에 안심하기 전에 대표가 물어야 할 최악의 계산</title>
+<meta name="description" content="고른유통 구하람 대표는 큰 금액의 거래 승인 보고에서 두 가지를 물었습니다. 이 담보가 경매에 넘어가면 우리 몫이 얼마가 되는가, 그리고 그 계산은 언제 했는가. 보고서의 안심 문장은 계산의 문장으로 바꿔야 합니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="담보가 있다는 보고에 안심하기 전에 대표가 물어야 할 최악의 계산">
+<meta property="og:description" content="고른유통 구하람 대표는 큰 금액의 거래 승인 보고에서 두 가지를 물었습니다. 이 담보가 경매에 넘어가면 우리 몫이 얼마가 되는가, 그리고 그 계산은 언제 했는가. 보고서의 안심 문장은 계산의 문장으로 바꿔야 합니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;800;900&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S2 개념정의형 — 딥네이비 & 골드 / 사전식 좌우 배치 */
+:root{--bg:#f3f4f7;--ink:#141f38;--mute:#5d6577;--acc:#8f6a12;--gold:#c9a24b;--navy:#0f1c3a;--head:"Noto Serif KR","Nanum Myeongjo",serif;--body:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0a1122;--ink:#e6e9f1;--mute:#9aa3b8;--acc:#d8b25e;--navy:#0f1c3a}}
+body{font-size:16.5px;line-height:1.85}
+.page{max-width:none;padding:0}
+.hd{background:var(--navy);color:#f1eee4;padding:44px 20px 40px}
+.hd>*{max-width:900px;margin-left:auto;margin-right:auto}
+.kicker{display:block;color:var(--gold);margin-bottom:16px}
+.headline{font-weight:700;font-size:clamp(26px,5.6vw,46px);line-height:1.34;letter-spacing:-.015em;color:#fff}
+.lede{margin-top:26px;padding:20px 20px 20px 22px;border-left:3px solid var(--gold);background:rgba(255,255,255,.06)}
+.lede-label{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.16em;font-weight:700;color:var(--gold);margin-bottom:8px}
+.lede p{font-size:clamp(16px,2.3vw,18.5px);line-height:1.85;color:#ece9de}
+.meta{margin-top:20px;color:#a9b2c7}
+.pq,.secs,.ft{width:100%;max-width:900px;margin-left:auto;margin-right:auto;padding-left:20px;padding-right:20px}
+.pq{margin-top:44px}
+.pq p{font-family:var(--head);font-weight:600;font-size:clamp(19px,3.2vw,26px);line-height:1.6;color:var(--ink);padding:4px 0 4px 20px;border-left:3px solid var(--gold)}
+.secs{margin-top:34px}
+.sec{padding:26px 0;border-top:1px solid color-mix(in srgb,var(--ink) 20%,transparent)}
+.sec:first-child{border-top:0}
+.sec .num{display:block;font-family:var(--sans);font-weight:700;font-size:12px;letter-spacing:.14em;color:var(--acc);margin-bottom:6px}
+.sec h2{font-family:var(--head);font-weight:700;font-size:clamp(19px,3.2vw,23px);line-height:1.45;margin-bottom:12px;color:var(--ink)}
+.kp{background:var(--navy);color:#eee;margin-top:20px;padding:34px 20px 38px}
+.kp>*{max-width:860px;margin-left:auto;margin-right:auto}
+.kp-t{font-family:var(--head);font-size:20px;font-weight:700;color:var(--gold);margin-bottom:14px}
+.kp li{display:flex;gap:14px;padding:12px 0;border-top:1px solid rgba(255,255,255,.14)}
+.kp li:first-child{border-top:0}
+.kp-n{flex:none;width:9px;height:9px;margin-top:.72em;background:var(--gold);transform:rotate(45deg);font-size:0;overflow:hidden}
+.kp-x{line-height:1.7;color:#eef0f5}
+.ft{padding-top:32px;padding-bottom:72px}
+@media (min-width:820px){
+  .hd{padding:80px 40px 64px}
+  .pq,.secs,.ft{padding-left:40px;padding-right:40px}
+  .kp{padding:52px 40px 56px}
+  .sec{display:grid;grid-template-columns:230px 1fr;column-gap:44px;padding:34px 0}
+  .sec .num{grid-column:1;grid-row:1;margin:0 0 4px;align-self:start}
+  .sec .sec-in{display:contents}
+  .sec h2{grid-column:1;grid-row:1;margin:26px 0 0}
+  .sec-body{grid-column:2;grid-row:1/span 2;font-size:17px}
+}
+</style>
+</head>
+<body data-tpl="S2">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "LCP-20260929-107", "title": "담보가 있다는 보고에 안심하기 전에 대표가 물어야 할 최악의 계산", "col_type": "체크리스트형", "kicker": "법률 컬럼 · CEO", "byline": "조우성", "date": "2026-09-29", "summary": {"headline": "담보가 있다는 보고에 안심하기 전에 대표가 물어야 할 최악의 계산", "lede": "고른유통 구하람 대표는 큰 금액의 거래 승인 보고에서 두 가지를 물었습니다. 이 담보가 경매에 넘어가면 우리 몫이 얼마가 되는가, 그리고 그 계산은 언제 했는가. 보고서의 안심 문장은 계산의 문장으로 바꿔야 합니다.", "sections": [{"h": "사건의 시작: 대표가 접은 보고서와 다시 편 등기부", "body": "식품 도매·유통을 하는 고른유통의 구하람 대표는 담보 부동산이 확보되었으니 안전하다는 거래 승인 보고를 받았습니다. 그러나 실무자의 답은 계약 시점의 평가였고, 그 이후의 재확인 기록은 없었습니다. 구 대표가 요구한 것은 등기부 재열람, 시세 재확인, 먼저 줄 선 담보들의 금액을 더한 새로운 계산이었습니다."}, {"h": "법이 보는 핵심: 회수의 길에는 먼저 오는 몫들이 있습니다", "body": "담보 부동산의 회수가치는 경매 환가, 선순위 담보권, 국세·지방세·최우선변제 임금채권에 따라 겉보기 가치와 다를 수 있습니다. 채무자가 갚지 못하면 담보 부동산은 경매라는 다른 시장으로 들어가고, 선순위 담보권과 세금·임금채권이 먼저 빠집니다. 우리 몫이 0원이 될 수도 있다는 정리는 이 구조를 끝까지 계산한 문장입니다."}, {"h": "조건과 예외: 보장의 문장과 수치의 유혹", "body": "근저당이 있으면 회수가 보장된다는 문장은 회수의 구조를 무시한 과장입니다. 경매로 시세의 몇 퍼센트를 받는다는 식의 수치 단정도 위험합니다. 검증되지 않은 수치로 승인 결정을 내리면 그 책임은 회사에 남고, 개별 담보의 회수 가능 금액은 개별 확인 사항입니다."}, {"h": "CEO가 해야 할 일: 안심의 문장을 계산의 문장으로 바꾸기", "body": "담보가 붙는 승인 보고에는 최악 시나리오 계산서를 함께 첨부하게 하고, 재평가를 분기 일정으로 고정합니다. 가치 하락 시의 대응을 절차로 정하고, 거래 한도에 회수 시간과 비용을 반영하게 합니다. 안전하다는 문구 대신 계산서의 숫자가 보고에 오게 하는 것이 대표가 바꿀 수 있는 가장 값싼 관습입니다."}], "keypoints": ["최악 계산: 경매 환가·선순위·국세·지방세·최우선변제 임금채권을 반영한 우리 몫 계산서를 승인 보고에 첨부한다", "재평가 고정: 등기부·시세의 주기적 재확인을 분기 일정으로 돌린다", "대응 절차화: 가치 하락 시 추가 담보·한도 축소를 절차로 연결한다", "문구 교정: 회수 보장·미확인 수치 문장을 보고에서 걷어내고 계산 근거로 대체한다"], "pull_quote": "안심은 계산 뒤에 와야지 계산 앞에 올 수 없습니다.", "sources": []}, "cards": {"cards": [{"kind": "cover", "title": "안심하기 전에 물어야 할 계산", "body": "담보 부동산이 확보되었으니 안전하다는 보고를 받았을 때, 대표가 물어야 할 질문은 두 개입니다. 경매에 넘어가면 우리 몫이 얼마인가, 그리고 그 계산은 언제 했는가."}, {"kind": "point", "title": "먼저 오는 몫들", "body": "채무자가 갚지 못하면 담보 부동산은 경매라는 다른 시장으로 들어갑니다. 그 시장의 가격은 정상 시세와 다를 수 있고, 결과에서 선순위 담보권이 먼저 빠지고 국세·지방세와 최우선변제 임금채권이 그다음을 차지합니다."}, {"kind": "point", "title": "계약 시점 평가의 유효기간", "body": "계약 시점의 평가를 맹신하지 않고 주기적으로 등기부와 시세를 재확인하는 것이 관리의 기본입니다. 가치가 하락하면 추가 담보나 한도 축소로 대응하고, 회수의 시간과 비용을 감안해 거래 규모를 정합니다."}, {"kind": "quote", "title": "대표의 질문에서 출발", "body": "담보는 돈이 아니라 돈으로 바꾸는 자산이라는 원칙은 대표의 질문에서 출발합니다. 보고서가 안심의 문장이면 대표는 그 문장을 계산의 문장으로 바꾸게 해야 합니다."}, {"kind": "compare", "title": "걷어낼 문구와 넣을 문구", "body": "걷어낼 문구: 근저당이면 회수가 보장된다 · 경매로 시세의 몇 퍼센트를 받는다 — 과장과 미확인 수치입니다\n넣을 문구: 경매 환가 추정·선순위 금액·국세·지방세·최우선변제 임금채권 여부가 항목으로 적힌 계산서"}, {"kind": "close", "title": "계산 뒤에 오는 안심", "body": "개별 담보의 회수 가능 금액은 개별 확인 사항이고, 대표가 받아야 하는 보고는 수치의 확신이 아니라 계산의 근거와 재확인의 날짜입니다. 기존 담보도 주기적으로 다시 묻는 습관이 회사의 담보 관리 역량입니다.", "small": "일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다."}], "source_line": "일반 법률 정보"}}</script>
+<script>
+window.TPL={"kpTitle": "핵심 정리", "ledeLabel": "핵심 정의", "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
+<!-- lgcol build-id: fb-bf89b074f1 -->
