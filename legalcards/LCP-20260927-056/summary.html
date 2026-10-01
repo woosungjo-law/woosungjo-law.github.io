@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>핵심 조건을 '나중에 정하자'고 미뤘다면 — 계약은 성립될 수도, 되지 않을 수도 있습니다</title>
+<meta name="description" content="핵심 조건을 비워 둔 채 먼저 투자하는 것이 가장 위험합니다. 계약이 성립될 수도, 특정 기준이 없으면 부정될 수도 있으므로 착수 전에 조건을 확정해야 합니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="핵심 조건을 '나중에 정하자'고 미뤘다면 — 계약은 성립될 수도, 되지 않을 수도 있습니다">
+<meta property="og:description" content="핵심 조건을 비워 둔 채 먼저 투자하는 것이 가장 위험합니다. 계약이 성립될 수도, 특정 기준이 없으면 부정될 수도 있으므로 착수 전에 조건을 확정해야 합니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S4 체크리스트형 — 페이퍼화이트 & 틸 / 산세리프 / 체크박스 */
+:root{--bg:#fafaf6;--ink:#1a2226;--mute:#5f6b70;--acc:#0e6b6b;--line:#d9ddd6;--soft:#eef2ee;--head:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--body:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0d1416;--ink:#e5eceb;--mute:#93a3a3;--acc:#4fc0b6;--line:#26353a;--soft:#141f22}}
+body{font-size:16.5px;line-height:1.8}
+.page{max-width:780px;padding:32px 20px 80px}
+.kicker{display:inline-block;align-self:flex-start;background:var(--acc);color:var(--bg);padding:4px 10px;letter-spacing:.06em;font-size:12px;border-radius:2px;margin-bottom:16px}
+.hd{padding-bottom:26px}
+.headline{font-weight:800;font-size:clamp(26px,6vw,42px);line-height:1.3;letter-spacing:-.035em}
+.lede{margin-top:16px;font-size:clamp(16px,2.3vw,18px);color:var(--mute);line-height:1.8}
+.meta{margin-top:14px}
+.pq{order:6;margin:8px 0 0;padding:18px 0 0;border-top:1px solid var(--line)}
+.pq p{font-weight:700;font-size:18px;color:var(--acc);line-height:1.6}
+.kp{order:2;margin:0 0 34px;padding:22px 18px 10px;background:var(--soft);border:1px solid var(--line);border-top:4px solid var(--acc);border-radius:4px}
+.kp-t{font-size:15px;font-weight:800;margin-bottom:6px}
+.kp-t::after{content:" · 눌러서 확인";font-weight:500;font-size:12px;color:var(--mute)}
+.kp li{display:flex;gap:14px;align-items:flex-start;padding:13px 4px;border-top:1px solid var(--line);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.kp li:first-child{border-top:0}
+.kp li:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.kp-n{flex:none;position:relative;width:24px;height:24px;margin-top:2px;border:2px solid var(--acc);border-radius:5px;font-size:0;background:var(--bg);transition:background .15s}
+.kp-n::after{content:"";position:absolute;left:6px;top:1.5px;width:6px;height:11px;border:solid var(--bg);border-width:0 2.5px 2.5px 0;transform:rotate(45deg) scale(0);transition:transform .15s}
+.kp li[aria-checked=true] .kp-n{background:var(--acc)}
+.kp li[aria-checked=true] .kp-n::after{transform:rotate(45deg) scale(1)}
+.kp li[aria-checked=true] .kp-x{color:var(--mute)}
+.kp-x{font-weight:600;line-height:1.65}
+.secs{order:3}
+.sec{display:grid;grid-template-columns:52px 1fr;column-gap:14px;padding:22px 0;border-top:1px solid var(--line)}
+.sec .num{grid-row:1/span 2;font-weight:800;font-size:34px;line-height:1;letter-spacing:-.04em;color:var(--acc);opacity:.9;padding-top:2px}
+.sec h2{font-weight:800;font-size:clamp(18px,3vw,21px);line-height:1.45;letter-spacing:-.02em;margin-bottom:8px}
+.ft{margin-top:30px;padding-top:18px;border-top:1px solid var(--line)}
+@media (min-width:820px){
+  .page{padding:64px 32px 110px}
+  .kp{padding:28px 30px 14px}
+  .sec{grid-template-columns:76px 1fr;padding:28px 0}
+  .sec .num{font-size:48px}
+  .sec-body{font-size:17px}
+}
+</style>
+</head>
+<body data-tpl="S4">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"byline": "조우성", "cards": {"cards": [{"body": "공사비와 수익 배분을 추후 협의로 남긴 채 먼저 자재를 발주하고 인력을 투입했습니다. 협의가 결렬되자 상대는 핵심 조건이 없었으니 계약도 없다고 통보했습니다.", "kind": "cover", "title": "비용을 먼저 쓰고 조건은 나중에"}, {"body": "대법원 2012다112138·112145는 보수의 액이 합의되지 않았더라도 도급계약의 성립을 인정할 수 있다고 보았습니다. 금액이 비어 있다는 이유만으로 계약이 통째로 무효가 되지 않습니다.", "kind": "point", "title": "보수액이 비어도 계약은 설 수 있다"}, {"body": "대법원 2017다20371은 매매목적물과 대금이 체결 당시 특정될 필요는 없고 나중에라도 특정할 방법과 기준이 있으면 충분하다고 보았습니다. 대금 확정을 유보한 경우에도 같은 법리가 적용됩니다.", "kind": "point", "title": "특정할 방법과 기준이면 충분하다"}, {"body": "계약이 있다는 결론이 원하는 금액을 받는다는 결론은 아닙니다. 남는 문제는 계약 내용을 무엇으로 특정하느냐입니다. 시장가 연동·제3자 감정 같은 기준이 있으면 살아 있고, 없으면 위태롭습니다.", "kind": "point", "title": "계약 성립과 금액 확정은 다르다"}, {"body": "계약으로 받을 이익: 계약이 성립해야 청구할 수 있다\n신뢰이익: 계약이 성립하지 않아도 신의칙 위반 등으로 지출 손해 배상이 문제될 수 있다", "kind": "compare", "title": "계약 이익과 신뢰이익은 다르다"}, {"body": "착수 전에 조건과 기준을 문서로 확정하고, 비용 지출과 자재 발주는 조건 확정 이후로 미룹니다. 결렬 시 회수·정산 방안을 미리 세우고, 중단 결정도 이유와 기록을 남깁니다.", "kind": "close", "small": "일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.", "title": "착수 전에 조건과 기준을 확정한다"}], "source_line": "민법 제2조 · 대법원 2012다112138·2017다20371"}, "col_id": "LCP-20260927-056", "col_type": "사례형", "date": "2026-09-27", "kicker": "법률 컬럼 · CEO", "summary": {"headline": "핵심 조건을 '나중에 정하자'고 미뤘다면 — 계약은 성립될 수도, 되지 않을 수도 있습니다", "keypoints": ["지금 문서가 최종 계약인지 협의용 양해각서인지 분명히 하고 그에 맞게 행동한다", "비워 둔 단가·배분·기간을 객관적 기준으로 특정해 둔다", "비용 지출과 자재 발주는 조건 확정 이후로 미룬다", "협의가 깨질 경우의 회수·정산 방안을 미리 세우고 관련 문서를 보존한다"], "lede": "핵심 조건을 비워 둔 채 먼저 투자하는 것이 가장 위험합니다. 계약이 성립될 수도, 특정 기준이 없으면 부정될 수도 있으므로 착수 전에 조건을 확정해야 합니다.", "pull_quote": "계약이 있다는 결론이 원하는 금액을 받는다는 결론은 아니다", "sections": [{"body": "공동시행 합의서에 공사비와 수익 배분을 추후 협의로 정한다고 남겨 둔 채 자재 발주와 인력 투입을 시작했습니다. 몇 달 뒤 수익 배분 비율을 놓고 협의가 결렬되자 상대방은 핵심 조건이 없었으니 계약도 없다고 통보했습니다. 이미 지출한 비용을 누구에게 어떻게 청구할 수 있는지가 문제였습니다.", "h": "사건의 시작 — 공사비를 추후 협의로 둔 공동시행 합의"}, {"body": "대법원은 수급인이 일의 완성을 약속하고 도급인이 보수를 지급하기로 하는 의사표시를 한 경우에는 보수의 액이 구체적으로 합의되지 않았더라도 도급계약의 성립을 인정할 수 있다고 보았습니다(대법원 2012다112138·112145). 또 매매목적물과 대금이 반드시 체결 당시 구체적으로 특정될 필요는 없고 나중에라도 특정할 방법과 기준이 정해져 있으면 충분하다고 보았습니다(대법원 2017다20371).", "h": "법이 보는 핵심 — 구속 의사가 있으면 계약은 섭니다"}, {"body": "구속되려는 의사와 유보된 내용을 특정할 방법·기준이 있어야 합니다. 공사비·배분 같은 본질적 요소가 전부 유보되고 특정 기준도 없다면 계약 성립 자체가 부정될 위험이 있습니다. 결렬도 별개의 문제를 낳습니다. 상대가 계약을 신뢰하게 하고 비용을 지출하게 한 뒤 합리적 이유 없이 협상을 끊었다면 신의칙(민법 제2조) 위반으로 신뢰이익 상당의 손해배상 책임이 문제될 수 있습니다.", "h": "조건과 예외 — 기준이 없으면 흔들리고 협상 파기는 별개 책임을 낳는다"}, {"body": "핵심 조건을 비워 둔 채 먼저 투자하는 것이 가장 위험합니다. 구속 의사를 확인하고, 비워 둔 단가·배분·기간을 객관적 기준으로 특정하며, 비용 지출과 자재 발주는 조건 확정 이후로 미룹니다. 협의가 깨질 경우의 회수·정산 방안을 미리 세우고, 중단 결정도 이유와 기록을 남깁니다.", "h": "CEO가 해야 할 일 — 착수 전에 조건과 기준을 확정하십시오"}], "sources": ["대법원 2012다112138", "대법원 2017다20371", "민법 제2조"]}, "title": "핵심 조건을 '나중에 정하자'고 미뤘다면 — 계약은 성립될 수도, 되지 않을 수도 있습니다"}</script>
+<script>
+window.TPL={"kpTitle": "체크리스트", "checkable": true, "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
+<!-- lgcol build-id: fb-4dddcd58f5 -->
