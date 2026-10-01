@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>이긴 자료는 돌려쓴다, 요령이 아닌 제출 목적과 보호 절차의 기록이다</title>
+<meta name="description" content="한 소송에서 정당하게 확보한 자료를 다른 소송에 쓰는 일은 요령이 아니라 기록의 문제입니다. 대표는 제출 결재란에 4요소 질문을 고정으로 넣어 리스크를 통제합니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="이긴 자료는 돌려쓴다, 요령이 아닌 제출 목적과 보호 절차의 기록이다">
+<meta property="og:description" content="한 소송에서 정당하게 확보한 자료를 다른 소송에 쓰는 일은 요령이 아니라 기록의 문제입니다. 대표는 제출 결재란에 4요소 질문을 고정으로 넣어 리스크를 통제합니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S4 체크리스트형 — 페이퍼화이트 & 틸 / 산세리프 / 체크박스 */
+:root{--bg:#fafaf6;--ink:#1a2226;--mute:#5f6b70;--acc:#0e6b6b;--line:#d9ddd6;--soft:#eef2ee;--head:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--body:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0d1416;--ink:#e5eceb;--mute:#93a3a3;--acc:#4fc0b6;--line:#26353a;--soft:#141f22}}
+body{font-size:16.5px;line-height:1.8}
+.page{max-width:780px;padding:32px 20px 80px}
+.kicker{display:inline-block;align-self:flex-start;background:var(--acc);color:var(--bg);padding:4px 10px;letter-spacing:.06em;font-size:12px;border-radius:2px;margin-bottom:16px}
+.hd{padding-bottom:26px}
+.headline{font-weight:800;font-size:clamp(26px,6vw,42px);line-height:1.3;letter-spacing:-.035em}
+.lede{margin-top:16px;font-size:clamp(16px,2.3vw,18px);color:var(--mute);line-height:1.8}
+.meta{margin-top:14px}
+.pq{order:6;margin:8px 0 0;padding:18px 0 0;border-top:1px solid var(--line)}
+.pq p{font-weight:700;font-size:18px;color:var(--acc);line-height:1.6}
+.kp{order:2;margin:0 0 34px;padding:22px 18px 10px;background:var(--soft);border:1px solid var(--line);border-top:4px solid var(--acc);border-radius:4px}
+.kp-t{font-size:15px;font-weight:800;margin-bottom:6px}
+.kp-t::after{content:" · 눌러서 확인";font-weight:500;font-size:12px;color:var(--mute)}
+.kp li{display:flex;gap:14px;align-items:flex-start;padding:13px 4px;border-top:1px solid var(--line);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.kp li:first-child{border-top:0}
+.kp li:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.kp-n{flex:none;position:relative;width:24px;height:24px;margin-top:2px;border:2px solid var(--acc);border-radius:5px;font-size:0;background:var(--bg);transition:background .15s}
+.kp-n::after{content:"";position:absolute;left:6px;top:1.5px;width:6px;height:11px;border:solid var(--bg);border-width:0 2.5px 2.5px 0;transform:rotate(45deg) scale(0);transition:transform .15s}
+.kp li[aria-checked=true] .kp-n{background:var(--acc)}
+.kp li[aria-checked=true] .kp-n::after{transform:rotate(45deg) scale(1)}
+.kp li[aria-checked=true] .kp-x{color:var(--mute)}
+.kp-x{font-weight:600;line-height:1.65}
+.secs{order:3}
+.sec{display:grid;grid-template-columns:52px 1fr;column-gap:14px;padding:22px 0;border-top:1px solid var(--line)}
+.sec .num{grid-row:1/span 2;font-weight:800;font-size:34px;line-height:1;letter-spacing:-.04em;color:var(--acc);opacity:.9;padding-top:2px}
+.sec h2{font-weight:800;font-size:clamp(18px,3vw,21px);line-height:1.45;letter-spacing:-.02em;margin-bottom:8px}
+.ft{margin-top:30px;padding-top:18px;border-top:1px solid var(--line)}
+@media (min-width:820px){
+  .page{padding:64px 32px 110px}
+  .kp{padding:28px 30px 14px}
+  .sec{grid-template-columns:76px 1fr;padding:28px 0}
+  .sec .num{font-size:48px}
+  .sec-body{font-size:17px}
+}
+</style>
+</head>
+<body data-tpl="S4">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "LCP-20261001-122", "title": "이긴 자료는 돌려쓴다, 요령이 아닌 제출 목적과 보호 절차의 기록이다", "col_type": "체크리스트형", "kicker": "법률 컬럼 · CEO", "byline": "조우성", "date": "2026-10-01", "summary": {"headline": "이긴 자료는 돌려쓴다, 요령이 아닌 제출 목적과 보호 절차의 기록이다", "lede": "한 소송에서 정당하게 확보한 자료를 다른 소송에 쓰는 일은 요령이 아니라 기록의 문제입니다. 대표는 제출 결재란에 4요소 질문을 고정으로 넣어 리스크를 통제합니다.", "sections": [{"h": "법이 보는 핵심 — 정당행위라는 방패와 두 개의 대법원 판결", "body": "형법 제20조는 법령에 의한 행위 또는 업무로 인한 행위 기타 사회상규에 위배되지 아니하는 행위는 벌하지 아니한다고 정합니다. 대법원 2025도13141 판결은 두 민사소송에서 을의 소송대리인이 각 사건의 재판부를 통해 확인한 갑·병의 은행 거래내역 등을 다른 사건의 증거로 제출한 사안에서, 소송상 필요한 주장의 증명 또는 방어권 행사를 위한 법원 제출이라면 형법 제20조에 따라 위법성이 조각될 수 있음을 확인하고 판단 방법을 제시했습니다. 대법원 2023도3673 판결도 입주민 개인정보가 적힌 입주자카드의 법원 제출 사안에서 같은 맥락을 다루었습니다. 법원은 제출을 무조건 허용하지 않고 목적과 방식이 정당했는지를 봅니다."}, {"h": "중요한 조건과 예외 — 4요소로 갈리는 경계", "body": "법원을 통해 얻은 금융거래정보·개인정보를 증거로 낼 때는 정보의 민감성, 제출 목적, 법원의 보호절차, 제3자 유출 위험을 함께 봅니다. 쟁점 증명에 필요한 범위를 넘는 자료까지 제출하면 리스크가 커지고, 방어권 행사 목적은 서면에 명시적으로 기재하는 것이 기본입니다. 가능하면 정보주체 동의를 얻거나 익명화·가명화 처리를 검토합니다. 목적 외 사용, 과도한 범위 제출, 유출 방지 소홀은 정당한 제출을 위태롭게 하며, 이 네 요소를 미리 기록으로 남긴 회사와 그렇지 않은 회사의 입장은 나중에 크게 달라질 수 있습니다."}, {"h": "CEO가 해야 할 일 — 제출 결재란에 4요소를 묻는다", "body": "제출 요청 결재란에 네 가지 질문을 고정으로 넣습니다. 이 자료가 다른 소송의 어떤 쟁점을 증명하는가, 제출 범위는 최소인가, 법원에 낼 때 방어권 행사 목적을 명시하는가, 유출 차단 조치는 무엇인가. 네 답이 문서로 오면 결재하고 하나라도 비면 보완을 지시합니다. 동의·익명화·가명화 검토 여부도 함께 보고받고, 목적과 무관한 정보가 섞였거나 필요한 범위를 특정할 수 없으면 그 자료는 내지 않습니다."}], "keypoints": ["제출 자료가 다른 소송의 어떤 쟁점 증명과 연결되는지 한 문장으로 확인했는가", "필요한 범위를 넘어서는 자료까지 제출하지 않는가", "법원 제출 서면에 방어권 행사 목적을 명시하는가", "법원 보호절차 안에서 제출되고 제3자 유출 차단 조치가 있는가"], "pull_quote": "법원은 제출을 무조건 허용하지 않는다. 목적과 방식이 정당했는지를 본다", "sources": ["형법 제20조", "대법원 2025도13141 판결", "대법원 2023도3673 판결"]}, "cards": {"cards": [{"kind": "cover", "title": "이긴 자료를 돌려 쓰려면 기록이 필요하다", "body": "한 소송에서 정당하게 확보한 금융거래정보를 다른 소송에 쓰고 싶다는 보고. 무엇을 왜 어떻게 냈는지 기록이 없으면 아낀 비용보다 큰 리스크가 됩니다."}, {"kind": "point", "title": "방패는 형법 제20조", "body": "소송상 필요한 증명·방어권 행사를 위한 법원 제출은 형법 제20조로 위법성이 조각될 수 있습니다(대법원 2025도13141 판결). 다만 목적과 방식이 정당했는지를 봅니다."}, {"kind": "compare", "title": "결재란에 넣을 네 가지 질문", "body": "묻는다: 어떤 쟁점 증명과 연결되는가, 범위는 최소인가\n확인한다: 방어권 목적을 서면에 명시하는가, 유출 차단 조치는 있는가"}, {"kind": "point", "title": "4요소가 갈림길이다", "body": "정보의 민감성, 제출 목적, 법원의 보호절차, 제3자 유출 위험을 종합해 판단합니다. 필요한 범위를 넘는 제출과 목적 외 사용은 정당행위 인정을 어렵게 합니다."}, {"kind": "point", "title": "비면 보완을 지시한다", "body": "네 답이 문서로 오면 결재하고, 하나라도 비면 보완을 지시합니다. 동의·익명화·가명화 검토 여부도 함께 보고받아 4요소 기록을 완성합니다."}, {"kind": "close", "title": "안 되면 전략을 바꾼다", "body": "목적과 무관한 정보가 섞였거나 필요한 범위를 특정할 수 없으면 그 자료는 내지 않습니다. 다른 증거로 쟁점을 증명하는 방향으로 전략을 바꾸는 것도 경영 판단입니다.", "small": "일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다."}], "source_line": "형법 제20조"}}</script>
+<script>
+window.TPL={"kpTitle": "체크리스트", "checkable": true, "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
+<!-- lgcol build-id: fb-b12f4b8b50 -->
