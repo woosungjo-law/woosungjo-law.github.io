@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>형사 절차는 멈춰도 민사 책임은 사라지지 않는다, 상대방 사망 후 배상 회수의 절차 지도</title>
+<meta name="description" content="상대방 운전자의 사망 통보와 함께 형사 절차의 종결 안내를 받은 준법감시인은, 절차가 멈췄으니 청구도 멈췄다는 계산 대신 형사와 민사를 구분하고 상속인을 향한 절차의 지도를 그렸습니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="형사 절차는 멈춰도 민사 책임은 사라지지 않는다, 상대방 사망 후 배상 회수의 절차 지도">
+<meta property="og:description" content="상대방 운전자의 사망 통보와 함께 형사 절차의 종결 안내를 받은 준법감시인은, 절차가 멈췄으니 청구도 멈췄다는 계산 대신 형사와 민사를 구분하고 상속인을 향한 절차의 지도를 그렸습니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S3 사례형 — 딥그린 & 클레이 / 세로 타임라인 */
+:root{--bg:#f1f3ea;--ink:#1c2a22;--mute:#5d6b60;--acc:#1f4d3a;--clay:#a4552b;--line:#1f4d3a;--soft:#e4e9da;--head:"Nanum Myeongjo","Noto Serif KR",serif;--body:"Nanum Myeongjo","Noto Serif KR",serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e1913;--ink:#dfe8de;--mute:#93a598;--acc:#86c4a2;--clay:#d98d63;--line:#86c4a2;--soft:#15251c}}
+body{font-size:17.5px;line-height:1.9}
+.page{max-width:760px;padding:36px 20px 80px}
+.kicker{color:var(--clay);display:block;margin-bottom:14px}
+.headline{font-weight:800;font-size:clamp(27px,6vw,44px);line-height:1.34;letter-spacing:-.02em;color:var(--acc)}
+.hd::before{content:"";display:block;width:44px;height:4px;background:var(--clay);margin-bottom:24px}
+.lede{margin-top:22px;font-size:clamp(17px,2.4vw,19.5px);line-height:1.9;color:var(--ink);opacity:.9}
+.meta{margin-top:18px}
+.pq{margin:34px 0 0;padding:22px 24px;background:var(--soft);border-radius:2px}
+.pq p{font-weight:800;font-size:clamp(18px,3vw,23px);line-height:1.6;color:var(--acc)}
+.secs{margin:44px 0 0;position:relative}
+.secs::before{content:"";position:absolute;left:19px;top:14px;bottom:20px;width:2px;background:repeating-linear-gradient(to bottom,var(--line) 0 8px,transparent 8px 14px);opacity:.55}
+.sec{position:relative;padding:0 0 42px 62px}
+.sec:last-child{padding-bottom:6px}
+.sec .num{position:absolute;left:0;top:-2px;width:40px;height:40px;border-radius:50%;background:var(--acc);color:var(--bg);display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:700;font-size:14px;box-shadow:0 0 0 6px var(--bg)}
+.sec h2{font-weight:800;font-size:clamp(20px,3.4vw,24px);line-height:1.45;margin-bottom:10px;padding-top:4px;color:var(--ink)}
+.sec-body{font-size:17px}
+.kp{margin:40px 0 0;padding:26px 22px;border:2px solid var(--acc);border-radius:2px}
+.kp-t{font-family:var(--sans);font-size:13px;letter-spacing:.14em;font-weight:700;color:var(--clay);margin-bottom:12px}
+.kp li{display:flex;gap:14px;padding:9px 0}
+.kp-n{flex:none;font-family:var(--sans);font-weight:700;font-size:13px;color:var(--clay);padding-top:.4em}
+.kp-x{font-weight:700;line-height:1.7}
+.ft{margin-top:44px;padding-top:18px;border-top:1px solid color-mix(in srgb,var(--ink) 25%,transparent)}
+@media (min-width:820px){
+  .page{padding:72px 32px 110px}
+  .secs::before{left:23px}
+  .sec{padding-left:84px}
+  .sec .num{width:48px;height:48px;font-size:16px}
+  .sec h2{padding-top:9px}
+}
+</style>
+</head>
+<body data-tpl="S3">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"byline": "조우성", "cards": {"cards": [{"body": "회사 차량 사고의 상대방이 사망했다는 통보와 함께 형사 절차의 종결 안내가 왔습니다. 절차가 멈췄으니 청구도 멈췄을까. 준비할 것은 포기의 이유서일까.", "kind": "cover", "small": "법률 컬럼 · 법무팀", "title": "청구도 함께 멈췄을까"}, {"body": "피고인이 사망하면 결정으로 공소를 기각합니다. 형사 절차는 피고인의 존재를 전제로 하므로 사망은 절차의 종결 사유가 됩니다.", "kind": "point", "small": "형사소송법 제328조 제1항 제2호의 구조입니다", "title": "형사는 존재를 전제로 한다"}, {"body": "상속인은 상속개시된 때부터 피상속인의 재산에 관한 포괄적 권리의무를 승계합니다. 가해자의 빚은 상속인에게 그대로 남습니다.", "kind": "point", "small": "민법 제1005조의 포괄 승계입니다", "title": "빚은 상속인에게 남는다"}, {"body": "형사의 종결: 피고인 사망 시 공소기각 — 절차는 멈춘다.\n민사의 존속: 배상 채무의 승계 — 상속인이 새로운 상대가 된다.\n보전: 가압류 — 상속 재산이 흩어지기 전에 묶어 둔다.", "kind": "compare", "small": "민사집행법 제276조의 장치입니다", "title": "세 구조를 연결한다"}, {"body": "3개월의 시간을 놓치면 회수는 어려워집니다. 상속포기가 이루어질 수 있는 기간 안에 가압류로 재산을 묶어 두어야 집행으로 이어질 수 있습니다.", "kind": "point", "small": "개별 승계 범위와 배상액은 별도 판단 사항입니다", "title": "시간 안에 묶어 둔다"}, {"body": "상속인을 특정하고 상속포기 전에 가압류를 신청하며, 수사기록 등사를 준비하고 배상액 근거를 문서로 고정합니다.", "kind": "close", "small": "일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.", "title": "특정과 보전과 기록의 순서다"}], "source_line": "형사소송법 제328조 · 민법 제1005조 · 민사집행법 제276조"}, "col_id": "LCP-20260929-109", "col_type": "개념정의형", "date": "2026-09-29", "kicker": "법률 컬럼 · 법무팀", "summary": {"headline": "형사 절차는 멈춰도 민사 책임은 사라지지 않는다, 상대방 사망 후 배상 회수의 절차 지도", "keypoints": ["종결 구분: 피고인 사망 시 공소기각 결정인 형사소송법 제328조 제1항 제2호와 배상 채무의 존속을 구분합니다.", "승계 추적: 상속인은 상속개시부터 포괄적 권리의무를 승계하는 민법 제1005조에 따라 가족관계증명서로 상속인을 특정합니다.", "보전 우선: 상속포기인 3개월 전에 가압류를 신청해 재산을 묶는 민사집행법 제276조를 활용합니다.", "기록 확보: 검찰청에 수사기록 등사를 신청하고, 개별 승계 범위와 배상액은 별도 판단 사항으로 관리합니다."], "lede": "상대방 운전자의 사망 통보와 함께 형사 절차의 종결 안내를 받은 준법감시인은, 절차가 멈췄으니 청구도 멈췄다는 계산 대신 형사와 민사를 구분하고 상속인을 향한 절차의 지도를 그렸습니다.", "pull_quote": "청구의 상대가 바뀌었다는 것은 절차의 지도가 바뀌었다는 뜻입니다.", "sections": [{"body": "통신장비 유지보수를 하는 회사의 준법감시인 표하준 씨는 회사 차량 사고 건의 진행 안내를 받았습니다. 상대방 운전자에게 과실이 있어 회사가 수리비와 영업손해를 배상받을 사안이었는데, 그 상대방이 사고 뒤 병원에서 사망했다는 통보와 함께 형사 절차의 종결 안내가 이어졌습니다. 내부에서는 배상도 끝났다는 반응이 나왔고, 절차가 멈췄으니 청구도 멈췄다는 계산이었습니다. 짚은 것은 두 절차의 구분으로, 형사 절차는 멈춰도 민사 책임은 사라지지 않으며, 채무의 주체가 바뀌는 자리가 존재한다는 것입니다.", "h": "사건의 시작: 종결 안내와 함께 도착한 침묵"}, {"body": "피고인이 사망하면 결정으로 공소를 기각하는 형사소송법 제328조 제1항 제2호가 첫 구조입니다. 형사 절차는 피고인의 존재를 전제로 하므로 사망은 절차의 종결 사유가 됩니다. 상속인은 상속개시된 때부터 피상속인의 재산에 관한 포괄적 권리의무를 승계하는 민법 제1005조가 둘째 구조로, 배상 채무도 상속의 대상이 됩니다. 가압류는 금전채권이나 금전으로 환산할 수 있는 채권에 대하여 강제집행을 보전하기 위하여 할 수 있는 민사집행법 제276조가 셋째 구조로, 상속 재산이 분산되거나 처분되기 전에 움직임을 묶어 둡니다. 형사의 종결을 확인하고 민사의 승계를 특정하고 보전의 시간 안에 움직이는 순서가 지도입니다.", "h": "법이 보는 핵심: 기각과 승계와 보전"}, {"body": "공소권 없음 처분이 배상 책임도 끝낸다는 문장은 형사의 종결과 민사의 존속을 섞은 오해이며, 상속인이 상속을 포기하면 무조건 책임이 없다는 문장은 상속포기·한정승인의 개별 효과를 확인하기 전의 단정입니다. 회수의 실무에서 가장 중요한 것은 시간으로, 3개월의 시간을 놓치면 회수는 어려워지므로 상속포기가 이루어질 수 있는 기간 안에 가압류로 재산을 묶어 두어야 합니다. 개별 사건의 상속 승계 범위와 배상액은 개별 판단 사항이므로 회사가 설계할 것은 절차의 순서입니다.", "h": "중요한 조건과 예외: 오해와 시간"}, {"body": "가족관계증명서를 확보해 상속인 목록을 만드는 것이 모든 절차의 첫 단추이며, 상속포기인 3개월 전에 가압류를 신청해 상속 재산의 움직임을 묶습니다. 검찰청에 수사기록 등사를 신청해 민사 청구의 재료를 준비하고, 수리비와 영업손해 등 청구 항목을 문서로 고정합니다. 상속인 측의 상속포기·한정승인 여부를 추적해 파일에 남기고, 절차가 끝났다는 문장 대신 민사 절차로 이동한다는 문장으로 내부 보고를 교정합니다.", "h": "법무팀이 해야 할 일: 특정과 보전과 기록"}], "sources": ["형사소송법 제328조", "민법 제1005조", "민사집행법 제276조"]}, "title": "형사 절차는 멈춰도 민사 책임은 사라지지 않는다, 상대방 사망 후 배상 회수의 절차 지도"}</script>
+<script>
+window.TPL={"kpTitle": "이야기에서 건진 것", "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
+<!-- lgcol build-id: fb-1745114eb7 -->
