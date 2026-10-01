@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>지인 회사 지분 투자, '잘 되면 돌려받겠지'가 아니라 정관과 배당 조건을 확인해야 하는 돈이다</title>
+<meta name="description" content="지인 회사 지분 투자도 잘 되면 돌려받겠지가 아니라 정관과 배당 조건을 확인해야 하는 돈입니다. 우선주에 붙은 권리는 정관에 적혀 있습니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="지인 회사 지분 투자, '잘 되면 돌려받겠지'가 아니라 정관과 배당 조건을 확인해야 하는 돈이다">
+<meta property="og:description" content="지인 회사 지분 투자도 잘 되면 돌려받겠지가 아니라 정관과 배당 조건을 확인해야 하는 돈입니다. 우선주에 붙은 권리는 정관에 적혀 있습니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S3 사례형 — 딥그린 & 클레이 / 세로 타임라인 */
+:root{--bg:#f1f3ea;--ink:#1c2a22;--mute:#5d6b60;--acc:#1f4d3a;--clay:#a4552b;--line:#1f4d3a;--soft:#e4e9da;--head:"Nanum Myeongjo","Noto Serif KR",serif;--body:"Nanum Myeongjo","Noto Serif KR",serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e1913;--ink:#dfe8de;--mute:#93a598;--acc:#86c4a2;--clay:#d98d63;--line:#86c4a2;--soft:#15251c}}
+body{font-size:17.5px;line-height:1.9}
+.page{max-width:760px;padding:36px 20px 80px}
+.kicker{color:var(--clay);display:block;margin-bottom:14px}
+.headline{font-weight:800;font-size:clamp(27px,6vw,44px);line-height:1.34;letter-spacing:-.02em;color:var(--acc)}
+.hd::before{content:"";display:block;width:44px;height:4px;background:var(--clay);margin-bottom:24px}
+.lede{margin-top:22px;font-size:clamp(17px,2.4vw,19.5px);line-height:1.9;color:var(--ink);opacity:.9}
+.meta{margin-top:18px}
+.pq{margin:34px 0 0;padding:22px 24px;background:var(--soft);border-radius:2px}
+.pq p{font-weight:800;font-size:clamp(18px,3vw,23px);line-height:1.6;color:var(--acc)}
+.secs{margin:44px 0 0;position:relative}
+.secs::before{content:"";position:absolute;left:19px;top:14px;bottom:20px;width:2px;background:repeating-linear-gradient(to bottom,var(--line) 0 8px,transparent 8px 14px);opacity:.55}
+.sec{position:relative;padding:0 0 42px 62px}
+.sec:last-child{padding-bottom:6px}
+.sec .num{position:absolute;left:0;top:-2px;width:40px;height:40px;border-radius:50%;background:var(--acc);color:var(--bg);display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:700;font-size:14px;box-shadow:0 0 0 6px var(--bg)}
+.sec h2{font-weight:800;font-size:clamp(20px,3.4vw,24px);line-height:1.45;margin-bottom:10px;padding-top:4px;color:var(--ink)}
+.sec-body{font-size:17px}
+.kp{margin:40px 0 0;padding:26px 22px;border:2px solid var(--acc);border-radius:2px}
+.kp-t{font-family:var(--sans);font-size:13px;letter-spacing:.14em;font-weight:700;color:var(--clay);margin-bottom:12px}
+.kp li{display:flex;gap:14px;padding:9px 0}
+.kp-n{flex:none;font-family:var(--sans);font-weight:700;font-size:13px;color:var(--clay);padding-top:.4em}
+.kp-x{font-weight:700;line-height:1.7}
+.ft{margin-top:44px;padding-top:18px;border-top:1px solid color-mix(in srgb,var(--ink) 25%,transparent)}
+@media (min-width:820px){
+  .page{padding:72px 32px 110px}
+  .secs::before{left:23px}
+  .sec{padding-left:84px}
+  .sec .num{width:48px;height:48px;font-size:16px}
+  .sec h2{padding-top:9px}
+}
+</style>
+</head>
+<body data-tpl="S3">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"byline": "조우성", "cards": {"cards": [{"body": "지인 회사에 보통주로 투자했는데, 기관이 들어오면 지분 가치도 오른다는 말만 들었습니다. 매각 시 누가 먼저 가져가는지, 배당 조건이 무엇인지는 확인하지 못했습니다.", "kind": "cover", "title": "잘 되면 돌려받겠지"}, {"body": "투자자에게 먼저 돌려주는 조건은 회사와 투자자 사이의 말이 아니라 정관에 적히는 내용입니다. 상법 제344조의2 제2항에 따라 정관에 잔여재산의 종류·가액 결정방법·분배 내용을 정합니다.", "kind": "point", "title": "먼저 돌려주는 조건은 정관에 있다"}, {"body": "대법원 2020다263574는 정관이 배당의무를 부과하면서 지급조건·산정방식을 구체적으로 정하고 배당액이 일의적으로 산정되면, 예외적으로 구체적 배당금지급청구권이 인정될 수 있다고 보았습니다.", "kind": "point", "title": "배당은 조건이 구체적이면 청구권이 된다"}, {"body": "대법원 2021다293213은 주식인수대금 전액 보전이나 별도 수익 지급 약정을 투하자본 회수를 절대 보장하는 것으로 보아 무효라고 했습니다. 나만 불리한 조건이면 다툴 수 있습니다.", "kind": "point", "title": "한 주주만 우대하는 약정은 굳지 않는다"}, {"body": "내 지분이 줄어드는 증자도 임의로는 안 된다\n상법 제418조: 주주는 주식 수에 따라 신주 배정을 받을 권리가 있고, 제3자 배정은 정관 근거와 경영상 목적, 납입기일 2주 전 통지가 필요하다", "kind": "compare", "title": "희석은 절차를 따른다"}, {"body": "회사 정관에서 잔여재산 분배와 배당 조건이 적힌 부분을 확인하고, 주주총회 안건 중 정관 변경과 제3자 배정 항목을 따로 표시합니다. 다른 주주에게만 있는 별도 조건이 있는지 물어 답을 문서로 남깁니다.", "kind": "close", "small": "일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.", "title": "정관과 안건을 받아 세 가지만 확인한다"}], "source_line": "상법 제344조의2·제418조 · 대법원 2020다263574·2021다293213"}, "col_id": "LCP-20260928-054", "col_type": "개념정의형", "date": "2026-09-28", "kicker": "법률 컬럼 · 일반개인", "summary": {"headline": "지인 회사 지분 투자, '잘 되면 돌려받겠지'가 아니라 정관과 배당 조건을 확인해야 하는 돈이다", "keypoints": ["정관에서 잔여재산 분배·배당·상환·전환 조건이 적혔는지 확인하고 사본을 보관한다", "주주총회 안건에서 정관 변경과 제3자 배정 항목을 따로 표시한다", "내 지분에만 없는 권리와 다른 주주만 가진 별도 수익 약정이 있는지 확인한다", "신주를 다른 사람에게 줄 때 납입기일 2주 전 통지나 공고가 있는지 확인한다"], "lede": "지인 회사 지분 투자도 잘 되면 돌려받겠지가 아니라 정관과 배당 조건을 확인해야 하는 돈입니다. 우선주에 붙은 권리는 정관에 적혀 있습니다.", "pull_quote": "확인할 것은 회사가 잘될 것인지가 아니라 자기 지분에 붙은 조건이 어느 문서에 적혔는지다", "sections": [{"body": "보통주로 3천만 원을 넣은 지 2년 만에 주주총회 안내를 받았습니다. 그사이 회사는 기관 투자자를 받았고 안내문에는 우선주 신주 발행과 정관 변경 안건이 함께 들어 있었습니다. 대표는 기관이 들어오면 지분도 좋아진다고 했지만, 매각 시 누가 먼저 가져가는지와 배당 조건은 설명하지 않았습니다.", "h": "사건의 시작 — 기관이 들어오면 지분 가치도 오른다는 말"}, {"body": "투자자에게 먼저 돌려주는 조건은 정관에 적히는 내용입니다. 상법 제344조의2 제2항에 따라 회사가 잔여재산 분배에 관하여 내용이 다른 종류주식을 발행하는 경우 정관에 잔여재산의 종류, 가액의 결정방법, 분배에 관한 내용을 정하여야 합니다. 배당도 조건이 구체적이면 청구권이 됩니다. 대법원 2020다263574는 정관이 배당의무를 부과하면서 지급조건이나 산정방식을 구체적으로 정하고 배당액이 일의적으로 산정되면 예외적으로 구체적 배당금지급청구권이 인정될 수 있다고 보았습니다.", "h": "법이 보는 핵심 — 우선주 권리는 정관에 적혀 있고 배당은 조건이 구체적일 때 청구권이 된다"}, {"body": "주주마다 조건이 다를 수 있지만 한 주주만 우대하는 약정은 그대로 굳지 않습니다. 대법원 2021다293213은 주주평등 원칙을 위반해 일부 주주에게만 우월한 권리를 주는 약정은 무효이고, 주식인수대금 전액 보전이나 별도 수익 지급 약정은 투하자본 회수를 절대적으로 보장하는 것으로 무효라고 보았습니다. 내 지분이 줄어드는 증자도 임의로는 안 되고, 상법 제418조에 따라 정관 근거와 경영상 목적, 납입기일 2주 전 통지가 필요합니다.", "h": "조건과 예외 — 나만 불리한 조건이면 다툴 수 있고 희석은 절차를 따른다"}, {"body": "정관에서 잔여재산 분배와 배당 조건이 적힌 부분을 확인하고, 주주총회 안건 중 정관 변경과 제3자 배정 항목을 따로 표시해 둡니다. 다른 주주에게만 있는 별도 조건이 있는지 물어보고 답을 문서로 남깁니다. 지인 회사라도 투자금과 조건은 문서로 확인하는 편이 낫습니다.", "h": "지금 당장 해야 할 일 — 정관과 안건을 받아 세 가지만 확인한다"}], "sources": ["상법 제344조의2", "상법 제418조", "대법원 2020다263574", "대법원 2021다293213"]}, "title": "지인 회사 지분 투자, '잘 되면 돌려받겠지'가 아니라 정관과 배당 조건을 확인해야 하는 돈이다"}</script>
+<script>
+window.TPL={"kpTitle": "이야기에서 건진 것", "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
+<!-- lgcol build-id: fb-cb0c14e777 -->
