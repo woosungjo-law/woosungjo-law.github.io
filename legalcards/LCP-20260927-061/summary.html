@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>퇴직금은 통장에 들어가는 순간 압류 대상이 됩니다 — 다만 채무자에게는 취소 신청이라는 잠금장치가 있습니다</title>
+<meta name="description" content="퇴직금은 전부가 아니라 2분의 1이 압류금지이고, 통장에 들어가면 예금채권이 되어 압류가 가능해집니다. 다만 채무자의 취소 신청이라는 장치까지 함께 계산해야 회수 설계가 서습니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="퇴직금은 통장에 들어가는 순간 압류 대상이 됩니다 — 다만 채무자에게는 취소 신청이라는 잠금장치가 있습니다">
+<meta property="og:description" content="퇴직금은 전부가 아니라 2분의 1이 압류금지이고, 통장에 들어가면 예금채권이 되어 압류가 가능해집니다. 다만 채무자의 취소 신청이라는 장치까지 함께 계산해야 회수 설계가 서습니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;800;900&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S5 인용사색형 — 본화이트 & 와인 / 중앙 정렬·큰 여백·대형 인용 */
+:root{--bg:#f5f1ea;--ink:#2a2226;--mute:#7a6f74;--acc:#6e2b3a;--line:#c9bfb3;--head:"Noto Serif KR","Nanum Myeongjo",serif;--body:"Noto Serif KR","Nanum Myeongjo",serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#15111a;--ink:#e9e2e6;--mute:#a1949b;--acc:#d3919f;--line:#3a2f3c}}
+body{font-weight:300;font-size:17px;line-height:2}
+.page{max-width:660px;padding:56px 24px 100px;text-align:center}
+.kicker{display:block;font-weight:500}
+.headline{font-weight:400;font-size:clamp(16px,3vw,19px);line-height:1.6;color:var(--mute);letter-spacing:0;margin-top:14px}
+.meta{margin-top:10px;font-size:12px}
+.lede-x{order:3;text-align:left;margin:0 0 64px;font-size:17px;line-height:2.05;font-weight:300}
+.pq{order:2;margin:56px -4px 56px;padding:0;position:relative}
+.pq::before{content:"\201C";display:block;font-family:var(--head);font-size:96px;line-height:.7;color:var(--acc);opacity:.85;margin-bottom:14px;font-weight:400}
+.pq p{font-weight:300;font-size:clamp(23px,5.6vw,38px);line-height:1.6;letter-spacing:-.02em;color:var(--ink)}
+.pq::after{content:"";display:block;width:36px;height:1px;background:var(--acc);margin:42px auto 0}
+.secs{order:4}
+.sec{margin:0 0 56px;text-align:left}
+.sec .num{display:block;text-align:center;font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:.3em;color:var(--acc);margin-bottom:12px}
+.sec h2{text-align:center;font-weight:500;font-size:clamp(19px,3.2vw,22px);line-height:1.6;margin-bottom:16px;color:var(--ink)}
+.sec-body{font-size:16.5px;line-height:2.05}
+.sec:not(:last-child)::after{content:"";display:block;width:4px;height:4px;border-radius:50%;background:var(--acc);margin:56px auto 0;opacity:.7}
+.kp{order:5;margin:20px 0 0;padding:34px 0 0;border-top:1px solid var(--line);text-align:left}
+.kp-t{text-align:center;font-family:var(--sans);font-weight:500;font-size:11px;letter-spacing:.3em;color:var(--acc);margin-bottom:12px}
+.kp li{display:flex;gap:14px;padding:10px 0}
+.kp-n{flex:none;font-family:var(--sans);font-size:11px;letter-spacing:.1em;color:var(--acc);padding-top:.6em}
+.kp-x{font-weight:400;line-height:1.85}
+.ft{order:6;margin-top:56px;padding-top:24px;border-top:1px solid var(--line);text-align:center}
+.ft .src li{padding-left:0;text-indent:0}
+.ft .src li::before{content:""}
+@media (min-width:820px){
+  .page{padding:110px 24px 140px}
+  .pq{margin:80px -60px}
+  .pq p{font-size:40px}
+}
+</style>
+</head>
+<body data-tpl="S5">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "LCP-20260927-061", "title": "퇴직금은 통장에 들어가는 순간 압류 대상이 됩니다 — 다만 채무자에게는 취소 신청이라는 잠금장치가 있습니다", "col_type": "개념정의형", "kicker": "법률 컬럼 · 법무팀", "byline": "조우성", "date": "2026-09-27", "summary": {"headline": "퇴직금은 통장에 들어가는 순간 압류 대상이 됩니다 — 다만 채무자에게는 취소 신청이라는 잠금장치가 있습니다", "lede": "퇴직금은 전부가 아니라 2분의 1이 압류금지이고, 통장에 들어가면 예금채권이 되어 압류가 가능해집니다. 다만 채무자의 취소 신청이라는 장치까지 함께 계산해야 회수 설계가 서습니다.", "sections": [{"h": "법이 보는 핵심 — 압류금지는 '전부'가 아니라 '2분의 1'이고, 통장에 들어가면 성질이 바뀝니다", "body": "민사집행법 제246조 제1항 제5호는 퇴직금 그 밖에 이와 비슷한 성질을 가진 급여채권의 2분의 1에 해당하는 금액을 압류하지 못한다고 정합니다. 같은 항 제4호도 급료·연금·봉급·상여금·퇴직연금 등 급여채권의 2분의 1을 보호합니다. 즉 퇴직금은 전부가 아니라 일정 비율이 보호되는 채권이고, 나머지 부분은 압류 대상이 될 수 있습니다. 대법원은 압류금지채권이 금융기관에 개설된 채무자의 계좌에 이체되는 경우 그 채권은 더 이상 압류금지의 효력이 미치지 아니하여 그 예금에 대한 압류명령은 유효하다고 보았습니다(대법원 2013다25552). 퇴직금이 통장에 들어가는 순간 그 돈은 퇴직금 채권이 아니라 은행에 대한 예금채권이 됩니다."}, {"h": "중요한 조건과 예외 — 채무자의 신청이 있으면 법원은 그 부분 압류명령을 취소하여야 합니다", "body": "민사집행법 제246조 제2항은 제1항 제1호부터 제7호까지의 금원이 계좌에 이체되는 경우 채무자의 신청에 따라 그에 해당하는 부분의 압류명령을 취소하여야 한다고 정합니다. 퇴직금은 제1항 제5호의 금원이므로 이 조항의 적용 대상입니다. 제3항은 당사자의 신청이 있으면 생활형편 등을 고려해 압류명령의 전부 또는 일부를 취소할 수 있다고 정하는 다른 각도의 조정 통로입니다. 취소의 효과에도 시간의 한계가 있습니다. 대법원은 제2항에 따라 압류명령이 취소되더라도 그 효력은 장래에 대해서만 상실되고 이미 완결된 집행행위에는 영향이 없어, 채권자가 집행행위로 취득한 금전을 부당이득으로 반환할 필요는 없다고 보았습니다(같은 판결). 채무자가 더 빨리 신청할수록 회수 가능 금액이 줄어듭니다."}, {"h": "법무팀이 해야 할 일 — 압류금지 범위와 취소 가능성을 함께 계산하십시오", "body": "퇴직금·급여 채권 압류는 대상과 시점을 잘못 잡으면 시간만 잃습니다. 압류금지 비율을 전제로 실제 회수 가능한 대상 금액을 계산하고, 퇴직금 채권 상태인지 이미 계좌에 입금되어 예금채권이 되었는지 구분합니다. 계좌 입금 사실을 확인하고 가능한 이른 시점에 압류 절차를 설계하되, 채무자가 제246조 제2항에 따라 취소를 신청하면 그 부분 압류명령이 취소될 수 있음을 전제로 합니다. 퇴직금·예금 외의 재산(부동산·급여 등)을 함께 조사해 회수 경로를 분산하고, 압류·추심 진행 상황과 채무자의 이의·취소 신청에 대응할 자료와 담당자를 미리 정해 둡니다."}], "keypoints": ["압류금지 범위 확인: 퇴직금·급여채권은 일정 비율(제246조 제1항 제5호·제4호)이 압류금지임을 전제로 실제 회수 가능한 대상 금액을 계산한다", "채권 성격 판단: 퇴직금 채권 상태인지, 이미 계좌에 입금되어 예금채권이 되었는지 구분한다", "입금 시점 포착: 계좌 입금 사실을 확인하고, 가능한 이른 시점에 압류 절차를 설계한다", "취소 리스크 인식: 채무자가 제246조 제2항에 따라 취소를 신청하면 그 부분 압류명령이 취소될 수 있음을 전제로 한다", "기록·추적: 압류·추심 진행 상황을 기록하고, 채무자의 이의·취소 신청에 대응할 자료와 담당자를 미리 정해 둔다"], "pull_quote": "회수 실무에서는 압류 자체의 성패보다 '언제, 무엇을 압류하고, 채무자가 언제 반격할 것인가'를 함께 봐야 한다", "sources": ["민사집행법 제246조", "대법원 2013다25552 판결"]}, "cards": {"cards": [{"kind": "cover", "title": "퇴직금 압류, 가능한가 불가한가", "body": "미수금 채무자가 퇴직금을 통장으로 받았다는 소식. \"퇴직금은 못 건드린다\"는 통념은 정확하지 않습니다. 압류금지 범위와 입금 시점, 취소 리스크를 함께 계산해야 합니다."}, {"kind": "point", "title": "전부가 아니라 2분의 1 보호", "body": "민사집행법 제246조 제1항 제5호는 퇴직금 등 급여채권의 2분의 1에 해당하는 금액을 압류하지 못한다고 정합니다. 나머지 부분은 압류 대상이 될 수 있습니다."}, {"kind": "point", "title": "입금 순간 예금채권이 된다", "body": "압류금지채권이 계좌에 이체되면 더 이상 압류금지의 효력이 미치지 않아 그 예금에 대한 압류명령은 유효합니다(대법원 2013다25552). 통장 입금이 압류의 운명을 가립니다."}, {"kind": "compare", "title": "압류 유효 vs 채무자의 반격", "body": "압류: 통장에 들어간 퇴직금에 대한 압류명령은 유효하다\n취소: 채무자가 제246조 제2항으로 신청하면 법원은 그 부분 압류명령을 취소하여야 한다"}, {"kind": "point", "title": "취소는 장래 효력만 있다", "body": "압류명령이 취소되어도 효력은 장래에만 상실되고 이미 완결된 집행행위에는 영향이 없습니다. 추심 완결 뒤에는 돈을 반환할 필요가 없지만, 채무자가 빨리 신청하면 회수 가능 금액이 줄어듭니다."}, {"kind": "close", "title": "시점이 회수의 승부처다", "body": "입금 포착, 압류금지 범위 계산, 취소 리스크 전제, 다른 재산 병행 조사. 압류를 집행하는 쪽의 변수는 언제 무엇을 압류하고 채무자가 언제 반격할 것인가에 있습니다.", "small": "일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다."}], "source_line": "민사집행법 제246조"}}</script>
+<script>
+window.TPL={"kpTitle": "남겨 둘 문장", "splitLede": true, "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
+<!-- lgcol build-id: fb-814770d27f -->
