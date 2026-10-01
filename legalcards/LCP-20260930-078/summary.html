@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>빌려준 돈 받기, 부동산부터가 아닌 못 건드리는 돈부터 가린다</title>
+<meta name="description" content="집이 있다는 말만 듣고 경매를 생각하기 전에 앞순위 채권과 비용을 빼야 합니다. 월급과 예금에는 보호되는 범위가 있고, 파산 신청이 들어오면 진행 중인 집행도 영향을 받습니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="빌려준 돈 받기, 부동산부터가 아닌 못 건드리는 돈부터 가린다">
+<meta property="og:description" content="집이 있다는 말만 듣고 경매를 생각하기 전에 앞순위 채권과 비용을 빼야 합니다. 월급과 예금에는 보호되는 범위가 있고, 파산 신청이 들어오면 진행 중인 집행도 영향을 받습니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S4 체크리스트형 — 페이퍼화이트 & 틸 / 산세리프 / 체크박스 */
+:root{--bg:#fafaf6;--ink:#1a2226;--mute:#5f6b70;--acc:#0e6b6b;--line:#d9ddd6;--soft:#eef2ee;--head:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--body:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0d1416;--ink:#e5eceb;--mute:#93a3a3;--acc:#4fc0b6;--line:#26353a;--soft:#141f22}}
+body{font-size:16.5px;line-height:1.8}
+.page{max-width:780px;padding:32px 20px 80px}
+.kicker{display:inline-block;align-self:flex-start;background:var(--acc);color:var(--bg);padding:4px 10px;letter-spacing:.06em;font-size:12px;border-radius:2px;margin-bottom:16px}
+.hd{padding-bottom:26px}
+.headline{font-weight:800;font-size:clamp(26px,6vw,42px);line-height:1.3;letter-spacing:-.035em}
+.lede{margin-top:16px;font-size:clamp(16px,2.3vw,18px);color:var(--mute);line-height:1.8}
+.meta{margin-top:14px}
+.pq{order:6;margin:8px 0 0;padding:18px 0 0;border-top:1px solid var(--line)}
+.pq p{font-weight:700;font-size:18px;color:var(--acc);line-height:1.6}
+.kp{order:2;margin:0 0 34px;padding:22px 18px 10px;background:var(--soft);border:1px solid var(--line);border-top:4px solid var(--acc);border-radius:4px}
+.kp-t{font-size:15px;font-weight:800;margin-bottom:6px}
+.kp-t::after{content:" · 눌러서 확인";font-weight:500;font-size:12px;color:var(--mute)}
+.kp li{display:flex;gap:14px;align-items:flex-start;padding:13px 4px;border-top:1px solid var(--line);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.kp li:first-child{border-top:0}
+.kp li:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.kp-n{flex:none;position:relative;width:24px;height:24px;margin-top:2px;border:2px solid var(--acc);border-radius:5px;font-size:0;background:var(--bg);transition:background .15s}
+.kp-n::after{content:"";position:absolute;left:6px;top:1.5px;width:6px;height:11px;border:solid var(--bg);border-width:0 2.5px 2.5px 0;transform:rotate(45deg) scale(0);transition:transform .15s}
+.kp li[aria-checked=true] .kp-n{background:var(--acc)}
+.kp li[aria-checked=true] .kp-n::after{transform:rotate(45deg) scale(1)}
+.kp li[aria-checked=true] .kp-x{color:var(--mute)}
+.kp-x{font-weight:600;line-height:1.65}
+.secs{order:3}
+.sec{display:grid;grid-template-columns:52px 1fr;column-gap:14px;padding:22px 0;border-top:1px solid var(--line)}
+.sec .num{grid-row:1/span 2;font-weight:800;font-size:34px;line-height:1;letter-spacing:-.04em;color:var(--acc);opacity:.9;padding-top:2px}
+.sec h2{font-weight:800;font-size:clamp(18px,3vw,21px);line-height:1.45;letter-spacing:-.02em;margin-bottom:8px}
+.ft{margin-top:30px;padding-top:18px;border-top:1px solid var(--line)}
+@media (min-width:820px){
+  .page{padding:64px 32px 110px}
+  .kp{padding:28px 30px 14px}
+  .sec{grid-template-columns:76px 1fr;padding:28px 0}
+  .sec .num{font-size:48px}
+  .sec-body{font-size:17px}
+}
+</style>
+</head>
+<body data-tpl="S4">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "LCP-20260930-078", "title": "빌려준 돈 받기, 부동산부터가 아닌 못 건드리는 돈부터 가린다", "col_type": "체크리스트형", "kicker": "법률 컬럼 · 일반개인", "byline": "조우성", "date": "2026-09-30", "summary": {"headline": "빌려준 돈 받기, 부동산부터가 아닌 못 건드리는 돈부터 가린다", "lede": "집이 있다는 말만 듣고 경매를 생각하기 전에 앞순위 채권과 비용을 빼야 합니다. 월급과 예금에는 보호되는 범위가 있고, 파산 신청이 들어오면 진행 중인 집행도 영향을 받습니다.", "sections": [{"h": "집이 있어도 받을 돈은 따로다", "body": "민사집행법 제78조의 경매는 제102조의 무잉여 여부를 먼저 봅니다. 선순위 대출과 비용을 빼고 남는 몫이 없으면 실익이 없습니다."}, {"h": "월급에도 건드릴 수 없는 선이 있다", "body": "민사집행법 제246조의 급여 2분의 1과 월 250만 원 이하 보호, 개인 예금 250만 원 이하 보호를 실제 상황에 대입합니다."}, {"h": "파산과 재산 이동을 확인한다", "body": "채무자회생법 제557조 제1항의 중지·실효를 확인하고, 친족 명의 이전과 파산 중 은닉은 별도 자료로 남깁니다."}], "keypoints": ["핵심 요건과 제한을 먼저 확인한다", "관련 자료를 날짜순으로 정리한다", "다음 절차와 책임 범위를 구분한다"], "pull_quote": "집이 있다는 말만 듣고 경매를 생각하기 전에 앞순위 채권과 비용을 빼야 합니다.", "sources": ["민사집행법 제78조", "민사집행법 제102조", "민사집행법 제246조", "채무자회생법 제383조", "채무자회생법 제557조 제1항", "형법 제327조", "채무자회생법 제650조"]}, "cards": {"cards": [{"kind": "cover", "title": "집이 있으면 바로 경매일까?", "body": "앞순위 대출과 비용을 뺀 뒤 남는 돈이 있는지부터 확인합니다."}, {"kind": "point", "title": "월급에서 받을 수 있는 몫", "body": "급여의 2분의 1과 월 250만 원 이하 보호 구간을 대입해 실제 금액을 계산합니다."}, {"kind": "point", "title": "파산 소식이 들리면", "body": "진행 중인 집행의 중지·실효 가능성과 파산 절차의 배당 경로를 확인합니다."}, {"kind": "point", "title": "자료를 날짜순으로", "body": "차용증·재산 자료·명의 이전 정황을 모아 회수 절차를 상담할 준비를 하세요."}, {"kind": "close", "title": "다음 단계", "body": "자료와 절차를 정리한 뒤 구체적 대응을 선택하세요.", "small": "일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다."}], "source_line": "근거: 민사집행법 제78조·민사집행법 제102조·민사집행법 제246조·채무자회생법 제383조·채무자회생법 제557조 제1항·형법 제327조·채무자회생법 제650조"}}</script>
+<script>
+window.TPL={"kpTitle": "체크리스트", "checkable": true, "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
+<!-- lgcol build-id: fb-07e1ff5a3f -->
