@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>어음을 받았다면 서류함이 아니라 달력에 넣어라</title>
+<meta name="description" content="서류함 속 어음은 안전 자산처럼 보이지만, 기한을 지키지 않으면 권리의 범위가 줄어드는 시간이 붙은 문서입니다. 받은 날 점검하고 달력에 만기를 적는 습관이 방어선입니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="어음을 받았다면 서류함이 아니라 달력에 넣어라">
+<meta property="og:description" content="서류함 속 어음은 안전 자산처럼 보이지만, 기한을 지키지 않으면 권리의 범위가 줄어드는 시간이 붙은 문서입니다. 받은 날 점검하고 달력에 만기를 적는 습관이 방어선입니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;800;900&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S5 인용사색형 — 본화이트 & 와인 / 중앙 정렬·큰 여백·대형 인용 */
+:root{--bg:#f5f1ea;--ink:#2a2226;--mute:#7a6f74;--acc:#6e2b3a;--line:#c9bfb3;--head:"Noto Serif KR","Nanum Myeongjo",serif;--body:"Noto Serif KR","Nanum Myeongjo",serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#15111a;--ink:#e9e2e6;--mute:#a1949b;--acc:#d3919f;--line:#3a2f3c}}
+body{font-weight:300;font-size:17px;line-height:2}
+.page{max-width:660px;padding:56px 24px 100px;text-align:center}
+.kicker{display:block;font-weight:500}
+.headline{font-weight:400;font-size:clamp(16px,3vw,19px);line-height:1.6;color:var(--mute);letter-spacing:0;margin-top:14px}
+.meta{margin-top:10px;font-size:12px}
+.lede-x{order:3;text-align:left;margin:0 0 64px;font-size:17px;line-height:2.05;font-weight:300}
+.pq{order:2;margin:56px -4px 56px;padding:0;position:relative}
+.pq::before{content:"\201C";display:block;font-family:var(--head);font-size:96px;line-height:.7;color:var(--acc);opacity:.85;margin-bottom:14px;font-weight:400}
+.pq p{font-weight:300;font-size:clamp(23px,5.6vw,38px);line-height:1.6;letter-spacing:-.02em;color:var(--ink)}
+.pq::after{content:"";display:block;width:36px;height:1px;background:var(--acc);margin:42px auto 0}
+.secs{order:4}
+.sec{margin:0 0 56px;text-align:left}
+.sec .num{display:block;text-align:center;font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:.3em;color:var(--acc);margin-bottom:12px}
+.sec h2{text-align:center;font-weight:500;font-size:clamp(19px,3.2vw,22px);line-height:1.6;margin-bottom:16px;color:var(--ink)}
+.sec-body{font-size:16.5px;line-height:2.05}
+.sec:not(:last-child)::after{content:"";display:block;width:4px;height:4px;border-radius:50%;background:var(--acc);margin:56px auto 0;opacity:.7}
+.kp{order:5;margin:20px 0 0;padding:34px 0 0;border-top:1px solid var(--line);text-align:left}
+.kp-t{text-align:center;font-family:var(--sans);font-weight:500;font-size:11px;letter-spacing:.3em;color:var(--acc);margin-bottom:12px}
+.kp li{display:flex;gap:14px;padding:10px 0}
+.kp-n{flex:none;font-family:var(--sans);font-size:11px;letter-spacing:.1em;color:var(--acc);padding-top:.6em}
+.kp-x{font-weight:400;line-height:1.85}
+.ft{order:6;margin-top:56px;padding-top:24px;border-top:1px solid var(--line);text-align:center}
+.ft .src li{padding-left:0;text-indent:0}
+.ft .src li::before{content:""}
+@media (min-width:820px){
+  .page{padding:110px 24px 140px}
+  .pq{margin:80px -60px}
+  .pq p{font-size:40px}
+}
+</style>
+</head>
+<body data-tpl="S5">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"byline": "조우성", "cards": {"cards": [{"body": "은행에서 바로 현금화할 수 있다는 말을 믿고 어음을 서류함에 넣어 두면, 기한을 지나 권리의 범위가 줄어듭니다. 어음은 달력에 넣어야 하는 시간이 붙은 문서입니다.", "kind": "cover", "title": "서류함이 아니라 달력에 넣어라"}, {"body": "약속어음의 법정 기재사항은 어음법 제75조가 정합니다. 금액과 날짜만 있으면 되는 게 아니라, 받는 순간 서식이 비어 있는 칸이 없는지 먼저 봅니다.", "kind": "point", "title": "받을 때 — 기재사항을 확인한다"}, {"body": "배서의 연속(어음법 제16조)은 내가 적법한 권리자라는 추정을 받는 근거입니다. 어음 뒷면의 서명 칸이 순서대로 이어졌는지 확인합니다.", "kind": "point", "title": "손을 바꿀 때 — 배서 칸의 흐름"}, {"body": "지급제시는 어음법 제38조부터 제42조에 따라 구분됩니다. 기한 안에 제시하는 것이 핵심이므로 만기를 달력과 휴대전화 알림에 두 겹으로 넣어 둡니다.", "kind": "point", "title": "돈 받으러 갈 때 — 기한 안에 제시한다"}, {"body": "받을 때: 기재사항(제75조)이 빠졌으면 받는 것 자체를 다시 생각한다\n거절 당할 때: 거절증서(제44조)와 통지(제45조)가 상환청구권(제43조~제54조)의 출발점이다", "kind": "compare", "title": "받을 때와 거절 때가 분기점이다"}, {"body": "받은 날 기재사항이 채워졌는지 확인하고, 배서 칸이 이어지는지 보고, 만기를 달력에 등록해 기한 안에 제시합니다. 지급이 거절되면 거절증서와 통지를 준비하고 경위를 기록으로 남깁니다.", "kind": "close", "small": "일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.", "title": "오늘 받은 어음을 세 단계로 점검한다"}], "source_line": "어음법 제16조·제38조~제45조·제75조"}, "col_id": "LCP-20261001-057", "col_type": "개념정의형", "date": "2026-10-01", "kicker": "법률 컬럼 · 일반개인", "summary": {"headline": "어음을 받았다면 서류함이 아니라 달력에 넣어라", "keypoints": ["어음을 받으면 어음법 제75조 기재사항과 배서 연속을 당일 점검한다", "만기를 달력에 등록하고 어음법 제38조~제42조 기준 안에 지급제시한다", "지급거절 시 거절증서와 통지로 상환청구권 행사 요건을 지킨다", "특수한 배서 유형이 섞였다면 은행이나 전문가에게 확인한다"], "lede": "서류함 속 어음은 안전 자산처럼 보이지만, 기한을 지키지 않으면 권리의 범위가 줄어드는 시간이 붙은 문서입니다. 받은 날 점검하고 달력에 만기를 적는 습관이 방어선입니다.", "pull_quote": "어음은 다 안전하다는 말은 절차를 지켰을 때만 참이 된다", "sections": [{"body": "단체 급식 납품처가 현금 대신 약속어음 두 장을 주며 은행에서 바로 현금화할 수 있다고 했습니다. 어음을 서류함에 넣어 두었고 한 장은 만기가 지나고 나서야 꺼냈습니다. 창구에서 어음은 기간 안에 제시해야 권리가 제대로 지켜진다는 설명을 들었습니다.", "h": "사건의 시작 — 만기가 지나고 나서야 꺼낸 어음 한 장"}, {"body": "약속어음의 법정 기재사항은 어음법 제75조가 정합니다. 배서는 어음법 제11조부터 제20조까지 적용되고 배서의 연속(제16조)이 권리자 추정의 장치입니다. 인수는 제21조부터 제29조, 지급제시는 제38조부터 제42조가 적용되고, 기한 전 지급의 효력은 제40조가 정합니다. 상환청구권(제43조~제54조)에는 거절증서(제44조)의 작성과 적법한 통지(제45조)가 요구됩니다.", "h": "법이 보는 핵심 — 발행부터 상환까지 다섯 단계의 규칙이다"}, {"body": "기재사항이 빠져 있으면 받는 것 자체를 다시 생각하고, 배서 칸이 순서대로 이어지는지 확인하며 특수한 배서 유형이 섞였다면 전문가에게 확인합니다. 만기가 되면 기한 안에 제시하고, 지급이 거절되면 거절증서와 통지를 즉시 준비합니다. 기한을 놓치면 신용 문제가 아니라 절차 문제로 권리가 줄어듭니다.", "h": "조건과 예외 — 받을 때와 거절 때가 분기점이다"}, {"body": "어음을 받은 날 세 가지를 합니다. 기재사항이 채워져 있는지 확인하고, 배서 칸이 이어지는지 보고, 만기를 달력과 휴대전화 알림에 두 겹으로 넣어 기한 안에 제시합니다. 지급이 거절되면 거절증서와 통지를 준비해 상환청구권을 지키고 경위를 기록으로 남깁니다.", "h": "지금 당장 해야 할 일 — 오늘 받은 어음을 세 단계로 점검한다"}], "sources": ["어음법 제75조", "어음법 제16조", "어음법 제38조", "어음법 제40조", "어음법 제44조", "어음법 제45조"]}, "title": "어음을 받았다면 서류함이 아니라 달력에 넣어라"}</script>
+<script>
+window.TPL={"kpTitle": "남겨 둘 문장", "splitLede": true, "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
+<!-- lgcol build-id: fb-84d246a89e -->

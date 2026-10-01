@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>직원이 출석요구를 받았다면 — 대표가 먼저 정할 것은 '동행과 진술의 선'입니다</title>
+<meta name="description" content="직원이 출석요구를 받았을 때 개인에게 맡기면 초기 진술이 회사 입장과 어긋날 수 있습니다. 대표가 정할 것은 대신 말해 주기가 아니라 동행과 진술의 선입니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="직원이 출석요구를 받았다면 — 대표가 먼저 정할 것은 '동행과 진술의 선'입니다">
+<meta property="og:description" content="직원이 출석요구를 받았을 때 개인에게 맡기면 초기 진술이 회사 입장과 어긋날 수 있습니다. 대표가 정할 것은 대신 말해 주기가 아니라 동행과 진술의 선입니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;800;900&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--pbg);color:var(--pink);font-family:var(--sans);-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:anywhere}
+h1,h2,p,blockquote{margin:0;padding:0}
+.top{max-width:1120px;margin:0 auto;padding:22px 16px 6px;display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;justify-content:space-between}
+.top h1{font-size:15px;font-weight:700;line-height:1.5;flex:1 1 260px}
+.top .sub{font-size:12px;color:var(--pmute);font-weight:400;display:block}
+.btn{font:600 13px/1 var(--sans);padding:11px 16px;border-radius:6px;border:1px solid var(--pink);background:transparent;color:var(--pink);cursor:pointer}
+.btn:hover{background:var(--pink);color:var(--pbg)}
+.btn:disabled{opacity:.5;cursor:wait}
+#zip{background:var(--pink);color:var(--pbg)}
+.stack{max-width:1120px;margin:0 auto;padding:10px 16px 60px;display:flex;flex-direction:column;align-items:center;gap:28px}
+.frame{width:100%;max-width:1080px}
+.bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;font-size:12px;color:var(--pmute)}
+.vp{position:relative;overflow:hidden;box-shadow:0 1px 0 rgba(0,0,0,.05),0 12px 30px -12px rgba(0,0,0,.3);margin:0 auto}
+.vp .card{position:absolute;left:0;top:0;transform-origin:0 0}
+.empty{padding:40px;color:var(--pmute)}
+
+/* ---- 카드 공통(1080x1350) ---- */
+.card{width:1080px;height:1350px;overflow:hidden;position:relative;background:var(--cbg);color:var(--cink);font-family:var(--cfont);display:flex;flex-direction:column;padding:84px 84px 68px;line-height:1.5;word-break:keep-all;overflow-wrap:anywhere;text-align:left}
+.c-top{flex:none;display:flex;justify-content:space-between;gap:24px;font:600 24px/1.2 var(--sans);letter-spacing:.1em;color:var(--cmute);position:relative;z-index:2}
+.c-main{flex:1;min-height:0;margin:36px 0 32px;display:flex;flex-direction:column;overflow:hidden;position:relative;z-index:2}
+.blk{--s:1;margin:auto 0;width:100%}
+.tag{font:700 26px/1 var(--sans);letter-spacing:.16em;color:var(--cacc);margin-bottom:calc(30px*var(--s))}
+.t{font-family:var(--hfont);font-weight:var(--tw,800);font-size:calc(var(--t,80px)*var(--s));line-height:1.3;letter-spacing:-.02em;text-wrap:balance;color:var(--ctitle,var(--cink))}
+.b{font-size:calc(var(--b,40px)*var(--s));line-height:1.62;margin-top:calc(36px*var(--s));color:var(--cbody,var(--cink));white-space:pre-line}
+.sm{font:500 calc(28px*var(--s))/1.6 var(--sans);margin-top:calc(30px*var(--s));color:var(--cmute)}
+.c-foot{flex:none;display:flex;justify-content:space-between;align-items:flex-end;gap:36px;font:400 23px/1.5 var(--sans);color:var(--cmute);border-top:2px solid var(--cline);padding-top:24px;position:relative;z-index:2;min-height:70px}
+.c-src{flex:1;min-width:0;max-height:72px;overflow:hidden}
+.c-by{flex:none;font-weight:600;color:var(--cink);letter-spacing:.04em}
+.c-srcblock{flex:1;min-width:0}
+.c-srcblock .k{display:block;font:700 22px/1 var(--sans);letter-spacing:.16em;color:var(--cacc);margin-bottom:10px}
+.c-srcblock p{font-size:24px;line-height:1.55;max-height:112px;overflow:hidden}
+.k-cover{--t:104px;--b:46px}
+.k-point{--t:76px;--b:46px}
+.k-close{--t:74px;--b:44px}
+.k-compare{--t:62px}
+.q{font-family:var(--hfont);font-weight:var(--qw,600);font-size:calc(66px*var(--s));line-height:1.55;letter-spacing:-.02em;color:var(--cink);white-space:pre-line}
+.who{font:600 calc(30px*var(--s))/1.5 var(--sans);margin-top:calc(40px*var(--s));color:var(--cmute)}
+.cmp{margin-top:calc(46px*var(--s));display:grid;grid-template-columns:1fr 1fr;gap:0;position:relative}
+.side{padding:calc(36px*var(--s)) calc(34px*var(--s))}.sa{padding-right:calc(64px*var(--s))}.sb{padding-left:calc(64px*var(--s))}
+.lab{font:800 calc(30px*var(--s))/1.35 var(--hfont);margin-bottom:calc(20px*var(--s));color:var(--cacc)}
+.stx{font-size:calc(40px*var(--s));line-height:1.6;white-space:pre-line}
+.vs{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:88px;height:88px;border-radius:50%;background:var(--cacc);color:var(--cbg);display:flex;align-items:center;justify-content:center;font:800 26px/1 var(--sans);letter-spacing:.04em;z-index:3}
+
+/* 책 표지 */
+.book-row{flex:none;display:flex;align-items:flex-end;gap:44px;margin-top:36px;position:relative;z-index:2}
+.book{flex:none;width:250px;margin:0;box-shadow:0 20px 40px -8px rgba(0,0,0,.35),0 2px 6px rgba(0,0,0,.2)}
+.book img{display:block;width:100%;height:auto}
+.bmeta{min-width:0;font:500 29px/1.55 var(--sans);color:var(--cmute);padding-bottom:6px}
+.bmeta span{display:block}
+.bmeta .bt{font:800 36px/1.4 var(--hfont);color:var(--cink);margin-bottom:10px}
+
+/* C5 인용사색형 — 다크 와인, 중앙 정렬·큰 인용부호·여백 */
+:root{--pbg:#1b1620;--pink:#e9e2e6;--pmute:#a1949b;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+.card{--cbg:#17121b;--cink:#ece5e9;--cmute:#a1949b;--cacc:#d3919f;--cline:rgba(211,145,159,.35);--cfont:"Noto Serif KR",serif;--hfont:"Noto Serif KR",serif;--tw:400;--qw:300;--cbody:#cfc4ca;padding:96px 110px 80px;text-align:center}
+.c-top{letter-spacing:.2em;font-weight:400;font-size:22px}
+.blk{text-align:center;position:relative;z-index:2}
+.c-main::before{content:"\201C";position:absolute;left:50%;top:-40px;transform:translateX(-50%);font:400 420px/1 "Noto Serif KR",serif;color:#d3919f;opacity:.16;z-index:0;pointer-events:none}
+.k-cover .t{--t:100px;font-weight:300;line-height:1.4}
+.k-cover .b{color:#a1949b;font-size:calc(38px*var(--s))}
+.k-cover .t::after{content:"";display:block;width:48px;height:2px;background:#d3919f;margin:calc(50px*var(--s)) auto 0}
+.k-point .t{font-weight:400;--t:74px;line-height:1.5}
+.k-point .b{font-weight:300;font-size:calc(40px*var(--s));line-height:1.9}
+.k-point .tag,.k-compare .tag,.k-close .tag{color:#d3919f;font-weight:400;font-size:22px;letter-spacing:.3em}
+.k-quote .q{font-size:calc(62px*var(--s));line-height:1.65;font-weight:300}
+.k-quote .who{color:#d3919f;font-weight:400;letter-spacing:.06em}
+.k-quote .who::before{content:"";display:block;width:48px;height:2px;background:#d3919f;margin:0 auto calc(36px*var(--s))}
+.k-compare .t{font-weight:400;font-size:calc(56px*var(--s))}
+.k-compare .cmp{gap:0}
+.k-compare .side{text-align:center;padding:calc(30px*var(--s))}
+.k-compare .sa{border-right:1px solid rgba(211,145,159,.45)}
+.k-compare .vs{width:72px;height:72px;font-weight:400;font-size:22px;background:#17121b;color:#d3919f;border:1px solid #d3919f}
+.k-compare .lab{font-weight:400}
+.k-compare .stx{font-weight:300}
+.k-close .t{font-weight:400;--t:70px}
+.k-close .c-srcblock{text-align:left}
+.k-close .b{font-weight:300}
+
+.book-row{justify-content:center;text-align:left}
+.book{box-shadow:0 22px 50px -10px rgba(0,0,0,.8);outline:1px solid rgba(211,145,159,.45);outline-offset:8px}
+.bmeta .bt{font-weight:400;color:#ece5e9}
+</style>
+</head>
+<body data-tpl="C5">
+<header class="top"><h1><span id="ttl"></span><span class="sub" id="sub"></span></h1><button type="button" class="btn" id="zip">전체 ZIP 저장</button></header>
+<main id="stack" class="stack"></main>
+<script id="col-data" type="application/json">{"byline": "조우성", "cards": {"cards": [{"body": "직원 개인이 잘 처리하겠지 하고 맡기면 초기 진술이 회사 입장과 어긋날 수 있습니다. 대표가 먼저 정할 것은 대신 말해 주기가 아니라 동행과 진술의 선입니다.", "kind": "cover", "title": "개인에게 맡기면 회사가 흔들린다"}, {"body": "출석요구를 받은 직원이 피의자라면 신분을 먼저 확인합니다. 형사소송법 제200조의2 제1항은 정당한 이유 없이 불응하거나 불응할 우려가 있을 때 체포영장으로 체포할 수 있다고 정합니다.", "kind": "point", "title": "체포 공포가 아니라 정당한 사유를 본다"}, {"body": "제244조의3 제1항은 신문 전에 진술을 하지 않을 수 있고, 하지 않아도 불이익을 받지 않으며, 거부권을 포기한 진술은 유죄 증거가 될 수 있고, 변호인 조력을 받을 수 있음을 고지합니다.", "kind": "point", "title": "조사 전에 고지되는 네 가지 권리"}, {"body": "제243조의2는 신청에 따라 변호인을 접견시키거나 정당한 사유가 없는 한 신문에 참여시키도록 정합니다. 변호인 동행은 직원의 진술을 정확하게 만들고 회사에 예측 가능한 정보를 줍니다.", "kind": "point", "title": "변호인 동행이 리스크를 줄인다"}, {"body": "지원은 대신 말해 주기가 아니라 권리를 지켜 주기: 진실을 왜곡하거나 증거에 손대지 않는다\n선을 넘으면 회사가 더 큰 리스크를 진다", "kind": "compare", "title": "지원과 개입의 선"}, {"body": "신분 확인, 변호인 지원 범위, 진술 지원의 선을 미리 정합니다. 출석일과 조율 요청, 체포·조사 과정의 고지 여부와 시각을 기록하게 하고, 사안이 중대하면 외부 법률 자문을 받습니다.", "kind": "close", "small": "일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.", "title": "지원의 범위와 선을 미리 정한다"}], "source_line": "형사소송법 제200조의2·제243조의2·제244조의3 · 대법원 2017도10866"}, "col_id": "LCP-20260927-059", "col_type": "개념정의형", "date": "2026-09-27", "kicker": "법률 컬럼 · CEO", "summary": {"headline": "직원이 출석요구를 받았다면 — 대표가 먼저 정할 것은 '동행과 진술의 선'입니다", "keypoints": ["직원이 참고인인지 피의자인지부터 확인하고 대응 수준을 정한다", "변호인 선임과 동행을 어디까지 지원할지 미리 기준을 세운다", "지원은 권리 행사와 사무에 한정하고 진실 왜곡·증거 손대기를 막는다", "체포·조사 과정의 고지 여부와 시각을 기록하게 해 추후 다툼에 대비한다"], "lede": "직원이 출석요구를 받았을 때 개인에게 맡기면 초기 진술이 회사 입장과 어긋날 수 있습니다. 대표가 정할 것은 대신 말해 주기가 아니라 동행과 진술의 선입니다.", "pull_quote": "회사의 지원은 대신 말해 주기가 아니라 권리를 지켜 주기다", "sections": [{"body": "운항 중 발생한 사고와 관련해 직원 한 명이 경찰 출석요구를 받았다는 보고가 올라왔습니다. 참고인으로 불린 것인지 피의자로 불린 것인지가 불분명했고, 개인에게 맡기면 초기 진술이 회사의 입장과 어긋날 수 있었습니다. 회사가 어디까지 나서야 하고 비용을 어디까지 대야 하는지가 문제였습니다.", "h": "사건의 시작 — 운항 사고 이후 찾아온 출석요구서"}, {"body": "출석요구를 받은 직원이 피의자라면 형사소송법 제200조의2 제1항의 체포영장 요건을 전제로 삼습니다. 다만 한 번 불응만으로 즉시 체포영장이 나오는 것은 아니고, 불응의 정당한 사유와 일정 조율의 여지가 문제입니다. 제244조의3 제1항은 신문 전에 진술거부권과 변호인 조력을 받을 권리 등을 고지하도록 정합니다.", "h": "법이 보는 핵심 — 피의자 신분이면 권리가 있고 회사가 지켜 줄 수 있다"}, {"body": "회사의 지원은 대신 말해 주기가 아니라 권리를 지켜 주기입니다. 제243조의2에 따르면 신청에 따라 변호인을 접견시키거나 신문에 참여시키고, 참여한 변호인은 부당한 신문방법에 이의를 제기할 수 있습니다. 회사는 진실을 왜곡하거나 증거를 정리하려 해서는 안 되고 권리 행사와 사무 지원에 머물러야 합니다. 체포 절차가 문제되면 대법원 2017도10866에 따라 고지 여부와 시각을 기록하게 합니다.", "h": "조건과 예외 — 변호인 동행과 체포 절차 기록"}, {"body": "임직원이 수사 대상이 되는 상황에서 즉흥적으로 대응하면 회사가 더 큰 리스크를 집니다. 신분 확인, 변호인 지원 범위, 진술 지원의 선을 미리 정하고, 출석일과 조율 요청을 기록해 임원 보고 체계에 올립니다. 절차 고지 여부를 기록하게 하고 비용·후속 대응 계획을 함께 세웁니다.", "h": "CEO가 해야 할 일 — 지원의 범위와 선을 미리 정해 두십시오"}], "sources": ["형사소송법 제200조의2", "형사소송법 제243조의2", "형사소송법 제244조의3", "대법원 2017도10866"]}, "title": "직원이 출석요구를 받았다면 — 대표가 먼저 정할 것은 '동행과 진술의 선'입니다"}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" crossorigin="anonymous"></script>
+<script>
+window.TPL={"labels": {"point": "사색", "quote": "", "compare": "두 갈래", "close": "맺으며"}, "fontLoads": ["300 60px \"Noto Serif KR\"", "400 30px \"Pretendard Variable\""]};
+(function(){try{var d=JSON.parse(document.getElementById('col-data').textContent);document.getElementById('ttl').textContent=d.title||'';document.getElementById('sub').textContent=(d.col_id||'')+' · 카드 '+(((d.cards||{}).cards||[]).length)+'장 · 1080×1350';}catch(e){}})();
+(function () {
+  var CFG = window.TPL || {};
+  var stack = document.getElementById('stack');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    stack.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var W = 1080, H = 1350;
+  var COLID = D.col_id || 'card';
+  var C = D.cards || {};
+  var cards = (Array.isArray(C.cards) ? C.cards : []).filter(function (c) { return c && typeof c === 'object'; });
+  var srcLine = typeof C.source_line === 'string' ? C.source_line.trim() : '';
+  var by = D.byline || '조우성';
+  var KINDS = { cover: 1, point: 1, quote: 1, compare: 1, close: 1 };
+
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function txt(v) { return ok(v) ? v.trim() : ''; }
+
+  /* compare: body 를 두 관점으로 분해. 구분자: 줄바꿈 / || / | / " vs ". "라벨: 내용" 은 라벨 분리 */
+  function splitSide(s) {
+    s = s.trim();
+    var m = s.match(/^([^:：\n]{1,16})[:：]\s*([\s\S]+)$/);
+    return m ? { lab: m[1].trim(), text: m[2].trim() } : { lab: '', text: s };
+  }
+  function parseCompare(body) {
+    var b = txt(body);
+    if (!b) return null;
+    var parts = b.split(/\n+|\s*\|\|\s*|\s*\|\s*|\s+[vV][sS]\.?\s+/).map(function (x) { return x.trim(); }).filter(Boolean);
+    if (parts.length < 2) return null;
+    if (parts.length > 2) parts = [parts[0], parts.slice(1).join(' ')];
+    return [splitSide(parts[0]), splitSide(parts[1])];
+  }
+
+  function buildCard(c, i, n) {
+    var kind = KINDS[c.kind] ? c.kind : 'point';
+    var title = txt(c.title), body = txt(c.body), small = txt(c.small);
+    var cmp = null;
+    if (kind === 'compare') {
+      cmp = parseCompare(body);
+      if (!cmp) kind = 'point';
+    }
+    var card = el('div', 'card k-' + kind);
+    card.setAttribute('data-index', i);
+    var top = el('div', 'c-top');
+    top.appendChild(el('span', 'c-kicker', txt(D.kicker)));
+    top.appendChild(el('span', 'c-no', pad2(i + 1) + ' / ' + pad2(n)));
+    card.appendChild(top);
+
+    var main = el('div', 'c-main');
+    var blk = el('div', 'blk');
+    var label = (CFG.labels || {})[kind];
+    if (label) blk.appendChild(el('div', 'tag', label));
+
+    if (kind === 'quote') {
+      var q = body, who = title;
+      if (!q) { q = title; who = ''; }
+      else if (title && title.length > body.length && body.length <= 40) { q = title; who = body; }
+      blk.appendChild(el('blockquote', 'q', q));
+      if (who || small) blk.appendChild(el('p', 'who', who && small ? who + ' · ' + small : (who || small)));
+    } else if (kind === 'compare') {
+      if (title) blk.appendChild(el('h2', 't', title));
+      var g = el('div', 'cmp');
+      [0, 1].forEach(function (k) {
+        var s = el('div', 'side ' + (k ? 'sb' : 'sa'));
+        if (cmp[k].lab) s.appendChild(el('div', 'lab', cmp[k].lab));
+        s.appendChild(el('p', 'stx', cmp[k].text));
+        g.appendChild(s);
+        if (k === 0) g.appendChild(el('div', 'vs', 'VS'));
+      });
+      blk.appendChild(g);
+      if (small) blk.appendChild(el('p', 'sm', small));
+    } else {
+      if (title) blk.appendChild(el('h2', 't', title));
+      if (body) blk.appendChild(el('p', 'b', body));
+      if (small) blk.appendChild(el('p', 'sm', small));
+    }
+    main.appendChild(blk);
+    var cv = D.cover;
+    if (cv && typeof cv.data_uri === 'string' && cv.data_uri &&
+        ((cv.place === 'last' && i === n - 1) || (cv.place !== 'last' && i === 0))) {
+      var row = el('div', 'book-row');
+      var fig = el('figure', 'book');
+      var img = document.createElement('img');
+      img.src = cv.data_uri;
+      img.alt = cv.title ? cv.title + ' 표지' : '책 표지';
+      if (cv.w && cv.h) { img.width = cv.w; img.height = cv.h; }
+      fig.appendChild(img);
+      row.appendChild(fig);
+      var meta = el('div', 'bmeta');
+      if (cv.title) meta.appendChild(el('span', 'bt', '《' + cv.title + '》'));
+      if (cv.author) meta.appendChild(el('span', 'ba', cv.author));
+      if (cv.publisher) meta.appendChild(el('span', 'bp', cv.publisher));
+      row.appendChild(meta);
+      main.appendChild(row);
+      card.classList.add('has-book');
+    }
+    card.appendChild(main);
+
+    var foot = el('div', 'c-foot');
+    if (kind === 'close') {
+      var sb = el('div', 'c-srcblock');
+      if (srcLine) { sb.appendChild(el('span', 'k', '출처')); sb.appendChild(el('p', null, srcLine)); }
+      foot.appendChild(sb);
+      foot.appendChild(el('span', 'c-by', by));
+    } else {
+      foot.appendChild(el('span', 'c-src', srcLine));
+      foot.appendChild(el('span', 'c-by', by));
+    }
+    card.appendChild(foot);
+    return card;
+  }
+
+  /* 글자 넘침 방지: blk 의 --s 를 줄여가며 c-main 안에 맞춘다 */
+  function fit(card) {
+    var main = card.querySelector('.c-main');
+    var blk = card.querySelector('.blk');
+    if (!main || !blk) return;
+    var s = 1;
+    blk.style.setProperty('--s', s);
+    var extra = 0;
+    Array.prototype.forEach.call(main.children, function (ch) {
+      if (ch === blk) return;
+      var cs = getComputedStyle(ch);
+      extra += ch.offsetHeight + parseFloat(cs.marginTop) + parseFloat(cs.marginBottom);
+    });
+    var guard = 0;
+    while (blk.offsetHeight > main.clientHeight - extra - 2 && s > 0.42 && guard++ < 40) {
+      s = Math.round((s - 0.03) * 100) / 100;
+      blk.style.setProperty('--s', s);
+    }
+    /* 여유가 크면 살짝 키워 카드 공간을 활용(최대 1.22배) */
+    if (s === 1) {
+      var avail = main.clientHeight - extra;
+      var g = 0;
+      while (s < 1.22 && blk.offsetHeight < avail * 0.74 && g++ < 12) {
+        s = Math.round((s + 0.03) * 100) / 100;
+        blk.style.setProperty('--s', s);
+        if (blk.offsetHeight > avail * 0.9) { s = Math.round((s - 0.03) * 100) / 100; blk.style.setProperty('--s', s); break; }
+      }
+    }
+    card.setAttribute('data-fit', s);
+  }
+
+  var n = cards.length;
+  var frames = [];
+  var cardEls = [];
+  cards.forEach(function (c, i) {
+    var fr = el('section', 'frame');
+    var bar = el('div', 'bar');
+    bar.appendChild(el('span', 'bar-t', '카드 ' + pad2(i + 1) + ' · ' + (KINDS[c.kind] ? c.kind : 'point')));
+    var btn = el('button', 'btn', 'PNG 저장');
+    btn.type = 'button';
+    btn.addEventListener('click', function () { savePng(i, btn); });
+    bar.appendChild(btn);
+    fr.appendChild(bar);
+    var vp = el('div', 'vp');
+    var card = buildCard(c, i, n);
+    vp.appendChild(card);
+    fr.appendChild(vp);
+    stack.appendChild(fr);
+    frames.push(vp);
+    cardEls.push(card);
+  });
+  if (!n) stack.appendChild(el('p', 'empty', '카드 데이터가 없습니다.'));
+
+  function scaleAll() {
+    frames.forEach(function (vp, i) {
+      var avail = vp.parentNode.clientWidth;
+      var sc = Math.min(1, avail / W);
+      vp.style.width = W * sc + 'px';
+      vp.style.height = H * sc + 'px';
+      cardEls[i].style.transform = 'scale(' + sc + ')';
+    });
+  }
+  function fitAll() { cardEls.forEach(fit); }
+  fitAll();
+  scaleAll();
+  window.addEventListener('resize', scaleAll);
+  function fontsReady() { return within(fontsReady0(), 8000); }
+  function fontsReady0() {
+    var p = document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve();
+    return p.then(function () {
+      if (!document.fonts || !document.fonts.load) return;
+      var sample = document.body.innerText.slice(0, 400) || '가나다';
+      var fams = (CFG.fontLoads || []);
+      return Promise.all(fams.map(function (f) { return document.fonts.load(f, sample); })).then(function () { return document.fonts.ready; });
+    }).catch(function () {});
+  }
+  Promise.all([fontsReady(), imgsReady()]).then(function () { fitAll(); scaleAll(); document.body.setAttribute('data-ready', '1'); });
+
+  /* ---- 캡처: 축소 없는 원본 크기 복제본을 화면 밖에서 렌더 ---- */
+  function within(p, ms) {
+    return Promise.race([p, new Promise(function (res) { setTimeout(res, ms); })]);
+  }
+  function imgsReady() {
+    return within(Promise.all(Array.prototype.map.call(document.querySelectorAll('.card img'), function (im) {
+      if (im.complete && im.naturalWidth) return Promise.resolve();
+      return im.decode ? im.decode().catch(function () {}) : Promise.resolve();
+    })), 5000);
+  }
+  function capture(i) {
+    return Promise.all([fontsReady(), imgsReady()]).then(function () {
+      if (typeof html2canvas !== 'function') throw new Error('html2canvas 로드 실패');
+      var stage = document.createElement('div');
+      stage.style.cssText = 'position:fixed;left:-20000px;top:0;width:' + W + 'px;height:' + H + 'px;overflow:hidden;pointer-events:none';
+      var clone = cardEls[i].cloneNode(true);
+      clone.style.transform = 'none';
+      stage.appendChild(clone);
+      document.body.appendChild(stage);
+      return html2canvas(clone, {
+        scale: 1, width: W, height: H, windowWidth: W, windowHeight: H,
+        useCORS: true, allowTaint: false, backgroundColor: null, logging: false
+      }).then(function (cv) { stage.remove(); return cv; },
+              function (e) { stage.remove(); throw e; });
+    });
+  }
+  function blobOf(cv) { return new Promise(function (res) { cv.toBlob(res, 'image/png'); }); }
+  function fname(i) { return COLID + '_card-' + pad2(i + 1) + '.png'; }
+  function download(blob, name) {
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = name;
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 1500);
+  }
+  function busy(btn, on, label) {
+    if (!btn) return;
+    btn.disabled = on;
+    if (on) { btn.setAttribute('data-l', btn.textContent); btn.textContent = label || '생성 중…'; }
+    else btn.textContent = btn.getAttribute('data-l') || btn.textContent;
+  }
+  function savePng(i, btn) {
+    busy(btn, true);
+    capture(i).then(blobOf).then(function (b) { download(b, fname(i)); })
+      .catch(function (e) { alert('PNG 생성 실패: ' + e.message); })
+      .then(function () { busy(btn, false); });
+  }
+  function saveZip(btn) {
+    if (typeof JSZip !== 'function') { alert('JSZip 로드 실패'); return; }
+    busy(btn, true, '압축 중…');
+    var zip = new JSZip();
+    var chain = Promise.resolve();
+    cardEls.forEach(function (_, i) {
+      chain = chain.then(function () { return capture(i); }).then(blobOf).then(function (b) { zip.file(fname(i), b); });
+    });
+    chain.then(function () { return zip.generateAsync({ type: 'blob' }); })
+      .then(function (z) { download(z, COLID + '_cards.zip'); })
+      .catch(function (e) { alert('ZIP 생성 실패: ' + e.message); })
+      .then(function () { busy(btn, false); });
+  }
+  var zbtn = document.getElementById('zip');
+  if (zbtn) zbtn.addEventListener('click', function () { saveZip(zbtn); });
+
+  /* 검증용 훅: 다운로드 없이 canvas 크기 확인 */
+  window.__lrCards = {
+    count: n,
+    sizes: function () {
+      var out = [];
+      var chain = Promise.resolve();
+      cardEls.forEach(function (_, i) {
+        chain = chain.then(function () { return capture(i); }).then(function (cv) { out.push([cv.width, cv.height]); });
+      });
+      return chain.then(function () { return out; });
+    },
+    capture: capture,
+    fits: function () { return cardEls.map(function (c) { return c.getAttribute('data-fit'); }); }
+  };
+})();
+</script>
+</body>
+</html>
+<!-- lgcol build-id: fb-ae2c751070 -->
