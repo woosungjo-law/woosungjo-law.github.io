@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>내 주식이 단주로 사라진다는 통보, 포기하기 전에 절차를 묻는 사람이 됩니다</title>
+<meta name="description" content="오래 모은 주식이 병합 뒤 단주로 사라진다는 편지가 왔습니다. 포기하기 전에 절차를 묻는 것이 권리를 지키는 첫 걸음입니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="내 주식이 단주로 사라진다는 통보, 포기하기 전에 절차를 묻는 사람이 됩니다">
+<meta property="og:description" content="오래 모은 주식이 병합 뒤 단주로 사라진다는 편지가 왔습니다. 포기하기 전에 절차를 묻는 것이 권리를 지키는 첫 걸음입니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S4 체크리스트형 — 페이퍼화이트 & 틸 / 산세리프 / 체크박스 */
+:root{--bg:#fafaf6;--ink:#1a2226;--mute:#5f6b70;--acc:#0e6b6b;--line:#d9ddd6;--soft:#eef2ee;--head:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--body:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0d1416;--ink:#e5eceb;--mute:#93a3a3;--acc:#4fc0b6;--line:#26353a;--soft:#141f22}}
+body{font-size:16.5px;line-height:1.8}
+.page{max-width:780px;padding:32px 20px 80px}
+.kicker{display:inline-block;align-self:flex-start;background:var(--acc);color:var(--bg);padding:4px 10px;letter-spacing:.06em;font-size:12px;border-radius:2px;margin-bottom:16px}
+.hd{padding-bottom:26px}
+.headline{font-weight:800;font-size:clamp(26px,6vw,42px);line-height:1.3;letter-spacing:-.035em}
+.lede{margin-top:16px;font-size:clamp(16px,2.3vw,18px);color:var(--mute);line-height:1.8}
+.meta{margin-top:14px}
+.pq{order:6;margin:8px 0 0;padding:18px 0 0;border-top:1px solid var(--line)}
+.pq p{font-weight:700;font-size:18px;color:var(--acc);line-height:1.6}
+.kp{order:2;margin:0 0 34px;padding:22px 18px 10px;background:var(--soft);border:1px solid var(--line);border-top:4px solid var(--acc);border-radius:4px}
+.kp-t{font-size:15px;font-weight:800;margin-bottom:6px}
+.kp-t::after{content:" · 눌러서 확인";font-weight:500;font-size:12px;color:var(--mute)}
+.kp li{display:flex;gap:14px;align-items:flex-start;padding:13px 4px;border-top:1px solid var(--line);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.kp li:first-child{border-top:0}
+.kp li:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.kp-n{flex:none;position:relative;width:24px;height:24px;margin-top:2px;border:2px solid var(--acc);border-radius:5px;font-size:0;background:var(--bg);transition:background .15s}
+.kp-n::after{content:"";position:absolute;left:6px;top:1.5px;width:6px;height:11px;border:solid var(--bg);border-width:0 2.5px 2.5px 0;transform:rotate(45deg) scale(0);transition:transform .15s}
+.kp li[aria-checked=true] .kp-n{background:var(--acc)}
+.kp li[aria-checked=true] .kp-n::after{transform:rotate(45deg) scale(1)}
+.kp li[aria-checked=true] .kp-x{color:var(--mute)}
+.kp-x{font-weight:600;line-height:1.65}
+.secs{order:3}
+.sec{display:grid;grid-template-columns:52px 1fr;column-gap:14px;padding:22px 0;border-top:1px solid var(--line)}
+.sec .num{grid-row:1/span 2;font-weight:800;font-size:34px;line-height:1;letter-spacing:-.04em;color:var(--acc);opacity:.9;padding-top:2px}
+.sec h2{font-weight:800;font-size:clamp(18px,3vw,21px);line-height:1.45;letter-spacing:-.02em;margin-bottom:8px}
+.ft{margin-top:30px;padding-top:18px;border-top:1px solid var(--line)}
+@media (min-width:820px){
+  .page{padding:64px 32px 110px}
+  .kp{padding:28px 30px 14px}
+  .sec{grid-template-columns:76px 1fr;padding:28px 0}
+  .sec .num{font-size:48px}
+  .sec-body{font-size:17px}
+}
+</style>
+</head>
+<body data-tpl="S4">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "LCP-20260929-123", "title": "내 주식이 단주로 사라진다는 통보, 포기하기 전에 절차를 묻는 사람이 됩니다", "col_type": "체크리스트형", "kicker": "법률 컬럼 · 일반개인", "byline": "조우성", "date": "2026-09-29", "summary": {"headline": "내 주식이 단주로 사라진다는 통보, 포기하기 전에 절차를 묻는 사람이 됩니다", "lede": "오래 모은 주식이 병합 뒤 단주로 사라진다는 편지가 왔습니다. 포기하기 전에 절차를 묻는 것이 권리를 지키는 첫 걸음입니다.", "sections": [{"h": "사건의 시작: 단주가 됐다는 편지", "body": "소액주주 윤소망 씨는 병합 뒤 기간 내 주권을 제출하라는 편지와 남는 주식은 단주로 처리된다는 문장을 받았습니다. 회사 마음대로 가능한 일인지, 절차는 법이 정한 대로 진행된 것인지부터 묻기 시작했습니다."}, {"h": "법이 보는 핵심: 병합의 절차", "body": "주식병합은 아무렇게나 할 수 없습니다. 정관 변경의 결의는 출석 의결권의 3분의 2 이상과 발행주식총수의 3분의 1 이상을 넘어야 하고, 자본금 감소에는 특별결의가 필요하며 감소 내용의 요점은 통지에 적혀 있어야 합니다. 병합할 때는 1개월 이상 공고하고 주주와 질권자에게 각별 통지해야 합니다."}, {"h": "중요한 조건과 예외: 단정 대신 확인", "body": "축출 병합이 무조건 무효라는 말과 절차만 지켰으니 어쩔 수 없다는 말은 모두 절반만 맞는 문장입니다. 목적과 불이익의 정도, 완화 조치의 유무 등 여러 사정의 종합 판단 사안이고, 단주 대금의 적정성도 별도로 다투어질 수 있는 사항입니다."}, {"h": "지금 당장 해야 할 일: 서류와 질문", "body": "받은 편지와 공고를 모아 병합의 뜻과 기간을 확인하고, 내 주식 수와 병합 비율로 남을 주식과 단주를 계산합니다. 주권 제출 기한을 지키되 의문이 있으면 기한 내에 문의하고, 단주 대금의 금액과 산정 근거를 물어봅니다. 절차 결함이 의심되면 혼자 판단하지 말고 전문가와 상의합니다."}], "keypoints": ["서류 모으기: 공고·편지·통지를 모아 병합의 뜻과 기간을 확인합니다.", "숫자 정리: 내 주식 수와 병합 비율로 남을 주식·단주가 되는 주식을 계산합니다.", "기한 준수: 주권 제출 기한을 지키되 의문이 있으면 기한 내에 문의합니다.", "상의 우선: 유효·무효를 스스로 단정하지 말고 절차·단주 대금 등은 전문가와 확인합니다."], "pull_quote": "포기하는 사람과 절차를 묻는 사람의 차이는 서류 몇 장과 질문 몇 개입니다.", "sources": ["상법 제434조", "상법 제438조", "상법 제440조"]}, "cards": {"cards": [{"kind": "cover", "title": "내 주식이 단주로 사라진다고?", "body": "오래 모은 주식이 병합 뒤 한 주도 남지 않는다는 편지가 왔습니다. 포기하기 전에 법이 정한 절차가 지켜졌는지 확인하는 일이 먼저입니다.", "small": "법률 컬럼 · 일반개인"}, {"kind": "point", "title": "① 서류를 모은다", "body": "받은 편지와 공고를 모아 병합의 뜻과 기간이 언제, 어떻게 알려졌는지 확인합니다. 법이 정한 통지였는지가 첫 확인 사항입니다.", "small": "1개월 이상 공고·주주와 질권자 각별 통지"}, {"kind": "point", "title": "② 절차가 지켜졌는지 본다", "body": "병합 결의는 출석 의결권의 3분의 2 이상과 발행주식총수의 3분의 1 이상이라는 이중 조건을 넘어야 합니다. 절차를 묻는 것은 내 권리를 확인하는 일입니다.", "small": "상법 제434조 · 제438조"}, {"kind": "compare", "title": "③ 기한, ④ 질문", "body": "기한: 주권 제출 기한은 지키되 의문이 있으면 기한 내에 문의한다.\n질문: 단주 대금이 얼마인지, 어떻게 정해졌는지 물어본다.", "small": "숫자로 정리하면 선택지가 보입니다"}, {"kind": "point", "title": "단정하지 않는다", "body": "무조건 무효라는 말과 어쩔 수 없다는 말은 모두 절반만 맞는 문장입니다. 목적과 불이익의 정도, 완화 조치의 유무가 종합 판단의 재료입니다.", "small": "혼자 판단하지 말고 상의합니다"}, {"kind": "close", "title": "질문이 선택지를 만든다", "body": "윤 씨는 편지를 다시 읽고 질문을 정리했습니다. 서류와 질문을 가진 사람에게 다음 단계의 선택지가 남습니다.", "small": "일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다."}], "source_line": "상법 제434조 · 제438조 · 제440조"}}</script>
+<script>
+window.TPL={"kpTitle": "체크리스트", "checkable": true, "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
+<!-- lgcol build-id: fb-5b9564b713 -->

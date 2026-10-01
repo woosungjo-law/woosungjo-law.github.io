@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>광고 문자의 첫 문장이 지키는 것들, 수신자와 발신자가 함께 지나가는 문</title>
+<meta name="description" content="새벽에 도착한 광고 문자에는 발신자 정보가 없었습니다. 보내는 사람과 받는 사람 사이의 이 문을 좁게 정하는 것은 동의라는 한 단어입니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="광고 문자의 첫 문장이 지키는 것들, 수신자와 발신자가 함께 지나가는 문">
+<meta property="og:description" content="새벽에 도착한 광고 문자에는 발신자 정보가 없었습니다. 보내는 사람과 받는 사람 사이의 이 문을 좁게 정하는 것은 동의라는 한 단어입니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S4 체크리스트형 — 페이퍼화이트 & 틸 / 산세리프 / 체크박스 */
+:root{--bg:#fafaf6;--ink:#1a2226;--mute:#5f6b70;--acc:#0e6b6b;--line:#d9ddd6;--soft:#eef2ee;--head:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--body:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0d1416;--ink:#e5eceb;--mute:#93a3a3;--acc:#4fc0b6;--line:#26353a;--soft:#141f22}}
+body{font-size:16.5px;line-height:1.8}
+.page{max-width:780px;padding:32px 20px 80px}
+.kicker{display:inline-block;align-self:flex-start;background:var(--acc);color:var(--bg);padding:4px 10px;letter-spacing:.06em;font-size:12px;border-radius:2px;margin-bottom:16px}
+.hd{padding-bottom:26px}
+.headline{font-weight:800;font-size:clamp(26px,6vw,42px);line-height:1.3;letter-spacing:-.035em}
+.lede{margin-top:16px;font-size:clamp(16px,2.3vw,18px);color:var(--mute);line-height:1.8}
+.meta{margin-top:14px}
+.pq{order:6;margin:8px 0 0;padding:18px 0 0;border-top:1px solid var(--line)}
+.pq p{font-weight:700;font-size:18px;color:var(--acc);line-height:1.6}
+.kp{order:2;margin:0 0 34px;padding:22px 18px 10px;background:var(--soft);border:1px solid var(--line);border-top:4px solid var(--acc);border-radius:4px}
+.kp-t{font-size:15px;font-weight:800;margin-bottom:6px}
+.kp-t::after{content:" · 눌러서 확인";font-weight:500;font-size:12px;color:var(--mute)}
+.kp li{display:flex;gap:14px;align-items:flex-start;padding:13px 4px;border-top:1px solid var(--line);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.kp li:first-child{border-top:0}
+.kp li:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.kp-n{flex:none;position:relative;width:24px;height:24px;margin-top:2px;border:2px solid var(--acc);border-radius:5px;font-size:0;background:var(--bg);transition:background .15s}
+.kp-n::after{content:"";position:absolute;left:6px;top:1.5px;width:6px;height:11px;border:solid var(--bg);border-width:0 2.5px 2.5px 0;transform:rotate(45deg) scale(0);transition:transform .15s}
+.kp li[aria-checked=true] .kp-n{background:var(--acc)}
+.kp li[aria-checked=true] .kp-n::after{transform:rotate(45deg) scale(1)}
+.kp li[aria-checked=true] .kp-x{color:var(--mute)}
+.kp-x{font-weight:600;line-height:1.65}
+.secs{order:3}
+.sec{display:grid;grid-template-columns:52px 1fr;column-gap:14px;padding:22px 0;border-top:1px solid var(--line)}
+.sec .num{grid-row:1/span 2;font-weight:800;font-size:34px;line-height:1;letter-spacing:-.04em;color:var(--acc);opacity:.9;padding-top:2px}
+.sec h2{font-weight:800;font-size:clamp(18px,3vw,21px);line-height:1.45;letter-spacing:-.02em;margin-bottom:8px}
+.ft{margin-top:30px;padding-top:18px;border-top:1px solid var(--line)}
+@media (min-width:820px){
+  .page{padding:64px 32px 110px}
+  .kp{padding:28px 30px 14px}
+  .sec{grid-template-columns:76px 1fr;padding:28px 0}
+  .sec .num{font-size:48px}
+  .sec-body{font-size:17px}
+}
+</style>
+</head>
+<body data-tpl="S4">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "LCP-20260929-126", "title": "광고 문자의 첫 문장이 지키는 것들, 수신자와 발신자가 함께 지나가는 문", "col_type": "체크리스트형", "kicker": "법률 컬럼 · 일반개인", "byline": "조우성", "date": "2026-09-29", "summary": {"headline": "광고 문자의 첫 문장이 지키는 것들, 수신자와 발신자가 함께 지나가는 문", "lede": "새벽에 도착한 광고 문자에는 발신자 정보가 없었습니다. 보내는 사람과 받는 사람 사이의 이 문을 좁게 정하는 것은 동의라는 한 단어입니다.", "sections": [{"h": "사건의 시작: 새벽에 도착한 문자 한 통", "body": "쇼핑몰을 운영하는 조은채 씨는 새벽에 온 문자에서 판매자의 이름과 연락처를 찾지 못했습니다. 나도 고객에게 문자를 보내는 사람이라는 생각에, 내 문자의 첫 문장이 무엇을 담아야 하는지를 함께 봤습니다."}, {"h": "법이 보는 핵심: 동의, 거리, 표시", "body": "영리목적의 광고성 정보는 명시적인 사전 동의를 받아 전송해야 합니다. 밤 9시부터 아침 8시 사이에는 별도의 사전 동의가 필요하고, 문자에는 전송자의 명칭과 연락처, 수신거부 방법이 밝혀져야 합니다. 수신거부나 철회 후에는 전송해서는 안 됩니다."}, {"h": "중요한 조건과 예외: 오해 두 개 내려놓기", "body": "가입 정보면 얼마나 보내도 된다는 말과 광고 문자면 무조건 처벌받는다는 말은 모두 온전하지 않습니다. 출처가 동의의 범위를 정하고, 벌칙은 수신거부 회피·방해 등 금지행위에 두어졌습니다. 보내기 전에는 동의와 조건을 묻고, 받은 뒤에는 거부 권리를 쓰면 됩니다."}, {"h": "지금 당장 해야 할 일: 세 점검과 하나의 기록", "body": "받은 문자에서 전송자 명칭과 연락처, 수신거부 방법이 보이는지 확인합니다. 더 받고 싶지 않으면 수신거부 방법을 바로 씁니다. 내가 보낼 때는 첫 문장에 표시 항목과 제외 체계를 갖추고, 연락처를 모을 때는 동의 자리와 범위를 기록으로 남깁니다."}], "keypoints": ["동의 원칙: 영리목적 광고는 명시적 사전 동의가 원칙이고 거래관계 예외는 좁게 열려 있습니다.", "거리와 표시: 야간 전송은 별도 동의가 필요하고 전송자 명칭·연락처·수신거부 방법 표시를 확인합니다.", "거부 존중: 수신거부·철회 후에는 전송되지 않아야 하고 회피·방해는 벌칙 대상이 될 수 있습니다.", "기록 남기기: 동의 자리와 제외 반영을 기록으로 남기고 개별 발송의 위법성은 단정하지 않습니다."], "pull_quote": "거부는 선택이 아니라 권리이고, 그 뒤로는 전송되지 않아야 합니다.", "sources": ["정보통신망법 제50조", "정보통신망법 제74조"]}, "cards": {"cards": [{"kind": "cover", "title": "새벽 문자에 이름이 없었다", "body": "새벽에 도착한 광고 문자에는 판매자의 이름과 연락처가 없었습니다. 보내는 사람과 받는 사람이 함께 지나가는 문은 동의라는 단어로 좁혀집니다.", "small": "법률 컬럼 · 일반개인"}, {"kind": "point", "title": "① 동의가 문을 좁힌다", "body": "영리목적의 광고성 정보는 명시적인 사전 동의를 받아 전송해야 합니다. 거래관계를 통해 직접 수집한 연락처의 예외는 좁게 열려 있습니다.", "small": "정보통신망법 제50조"}, {"kind": "point", "title": "② 밤 9시는 별도 동의", "body": "밤 9시부터 아침 8시 사이의 전송에는 별도의 사전 동의가 필요합니다. 새벽에 도착한 광고라면 동의가 있었는지 함께 생각할 수 있습니다.", "small": "낮과 밤의 거리"}, {"kind": "compare", "title": "③ 표시, ④ 거부 존중", "body": "표시: 문자에는 전송자 명칭과 연락처, 수신거부 방법이 밝혀져야 한다.\n거부: 수신거부·철회 후에는 전송하지 않는다 — 회피·방해는 벌칙 대상이 될 수 있다.", "small": "정보통신망법 제50조 · 제74조"}, {"kind": "point", "title": "거부는 권리입니다", "body": "더 받고 싶지 않은 광고라면 수신거부 방법을 바로 사용합니다. 내가 보내는 사람이라면 거부 요청이 오면 즉시 제외되는 체계를 갖추는 것이 발송의 조건입니다.", "small": "제외 반영을 기록으로 남깁니다"}, {"kind": "close", "title": "첫 문장을 다시 본다", "body": "은채 씨는 받은 문자의 첫 문장과 내 문자의 첫 문장을 같은 줄에서 봤습니다. 동의와 표시와 거부의 세 줄이 두 자리 모두를 지킵니다.", "small": "일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다."}], "source_line": "정보통신망법 제50조 · 제74조"}}</script>
+<script>
+window.TPL={"kpTitle": "체크리스트", "checkable": true, "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
+<!-- lgcol build-id: fb-09ddbb7fba -->

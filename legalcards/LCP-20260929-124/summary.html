@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>광고 문자의 리스크는 발송량이 아니라 동의의 출처다, 발송 체계 점검의 순서</title>
+<meta name="description" content="시즌 이벤트 광고 문자 발송 계획에 연락처 전체가 대상으로 올라왔습니다. 승인의 답은 명단의 양이 아니라 연락처가 어떻게 들어왔는지라는 출처가 정합니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="광고 문자의 리스크는 발송량이 아니라 동의의 출처다, 발송 체계 점검의 순서">
+<meta property="og:description" content="시즌 이벤트 광고 문자 발송 계획에 연락처 전체가 대상으로 올라왔습니다. 승인의 답은 명단의 양이 아니라 연락처가 어떻게 들어왔는지라는 출처가 정합니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;800;900&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S5 인용사색형 — 본화이트 & 와인 / 중앙 정렬·큰 여백·대형 인용 */
+:root{--bg:#f5f1ea;--ink:#2a2226;--mute:#7a6f74;--acc:#6e2b3a;--line:#c9bfb3;--head:"Noto Serif KR","Nanum Myeongjo",serif;--body:"Noto Serif KR","Nanum Myeongjo",serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#15111a;--ink:#e9e2e6;--mute:#a1949b;--acc:#d3919f;--line:#3a2f3c}}
+body{font-weight:300;font-size:17px;line-height:2}
+.page{max-width:660px;padding:56px 24px 100px;text-align:center}
+.kicker{display:block;font-weight:500}
+.headline{font-weight:400;font-size:clamp(16px,3vw,19px);line-height:1.6;color:var(--mute);letter-spacing:0;margin-top:14px}
+.meta{margin-top:10px;font-size:12px}
+.lede-x{order:3;text-align:left;margin:0 0 64px;font-size:17px;line-height:2.05;font-weight:300}
+.pq{order:2;margin:56px -4px 56px;padding:0;position:relative}
+.pq::before{content:"\201C";display:block;font-family:var(--head);font-size:96px;line-height:.7;color:var(--acc);opacity:.85;margin-bottom:14px;font-weight:400}
+.pq p{font-weight:300;font-size:clamp(23px,5.6vw,38px);line-height:1.6;letter-spacing:-.02em;color:var(--ink)}
+.pq::after{content:"";display:block;width:36px;height:1px;background:var(--acc);margin:42px auto 0}
+.secs{order:4}
+.sec{margin:0 0 56px;text-align:left}
+.sec .num{display:block;text-align:center;font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:.3em;color:var(--acc);margin-bottom:12px}
+.sec h2{text-align:center;font-weight:500;font-size:clamp(19px,3.2vw,22px);line-height:1.6;margin-bottom:16px;color:var(--ink)}
+.sec-body{font-size:16.5px;line-height:2.05}
+.sec:not(:last-child)::after{content:"";display:block;width:4px;height:4px;border-radius:50%;background:var(--acc);margin:56px auto 0;opacity:.7}
+.kp{order:5;margin:20px 0 0;padding:34px 0 0;border-top:1px solid var(--line);text-align:left}
+.kp-t{text-align:center;font-family:var(--sans);font-weight:500;font-size:11px;letter-spacing:.3em;color:var(--acc);margin-bottom:12px}
+.kp li{display:flex;gap:14px;padding:10px 0}
+.kp-n{flex:none;font-family:var(--sans);font-size:11px;letter-spacing:.1em;color:var(--acc);padding-top:.6em}
+.kp-x{font-weight:400;line-height:1.85}
+.ft{order:6;margin-top:56px;padding-top:24px;border-top:1px solid var(--line);text-align:center}
+.ft .src li{padding-left:0;text-indent:0}
+.ft .src li::before{content:""}
+@media (min-width:820px){
+  .page{padding:110px 24px 140px}
+  .pq{margin:80px -60px}
+  .pq p{font-size:40px}
+}
+</style>
+</head>
+<body data-tpl="S5">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "LCP-20260929-124", "title": "광고 문자의 리스크는 발송량이 아니라 동의의 출처다, 발송 체계 점검의 순서", "col_type": "개념정의형", "kicker": "법률 컬럼 · 법무팀", "byline": "조우성", "date": "2026-09-29", "summary": {"headline": "광고 문자의 리스크는 발송량이 아니라 동의의 출처다, 발송 체계 점검의 순서", "lede": "시즌 이벤트 광고 문자 발송 계획에 연락처 전체가 대상으로 올라왔습니다. 승인의 답은 명단의 양이 아니라 연락처가 어떻게 들어왔는지라는 출처가 정합니다.", "sections": [{"h": "사건의 시작: 세 개의 명단과 하나의 승인 요청", "body": "법무팀장 한예린 씨에게 구매 이력 고객 명단, 문의만 한 명단, 뉴스레터 구독 명단 세 개가 승인 요청으로 들어왔습니다. 명단의 크기가 아니라 연락처의 출처를 나란히 봤고, 출처가 정해진 범위 안에서만 발송이 검토를 통과합니다."}, {"h": "법이 보는 핵심: 동의 원칙과 좁게 열린 예외", "body": "영리목적의 광고성 정보는 수신자의 명시적인 사전 동의를 받아 전송해야 합니다. 거래관계를 통해 직접 수집한 연락처로 같은 종류 재화의 광고를 법령이 정한 기간 내에 보내는 경우 등 예외는 좁습니다. 출처와 방식, 범위와 기간의 네 칸이 모두 채워져야 예외의 문이 열리고, 한 칸이라도 비면 원칙으로 돌아갑니다."}, {"h": "중요한 조건과 예외: 두 통념의 격리와 다섯 칸", "body": "가입 정보면 보내도 된다는 통념과 광고 문자면 무조건 처벌받는다는 통념은 모두 절반의 그림입니다. 벌칙은 수신거부 회피·방해 등 금지행위에 두어졌고 개별 발송의 위법 여부는 사안의 판단 문제입니다. 확인할 조건은 출처, 수집 방식, 재화의 종류, 동의 기록, 발송 시각과 표시 항목의 다섯 칸입니다."}, {"h": "법무팀이 해야 할 일: 명단별 검토와 기록화", "body": "명단을 통째로 승인하지 않고 출처별로 나눠 검토하고, 동의 기록을 발송 명단과 연결해 보관합니다. 수신거부 접수 통로를 하나로 모아 제외 반영 시간을 계산하고, 야간 발송은 별도 동의 확인 절차를 거치게 합니다. 표시 항목을 발송 문구 검토의 고정 항목으로 둡니다."}], "keypoints": ["사전 동의: 영리목적 광고성 정보는 명시적 사전 동의가 원칙이고 예외 요건을 명단별로 확인합니다.", "존중과 표시: 수신거부·철회를 존중하고 야간 전송은 별도 동의를, 표시 항목을 검토 항목으로 둡니다.", "금지행위: 수신거부 회피·방해 등 금지행위는 벌칙 대상이 될 수 있습니다.", "기록화: 동의 기록·발송 대상·제외 반영을 시스템으로 남기고 개별 발송의 위법 여부는 단정하지 않습니다."], "pull_quote": "승인 요청의 답은 양의 문이 아니라 출처의 문이었습니다.", "sources": ["정보통신망법 제50조", "정보통신망법 제74조"]}, "cards": {"cards": [{"kind": "cover", "title": "명단 세 개, 어디까지 보내도 될까", "body": "구매 이력 고객 명단, 문의만 한 명단, 뉴스레터 구독 명단이 승인 요청으로 들어왔습니다. 답을 정하는 것은 명단의 크기가 아니라 연락처의 출처입니다.", "small": "법률 컬럼 · 법무팀"}, {"kind": "point", "title": "원칙은 명시적 사전 동의", "body": "영리목적의 광고성 정보는 수신자의 명시적인 사전 동의를 받아 전송해야 합니다. 거래관계 직접 수집·같은 종류 재화·법령 정한 기간의 예외는 좁게 열려 있습니다.", "small": "정보통신망법 제50조"}, {"kind": "point", "title": "네 칸이 다 차야 예외", "body": "거래관계라는 출처, 직접 수집이라는 방식, 같은 종류 재화라는 범위, 법령이 정한 기간이라는 시간. 한 칸이라도 비면 원칙으로 돌아가 동의를 물어야 합니다.", "small": "출처·방식·범위·기간의 확인"}, {"kind": "compare", "title": "두 통념 모두 절반의 그림", "body": "가입 정보면 된다: 동의의 범위와 예외 요건은 별도로 물어진다.\n무조건 처벌받는다: 벌칙은 수신거부 회피·방해 등 금지행위에 두어졌다.", "small": "개별 발송의 위법 여부는 사안의 판단 문제"}, {"kind": "point", "title": "야간과 표시도 조건", "body": "오후 9시부터 오전 8시 사이 전송에는 별도의 사전 동의가 필요하고, 전송자 명칭·연락처·수신거부 방법 표시를 검토의 고정 항목으로 둡니다.", "small": "수신거부 반영은 시스템의 일입니다"}, {"kind": "close", "title": "양을 재는 일이 아니라 출처를 묻는 일", "body": "명단별 출처 검토, 동의 기록 보관, 제외 반영 시간 관리. 출처가 명확한 발송만이 나중에도 설명이 가능합니다.", "small": "일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다."}], "source_line": "정보통신망법 제50조 · 제74조"}}</script>
+<script>
+window.TPL={"kpTitle": "남겨 둘 문장", "splitLede": true, "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
+<!-- lgcol build-id: fb-a97ae27fca -->
