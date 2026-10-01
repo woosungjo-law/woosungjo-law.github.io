@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>예금과 대출이 같은 은행에 있어도 그 사이의 시간 순서가 모든 것을 가른다</title>
+<meta name="description" content="거래처 예금에 가압류를 걸고 지급 금지 명령을 송달한 담당자는 은행이 같은 은행의 대출금으로 상계할 수 있다는 검토를 받자, 예금 위에 겹친 두 권리를 가르는 것은 날짜의 순서라는 질문을 정리했습니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="예금과 대출이 같은 은행에 있어도 그 사이의 시간 순서가 모든 것을 가른다">
+<meta property="og:description" content="거래처 예금에 가압류를 걸고 지급 금지 명령을 송달한 담당자는 은행이 같은 은행의 대출금으로 상계할 수 있다는 검토를 받자, 예금 위에 겹친 두 권리를 가르는 것은 날짜의 순서라는 질문을 정리했습니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S4 체크리스트형 — 페이퍼화이트 & 틸 / 산세리프 / 체크박스 */
+:root{--bg:#fafaf6;--ink:#1a2226;--mute:#5f6b70;--acc:#0e6b6b;--line:#d9ddd6;--soft:#eef2ee;--head:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--body:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0d1416;--ink:#e5eceb;--mute:#93a3a3;--acc:#4fc0b6;--line:#26353a;--soft:#141f22}}
+body{font-size:16.5px;line-height:1.8}
+.page{max-width:780px;padding:32px 20px 80px}
+.kicker{display:inline-block;align-self:flex-start;background:var(--acc);color:var(--bg);padding:4px 10px;letter-spacing:.06em;font-size:12px;border-radius:2px;margin-bottom:16px}
+.hd{padding-bottom:26px}
+.headline{font-weight:800;font-size:clamp(26px,6vw,42px);line-height:1.3;letter-spacing:-.035em}
+.lede{margin-top:16px;font-size:clamp(16px,2.3vw,18px);color:var(--mute);line-height:1.8}
+.meta{margin-top:14px}
+.pq{order:6;margin:8px 0 0;padding:18px 0 0;border-top:1px solid var(--line)}
+.pq p{font-weight:700;font-size:18px;color:var(--acc);line-height:1.6}
+.kp{order:2;margin:0 0 34px;padding:22px 18px 10px;background:var(--soft);border:1px solid var(--line);border-top:4px solid var(--acc);border-radius:4px}
+.kp-t{font-size:15px;font-weight:800;margin-bottom:6px}
+.kp-t::after{content:" · 눌러서 확인";font-weight:500;font-size:12px;color:var(--mute)}
+.kp li{display:flex;gap:14px;align-items:flex-start;padding:13px 4px;border-top:1px solid var(--line);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.kp li:first-child{border-top:0}
+.kp li:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.kp-n{flex:none;position:relative;width:24px;height:24px;margin-top:2px;border:2px solid var(--acc);border-radius:5px;font-size:0;background:var(--bg);transition:background .15s}
+.kp-n::after{content:"";position:absolute;left:6px;top:1.5px;width:6px;height:11px;border:solid var(--bg);border-width:0 2.5px 2.5px 0;transform:rotate(45deg) scale(0);transition:transform .15s}
+.kp li[aria-checked=true] .kp-n{background:var(--acc)}
+.kp li[aria-checked=true] .kp-n::after{transform:rotate(45deg) scale(1)}
+.kp li[aria-checked=true] .kp-x{color:var(--mute)}
+.kp-x{font-weight:600;line-height:1.65}
+.secs{order:3}
+.sec{display:grid;grid-template-columns:52px 1fr;column-gap:14px;padding:22px 0;border-top:1px solid var(--line)}
+.sec .num{grid-row:1/span 2;font-weight:800;font-size:34px;line-height:1;letter-spacing:-.04em;color:var(--acc);opacity:.9;padding-top:2px}
+.sec h2{font-weight:800;font-size:clamp(18px,3vw,21px);line-height:1.45;letter-spacing:-.02em;margin-bottom:8px}
+.ft{margin-top:30px;padding-top:18px;border-top:1px solid var(--line)}
+@media (min-width:820px){
+  .page{padding:64px 32px 110px}
+  .kp{padding:28px 30px 14px}
+  .sec{grid-template-columns:76px 1fr;padding:28px 0}
+  .sec .num{font-size:48px}
+  .sec-body{font-size:17px}
+}
+</style>
+</head>
+<body data-tpl="S4">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"byline": "조우성", "cards": {"cards": [{"body": "불량 결제 대금 회수를 위해 거래처 예금에 가압류를 걸었는데, 은행이 같은 은행의 대출금으로 예금과 상계할 수 있다는 검토를 합니다. 돈은 누구 것일까.", "kind": "cover", "small": "법률 컬럼 · 법무팀", "title": "가압류가 걸렸으니 우리 돈일까"}, {"body": "지급을 금지하는 명령을 받은 제3채무자는 그 후에 취득한 채권에 의한 상계로 명령을 신청한 채권자에게 대항하지 못합니다.", "kind": "point", "small": "민법 제498조의 뼈대입니다", "title": "명령 뒤의 채권은 막힌다"}, {"body": "가압류가 걸린 뒤 은행이 새 대출을 내주고 그것으로 예금을 상계하려는 구조가 법의 막는 자리입니다. 뒤에 만들어진 권리는 막힙니다.", "kind": "point", "small": "새 대출로 예금을 가져가는 구조입니다", "title": "뒤에 만든 권리는 막힌다"}, {"body": "인정될 수 있는 자리: 압류 효력 발생 시 이미 상계적상에 있었거나 대출의 변제기가 예금보다 먼저 또는 동시에 도래한 경우.\n막히는 자리: 압류 뒤에 취득한 채권으로 상계를 주장하는 경우.", "kind": "compare", "small": "시간 관계 확인이 핵심입니다", "title": "시간의 문은 하나가 아니다"}, {"body": "은행은 언제나 상계할 수 있다는 문장과 가압류채권자가 무조건 이긴다는 문장은 모두 절반의 진실입니다. 개별 상계 인정 여부는 개별 사건의 판단 대상입니다.", "kind": "point", "small": "기록 없는 다툼은 추측의 대결이 됩니다", "title": "두 단정을 모두 조심한다"}, {"body": "송달과 효력 발생 시점을 고정하고 은행과는 서면으로 소통하며, 대출의 취득 시점과 변제기를 확인해 시간표로 관리합니다.", "kind": "close", "small": "일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.", "title": "날짜를 기록하고 서면으로 묻는다"}], "source_line": "민법 제498조"}, "col_id": "LCP-20260929-112", "col_type": "체크리스트형", "date": "2026-09-29", "kicker": "법률 컬럼 · 법무팀", "summary": {"headline": "예금과 대출이 같은 은행에 있어도 그 사이의 시간 순서가 모든 것을 가른다", "keypoints": ["조문 확보: 지급 금지 명령을 받은 제3채무자는 명령 후 취득 채권에 의한 상계로 가압류채권자에게 대항할 수 없는 민법 제498조를 확보합니다.", "시간 관계: 압류 효력 발생 시의 상계적상 또는 자동채권 변제기의 선행·동시 도래 여부를 확인합니다.", "기록 고정: 송달 증명과 효력 발생 시점, 은행 채권 취득 시점과 변제기를 사건 파일의 시간표로 관리합니다.", "단정 금지: 은행의 무조건 상계와 가압류채권자의 무조건 우선을 모두 쓰지 않고 개별 확인 사항으로 분리합니다."], "lede": "거래처 예금에 가압류를 걸고 지급 금지 명령을 송달한 담당자는 은행이 같은 은행의 대출금으로 상계할 수 있다는 검토를 받자, 예금 위에 겹친 두 권리를 가르는 것은 날짜의 순서라는 질문을 정리했습니다.", "pull_quote": "그 겹침을 가르는 것은 날짜의 순서였습니다.", "sections": [{"body": "교육 콘텐츠를 만드는 회사의 법무 담당 진하늘 씨는 불량 결제 대금 회수를 위해 거래처의 예금에 가압류를 걸고 지급 금지 명령을 은행에 송달했습니다. 은행으로부터 돌아온 것은 예상과 다른 안내로, 거래처가 같은 은행에서 받은 대출이 있고 은행이 그 대출금으로 예금과 상계할 수 있다는 검토가 진행 중이라는 것이었습니다. 영업 쪽에서는 가압류가 걸렸으니 돈은 우리 것이라는 반응이 나왔고, 정리된 질문은 가압류가 걸린 예금은 얼어 있는 돈이 아니라 이해관계가 얽힌 자리라는 것이었습니다. 예금 위에는 회사의 권리와 은행의 권리가 겹치고, 그 겹침을 가르는 것은 날짜의 순서였습니다.", "h": "사건의 시작: 지급 금지 명령 뒤의 안내"}, {"body": "지급을 금지하는 명령을 받은 제3채무자는 그 후에 취득한 채권에 의한 상계로 그 명령을 신청한 채권자에게 대항하지 못합니다. 제3채무자인 은행이 가압류 뒤에 새로 취득한 채권을 들어 상계를 주장하면, 그 상계로는 가압류채권자에게 맞설 수 없다는 것이 이 조의 뼈대입니다. 다만 압류 효력 발생 시 이미 상계적상에 있었거나 자동채권인 대출의 변제기가 수동채권인 예금보다 먼저 또는 동시에 도래해야 가압류 후 상계로 대항할 수 있습니다. 압류 전부터 상계의 자리에 서 있었던 은행의 권리는 법이 인정할 수 있는 반면, 압류 뒤에 만들어진 권리는 막힙니다.", "h": "법이 보는 핵심: 명령 후의 채권은 대항하지 못합니다"}, {"body": "은행은 언제나 자기 대출금으로 예금을 상계할 수 있다는 문장은 민법 제498조의 제한을 지운 과장이고, 가압류가 있으면 무조건 가압류채권자가 이긴다는 문장은 압류 전의 상계적상이라는 반대편 여지를 지운 과장입니다. 개별 상계의 인정 여부와 가압류채권자의 우선 여부는 개별 사건의 판단 대상이고, 변제기의 도래 시점과 상계적상의 성립은 개별 확인 사항입니다. 법무가 만들어야 하는 것은 결론이 아니라 시간의 기록으로, 지급 금지 명령이 언제 송달되어 효력이 발생했는지, 은행의 대출 채권은 언제 취득되고 변제기가 언제 도래하는지가 정리되어야 합니다.", "h": "중요한 조건과 예외: 단정과 개별 확인"}, {"body": "지급 금지 명령의 송달과 효력 발생 시점을 기록으로 고정해 파일의 첫 문서로 둡니다. 은행의 상계 검토 안내에는 서면으로 답하고, 은행의 자동채권에 대한 정보를 문서로 요청해 대출의 취득 시점과 변제기가 예금보다 먼저 또는 동시에 도래했는지를 확인합니다. 가압류 이후 은행과의 새로운 대출 거래가 확인되면 그 사실을 기록으로 남기고, 압류 전부터 상계적상이 있었다는 은행 측 주장이 나오면 그 시간 관계를 검토합니다. 가압류 신청, 접수, 송달, 효력 발생, 은행 안내, 상계 주장의 날짜를 한 줄에 놓은 시간표를 만듭니다.", "h": "법무팀이 해야 할 일: 기록화와 서면 소통"}], "sources": ["민법 제498조"]}, "title": "예금과 대출이 같은 은행에 있어도 그 사이의 시간 순서가 모든 것을 가른다"}</script>
+<script>
+window.TPL={"kpTitle": "체크리스트", "checkable": true, "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
+<!-- lgcol build-id: fb-130a667417 -->
