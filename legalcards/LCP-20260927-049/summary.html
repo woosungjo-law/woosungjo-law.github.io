@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>거래처 파산, 신고했다고 끝이 아닙니다 — 시효는 절차가 끝나면 다시 돌아옵니다</title>
+<meta name="description" content="거래처 파산에서 신고는 끝이 아니라 시작입니다. 신고로 시효가 중단되더라도 절차가 종료되면 시효는 다시 진행되므로, 신고와 시효를 한 장부에서 관리해야 합니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="거래처 파산, 신고했다고 끝이 아닙니다 — 시효는 절차가 끝나면 다시 돌아옵니다">
+<meta property="og:description" content="거래처 파산에서 신고는 끝이 아니라 시작입니다. 신고로 시효가 중단되더라도 절차가 종료되면 시효는 다시 진행되므로, 신고와 시효를 한 장부에서 관리해야 합니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S4 체크리스트형 — 페이퍼화이트 & 틸 / 산세리프 / 체크박스 */
+:root{--bg:#fafaf6;--ink:#1a2226;--mute:#5f6b70;--acc:#0e6b6b;--line:#d9ddd6;--soft:#eef2ee;--head:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--body:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0d1416;--ink:#e5eceb;--mute:#93a3a3;--acc:#4fc0b6;--line:#26353a;--soft:#141f22}}
+body{font-size:16.5px;line-height:1.8}
+.page{max-width:780px;padding:32px 20px 80px}
+.kicker{display:inline-block;align-self:flex-start;background:var(--acc);color:var(--bg);padding:4px 10px;letter-spacing:.06em;font-size:12px;border-radius:2px;margin-bottom:16px}
+.hd{padding-bottom:26px}
+.headline{font-weight:800;font-size:clamp(26px,6vw,42px);line-height:1.3;letter-spacing:-.035em}
+.lede{margin-top:16px;font-size:clamp(16px,2.3vw,18px);color:var(--mute);line-height:1.8}
+.meta{margin-top:14px}
+.pq{order:6;margin:8px 0 0;padding:18px 0 0;border-top:1px solid var(--line)}
+.pq p{font-weight:700;font-size:18px;color:var(--acc);line-height:1.6}
+.kp{order:2;margin:0 0 34px;padding:22px 18px 10px;background:var(--soft);border:1px solid var(--line);border-top:4px solid var(--acc);border-radius:4px}
+.kp-t{font-size:15px;font-weight:800;margin-bottom:6px}
+.kp-t::after{content:" · 눌러서 확인";font-weight:500;font-size:12px;color:var(--mute)}
+.kp li{display:flex;gap:14px;align-items:flex-start;padding:13px 4px;border-top:1px solid var(--line);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.kp li:first-child{border-top:0}
+.kp li:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.kp-n{flex:none;position:relative;width:24px;height:24px;margin-top:2px;border:2px solid var(--acc);border-radius:5px;font-size:0;background:var(--bg);transition:background .15s}
+.kp-n::after{content:"";position:absolute;left:6px;top:1.5px;width:6px;height:11px;border:solid var(--bg);border-width:0 2.5px 2.5px 0;transform:rotate(45deg) scale(0);transition:transform .15s}
+.kp li[aria-checked=true] .kp-n{background:var(--acc)}
+.kp li[aria-checked=true] .kp-n::after{transform:rotate(45deg) scale(1)}
+.kp li[aria-checked=true] .kp-x{color:var(--mute)}
+.kp-x{font-weight:600;line-height:1.65}
+.secs{order:3}
+.sec{display:grid;grid-template-columns:52px 1fr;column-gap:14px;padding:22px 0;border-top:1px solid var(--line)}
+.sec .num{grid-row:1/span 2;font-weight:800;font-size:34px;line-height:1;letter-spacing:-.04em;color:var(--acc);opacity:.9;padding-top:2px}
+.sec h2{font-weight:800;font-size:clamp(18px,3vw,21px);line-height:1.45;letter-spacing:-.02em;margin-bottom:8px}
+.ft{margin-top:30px;padding-top:18px;border-top:1px solid var(--line)}
+@media (min-width:820px){
+  .page{padding:64px 32px 110px}
+  .kp{padding:28px 30px 14px}
+  .sec{grid-template-columns:76px 1fr;padding:28px 0}
+  .sec .num{font-size:48px}
+  .sec-body{font-size:17px}
+}
+</style>
+</head>
+<body data-tpl="S4">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"byline": "조우성", "cards": {"cards": [{"body": "거래처 파산 소식을 듣고 공급대금 채권을 파산절차에 신고했습니다. 그런데 신고로 시효가 중단되더라도 절차가 종료되면 시효는 다시 진행됩니다.", "kind": "cover", "title": "신고했다고 끝이 아니다"}, {"body": "민법 제168조는 소멸시효가 청구·압류·가압류·가처분·승인으로 중단된다고 정합니다. 평소에는 내용증명이나 지급명령이 이 자리를 채웁니다.", "kind": "point", "title": "시효 중단의 기본"}, {"body": "민법 제174조는 최고가 6월 내에 파산절차참가 등으로 이어지지 않으면 시효중단의 효력이 없다고 정합니다. 파산절차참가가 명시되어 있어 채권 신고는 법이 인정한 시효 관리 수단입니다.", "kind": "point", "title": "도산 참가는 법이 정한 시효 관리"}, {"body": "채무자회생법 제148조 제1항은 신고기간 안에 채권의 내용·원인·의결권 액수를 신고하고 증거서류를 제출하도록 합니다. 이 기한을 놓치면 배당 참가와 시효 관리 두 가지를 함께 잃습니다.", "kind": "point", "title": "신고기간은 협상의 여지가 없다"}, {"body": "중단: 신고로 시효가 멈추지만 절차가 끝나면 다시 진행된다\n인가: 채무자회생법 제251조에 따라 인정되지 않은 채권은 실권되고 인정된 권리도 변경된다(제252조)", "kind": "compare", "title": "중단과 실권은 다르다"}, {"body": "신고기간을 캘린더에 등록하고 담당자를 지정하며, 채권자목록 기재 여부와 소송 중단·수계를 관리합니다. 절차 종료 직후 독촉·지급명령 시나리오를 미리 만들고 인가 후 권리 변경을 추적합니다.", "kind": "close", "small": "일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.", "title": "신고와 시효를 한 장부에서 관리한다"}], "source_line": "민법 제168조·제174조 · 채무자회생법 제148조·제251조·제252조"}, "col_id": "LCP-20260927-049", "col_type": "체크리스트형", "date": "2026-09-27", "kicker": "법률 컬럼 · 법무팀", "summary": {"headline": "거래처 파산, 신고했다고 끝이 아닙니다 — 시효는 절차가 끝나면 다시 돌아옵니다", "keypoints": ["거래처 도산 소식을 접하면 즉시 신고기간을 등록하고 담당자를 지정한다", "우리 채권이 채권자목록에 기재되었는지, 누락되었다면 관리인이 알 수 있었는지 확인한다", "진행 중 소송의 중단·수계를 관리한다", "절차 종료 시 시효가 다시 진행된다는 전제로 후속 조치 시나리오를 만든다"], "lede": "거래처 파산에서 신고는 끝이 아니라 시작입니다. 신고로 시효가 중단되더라도 절차가 종료되면 시효는 다시 진행되므로, 신고와 시효를 한 장부에서 관리해야 합니다.", "pull_quote": "신고는 몇 년짜리 유예가 아니라 절차가 끝나면 다시 관리해야 하는 상태를 만드는 조치다", "sections": [{"body": "거래처의 파산 소식을 듣고 공급대금 채권을 파산절차에 신고했습니다. 문제는 그다음이었습니다. 파산관재인이 선임된 뒤 재산 조사와 관련 소송이 길어지면서 절차가 몇 해를 넘겼고, 상사시효는 3년인데 절차가 길어지는 동안 시효는 누가 지켜 주는지, 절차가 끝나면 시계는 어디서부터 다시 가는지가 불안했습니다.", "h": "사건의 시작 — 신고서를 낸 다음이 진짜 문제였습니다"}, {"body": "민법 제168조는 소멸시효가 청구, 압류·가압류·가처분, 승인의 사유로 중단된다고 정합니다. 민법 제174조는 최고가 6월 내에 재판상의 청구, 파산절차참가 등으로 이어지지 않으면 시효중단의 효력이 없다고 정하고, 조문에 파산절차참가가 명시되어 있습니다. 신고로 시효가 중단되더라도 절차가 종료되면 중단의 힘도 정리되고 시효는 다시 진행됩니다.", "h": "법이 보는 핵심 — 도산 절차 참가는 법이 인정한 시효 관리 수단이다"}, {"body": "신고기간은 협상의 여지가 없는 기한입니다. 채무자회생법 제148조 제1항은 회생채권자가 신고기간 안에 채권의 내용과 원인, 의결권 액수 등을 신고하고 증거서류를 제출하여야 한다고 정합니다. 회생계획인가 결정이 나면 제251조에 따라 인정되지 않은 채권은 실권되고, 인정된 권리도 제252조 제1항에 따라 회생계획대로 내용이 변경됩니다.", "h": "조건과 예외 — 인가는 채권을 바꾸고 신고 누락은 치명적이다"}, {"body": "거래처 도산 소식을 접하면 즉시 신고기간을 캘린더에 등록하고 담당자를 지정합니다. 우리 채권이 채권자목록에 기재되었는지 확인하고, 진행 중 소송의 중단·수계를 관리합니다. 절차 종료 시 시효가 다시 진행된다는 전제로 후속 조치 시나리오를 만들고, 인가 후 권리 변경을 추적합니다.", "h": "법무팀이 해야 할 일 — 신고와 시효를 한 장부에서 관리하십시오"}], "sources": ["민법 제168조", "민법 제174조", "채무자회생법 제148조", "채무자회생법 제251조", "채무자회생법 제252조"]}, "title": "거래처 파산, 신고했다고 끝이 아닙니다 — 시효는 절차가 끝나면 다시 돌아옵니다"}</script>
+<script>
+window.TPL={"kpTitle": "체크리스트", "checkable": true, "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
+<!-- lgcol build-id: fb-52092f6a4b -->
