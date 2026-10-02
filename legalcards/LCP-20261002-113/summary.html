@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>소송을 걸까 말까(쟁점), 이길 것 같으면 가는 것(통념)이 아닌, 회사의 자원과 평판을 걸 만한 분쟁인지 판단하는 것(본질)이다</title>
+<meta name="description" content="이길 것 같으면 가는 것이 아니라, 회사의 자원과 평판을 걸 만한 분쟁인지 판단해야 합니다. 승소해도 회수할 자산이 없으면 좋은 소송이 아닙니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="소송을 걸까 말까(쟁점), 이길 것 같으면 가는 것(통념)이 아닌, 회사의 자원과 평판을 걸 만한 분쟁인지 판단하는 것(본질)이다">
+<meta property="og:description" content="이길 것 같으면 가는 것이 아니라, 회사의 자원과 평판을 걸 만한 분쟁인지 판단해야 합니다. 승소해도 회수할 자산이 없으면 좋은 소송이 아닙니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S4 체크리스트형 — 페이퍼화이트 & 틸 / 산세리프 / 체크박스 */
+:root{--bg:#fafaf6;--ink:#1a2226;--mute:#5f6b70;--acc:#0e6b6b;--line:#d9ddd6;--soft:#eef2ee;--head:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--body:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0d1416;--ink:#e5eceb;--mute:#93a3a3;--acc:#4fc0b6;--line:#26353a;--soft:#141f22}}
+body{font-size:16.5px;line-height:1.8}
+.page{max-width:780px;padding:32px 20px 80px}
+.kicker{display:inline-block;align-self:flex-start;background:var(--acc);color:var(--bg);padding:4px 10px;letter-spacing:.06em;font-size:12px;border-radius:2px;margin-bottom:16px}
+.hd{padding-bottom:26px}
+.headline{font-weight:800;font-size:clamp(26px,6vw,42px);line-height:1.3;letter-spacing:-.035em}
+.lede{margin-top:16px;font-size:clamp(16px,2.3vw,18px);color:var(--mute);line-height:1.8}
+.meta{margin-top:14px}
+.pq{order:6;margin:8px 0 0;padding:18px 0 0;border-top:1px solid var(--line)}
+.pq p{font-weight:700;font-size:18px;color:var(--acc);line-height:1.6}
+.kp{order:2;margin:0 0 34px;padding:22px 18px 10px;background:var(--soft);border:1px solid var(--line);border-top:4px solid var(--acc);border-radius:4px}
+.kp-t{font-size:15px;font-weight:800;margin-bottom:6px}
+.kp-t::after{content:" · 눌러서 확인";font-weight:500;font-size:12px;color:var(--mute)}
+.kp li{display:flex;gap:14px;align-items:flex-start;padding:13px 4px;border-top:1px solid var(--line);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.kp li:first-child{border-top:0}
+.kp li:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.kp-n{flex:none;position:relative;width:24px;height:24px;margin-top:2px;border:2px solid var(--acc);border-radius:5px;font-size:0;background:var(--bg);transition:background .15s}
+.kp-n::after{content:"";position:absolute;left:6px;top:1.5px;width:6px;height:11px;border:solid var(--bg);border-width:0 2.5px 2.5px 0;transform:rotate(45deg) scale(0);transition:transform .15s}
+.kp li[aria-checked=true] .kp-n{background:var(--acc)}
+.kp li[aria-checked=true] .kp-n::after{transform:rotate(45deg) scale(1)}
+.kp li[aria-checked=true] .kp-x{color:var(--mute)}
+.kp-x{font-weight:600;line-height:1.65}
+.secs{order:3}
+.sec{display:grid;grid-template-columns:52px 1fr;column-gap:14px;padding:22px 0;border-top:1px solid var(--line)}
+.sec .num{grid-row:1/span 2;font-weight:800;font-size:34px;line-height:1;letter-spacing:-.04em;color:var(--acc);opacity:.9;padding-top:2px}
+.sec h2{font-weight:800;font-size:clamp(18px,3vw,21px);line-height:1.45;letter-spacing:-.02em;margin-bottom:8px}
+.ft{margin-top:30px;padding-top:18px;border-top:1px solid var(--line)}
+@media (min-width:820px){
+  .page{padding:64px 32px 110px}
+  .kp{padding:28px 30px 14px}
+  .sec{grid-template-columns:76px 1fr;padding:28px 0}
+  .sec .num{font-size:48px}
+  .sec-body{font-size:17px}
+}
+</style>
+</head>
+<body data-tpl="S4">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"byline": "조우성", "cards": {"cards": [{"body": "오래 거래해 온 파트너사가 계약 조건을 어기며 납품을 미뤘습니다. 팀장은 우리가 이기니 소송하자고 했고, 재무 담당은 소송비용과 시간이 더 클 수 있다며 말렸습니다. 이기는 싸움인데 회사에 남는 게 있는가.", "kind": "cover", "title": "이기는 싸움인데 남는 게 있나"}, {"body": "민사소송법 제248조는 소장이 접수되면 제출된 때에 소가 제기된 것으로 본다고 정합니다. 소송의 시작은 결심이나 발표가 아니라 소장이 접수된 시점입니다.", "kind": "point", "title": "제소는 선언이 아니라 접수다"}, {"body": "소장을 접수하기 전까지는 방향을 바꿀 수 있지만, 접수된 뒤에는 절차가 회사의 의사와 무관하게 진행됩니다. 대표가 통제할 수 있는 구간은 접수 이전입니다.", "kind": "point", "title": "통제할 수 있는 구간은 접수 이전"}, {"body": "민법 제162조는 일반 채권은 10년간 행사하지 않으면 소멸시효가 완성된다고 정합니다. 조금 더 지켜보자는 결정도 시효라는 시계 위에서 내려진 결정입니다.", "kind": "point", "title": "기다리는 시간도 비용이다"}, {"body": "즉시 조치: 소장 접수 준비 상태와 시효 잔여 기간을 점검한다\n장기 판단: 소송비용·인력·관계·평판을 합산한 총비용과 회수 가능성을 비교한다", "kind": "compare", "title": "접수 전에 한 번 냉정하게"}, {"body": "승패가 아니라 회사가 치르는 총비용을 봅니다. 소송비용·담당 인력의 시간·거래 관계의 단절·평판 변화까지 포함해, 승소해도 회수할 자산이 없거나 잃는 관계가 크면 좋은 소송이 아닙니다. 접수 준비가 끝난 뒤에 제소 여부를 정합니다.", "kind": "close", "small": "일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.", "title": "분쟁을 비용 항목으로 환산한다"}], "source_line": "민사소송법 제248조 · 민법 제162조"}, "col_id": "LCP-20261002-113", "col_type": "체크리스트형", "date": "2026-10-02", "kicker": "법률 컬럼 · CEO", "summary": {"headline": "소송을 걸까 말까(쟁점), 이길 것 같으면 가는 것(통념)이 아닌, 회사의 자원과 평판을 걸 만한 분쟁인지 판단하는 것(본질)이다", "keypoints": ["승패와 회수를 분리해 각각의 확률을 따로 본다", "민법 제162조가 정한 10년의 흐름을 기준으로 결정 기한을 역산한다", "민사소송법 제248조에 따라 소장 접수 시점을 전제로 준비 상태를 점검한다", "소송비용·인력·관계·평판을 합산한 총비용을 계산한다"], "lede": "이길 것 같으면 가는 것이 아니라, 회사의 자원과 평판을 걸 만한 분쟁인지 판단해야 합니다. 승소해도 회수할 자산이 없으면 좋은 소송이 아닙니다.", "pull_quote": "대표의 역할은 소송을 지시하는 것이 아니라, 소송이 회사에 남기는 것이 무엇인지 계산하게 만드는 것이다", "sections": [{"body": "오래 거래해 온 파트너사가 계약 조건을 어기며 납품을 미뤘습니다. 담당 팀장은 우리가 이긴다며 소송하자고 했고, 재무 담당은 소송비용과 시간이 더 클 수 있다며 말렸습니다. 이기는 싸움인데 이 싸움이 회사에 남는 게 있는지가 문제였습니다.", "h": "사건의 시작 — 대표가 결재 서류 앞에서 멈춘 날"}, {"body": "민사소송법 제248조는 소를 제기하려는 사람은 법원에 소장을 제출해야 하고, 소장이 접수되면 제출된 때에 소가 제기된 것으로 본다고 정합니다. 소장을 접수하기 전까지는 방향을 바꿀 수 있지만, 접수된 뒤에는 절차가 회사의 의사와 무관하게 진행됩니다. 대표가 통제할 수 있는 구간은 접수 이전입니다.", "h": "법이 보는 핵심 — 제소는 선언이 아니라 접수다"}, {"body": "분쟁을 붙들고 있는 동안에도 시간은 흐릅니다. 민법 제162조는 일반 채권은 10년간 행사하지 않으면 소멸시효가 완성된다고 정합니다. 조금 더 지켜보자는 결정도 시효라는 시계 위에서 내려진 결정입니다. 분쟁을 안고 있는 동안 협상·내부 검토·자료 수집에 사람과 시간이 들어가지만 이 비용은 장부에 잘 드러나지 않습니다.", "h": "조건과 예외 — 기다리는 시간도 비용이다"}, {"body": "대표가 놓치기 쉬운 것은 승패가 아니라 회사가 치르는 총비용입니다. 소송비용, 담당 인력의 시간, 거래 관계의 단절, 평판의 변화까지 포함해야 합니다. 승소해도 회수할 자산이 없거나 이겨서 얻는 것보다 잃는 관계가 크면 좋은 소송이 아니므로, 시효 잔여 기간을 확인하고 접수 준비 상태를 점검한 뒤 제소 여부를 정합니다.", "h": "CEO가 해야 할 일 — 분쟁을 비용 항목으로 환산한다"}], "sources": ["민사소송법 제248조", "민법 제162조"]}, "title": "소송을 걸까 말까(쟁점), 이길 것 같으면 가는 것(통념)이 아닌, 회사의 자원과 평판을 걸 만한 분쟁인지 판단하는 것(본질)이다"}</script>
+<script>
+window.TPL={"kpTitle": "체크리스트", "checkable": true, "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
+<!-- lgcol build-id: fb-2ab0f73f7a -->
