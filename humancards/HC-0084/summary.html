@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>멈추는_손이_경쟁자의_가속을_끝낸다</title>
+<meta name="description" content="경쟁이 치열해질수록 회사의 속도계는 오른다. 신차를 내놓고 가격을 깎고 깎은 가격을 광고하는 가속의 사슬이 완성된다. 그런데 이 경주에는 이상한 성질이 있다. 모두가 가속할수록 모두가 잃는다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="멈추는_손이_경쟁자의_가속을_끝낸다">
+<meta property="og:description" content="경쟁이 치열해질수록 회사의 속도계는 오른다. 신차를 내놓고 가격을 깎고 깎은 가격을 광고하는 가속의 사슬이 완성된다. 그런데 이 경주에는 이상한 성질이 있다. 모두가 가속할수록 모두가 잃는다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S4 체크리스트형 — 페이퍼화이트 & 틸 / 산세리프 / 체크박스 */
+:root{--bg:#fafaf6;--ink:#1a2226;--mute:#5f6b70;--acc:#0e6b6b;--line:#d9ddd6;--soft:#eef2ee;--head:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--body:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0d1416;--ink:#e5eceb;--mute:#93a3a3;--acc:#4fc0b6;--line:#26353a;--soft:#141f22}}
+body{font-size:16.5px;line-height:1.8}
+.page{max-width:780px;padding:32px 20px 80px}
+.kicker{display:inline-block;align-self:flex-start;background:var(--acc);color:var(--bg);padding:4px 10px;letter-spacing:.06em;font-size:12px;border-radius:2px;margin-bottom:16px}
+.hd{padding-bottom:26px}
+.headline{font-weight:800;font-size:clamp(26px,6vw,42px);line-height:1.3;letter-spacing:-.035em}
+.lede{margin-top:16px;font-size:clamp(16px,2.3vw,18px);color:var(--mute);line-height:1.8}
+.meta{margin-top:14px}
+.pq{order:6;margin:8px 0 0;padding:18px 0 0;border-top:1px solid var(--line)}
+.pq p{font-weight:700;font-size:18px;color:var(--acc);line-height:1.6}
+.kp{order:2;margin:0 0 34px;padding:22px 18px 10px;background:var(--soft);border:1px solid var(--line);border-top:4px solid var(--acc);border-radius:4px}
+.kp-t{font-size:15px;font-weight:800;margin-bottom:6px}
+.kp-t::after{content:" · 눌러서 확인";font-weight:500;font-size:12px;color:var(--mute)}
+.kp li{display:flex;gap:14px;align-items:flex-start;padding:13px 4px;border-top:1px solid var(--line);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.kp li:first-child{border-top:0}
+.kp li:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.kp-n{flex:none;position:relative;width:24px;height:24px;margin-top:2px;border:2px solid var(--acc);border-radius:5px;font-size:0;background:var(--bg);transition:background .15s}
+.kp-n::after{content:"";position:absolute;left:6px;top:1.5px;width:6px;height:11px;border:solid var(--bg);border-width:0 2.5px 2.5px 0;transform:rotate(45deg) scale(0);transition:transform .15s}
+.kp li[aria-checked=true] .kp-n{background:var(--acc)}
+.kp li[aria-checked=true] .kp-n::after{transform:rotate(45deg) scale(1)}
+.kp li[aria-checked=true] .kp-x{color:var(--mute)}
+.kp-x{font-weight:600;line-height:1.65}
+.secs{order:3}
+.sec{display:grid;grid-template-columns:52px 1fr;column-gap:14px;padding:22px 0;border-top:1px solid var(--line)}
+.sec .num{grid-row:1/span 2;font-weight:800;font-size:34px;line-height:1;letter-spacing:-.04em;color:var(--acc);opacity:.9;padding-top:2px}
+.sec h2{font-weight:800;font-size:clamp(18px,3vw,21px);line-height:1.45;letter-spacing:-.02em;margin-bottom:8px}
+.ft{margin-top:30px;padding-top:18px;border-top:1px solid var(--line)}
+@media (min-width:820px){
+  .page{padding:64px 32px 110px}
+  .kp{padding:28px 30px 14px}
+  .sec{grid-template-columns:76px 1fr;padding:28px 0}
+  .sec .num{font-size:48px}
+  .sec-body{font-size:17px}
+}
+</style>
+</head>
+<body data-tpl="S4">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "HC-0084", "title": "멈추는_손이_경쟁자의_가속을_끝낸다", "col_type": "사례형", "kicker": "협상과교착", "byline": "조우성", "date": "2026-10-01", "summary": {"headline": "멈추는_손이_경쟁자의_가속을_끝낸다", "lede": "경쟁이 치열해질수록 회사의 속도계는 오른다. 신차를 내놓고 가격을 깎고 깎은 가격을 광고하는 가속의 사슬이 완성된다. 그런데 이 경주에는 이상한 성질이 있다. 모두가 가속할수록 모두가 잃는다.", "sections": [{"h": "가속의 사슬", "body": "선두 자리에 대한 집착이 가격 할인이라는 마약이 되고 시장 전체가 집단 마비에 빠진다. 처음엔 이득처럼 보이던 것들이 의존으로 바뀐다. 모두가 가속할수록 모두가 잃는 치킨게임의 저주가 그대로 작동한다. 브레이크가 없는 도로에서는 속도가 곧 전부의 손실이다."}, {"h": "1980년대의 브레이크", "body": "1980년대 중반 미국 자동차 시장이 그랬다. 리 아이아코카는 크라이슬러를 이끌며 이 가속의 사슬을 끊었다. 그는 더 이상은 안 된다는 브레이크를 밟았다. 점유율 허상 대신 생존과 실리를 직시한 것이다. 멈춤은 포기가 아니고 시장의 룰을 다시 쓰는 일이었다."}, {"h": "조건 있는 브레이크", "body": "이렇게 묻는 사람이 있을 것이다. 그러면 경쟁은 어떻게 하라는 말인가. 반대 사례도 만만치 않다. 가격 경쟁이 실제로 시장을 키운 경우도 있었다. 그러나 성공의 조건은 명확하다. 원가를 깎을 구조가 미리 있었거나 시장이 커져서 가격 인하가 생존을 건 싸움이 아니었다. 조건 없는 브레이크는 사고요 조건 있는 브레이크는 설계다."}, {"h": "종료권의 주인", "body": "멈춤의 진짜 검증은 혼자 멈출 때 온다. 경쟁자가 그대로 달리고 있고 나는 이탈자가 된다. 이탈자의 명분은 결과가 증명해야 한다. 먼저 멈춘 쪽이 경쟁자의 가속을 끝낸다. 경쟁의 종료권은 가장 빠른 자가 아니고 가장 이른 자에게 있다."}], "keypoints": ["모두가 가속할수록 모두가 잃는다", "멈춤은 포기가 아니고 시장의 룰을 다시 쓰는 일이다", "조건 없는 브레이크는 사고요 조건 있는 브레이크는 설계다", "멈춤의 품위는 강도가 아니고 타이밍으로 결정된다", "경쟁의 종료권은 가장 빠른 자가 아니고 가장 이른 자에게 있다"], "pull_quote": "먼저 멈춘 쪽이 경쟁자의 가속을 끝낸다.", "sources": []}, "cards": {"cards": [{"kind": "cover", "title": "멈추는_손이_경쟁자의_가속을_끝낸다", "body": "경쟁이 치열해질수록 속도계는 오른다. 신차를 내놓고 가격을 깎고 깎은 가격을 광고한다. 가속의 사슬이 완성되는 순간 시장 전체가 집단 마비에 빠진다."}, {"kind": "compare", "title": "가속과 브레이크", "body": "가속: 선두 집착이 할인의 마약이 된다. 모두가 가속할수록 모두가 잃는다.\n브레이크: 더 이상은 안 된다는 선을 긋는다. 시장의 룰을 다시 쓰는 일이 된다.", "small": "프레임"}, {"kind": "point", "title": "1980년대의 선례", "body": "1980년대 중반 미국 자동차 시장에서 리 아이아코카는 크라이슬러를 이끌며 가속의 사슬을 끊었다. 점유율 허상 대신 생존과 실리를 직시한 선택이었다.", "small": "핵심"}, {"kind": "point", "title": "성공의 조건", "body": "가격 경쟁이 시장을 키운 경우도 있었다. 그러나 조건이 명확하다. 원가를 깎을 구조가 미리 있었거나 시장이 커진 경우다. 조건 없는 브레이크는 사고다.", "small": "반론"}, {"kind": "point", "title": "혼자 멈추는 검증", "body": "경쟁자가 그대로 달릴 때 혼자 멈추면 이탈자가 된다. 이탈자의 명분은 결과가 증명해야 한다. 그 순간의 우열을 아는 사람은 전투를 끝낸 것이다.", "small": "한계"}, {"kind": "close", "title": "시간을 결정하는 손", "body": "트랙 위에서 계속 가속하는 자는 부품을 남기지 않는다. 브레이크를 밟는 손은 약한 손이 아니다. 경기의 시간을 결정하는 손이다.", "small": "개인의 해석을 담은 에세이이며 전문적 조언이 아닙니다."}], "source_line": "협상과교착"}}</script>
+<script>
+window.TPL={"kpTitle": "체크리스트", "checkable": true, "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '개인의 해석을 담은 에세이이며 전문적 조언이 아닙니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
+<!-- hgcol build-id: hb-ba5ad017af -->

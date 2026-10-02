@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>위임이라는 망원경 뒤에 숨은 방관을 살핀다</title>
+<meta name="description" content="현장은 담당자에게 맡기고 리더는 큰 그림을 보자는 말은 그럴듯하다. 하지만 큰 그림을 본다는 이유로 구체적인 신호를 외면하면 망원경은 시야를 넓히는 도구가 아닌 현실을 멀리하는 핑계가 된다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="위임이라는 망원경 뒤에 숨은 방관을 살핀다">
+<meta property="og:description" content="현장은 담당자에게 맡기고 리더는 큰 그림을 보자는 말은 그럴듯하다. 하지만 큰 그림을 본다는 이유로 구체적인 신호를 외면하면 망원경은 시야를 넓히는 도구가 아닌 현실을 멀리하는 핑계가 된다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;800;900&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S2 개념정의형 — 딥네이비 & 골드 / 사전식 좌우 배치 */
+:root{--bg:#f3f4f7;--ink:#141f38;--mute:#5d6577;--acc:#8f6a12;--gold:#c9a24b;--navy:#0f1c3a;--head:"Noto Serif KR","Nanum Myeongjo",serif;--body:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0a1122;--ink:#e6e9f1;--mute:#9aa3b8;--acc:#d8b25e;--navy:#0f1c3a}}
+body{font-size:16.5px;line-height:1.85}
+.page{max-width:none;padding:0}
+.hd{background:var(--navy);color:#f1eee4;padding:44px 20px 40px}
+.hd>*{max-width:900px;margin-left:auto;margin-right:auto}
+.kicker{display:block;color:var(--gold);margin-bottom:16px}
+.headline{font-weight:700;font-size:clamp(26px,5.6vw,46px);line-height:1.34;letter-spacing:-.015em;color:#fff}
+.lede{margin-top:26px;padding:20px 20px 20px 22px;border-left:3px solid var(--gold);background:rgba(255,255,255,.06)}
+.lede-label{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.16em;font-weight:700;color:var(--gold);margin-bottom:8px}
+.lede p{font-size:clamp(16px,2.3vw,18.5px);line-height:1.85;color:#ece9de}
+.meta{margin-top:20px;color:#a9b2c7}
+.pq,.secs,.ft{width:100%;max-width:900px;margin-left:auto;margin-right:auto;padding-left:20px;padding-right:20px}
+.pq{margin-top:44px}
+.pq p{font-family:var(--head);font-weight:600;font-size:clamp(19px,3.2vw,26px);line-height:1.6;color:var(--ink);padding:4px 0 4px 20px;border-left:3px solid var(--gold)}
+.secs{margin-top:34px}
+.sec{padding:26px 0;border-top:1px solid color-mix(in srgb,var(--ink) 20%,transparent)}
+.sec:first-child{border-top:0}
+.sec .num{display:block;font-family:var(--sans);font-weight:700;font-size:12px;letter-spacing:.14em;color:var(--acc);margin-bottom:6px}
+.sec h2{font-family:var(--head);font-weight:700;font-size:clamp(19px,3.2vw,23px);line-height:1.45;margin-bottom:12px;color:var(--ink)}
+.kp{background:var(--navy);color:#eee;margin-top:20px;padding:34px 20px 38px}
+.kp>*{max-width:860px;margin-left:auto;margin-right:auto}
+.kp-t{font-family:var(--head);font-size:20px;font-weight:700;color:var(--gold);margin-bottom:14px}
+.kp li{display:flex;gap:14px;padding:12px 0;border-top:1px solid rgba(255,255,255,.14)}
+.kp li:first-child{border-top:0}
+.kp-n{flex:none;width:9px;height:9px;margin-top:.72em;background:var(--gold);transform:rotate(45deg);font-size:0;overflow:hidden}
+.kp-x{line-height:1.7;color:#eef0f5}
+.ft{padding-top:32px;padding-bottom:72px}
+@media (min-width:820px){
+  .hd{padding:80px 40px 64px}
+  .pq,.secs,.ft{padding-left:40px;padding-right:40px}
+  .kp{padding:52px 40px 56px}
+  .sec{display:grid;grid-template-columns:230px 1fr;column-gap:44px;padding:34px 0}
+  .sec .num{grid-column:1;grid-row:1;margin:0 0 4px;align-self:start}
+  .sec .sec-in{display:contents}
+  .sec h2{grid-column:1;grid-row:1;margin:26px 0 0}
+  .sec-body{grid-column:2;grid-row:1/span 2;font-size:17px}
+}
+</style>
+</head>
+<body data-tpl="S2">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "HC-0086", "title": "위임이라는 망원경 뒤에 숨은 방관을 살핀다", "col_type": "개념정의형", "kicker": "돈과계약", "byline": "조우성", "date": "2026-09-30", "summary": {"headline": "위임이라는 망원경 뒤에 숨은 방관을 살핀다", "lede": "현장은 담당자에게 맡기고 리더는 큰 그림을 보자는 말은 그럴듯하다. 하지만 큰 그림을 본다는 이유로 구체적인 신호를 외면하면 망원경은 시야를 넓히는 도구가 아닌 현실을 멀리하는 핑계가 된다.", "sections": [{"h": "위임과 방관의 갈림", "body": "위임은 권한을 나누면서도 결과의 연결을 놓지 않는 일이다. 방관은 권한을 넘긴 뒤 관심과 질문까지 함께 거두는 일이다. 구성원이 자율적으로 일하도록 돕는 리더는 현장의 언어를 이해하려고 애쓴다. 어디까지 맡겼는지와 무엇을 확인할지는 분명히 남긴다."}, {"h": "망원경과 현미경", "body": "망원경은 멀리 있는 방향을 보여 주고 현미경은 가까운 곳의 이상을 드러낸다. 리더에게 둘 다 필요한 이유는 전략이 세부의 현실 위에 서기 때문이다. 큰 목표가 아무리 멋져도 작업 과정의 병목과 고객의 불편, 반복되는 작은 오류를 보지 못하면 목표는 구호에 머문다."}, {"h": "좋은 위임의 모양", "body": "좋은 위임은 결과 기준과 위험 신호를 합의하고 정해진 간격에 현장의 사례를 듣고 필요한 자원을 결정하는 방식이다. 리더는 손을 대신 움직이지 않지만 손이 닿는 길이 막혔는지는 확인한다. 구체적인 질문이 방관과 위임을 가른다. 현장의 답을 들은 뒤 자원과 우선순위를 바꾸지 않는다면 질문도 장식이 된다."}, {"h": "감시로 바뀌는 확인", "body": "실패 조건은 있다. 리더가 세부를 직접 확인한다는 이유로 구성원의 판단을 매번 가로채면 위임은 감시로 바뀐다. 확인은 간섭의 양보다 의사결정에 필요한 깊이로 조정하는 편이 좋다. 이미 업무가 과밀한 관리자에게 현미경까지 들라고 하면 모든 문제를 자신이 해결할 책임까지 떠안게 된다."}], "keypoints": ["위임과 방관은 겉모습이 비슷하지만 책임이 향하는 곳이 다르다", "전략이 세부의 현실 위에 서기에 망원경과 현미경이 둘 다 필요하다", "구체적인 질문이 방관과 위임을 가른다", "세부를 확인한다는 이유로 판단을 가로채면 위임은 감시로 바뀐다", "큰 그림은 작은 현실을 통과할 때 비로소 계획이 된다"], "pull_quote": "큰 그림은 작은 현실을 통과할 때 비로소 계획이 된다.", "sources": []}, "cards": {"cards": [{"kind": "cover", "title": "위임이라는 망원경 뒤에 숨은 방관을 살핀다", "body": "현장은 담당자에게 맡기고 큰 그림을 보자는 말은 그럴듯하다. 하지만 구체적인 신호를 외면하면 망원경은 시야를 넓히는 도구가 아니라 현실을 멀리하는 핑계가 된다."}, {"kind": "compare", "title": "위임과 방관", "body": "위임: 권한을 나누면서도 결과의 연결을 놓지 않는다. 맡긴 범위와 확인할 것을 남긴다.\n방관: 권한을 넘긴 뒤 관심과 질문까지 거둔다. 자율이 고립으로 변한다.", "small": "프레임"}, {"kind": "point", "title": "두 개의 렌즈", "body": "망원경은 멀리 있는 방향을 보여 주고 현미경은 가까운 곳의 이상을 드러낸다. 작업 과정의 병목과 반복되는 작은 오류를 보지 못하면 목표는 구호에 머문다.", "small": "핵심"}, {"kind": "point", "title": "질문의 갈림", "body": "지금 가장 큰 병목은 무엇인가, 누가 결정할 수 없는 문제를 떠안고 있는가를 묻는다. 질문의 목적은 범인을 찾는 데 있지 않다. 알아야 할 세부와 맡길 세부를 구분하는 데 있다.", "small": "반론"}, {"kind": "point", "title": "감시가 되는 확인", "body": "세부를 직접 확인한다는 이유로 구성원의 판단을 매번 가로채면 위임은 감시로 바뀐다. 경험을 믿지 못해 질문을 심문처럼 만들면 정보는 더 빨리 사라진다.", "small": "한계"}, {"kind": "close", "title": "가까이 갈 준비", "body": "위임은 멀리 서 있는 자세보다 필요한 순간 가까이 갈 준비에 가깝다. 사람의 손을 빼앗지 않으면서 책임의 선을 지키는 일이 위임이다.", "small": "개인의 해석을 담은 에세이이며 전문적 조언이 아닙니다."}], "source_line": "돈과계약"}}</script>
+<script>
+window.TPL={"kpTitle": "핵심 정리", "ledeLabel": "핵심 정의", "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '개인의 해석을 담은 에세이이며 전문적 조언이 아닙니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
+<!-- hgcol build-id: hb-fba1e05d4b -->
