@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>특허권 침해의 요건 — 청구범위 해석(균등론 포함)</title>
+<meta name="description" content="새론스틸의 금속가공업체 법무 담당 서인호는 월요일 아침 경쟁사로부터 온 경고장을 받았다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="특허권 침해의 요건 — 청구범위 해석(균등론 포함)">
+<meta property="og:description" content="새론스틸의 금속가공업체 법무 담당 서인호는 월요일 아침 경쟁사로부터 온 경고장을 받았다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;800;900&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S2 개념정의형 — 딥네이비 & 골드 / 사전식 좌우 배치 */
+:root{--bg:#f3f4f7;--ink:#141f38;--mute:#5d6577;--acc:#8f6a12;--gold:#c9a24b;--navy:#0f1c3a;--head:"Noto Serif KR","Nanum Myeongjo",serif;--body:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0a1122;--ink:#e6e9f1;--mute:#9aa3b8;--acc:#d8b25e;--navy:#0f1c3a}}
+body{font-size:16.5px;line-height:1.85}
+.page{max-width:none;padding:0}
+.hd{background:var(--navy);color:#f1eee4;padding:44px 20px 40px}
+.hd>*{max-width:900px;margin-left:auto;margin-right:auto}
+.kicker{display:block;color:var(--gold);margin-bottom:16px}
+.headline{font-weight:700;font-size:clamp(26px,5.6vw,46px);line-height:1.34;letter-spacing:-.015em;color:#fff}
+.lede{margin-top:26px;padding:20px 20px 20px 22px;border-left:3px solid var(--gold);background:rgba(255,255,255,.06)}
+.lede-label{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.16em;font-weight:700;color:var(--gold);margin-bottom:8px}
+.lede p{font-size:clamp(16px,2.3vw,18.5px);line-height:1.85;color:#ece9de}
+.meta{margin-top:20px;color:#a9b2c7}
+.pq,.secs,.ft{width:100%;max-width:900px;margin-left:auto;margin-right:auto;padding-left:20px;padding-right:20px}
+.pq{margin-top:44px}
+.pq p{font-family:var(--head);font-weight:600;font-size:clamp(19px,3.2vw,26px);line-height:1.6;color:var(--ink);padding:4px 0 4px 20px;border-left:3px solid var(--gold)}
+.secs{margin-top:34px}
+.sec{padding:26px 0;border-top:1px solid color-mix(in srgb,var(--ink) 20%,transparent)}
+.sec:first-child{border-top:0}
+.sec .num{display:block;font-family:var(--sans);font-weight:700;font-size:12px;letter-spacing:.14em;color:var(--acc);margin-bottom:6px}
+.sec h2{font-family:var(--head);font-weight:700;font-size:clamp(19px,3.2vw,23px);line-height:1.45;margin-bottom:12px;color:var(--ink)}
+.kp{background:var(--navy);color:#eee;margin-top:20px;padding:34px 20px 38px}
+.kp>*{max-width:860px;margin-left:auto;margin-right:auto}
+.kp-t{font-family:var(--head);font-size:20px;font-weight:700;color:var(--gold);margin-bottom:14px}
+.kp li{display:flex;gap:14px;padding:12px 0;border-top:1px solid rgba(255,255,255,.14)}
+.kp li:first-child{border-top:0}
+.kp-n{flex:none;width:9px;height:9px;margin-top:.72em;background:var(--gold);transform:rotate(45deg);font-size:0;overflow:hidden}
+.kp-x{line-height:1.7;color:#eef0f5}
+.ft{padding-top:32px;padding-bottom:72px}
+@media (min-width:820px){
+  .hd{padding:80px 40px 64px}
+  .pq,.secs,.ft{padding-left:40px;padding-right:40px}
+  .kp{padding:52px 40px 56px}
+  .sec{display:grid;grid-template-columns:230px 1fr;column-gap:44px;padding:34px 0}
+  .sec .num{grid-column:1;grid-row:1;margin:0 0 4px;align-self:start}
+  .sec .sec-in{display:contents}
+  .sec h2{grid-column:1;grid-row:1;margin:26px 0 0}
+  .sec-body{grid-column:2;grid-row:1/span 2;font-size:17px}
+}
+</style>
+</head>
+<body data-tpl="S2">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "LCP-20261003-118", "title": "특허권 침해의 요건 — 청구범위 해석(균등론 포함)", "col_type": "체크리스트형", "kicker": "법률 컬럼 · 법무팀", "byline": "조우성", "date": "2026-10-03", "summary": {"headline": "특허권 침해의 요건 — 청구범위 해석(균등론 포함)", "lede": "새론스틸의 금속가공업체 법무 담당 서인호는 월요일 아침 경쟁사로부터 온 경고장을 받았다.", "sections": [{"h": "사건의 시작: 경고장을 받은 제품", "body": "새론스틸의 금속가공업체 법무 담당 서인호는 월요일 아침 경쟁사로부터 온 경고장을 받았다. 자사 주력 부품이 상대방 특허의 보호범위에 들어가니 생산을 중단하고 라이선스를 협의하라는 내용이었다. 경고장에는 균등론이라는 말이 적혀 있었다. 문언 그대로는 청구범위와 다르지만 실질적으로 같은 구성이므로 침해라는 주장이다. 서인호는 먼저 상대방 특허의 청구범위와 자사 제품의 구성을 나란히 놓고 대조했다. 겉보기에는 다른 부분이 있었다."}, {"h": "법이 보는 핵심: 보호범위는 청구범위가 정한다", "body": "특허발명의 보호범위는 청구범위에 기재된 사항을 기초로 정해진다. 특허법 제97조가 그 기준이다. 권리의 범위는 명세서의 설명이 아니라 청구범위에 적힌 문장으로 정해진다는 뜻이다. 그래서 침해 여부를 다툴 때는 청구범위의 문언 해석이 출발점이다. 문언 그대로 읽어서 들어가는지는 문언침해의 문제고, 문언에서 벗어나지만 실질적으로 같다고 보는지는 균등의 문제다. 균등론은 문언과 다르더라도 과제 해결 원리와 효과가 같으면 보호범위에 속한다고 보는 법리다."}, {"h": "중요한 조건과 예외: 권리자의 균등 구성과 침해자의 제외 항변", "body": "균등을 주장하는 권리자 측의 실무는 기술과제와 해결수단의 특정에서 시작한다. 우선 특허발명이 선행기술 대비 해결한 기술과제와 핵심 해결수단을 특정하고, 침해대상도 그 과제를 같은 방식으로 해결함을 중심으로 효과 동일성을 구성한다. 과제와 수단, 효과의 흐름이 일관돼야 균등 주장이 힘을 얻는다. 침해자 측의 항변은 의식적 제외에서 나온다. 심사관 거절이유와 보정서, 의견서 문구, 정정 이유를 종합해 해당 구성을 배제하려는 의사가 드러나는지를 정리한다."}], "keypoints": ["문언 대조: 특허법 제97조를 기준으로 청구범위와 제품 구성을 대비한다.", "균등 검토: 기술과제와 해결수단, 효과 동일성을 중심으로 균등 성립을 따진다.", "제외 항변: 대법원 2015다244517 판결의 방법에 따라 출원기록에서 의식적 제외를 찾는다.", "분할 확인: 대법원 2006다35308 판결의 법리에 따라 분할출원 이력을 점검한다.", "의견서 관리: 보정서·의견서의 차별화 사유가 장래 분쟁에서 어떻게 읽힐지 관리한다."], "pull_quote": "특허발명의 보호범위는 청구범위에 기재된 사항을 기초로 정해진다.", "sources": ["대법원 2015다244517 판결", "대법원 2006다35308 판결"]}, "cards": {"cards": [{"kind": "cover", "title": "새론스틸의 금속가공업체 법무 담당 서인호는 월요일 아침 경쟁사로부터 온 경고장을 받았다.", "body": "새론스틸의 금속가공업체 법무 담당 서인호는 월요일 아침 경쟁사로부터 온 경고장을 받았다. 자사 주력 부품이 상대방 특허의 보호범위에 들어가니 생산을 중단하고 라이선스를 협의하라는 내용이었다."}, {"kind": "point", "title": "법이 보는 핵심: 보호범위는 청구범위가 정한다", "body": "특허발명의 보호범위는 청구범위에 기재된 사항을 기초로 정해진다. 특허법 제97조가 그 기준이다."}, {"kind": "point", "title": "중요한 조건과 예외", "body": "권리의 범위는 명세서의 설명이 아니라 청구범위에 적힌 문장으로 정해진다는 뜻이다. 그래서 침해 여부를 다툴 때는 청구범위의 문언 해석이 출발점이다."}, {"kind": "point", "title": "중요한 조건과 예외: 권리자의 균등 구성과 침해자의 제외 항변", "body": "균등을 주장하는 권리자 측의 실무는 기술과제와 해결수단의 특정에서 시작한다. 우선 특허발명이 선행기술 대비 해결한 기술과제와 핵심 해결수단을 특정하고, 침해대상도 그 과제를 같은 방식으로 해결함을 중심으로 효과 "}, {"kind": "close", "title": "원문 기준으로 확인하기", "body": "문언 대조: 특허법 제97조를 기준으로 청구범위와 제품 구성을 대비한다. 균등 검토: 기술과제와 해결수단, 효과 동일성을 중심으로 균등 성립을 따진다.", "small": "일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다."}], "source_line": "대법원 2015다244517 판결·대법원 2006다35308 판결"}}</script>
+<script>
+window.TPL={"kpTitle": "핵심 정리", "ledeLabel": "핵심 정의", "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '일반적인 법률 정보이며 개별 사안에 따라 결론이 달라질 수 있습니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
+<!-- lgcol build-id: fb-87483390eb -->
