@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>지표가 말을 거두는 시점</title>
+<meta name="description" content="성과 측정 논쟁에서 두 개의 처방이 정면으로 엇갈립니다. 마이어와 굽타 1994년은 반복되는 지표가 차이를 설명하지 못하고 마모된다고 경고했고, 이트너와 라커 2003년은 인과모형과 타당도 점검을 붙이면 비재무 지표도 의사결정 도구가 된다고 반박합니다. 지표를 폐기할지 살릴지보다 먼저 물어야 할 것이 있습니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="지표가 말을 거두는 시점">
+<meta property="og:description" content="성과 측정 논쟁에서 두 개의 처방이 정면으로 엇갈립니다. 마이어와 굽타 1994년은 반복되는 지표가 차이를 설명하지 못하고 마모된다고 경고했고, 이트너와 라커 2003년은 인과모형과 타당도 점검을 붙이면 비재무 지표도 의사결정 도구가 된다고 반박합니다. 지표를 폐기할지 살릴지보다 먼저 물어야 할 것이 있습니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S3 사례형 — 딥그린 & 클레이 / 세로 타임라인 */
+:root{--bg:#f1f3ea;--ink:#1c2a22;--mute:#5d6b60;--acc:#1f4d3a;--clay:#a4552b;--line:#1f4d3a;--soft:#e4e9da;--head:"Nanum Myeongjo","Noto Serif KR",serif;--body:"Nanum Myeongjo","Noto Serif KR",serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e1913;--ink:#dfe8de;--mute:#93a598;--acc:#86c4a2;--clay:#d98d63;--line:#86c4a2;--soft:#15251c}}
+body{font-size:17.5px;line-height:1.9}
+.page{max-width:760px;padding:36px 20px 80px}
+.kicker{color:var(--clay);display:block;margin-bottom:14px}
+.headline{font-weight:800;font-size:clamp(27px,6vw,44px);line-height:1.34;letter-spacing:-.02em;color:var(--acc)}
+.hd::before{content:"";display:block;width:44px;height:4px;background:var(--clay);margin-bottom:24px}
+.lede{margin-top:22px;font-size:clamp(17px,2.4vw,19.5px);line-height:1.9;color:var(--ink);opacity:.9}
+.meta{margin-top:18px}
+.pq{margin:34px 0 0;padding:22px 24px;background:var(--soft);border-radius:2px}
+.pq p{font-weight:800;font-size:clamp(18px,3vw,23px);line-height:1.6;color:var(--acc)}
+.secs{margin:44px 0 0;position:relative}
+.secs::before{content:"";position:absolute;left:19px;top:14px;bottom:20px;width:2px;background:repeating-linear-gradient(to bottom,var(--line) 0 8px,transparent 8px 14px);opacity:.55}
+.sec{position:relative;padding:0 0 42px 62px}
+.sec:last-child{padding-bottom:6px}
+.sec .num{position:absolute;left:0;top:-2px;width:40px;height:40px;border-radius:50%;background:var(--acc);color:var(--bg);display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:700;font-size:14px;box-shadow:0 0 0 6px var(--bg)}
+.sec h2{font-weight:800;font-size:clamp(20px,3.4vw,24px);line-height:1.45;margin-bottom:10px;padding-top:4px;color:var(--ink)}
+.sec-body{font-size:17px}
+.kp{margin:40px 0 0;padding:26px 22px;border:2px solid var(--acc);border-radius:2px}
+.kp-t{font-family:var(--sans);font-size:13px;letter-spacing:.14em;font-weight:700;color:var(--clay);margin-bottom:12px}
+.kp li{display:flex;gap:14px;padding:9px 0}
+.kp-n{flex:none;font-family:var(--sans);font-weight:700;font-size:13px;color:var(--clay);padding-top:.4em}
+.kp-x{font-weight:700;line-height:1.7}
+.ft{margin-top:44px;padding-top:18px;border-top:1px solid color-mix(in srgb,var(--ink) 25%,transparent)}
+@media (min-width:820px){
+  .page{padding:72px 32px 110px}
+  .secs::before{left:23px}
+  .sec{padding-left:84px}
+  .sec .num{width:48px;height:48px;font-size:16px}
+  .sec h2{padding-top:9px}
+}
+</style>
+</head>
+<body data-tpl="S3">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "LR-P-091", "title": "지표가 말을 거두는 시점", "col_type": "대립형", "kicker": "연구 노트 · 성장", "byline": "조우성", "date": "2026-10-05", "summary": {"headline": "한 지표가 좋아질 때 무엇을 놓치고 있는가", "lede": "성과 측정 논쟁에서 두 개의 처방이 정면으로 엇갈립니다. 마이어와 굽타 1994년은 반복되는 지표가 차이를 설명하지 못하고 마모된다고 경고했고, 이트너와 라커 2003년은 인과모형과 타당도 점검을 붙이면 비재무 지표도 의사결정 도구가 된다고 반박합니다. 지표를 폐기할지 살릴지보다 먼저 물어야 할 것이 있습니다.", "sections": [{"h": "프레임: 지표는 닳는다", "body": "마이어와 굽타 1994년은 지표가 반복될수록 차이를 잘 설명하지 못해진다고 지적합니다. 목표가 정해지면 구성원은 그 목표에 맞춰 행동하고, 행동이 지표를 평준화하면서 변별력이 떨어집니다. 새로운 지표를 도입해도 시간이 지나면 다시 닳는 순환입니다."}, {"h": "반증: 인과를 붙이면 지표가 산다", "body": "이트너와 라커 2003년은 비재무 지표의 실패가 지표의 선택과 분석에서 왔다는 진단을 냅니다. 전략적 성공을 설명하는 인과모형을 세우고, 데이터의 타당도와 신뢰도를 점검하며, 시장이 바뀔 때 모형을 다시 검증하면 지표는 의사결정을 도울 수 있다고 반박합니다."}, {"h": "갈리는 지점", "body": "앞의 논문에서 지표는 시간이 지날수록 설명력을 잃는 도구이고, 뒤의 논문에서 지표는 인과 연결을 설계하면 다시 설명력이 돌아오는 도구입니다. 검증으로 버틸지 설계로 살릴지, 처방이 완전히 갈립니다."}, {"h": "바뀌는 질문", "body": "이 지표가 나빠서 버리는지, 아니면 이 지표가 좋아져서 위험한 것인지 먼저 구분합니다. 숫자가 빨리 좋아질 때 무엇이 사라졌는지를 묻습니다."}], "keypoints": ["마이어와 굽타 1994년은 반복되는 지표가 변별력을 잃는 마모를 지적한다.", "이트너와 라커 2003년은 인과모형·타당도·재검증을 붙이면 지표가 산다고 반박한다.", "두 논문은 버릴지 설계할지로 처방이 완전히 갈린다.", "숫자가 좋아진 방향과 현장의 위험이 사라진 방향은 서로 다를 수 있다."], "pull_quote": "개선에 필요한 비용과 시간이 사라졌는데 결과만 좋아졌다면 분모가 바뀌었을 가능성이 있다.", "sources": ["Meyer, M. W., \u0026 Gupta, V. (1994) The Performance Paradox — Research in Organizational Behavior, 16, 309-369", "Ittner, C. D., \u0026 Larcker, D. F. (2003) Coming Up Short on Nonfinancial Performance Measurement — Harvard Business Review, 81(11), 88-95"]}, "cards": {"cards": [{"kind": "cover", "title": "지표가 말을 거두는 시점", "body": "성과 측정은 버릴지 살릴지로 갈리지 않는다. 1994년 마이어와 굽타의 마모 진단과 2003년 이트너와 라커의 인과모형 반박을 겹쳐 보면, 지표를 없애야 할 때와 설계해야 할 때의 경계가 드러난다.", "small": "연구 노트 · 성장 · 1994 대 2003"}, {"kind": "compare", "title": "마모 대 설계", "body": "1994년 마이어·굽타: 반복되는 지표는 변별력을 잃는다. 목표에 맞춘 행동이 지표를 평준화하면서 설명력이 떨어진다. 2003년 이트너·라커: 인과모형과 타당도 점검을 붙이면 지표가 의사결정을 도운다.", "small": "경영행동연구 1994 대 경영전문지 2003"}, {"kind": "point", "title": "지표는 닳는다", "body": "항목을 늘려도 이미 써온 지표는 쓸수록 둔해진다. 목표를 향한 행동이 지표의 높낮이를 평평하게 만들어 버린다. 새 지표를 도입해도 이 순환은 반복된다.", "small": "마이어·굽타(1994)"}, {"kind": "point", "title": "인과를 붙이면 산다", "body": "비재무 지표의 실패는 지표 자체가 아니라 선택과 분석의 결함에서 온다. 전략적 성공을 설명하는 인과모형을 세우고 타당도와 신뢰도를 점검하며, 시장이 바뀌면 모형을 다시 검증한다.", "small": "이트너·라커(2003)"}, {"kind": "point", "title": "숫자가 쉬워지는 순간", "body": "지표가 강한 압박으로 작동할수록 현장은 지표를 달성하는 기술을 발전시킨다. 복잡한 환자를 다른 경로로 돌려 평균만 낮추는 것도 그렇다. 이때 숫자는 신호가 아니라 무엇을 숨겼는지 보여 주는 흔적이다.", "small": "대기시간 사례의 일반화"}, {"kind": "close", "title": "오늘의 점검", "body": "지표를 진단용과 보상용으로 나눈다. 이번 분기 가장 중요한 지표 하나를 골라 무엇을 측정하지 않는지 적고, 그 숫자를 높이는 가장 쉬운 우회로가 무엇인지 적는다."}], "source_line": "Meyer \u0026 Gupta (1994) Research in Organizational Behavior · Ittner \u0026 Larcker (2003) Harvard Business Review"}}</script>
+<script>
+window.TPL={"kpTitle": "이야기에서 건진 것", "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '독서·연구 노트이며 법률·투자 자문이 아닙니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>

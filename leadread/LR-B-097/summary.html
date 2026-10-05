@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>기술을 잘하는 것과 사업을 설계하는 것은 다르다</title>
+<meta name="description" content="빵을 잘 굽는 사람이 빵집을 열면 사업이 시작됩니다. 마이클 거버의 이 책은 그 직후의 문제를 짚습니다. 기술의 일을 이해한다는 사실은 그 일을 반복해 주는 사업도 이해한다는 뜻이 아니라는 것입니다. 이 글은 기술자가 도로 밟는 자리와 반복이 설계되지 않을 때 무엇이 무너지는지를 나눠 봅니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="기술을 잘하는 것과 사업을 설계하는 것은 다르다">
+<meta property="og:description" content="빵을 잘 굽는 사람이 빵집을 열면 사업이 시작됩니다. 마이클 거버의 이 책은 그 직후의 문제를 짚습니다. 기술의 일을 이해한다는 사실은 그 일을 반복해 주는 사업도 이해한다는 뜻이 아니라는 것입니다. 이 글은 기술자가 도로 밟는 자리와 반복이 설계되지 않을 때 무엇이 무너지는지를 나눠 봅니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;800;900&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S1 대립형 — 잉크 & 크림 / 주홍 포인트 / 좌우 대칭 */
+:root{--bg:#f6f1e7;--ink:#1b1a17;--mute:#6b655a;--acc:#b23a26;--line:#1b1a17;--soft:#ece4d3;--head:"Noto Serif KR","Nanum Myeongjo",serif;--body:"Noto Serif KR","Nanum Myeongjo",serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#151412;--ink:#eee7d7;--mute:#a59d8c;--acc:#e0664f;--line:#eee7d7;--soft:#211f1b}}
+body{font-size:16.5px}
+.page{max-width:1040px;padding:28px 20px 72px}
+.hd{border-top:4px solid var(--line);padding-top:6px;position:relative;text-align:center;margin-bottom:36px}
+.hd::before{content:"";display:block;border-top:1px solid var(--line);margin-bottom:26px}
+.kicker{display:inline-block;margin-bottom:14px}
+.headline{font-weight:900;font-size:clamp(27px,6.2vw,52px);line-height:1.3;letter-spacing:-.02em}
+.lede{max-width:680px;margin:22px auto 0;font-size:clamp(16px,2.3vw,19px);line-height:1.85;color:var(--ink);opacity:.88;text-align:left}
+.meta{margin-top:20px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.pq{margin:6px auto 44px;max-width:760px;text-align:center;padding:30px 4px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:relative}
+.pq p{font-weight:700;font-size:clamp(20px,3.6vw,30px);line-height:1.55;letter-spacing:-.01em;color:var(--acc)}
+.pq::before{content:"\201C";position:absolute;left:50%;top:-20px;transform:translateX(-50%);background:var(--bg);padding:0 12px;font-size:44px;line-height:1;color:var(--acc);font-family:var(--head)}
+.secs{display:grid;grid-template-columns:1fr;gap:0}
+.sec{padding:0;position:relative}
+.sec .num{display:block;font-family:var(--sans);font-weight:800;font-size:12px;letter-spacing:.14em;color:var(--acc);margin-bottom:8px}
+.sec h2{font-size:clamp(20px,3.4vw,25px);font-weight:800;line-height:1.4;margin-bottom:12px;letter-spacing:-.01em}
+.sec-body{font-size:16.5px;line-height:1.9}
+.sec:nth-child(1),.sec:nth-child(2){padding-bottom:8px}
+.sec:nth-child(2){margin-top:44px;padding-top:34px;border-top:1px solid var(--line)}
+.sec:nth-child(2)::before{content:"VS";position:absolute;left:50%;top:-17px;transform:translateX(-50%);width:34px;height:34px;line-height:34px;border-radius:50%;background:var(--acc);color:#fff;font:800 11px/34px var(--sans);text-align:center;letter-spacing:.04em}
+.sec:nth-child(n+3){margin-top:36px;padding-top:28px;border-top:3px double var(--line)}
+.kp{margin:44px 0 0;padding:26px 22px;background:var(--soft);border-top:3px solid var(--acc)}
+.kp-t{font-family:var(--sans);font-size:13px;letter-spacing:.14em;font-weight:700;color:var(--acc);margin-bottom:14px}
+.kp li{display:flex;gap:14px;padding:11px 0;border-top:1px solid color-mix(in srgb,var(--ink) 18%,transparent)}
+.kp li:first-child{border-top:0}
+.kp-n{flex:none;font-family:var(--sans);font-weight:800;font-size:13px;color:var(--acc);padding-top:.35em}
+.kp-x{font-weight:600;line-height:1.7}
+.ft{margin-top:44px;padding-top:20px;border-top:4px solid var(--line)}
+@media (min-width:820px){
+  .page{padding:48px 40px 96px}
+  .secs{grid-template-columns:1fr 1fr;column-gap:0}
+  .sec:nth-child(1){padding-right:40px}
+  .sec:nth-child(2){margin-top:0;padding-top:0;border-top:0;padding-left:40px;border-left:1px solid var(--line)}
+  .sec:nth-child(2)::before{left:-17px;top:0;transform:none}
+  .sec:nth-child(n+3){grid-column:1/-1}
+  .sec:nth-child(n+3) .sec-body{max-width:820px}
+  .kp li{padding:13px 0}
+}
+</style>
+</head>
+<body data-tpl="S1">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "LR-B-097", "title": "기술을 잘하는 것과 사업을 설계하는 것은 다르다", "col_type": "개념정의형", "kicker": "연구 노트 · 전략", "byline": "조우성", "date": "2026-10-05", "summary": {"headline": "숙련된 기술로 만든 일은 그대로 남지 않는다", "lede": "빵을 잘 굽는 사람이 빵집을 열면 사업이 시작됩니다. 마이클 거버의 이 책은 그 직후의 문제를 짚습니다. 기술의 일을 이해한다는 사실은 그 일을 반복해 주는 사업도 이해한다는 뜻이 아니라는 것입니다. 이 글은 기술자가 도로 밟는 자리와 반복이 설계되지 않을 때 무엇이 무너지는지를 나눠 봅니다.", "sections": [{"h": "세 가지 자리", "body": "이 책은 창업자의 몸에 세 역할이 겹쳐 있다고 봅니다. 기술을 직접 완성하는 자리, 질서와 기준을 만드는 자리, 미래의 방향과 기회를 보는 자리입니다. 어느 하나가 다른 둘을 눌러버리면 사업은.창업자의 노동량에만 의존하게 됩니다."}, {"h": "반복되지 않으면 왜 다시 일이 되는가", "body": "고객이 다시 찾아올 수 있는 이유는 결과의 품질이 아니라 약속의 재현 가능성입니다. 그래서 시스템은 거창한 도구가 아니라 순서와 기준과 책임을 적은 약속에서 출발합니다. 다음 사람이 같은 문제를 볼 수 있게 만드는 것이 시스템의 실제 일입니다."}, {"h": "경직과 느슨함 사이", "body": "공통 절차가 지나치면 현장의 판단이 막히고 너무 느슨하면 같은 실수가 되풀이됩니다. 좋은 절차는 단계마다 목적과 종료 조건과 책임자를 가집니다. 예외를 기록하고 정당한 이유로 고칠 수 있어야 규칙이 살아 있습니다."}], "keypoints": ["기술을 이해하는 것과 그 일을 반복해 주는 사업을 설계하는 것은 다른 일이다.", "기술 완성·기준 만들기·방향 보기 세 역할이 한 사람에 겹치면 노동량에 의존하게 된다.", "고객의 재방문은 품질이 아니라 약속이 재현되는 구조에서 나온다.", "좋은 절차는 목적과 종료 조건과 책임자를 갖고 예외 수정 권한을 남긴다."], "pull_quote": "다음 사람이 같은 문제를 볼 수 있게 만드는 일이 시스템의 실제 일이다.", "sources": ["마이클 거버 (2025) 사업의 철학, 이제용 옮김, 라이팅하우스", "Michael E. Gerber The E-Myth Revisited — 원서"]}, "cards": {"cards": [{"kind": "cover", "title": "기술을 잘하는 것과 사업을 설계하는 것은 다르다", "body": "기술로 시작한 일의 병목은 처음 생각한 곳에 있지 않다. 이 책은 치명적인 가정을 정면으로 짚고, 반복이 설계되지 않을 때 무엇이 무너지는지 짚는다.", "small": "연구 노트 · 전략 · 역할과 반복"}, {"kind": "point", "title": "치명적인 가정", "body": "기술적인 일을 이해하면 그 일을 하는 사업도 이해한다는 가정이다. 가격과 고객과 현금 흐름과 반복 운영과 채용은 별개의 문제이며 기술 숙련만으로는 풀리지 않는다.", "small": "거버의 출발점"}, {"kind": "point", "title": "세 가지 자리", "body": "일을 직접 완성하는 자리, 질서와 기준을 만드는 자리, 미래의 방향과 기회를 보는 자리. 어느 하나가 다른 둘을 누르면 그 사업은 한 사람의 노동량에만 의존하게 된다.", "small": "역할의 분기"}, {"kind": "point", "title": "시스템은 약속이다", "body": "거창한 소프트웨어가 아니라 순서와 기준과 책임을 적은 약속에서 시작한다. 반복되는 질문을 기록하고 실수를 절차의 문제로 고치는 것이 시스템을 만드는 일이다.", "small": "반복의 층위"}, {"kind": "point", "title": "경직과 느슨함 사이", "body": "절차가 지나치면 현장 판단이 막히고 느슨하면 같은 실수가 되풀이된다. 좋은 절차는 단계마다 목적과 종료 조건과 책임자를 갖고 예외 수정 권한을 남긴다.", "small": "필자의 이어 붙임"}, {"kind": "close", "title": "오늘의 점검", "body": "지금 내 일에서 남이 반복해서 물어보는 부분이 어디인지 적는다. 그 자리가 비어 있으면 사업은 나 혼자의 속도로만 달린다. 오늘 처리한 일 중 다음 사람에게 설명해야 할 것을 한 문장으로 적어 본다."}], "source_line": "마이클 거버 사업의 철학(2025), 라이팅하우스 · The E-Myth Revisited, 원서"}}</script>
+<script>
+window.TPL={"kpTitle": "두 관점, 한눈에", "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '독서·연구 노트이며 법률·투자 자문이 아닙니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>

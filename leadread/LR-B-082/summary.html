@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>기억되는 전략은 더 많이 말하는 대신 무엇을 포기할지 선명하게 정한다</title>
+<meta name="description" content="제가 읽고 정리한 바로는, 포지셔닝은 제품을 바꾸는 기술보다 사람의 마음속에 들어갈 자리를 정하는 작업입니다. 좋은 설명을 많이 붙인다고 기억되는 것은 아닙니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="기억되는 전략은 더 많이 말하는 대신 무엇을 포기할지 선명하게 정한다">
+<meta property="og:description" content="제가 읽고 정리한 바로는, 포지셔닝은 제품을 바꾸는 기술보다 사람의 마음속에 들어갈 자리를 정하는 작업입니다. 좋은 설명을 많이 붙인다고 기억되는 것은 아닙니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;800;900&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S5 인용사색형 — 본화이트 & 와인 / 중앙 정렬·큰 여백·대형 인용 */
+:root{--bg:#f5f1ea;--ink:#2a2226;--mute:#7a6f74;--acc:#6e2b3a;--line:#c9bfb3;--head:"Noto Serif KR","Nanum Myeongjo",serif;--body:"Noto Serif KR","Nanum Myeongjo",serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#15111a;--ink:#e9e2e6;--mute:#a1949b;--acc:#d3919f;--line:#3a2f3c}}
+body{font-weight:300;font-size:17px;line-height:2}
+.page{max-width:660px;padding:56px 24px 100px;text-align:center}
+.kicker{display:block;font-weight:500}
+.headline{font-weight:400;font-size:clamp(16px,3vw,19px);line-height:1.6;color:var(--mute);letter-spacing:0;margin-top:14px}
+.meta{margin-top:10px;font-size:12px}
+.lede-x{order:3;text-align:left;margin:0 0 64px;font-size:17px;line-height:2.05;font-weight:300}
+.pq{order:2;margin:56px -4px 56px;padding:0;position:relative}
+.pq::before{content:"\201C";display:block;font-family:var(--head);font-size:96px;line-height:.7;color:var(--acc);opacity:.85;margin-bottom:14px;font-weight:400}
+.pq p{font-weight:300;font-size:clamp(23px,5.6vw,38px);line-height:1.6;letter-spacing:-.02em;color:var(--ink)}
+.pq::after{content:"";display:block;width:36px;height:1px;background:var(--acc);margin:42px auto 0}
+.secs{order:4}
+.sec{margin:0 0 56px;text-align:left}
+.sec .num{display:block;text-align:center;font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:.3em;color:var(--acc);margin-bottom:12px}
+.sec h2{text-align:center;font-weight:500;font-size:clamp(19px,3.2vw,22px);line-height:1.6;margin-bottom:16px;color:var(--ink)}
+.sec-body{font-size:16.5px;line-height:2.05}
+.sec:not(:last-child)::after{content:"";display:block;width:4px;height:4px;border-radius:50%;background:var(--acc);margin:56px auto 0;opacity:.7}
+.kp{order:5;margin:20px 0 0;padding:34px 0 0;border-top:1px solid var(--line);text-align:left}
+.kp-t{text-align:center;font-family:var(--sans);font-weight:500;font-size:11px;letter-spacing:.3em;color:var(--acc);margin-bottom:12px}
+.kp li{display:flex;gap:14px;padding:10px 0}
+.kp-n{flex:none;font-family:var(--sans);font-size:11px;letter-spacing:.1em;color:var(--acc);padding-top:.6em}
+.kp-x{font-weight:400;line-height:1.85}
+.ft{order:6;margin-top:56px;padding-top:24px;border-top:1px solid var(--line);text-align:center}
+.ft .src li{padding-left:0;text-indent:0}
+.ft .src li::before{content:""}
+@media (min-width:820px){
+  .page{padding:110px 24px 140px}
+  .pq{margin:80px -60px}
+  .pq p{font-size:40px}
+}
+</style>
+</head>
+<body data-tpl="S5">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "LR-B-082", "title": "기억되는 전략은 더 많이 말하는 대신 무엇을 포기할지 선명하게 정한다", "col_type": "개념정의형", "kicker": "연구 노트", "byline": "조우성", "date": "2026-10-05", "summary": {"headline": "기억되는 전략은 더 많이 말하는 대신 무엇을 포기할지 선명하게 정한다", "lede": "제가 읽고 정리한 바로는, 포지셔닝은 제품을 바꾸는 기술보다 사람의 마음속에 들어갈 자리를 정하는 작업입니다. 좋은 설명을 많이 붙인다고 기억되는 것은 아닙니다.", "sections": [{"h": "핵심 관점 1", "body": "본질은 희생이라는 말이 이 책의 핵심을 잘 보여 줍니다. 모든 고객에게 모든 가치를 약속하면 결국 아무것도 뚜렷하지 않게 됩니다. 무엇을 하지 않을지 정해야 무엇을 잘한다고 말할 수 있습니다. 이 선택은 광고 문구만의 문제가 아니라 제품의 기능, 서비스의 속도, 고객을 만나는 방식과 연결됩니다."}, {"h": "핵심 관점 2", "body": "적을 통해 나를 정의한다는 관점도 단순한 경쟁자 흠집 내기가 아닙니다. 시장에서 사람들은 제품을 고립된 상태로 평가하지 않고 이미 아는 범주와 비교합니다. 따라서 내가 누구인지 설명하려면 어떤 대안과 다른지, 그 차이가 고객의 문제를 어떻게 줄이는지 보여 줘야 합니다. 경쟁자를 닮아가면서 차별화를 말하면 메시지는 금방 흐"}, {"h": "핵심 관점 3", "body": "고가 포지셔닝은 가격표를 올리는 일만으로 완성되지 않습니다. 고객이 높은 가격을 납득할 만한 이유와 경험과 신뢰가 함께 있어야 합니다. 반대로 저렴함을 강조하면서 품질과 관계를 포기하면 가격은 장점이 아니라 불안의 신호가 될 수 있습니다. 포지셔닝은 말과 실제 경험이 같은 방향으로 움직일 때 힘을 얻습니다."}], "keypoints": ["본질은 희생이라는 말이 이 책의 핵심을 잘 보여 줍니다. 모든 고객에게 모든 가치를 약속하면 결국 아무것도 뚜렷하지 않게 됩니다. 무엇을 하지 않을지 정해야 무엇을 잘한다고 말할 수 있습니다. 이 선택은 광고 문구만", "적을 통해 나를 정의한다는 관점도 단순한 경쟁자 흠집 내기가 아닙니다. 시장에서 사람들은 제품을 고립된 상태로 평가하지 않고 이미 아는 범주와 비교합니다. 따라서 내가 누구인지 설명하려면 어떤 대안과 다른지, 그 차", "고가 포지셔닝은 가격표를 올리는 일만으로 완성되지 않습니다. 고객이 높은 가격을 납득할 만한 이유와 경험과 신뢰가 함께 있어야 합니다. 반대로 저렴함을 강조하면서 품질과 관계를 포기하면 가격은 장점이 아니라 불안의 "], "pull_quote": "포지셔닝은 외부에 보이는 문장만의 문제가 아닙니다. 내부의 채용과 제품 우선순위와 고객 응대가 같은 선택을 반복해야 합니다. 말과 실제가 어긋나면 고객은 문구가 아니라 경험을 기억", "sources": ["잭 트라우트 · 앨 리스"]}, "cards": {"cards": [{"kind": "cover", "title": "제가 읽고 정리한 바로는, 포지셔닝은 제", "body": "제가 읽고 정리한 바로는, 포지셔닝은 제품을 바꾸는 기술보다 사람의 마음속에 들어갈 자리를 정하는 작업입니다. 좋은 설명을 많이 붙인다고 기억되는 것은 아닙니다. 이미 복잡한 선택지로 가득한 사람의 머릿속에 무엇", "small": "잭 트라우트 · 앨 리스"}, {"kind": "point", "title": "본질은 희생이라는 말이 이 책의 핵심을 ", "body": "본질은 희생이라는 말이 이 책의 핵심을 잘 보여 줍니다. 모든 고객에게 모든 가치를 약속하면 결국 아무것도 뚜렷하지 않게 됩니다. 무엇을 하지 않을지 정해야 무엇을 잘한다고 말할 수 있습니다. 이 선택은 광고 문", "small": "잭 트라우트 · 앨 리스"}, {"kind": "compare", "title": "적을 통해 나를 정의한다는 관점도 단순한", "body": "적을 통해 나를 정의한다는 관점도 단순한 경쟁자 흠집 내기가 아닙니다. 시장에서 사람들은 제품을 고립된 상태로 평가하지 않고 이미 아는 범주와 비교합니다. 따라서 내가 누구인지 설명하려면 어떤 대안과 다른지, 그", "small": "잭 트라우트 · 앨 리스"}, {"kind": "point", "title": "일관성은 지루함을 견디는 능력입니다", "body": "일관성은 지루함을 견디는 능력입니다. 새로운 문구와 캠페인을 계속 바꾸면 내부에는 활기가 있어도 고객의 기억에는 아무것도 남지 않을 수 있습니다. 같은 핵심을 반복하되, 시장의 변화에 맞춰 증거와 표현을 조정해야", "small": "잭 트라우트 · 앨 리스"}, {"kind": "close", "title": "포지셔닝은 외부에 보이는 문장만의 문제가", "body": "포지셔닝은 외부에 보이는 문장만의 문제가 아닙니다. 내부의 채용과 제품 우선순위와 고객 응대가 같은 선택을 반복해야 합니다. 말과 실제가 어긋나면 고객은 문구가 아니라 경험을 기억합니다. 무엇을 하지 않을지 합의", "small": "잭 트라우트 · 앨 리스"}], "source_line": "잭 트라우트 · 앨 리스"}}</script>
+<script>
+window.TPL={"kpTitle": "남겨 둘 문장", "splitLede": true, "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '독서·연구 노트이며 법률·투자 자문이 아닙니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>

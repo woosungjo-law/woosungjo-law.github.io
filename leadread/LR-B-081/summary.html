@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>자율은 규칙을 없애는 일이 아니라 맥락을 공유하는 일이다</title>
+<meta name="description" content="제가 읽고 정리한 바로는, 규칙 없음은 통제를 없애자는 선언이 아닙니다. 구성원이 판단할 수 있도록 맥락과 기대 수준을 충분히 공유하자는 제안입니다. 규칙을 줄이">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="자율은 규칙을 없애는 일이 아니라 맥락을 공유하는 일이다">
+<meta property="og:description" content="제가 읽고 정리한 바로는, 규칙 없음은 통제를 없애자는 선언이 아닙니다. 구성원이 판단할 수 있도록 맥락과 기대 수준을 충분히 공유하자는 제안입니다. 규칙을 줄이">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;800;900&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S1 대립형 — 잉크 & 크림 / 주홍 포인트 / 좌우 대칭 */
+:root{--bg:#f6f1e7;--ink:#1b1a17;--mute:#6b655a;--acc:#b23a26;--line:#1b1a17;--soft:#ece4d3;--head:"Noto Serif KR","Nanum Myeongjo",serif;--body:"Noto Serif KR","Nanum Myeongjo",serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#151412;--ink:#eee7d7;--mute:#a59d8c;--acc:#e0664f;--line:#eee7d7;--soft:#211f1b}}
+body{font-size:16.5px}
+.page{max-width:1040px;padding:28px 20px 72px}
+.hd{border-top:4px solid var(--line);padding-top:6px;position:relative;text-align:center;margin-bottom:36px}
+.hd::before{content:"";display:block;border-top:1px solid var(--line);margin-bottom:26px}
+.kicker{display:inline-block;margin-bottom:14px}
+.headline{font-weight:900;font-size:clamp(27px,6.2vw,52px);line-height:1.3;letter-spacing:-.02em}
+.lede{max-width:680px;margin:22px auto 0;font-size:clamp(16px,2.3vw,19px);line-height:1.85;color:var(--ink);opacity:.88;text-align:left}
+.meta{margin-top:20px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.pq{margin:6px auto 44px;max-width:760px;text-align:center;padding:30px 4px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:relative}
+.pq p{font-weight:700;font-size:clamp(20px,3.6vw,30px);line-height:1.55;letter-spacing:-.01em;color:var(--acc)}
+.pq::before{content:"\201C";position:absolute;left:50%;top:-20px;transform:translateX(-50%);background:var(--bg);padding:0 12px;font-size:44px;line-height:1;color:var(--acc);font-family:var(--head)}
+.secs{display:grid;grid-template-columns:1fr;gap:0}
+.sec{padding:0;position:relative}
+.sec .num{display:block;font-family:var(--sans);font-weight:800;font-size:12px;letter-spacing:.14em;color:var(--acc);margin-bottom:8px}
+.sec h2{font-size:clamp(20px,3.4vw,25px);font-weight:800;line-height:1.4;margin-bottom:12px;letter-spacing:-.01em}
+.sec-body{font-size:16.5px;line-height:1.9}
+.sec:nth-child(1),.sec:nth-child(2){padding-bottom:8px}
+.sec:nth-child(2){margin-top:44px;padding-top:34px;border-top:1px solid var(--line)}
+.sec:nth-child(2)::before{content:"VS";position:absolute;left:50%;top:-17px;transform:translateX(-50%);width:34px;height:34px;line-height:34px;border-radius:50%;background:var(--acc);color:#fff;font:800 11px/34px var(--sans);text-align:center;letter-spacing:.04em}
+.sec:nth-child(n+3){margin-top:36px;padding-top:28px;border-top:3px double var(--line)}
+.kp{margin:44px 0 0;padding:26px 22px;background:var(--soft);border-top:3px solid var(--acc)}
+.kp-t{font-family:var(--sans);font-size:13px;letter-spacing:.14em;font-weight:700;color:var(--acc);margin-bottom:14px}
+.kp li{display:flex;gap:14px;padding:11px 0;border-top:1px solid color-mix(in srgb,var(--ink) 18%,transparent)}
+.kp li:first-child{border-top:0}
+.kp-n{flex:none;font-family:var(--sans);font-weight:800;font-size:13px;color:var(--acc);padding-top:.35em}
+.kp-x{font-weight:600;line-height:1.7}
+.ft{margin-top:44px;padding-top:20px;border-top:4px solid var(--line)}
+@media (min-width:820px){
+  .page{padding:48px 40px 96px}
+  .secs{grid-template-columns:1fr 1fr;column-gap:0}
+  .sec:nth-child(1){padding-right:40px}
+  .sec:nth-child(2){margin-top:0;padding-top:0;border-top:0;padding-left:40px;border-left:1px solid var(--line)}
+  .sec:nth-child(2)::before{left:-17px;top:0;transform:none}
+  .sec:nth-child(n+3){grid-column:1/-1}
+  .sec:nth-child(n+3) .sec-body{max-width:820px}
+  .kp li{padding:13px 0}
+}
+</style>
+</head>
+<body data-tpl="S1">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "LR-B-081", "title": "자율은 규칙을 없애는 일이 아니라 맥락을 공유하는 일이다", "col_type": "개념정의형", "kicker": "연구 노트", "byline": "조우성", "date": "2026-10-05", "summary": {"headline": "자율은 규칙을 없애는 일이 아니라 맥락을 공유하는 일이다", "lede": "제가 읽고 정리한 바로는, 규칙 없음은 통제를 없애자는 선언이 아닙니다. 구성원이 판단할 수 있도록 맥락과 기대 수준을 충분히 공유하자는 제안입니다. 규칙을 줄이", "sections": [{"h": "핵심 관점 1", "body": "평범함이 탁월함을 죽인다는 말은 모든 사람이 특별해야 한다는 뜻이 아닙니다. 평균적인 안전을 위해 좋은 판단을 막는 절차가 늘어나면 조직은 문제를 해결하는 대신 규정을 지키는 데 집중하게 됩니다. 자율을 주려면 먼저 어떤 결과가 중요한지, 어떤 위험은 감수할 수 있는지, 어디서 도움을 요청해야 하는지를 알려야 합니다. 맥"}, {"h": "핵심 관점 2", "body": "실수를 숨기는 문화는 실수를 줄이지 못합니다. 사람들은 문제가 커지기 전에 알리기보다 평가가 끝난 뒤 조용히 수습하려 합니다. 반대로 모든 실수를 허용한다는 말만 반복해도 기준은 사라집니다. 좋은 조직은 실수를 공유할 수 있게 하되, 같은 실수를 줄이기 위한 학습과 책임을 요구합니다. 솔직함은 무조건적인 고백이 아니라 더"}, {"h": "핵심 관점 3", "body": "리더의 역할도 바뀝니다. 답을 모두 알고 지시하는 사람보다, 판단에 필요한 정보와 우선순위를 제공하고 결과를 함께 검토하는 사람이 필요합니다. 구성원이 자율적으로 일하려면 리더가 결정권을 위임한 뒤 뒤늦게 개입하지 않아야 합니다. 대신 중요한 선택의 기준과 회고의 시간을 정해 두어야 합니다."}], "keypoints": ["평범함이 탁월함을 죽인다는 말은 모든 사람이 특별해야 한다는 뜻이 아닙니다. 평균적인 안전을 위해 좋은 판단을 막는 절차가 늘어나면 조직은 문제를 해결하는 대신 규정을 지키는 데 집중하게 됩니다. 자율을 주려면 먼저", "실수를 숨기는 문화는 실수를 줄이지 못합니다. 사람들은 문제가 커지기 전에 알리기보다 평가가 끝난 뒤 조용히 수습하려 합니다. 반대로 모든 실수를 허용한다는 말만 반복해도 기준은 사라집니다. 좋은 조직은 실수를 공유", "리더의 역할도 바뀝니다. 답을 모두 알고 지시하는 사람보다, 판단에 필요한 정보와 우선순위를 제공하고 결과를 함께 검토하는 사람이 필요합니다. 구성원이 자율적으로 일하려면 리더가 결정권을 위임한 뒤 뒤늦게 개입하지 "], "pull_quote": "자율을 말할 때 구성원의 성숙만 요구해서는 안 됩니다. 정보 비대칭과 평가 불안을 줄이고, 판단의 결과를 함께 학습하는 절차가 있어야 합니다. 그래야 솔직함이 고백의 부담이 아니라", "sources": ["리드 헤이스팅스 · 에린 마이어"]}, "cards": {"cards": [{"kind": "cover", "title": "제가 읽고 정리한 바로는, 규칙 없음은 ", "body": "제가 읽고 정리한 바로는, 규칙 없음은 통제를 없애자는 선언이 아닙니다. 구성원이 판단할 수 있도록 맥락과 기대 수준을 충분히 공유하자는 제안입니다. 규칙을 줄이면 자유가 커지는 것처럼 보이지만, 정보가 부족한 ", "small": "리드 헤이스팅스 · 에린 마이어"}, {"kind": "point", "title": "평범함이 탁월함을 죽인다는 말은 모든 사", "body": "평범함이 탁월함을 죽인다는 말은 모든 사람이 특별해야 한다는 뜻이 아닙니다. 평균적인 안전을 위해 좋은 판단을 막는 절차가 늘어나면 조직은 문제를 해결하는 대신 규정을 지키는 데 집중하게 됩니다. 자율을 주려면 ", "small": "리드 헤이스팅스 · 에린 마이어"}, {"kind": "compare", "title": "실수를 숨기는 문화는 실수를 줄이지 못합", "body": "실수를 숨기는 문화는 실수를 줄이지 못합니다. 사람들은 문제가 커지기 전에 알리기보다 평가가 끝난 뒤 조용히 수습하려 합니다. 반대로 모든 실수를 허용한다는 말만 반복해도 기준은 사라집니다. 좋은 조직은 실수를 ", "small": "리드 헤이스팅스 · 에린 마이어"}, {"kind": "point", "title": "자율은 사람마다 같은 자유를 나누는 일이", "body": "자율은 사람마다 같은 자유를 나누는 일이 아니라, 책임질 수 있는 범위와 필요한 지원을 함께 조정하는 일입니다. 경력이 짧은 사람에게도 판단의 기회를 주되, 질문할 창구와 검토의 간격을 마련해야 합니다. 경험 많", "small": "리드 헤이스팅스 · 에린 마이어"}, {"kind": "close", "title": "자율을 말할 때 구성원의 성숙만 요구해서", "body": "자율을 말할 때 구성원의 성숙만 요구해서는 안 됩니다. 정보 비대칭과 평가 불안을 줄이고, 판단의 결과를 함께 학습하는 절차가 있어야 합니다. 그래야 솔직함이 고백의 부담이 아니라 조직의 감지 능력이 됩니다. 규", "small": "리드 헤이스팅스 · 에린 마이어"}], "source_line": "리드 헤이스팅스 · 에린 마이어"}}</script>
+<script>
+window.TPL={"kpTitle": "두 관점, 한눈에", "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '독서·연구 노트이며 법률·투자 자문이 아닙니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>공유되는 생각은 좋은 내용보다 사람의 맥락에 붙는다</title>
+<meta name="description" content="제가 읽고 정리한 바로는, 사람들은 정보가 좋아서만 공유하지 않습니다. 그 정보를 말할 때 자신이 어떤 사람으로 보이는지, 일상에서 다시 떠올릴 계기가 있는지,">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="공유되는 생각은 좋은 내용보다 사람의 맥락에 붙는다">
+<meta property="og:description" content="제가 읽고 정리한 바로는, 사람들은 정보가 좋아서만 공유하지 않습니다. 그 정보를 말할 때 자신이 어떤 사람으로 보이는지, 일상에서 다시 떠올릴 계기가 있는지,">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;800;900&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S5 인용사색형 — 본화이트 & 와인 / 중앙 정렬·큰 여백·대형 인용 */
+:root{--bg:#f5f1ea;--ink:#2a2226;--mute:#7a6f74;--acc:#6e2b3a;--line:#c9bfb3;--head:"Noto Serif KR","Nanum Myeongjo",serif;--body:"Noto Serif KR","Nanum Myeongjo",serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#15111a;--ink:#e9e2e6;--mute:#a1949b;--acc:#d3919f;--line:#3a2f3c}}
+body{font-weight:300;font-size:17px;line-height:2}
+.page{max-width:660px;padding:56px 24px 100px;text-align:center}
+.kicker{display:block;font-weight:500}
+.headline{font-weight:400;font-size:clamp(16px,3vw,19px);line-height:1.6;color:var(--mute);letter-spacing:0;margin-top:14px}
+.meta{margin-top:10px;font-size:12px}
+.lede-x{order:3;text-align:left;margin:0 0 64px;font-size:17px;line-height:2.05;font-weight:300}
+.pq{order:2;margin:56px -4px 56px;padding:0;position:relative}
+.pq::before{content:"\201C";display:block;font-family:var(--head);font-size:96px;line-height:.7;color:var(--acc);opacity:.85;margin-bottom:14px;font-weight:400}
+.pq p{font-weight:300;font-size:clamp(23px,5.6vw,38px);line-height:1.6;letter-spacing:-.02em;color:var(--ink)}
+.pq::after{content:"";display:block;width:36px;height:1px;background:var(--acc);margin:42px auto 0}
+.secs{order:4}
+.sec{margin:0 0 56px;text-align:left}
+.sec .num{display:block;text-align:center;font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:.3em;color:var(--acc);margin-bottom:12px}
+.sec h2{text-align:center;font-weight:500;font-size:clamp(19px,3.2vw,22px);line-height:1.6;margin-bottom:16px;color:var(--ink)}
+.sec-body{font-size:16.5px;line-height:2.05}
+.sec:not(:last-child)::after{content:"";display:block;width:4px;height:4px;border-radius:50%;background:var(--acc);margin:56px auto 0;opacity:.7}
+.kp{order:5;margin:20px 0 0;padding:34px 0 0;border-top:1px solid var(--line);text-align:left}
+.kp-t{text-align:center;font-family:var(--sans);font-weight:500;font-size:11px;letter-spacing:.3em;color:var(--acc);margin-bottom:12px}
+.kp li{display:flex;gap:14px;padding:10px 0}
+.kp-n{flex:none;font-family:var(--sans);font-size:11px;letter-spacing:.1em;color:var(--acc);padding-top:.6em}
+.kp-x{font-weight:400;line-height:1.85}
+.ft{order:6;margin-top:56px;padding-top:24px;border-top:1px solid var(--line);text-align:center}
+.ft .src li{padding-left:0;text-indent:0}
+.ft .src li::before{content:""}
+@media (min-width:820px){
+  .page{padding:110px 24px 140px}
+  .pq{margin:80px -60px}
+  .pq p{font-size:40px}
+}
+</style>
+</head>
+<body data-tpl="S5">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "LR-B-077", "title": "공유되는 생각은 좋은 내용보다 사람의 맥락에 붙는다", "col_type": "개념정의형", "kicker": "연구 노트", "byline": "조우성", "date": "2026-10-05", "summary": {"headline": "공유되는 생각은 좋은 내용보다 사람의 맥락에 붙는다", "lede": "제가 읽고 정리한 바로는, 사람들은 정보가 좋아서만 공유하지 않습니다. 그 정보를 말할 때 자신이 어떤 사람으로 보이는지, 일상에서 다시 떠올릴 계기가 있는지, ", "sections": [{"h": "핵심 관점 1", "body": "소셜 화폐는 사람에게 자신을 표현할 재료를 줍니다. 흥미로운 사실과 유용한 관점은 공유하는 사람을 더 영리하거나 세심한 사람처럼 보이게 할 수 있습니다. 그렇다고 사람을 이용해 메시지를 퍼뜨리라는 뜻은 아닙니다. 누가 이 내용을 말하고 싶어 하는지, 그 말이 자신의 정체성과 어떻게 연결되는지 이해해야 한다는 뜻입니다."}, {"h": "핵심 관점 2", "body": "방아쇠는 내용이 기억나는 순간을 만듭니다. 좋은 캠페인도 일상에서 떠올릴 단서가 없으면 금방 사라집니다. 사람의 일정과 장소와 반복 행동에 자연스럽게 연결될 때 메시지는 다시 나타납니다. 감정 역시 중요하지만 강한 자극만 추구하면 피로와 반감이 생깁니다. 감정은 행동을 부추기는 장치가 아니라 의미를 만드는 통로여야 합니다"}, {"h": "핵심 관점 3", "body": "대중성은 눈에 띄는 디자인만으로 만들어지지 않습니다. 다른 사람이 무엇을 하고 있는지 보이면 행동은 따라 하기 쉬워집니다. 제품과 아이디어를 사회적 환경에 놓고, 사용자가 결과를 보여 주거나 서로의 선택을 확인할 수 있게 하는 설계가 필요합니다. 공유는 개인의 클릭이 아니라 관계 속에서 일어나는 행동입니다."}], "keypoints": ["소셜 화폐는 사람에게 자신을 표현할 재료를 줍니다. 흥미로운 사실과 유용한 관점은 공유하는 사람을 더 영리하거나 세심한 사람처럼 보이게 할 수 있습니다. 그렇다고 사람을 이용해 메시지를 퍼뜨리라는 뜻은 아닙니다. 누", "방아쇠는 내용이 기억나는 순간을 만듭니다. 좋은 캠페인도 일상에서 떠올릴 단서가 없으면 금방 사라집니다. 사람의 일정과 장소와 반복 행동에 자연스럽게 연결될 때 메시지는 다시 나타납니다. 감정 역시 중요하지만 강한 ", "대중성은 눈에 띄는 디자인만으로 만들어지지 않습니다. 다른 사람이 무엇을 하고 있는지 보이면 행동은 따라 하기 쉬워집니다. 제품과 아이디어를 사회적 환경에 놓고, 사용자가 결과를 보여 주거나 서로의 선택을 확인할 수"], "pull_quote": "공유를 설계할 때는 사람을 데이터로만 보지 말아야 합니다. 무엇을 말하고 싶고 무엇을 숨기고 싶은지, 공유 뒤 어떤 관계가 남는지까지 살펴야 합니다. 지속되는 전파는 자극보다 신뢰", "sources": ["조나 버거"]}, "cards": {"cards": [{"kind": "cover", "title": "제가 읽고 정리한 바로는, 사람들은 정보", "body": "제가 읽고 정리한 바로는, 사람들은 정보가 좋아서만 공유하지 않습니다. 그 정보를 말할 때 자신이 어떤 사람으로 보이는지, 일상에서 다시 떠올릴 계기가 있는지, 감정이 얼마나 움직였는지까지 함께 작용합니다. 전파", "small": "조나 버거"}, {"kind": "point", "title": "소셜 화폐는 사람에게 자신을 표현할 재료", "body": "소셜 화폐는 사람에게 자신을 표현할 재료를 줍니다. 흥미로운 사실과 유용한 관점은 공유하는 사람을 더 영리하거나 세심한 사람처럼 보이게 할 수 있습니다. 그렇다고 사람을 이용해 메시지를 퍼뜨리라는 뜻은 아닙니다.", "small": "조나 버거"}, {"kind": "compare", "title": "방아쇠는 내용이 기억나는 순간을 만듭니다", "body": "방아쇠는 내용이 기억나는 순간을 만듭니다. 좋은 캠페인도 일상에서 떠올릴 단서가 없으면 금방 사라집니다. 사람의 일정과 장소와 반복 행동에 자연스럽게 연결될 때 메시지는 다시 나타납니다. 감정 역시 중요하지만 강", "small": "조나 버거"}, {"kind": "point", "title": "이야기는 정보를 운반하는 그릇입니다", "body": "이야기는 정보를 운반하는 그릇입니다. 숫자와 특징을 나열하는 대신 사람이 실제로 겪는 문제와 선택을 담으면 내용은 더 오래 기억됩니다. 다만 이야기가 사실을 장식하는 도구가 되어서는 안 됩니다. 핵심 정보가 빠진", "small": "조나 버거"}, {"kind": "close", "title": "공유를 설계할 때는 사람을 데이터로만 보", "body": "공유를 설계할 때는 사람을 데이터로만 보지 말아야 합니다. 무엇을 말하고 싶고 무엇을 숨기고 싶은지, 공유 뒤 어떤 관계가 남는지까지 살펴야 합니다. 지속되는 전파는 자극보다 신뢰와 맥락을 오래 남깁니다. 좋은 ", "small": "조나 버거"}], "source_line": "조나 버거"}}</script>
+<script>
+window.TPL={"kpTitle": "남겨 둘 문장", "splitLede": true, "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '독서·연구 노트이며 법률·투자 자문이 아닙니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
