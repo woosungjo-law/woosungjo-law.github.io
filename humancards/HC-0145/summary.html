@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>승인 없는 속도는 권한이 아니다</title>
+<meta name="description" content="빠른 사람은 조직에서 쉽게 칭찬받는다. 남들이 회의할 때 먼저 실행하고 문제가 생기면 또 먼저 고친다. 그러나 속도가 곧 권한은 아니다. 누가 무엇을 바꿀 수 있는지 합의되지 않은 조직에서 빠른 실행은 새로운 위험이 된다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="승인 없는 속도는 권한이 아니다">
+<meta property="og:description" content="빠른 사람은 조직에서 쉽게 칭찬받는다. 남들이 회의할 때 먼저 실행하고 문제가 생기면 또 먼저 고친다. 그러나 속도가 곧 권한은 아니다. 누가 무엇을 바꿀 수 있는지 합의되지 않은 조직에서 빠른 실행은 새로운 위험이 된다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;800;900&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S5 인용사색형 — 본화이트 & 와인 / 중앙 정렬·큰 여백·대형 인용 */
+:root{--bg:#f5f1ea;--ink:#2a2226;--mute:#7a6f74;--acc:#6e2b3a;--line:#c9bfb3;--head:"Noto Serif KR","Nanum Myeongjo",serif;--body:"Noto Serif KR","Nanum Myeongjo",serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#15111a;--ink:#e9e2e6;--mute:#a1949b;--acc:#d3919f;--line:#3a2f3c}}
+body{font-weight:300;font-size:17px;line-height:2}
+.page{max-width:660px;padding:56px 24px 100px;text-align:center}
+.kicker{display:block;font-weight:500}
+.headline{font-weight:400;font-size:clamp(16px,3vw,19px);line-height:1.6;color:var(--mute);letter-spacing:0;margin-top:14px}
+.meta{margin-top:10px;font-size:12px}
+.lede-x{order:3;text-align:left;margin:0 0 64px;font-size:17px;line-height:2.05;font-weight:300}
+.pq{order:2;margin:56px -4px 56px;padding:0;position:relative}
+.pq::before{content:"\201C";display:block;font-family:var(--head);font-size:96px;line-height:.7;color:var(--acc);opacity:.85;margin-bottom:14px;font-weight:400}
+.pq p{font-weight:300;font-size:clamp(23px,5.6vw,38px);line-height:1.6;letter-spacing:-.02em;color:var(--ink)}
+.pq::after{content:"";display:block;width:36px;height:1px;background:var(--acc);margin:42px auto 0}
+.secs{order:4}
+.sec{margin:0 0 56px;text-align:left}
+.sec .num{display:block;text-align:center;font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:.3em;color:var(--acc);margin-bottom:12px}
+.sec h2{text-align:center;font-weight:500;font-size:clamp(19px,3.2vw,22px);line-height:1.6;margin-bottom:16px;color:var(--ink)}
+.sec-body{font-size:16.5px;line-height:2.05}
+.sec:not(:last-child)::after{content:"";display:block;width:4px;height:4px;border-radius:50%;background:var(--acc);margin:56px auto 0;opacity:.7}
+.kp{order:5;margin:20px 0 0;padding:34px 0 0;border-top:1px solid var(--line);text-align:left}
+.kp-t{text-align:center;font-family:var(--sans);font-weight:500;font-size:11px;letter-spacing:.3em;color:var(--acc);margin-bottom:12px}
+.kp li{display:flex;gap:14px;padding:10px 0}
+.kp-n{flex:none;font-family:var(--sans);font-size:11px;letter-spacing:.1em;color:var(--acc);padding-top:.6em}
+.kp-x{font-weight:400;line-height:1.85}
+.ft{order:6;margin-top:56px;padding-top:24px;border-top:1px solid var(--line);text-align:center}
+.ft .src li{padding-left:0;text-indent:0}
+.ft .src li::before{content:""}
+@media (min-width:820px){
+  .page{padding:110px 24px 140px}
+  .pq{margin:80px -60px}
+  .pq p{font-size:40px}
+}
+</style>
+</head>
+<body data-tpl="S5">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "HC-0145", "title": "승인 없는 속도는 권한이 아니다", "col_type": "대립형", "kicker": "인재와평가", "byline": "조우성", "date": "2026-10-05", "summary": {"headline": "승인 없는 속도는 권한이 아니다", "lede": "빠른 사람은 조직에서 쉽게 칭찬받는다. 남들이 회의할 때 먼저 실행하고 문제가 생기면 또 먼저 고친다. 그러나 속도가 곧 권한은 아니다. 누가 무엇을 바꿀 수 있는지 합의되지 않은 조직에서 빠른 실행은 새로운 위험이 된다.", "sections": [{"h": "속도와 권한은 다르다", "body": "속도를 평가하려면 도착 시간뿐 아니라 누구에게 영향을 주었는지도 봐야 한다. 권한은 승인, 검증, 기록이 이어질 때 생긴다. 이 절차는 느린 관료주의가 아니라 속도가 만든 흔적을 공동의 판단으로 바꾸는 장치다."}, {"h": "끝난 뒤의 질문", "body": "누가 바꿨는지보다 무엇이 바뀌었고 누가 영향을 받았는지 먼저 묻는다. 되돌릴 수 있는 조치라면 짧은 기록만으로 충분하지만, 고객과 동료와 데이터에 오래 남는 변화라면 사전 확인이 필요하다. 이 구분이 있으면 빠른 사람은 매번 허락을 구하지 않으면서도 자신의 범위를 안다."}, {"h": "영웅담을 만들지 않기", "body": "리더는 결과가 좋았다는 이유로 절차를 생략한 행동을 영웅담으로 만들지 않아야 한다. 반대로 작은 실험이 실패했다고 사람 전체를 낮게 평가해서도 안 된다. 권한은 성공의 보너스가 아니라 책임을 감당할 수 있도록 설계된 공간이다."}, {"h": "승인이 세분되면 멈춘다", "body": "실패하는 조건도 있다. 승인을 지나치게 세분하면 작은 판단까지 위로 올라가 조직이 멈춘다. 규칙을 무시한 사람의 속도만 성과로 기록하는 팀도 있다. 위험이 낮고 되돌릴 수 있는 일에는 간단한 사전 합의를 쓰고, 영향이 큰 일에는 검증을 강화한다."}], "keypoints": ["속도가 곧 권한은 아니다", "권한은 승인과 검증과 기록이 이어질 때 생긴다", "일이 끝난 뒤 누가 영향을 받았는지를 먼저 묻는다", "절차를 생략한 성공을 영웅담으로 만들지 않는다", "되돌릴 수 있는 일은 가볍게, 오래 남는 변화는 무겁게 다룬다"], "pull_quote": "진짜 권한은 혼자 앞서가는 허가가 아니다. 함께 감당할 수 있는 범위를 정하고 그 안에서 빠르게 움직일 수 있는 신뢰다.", "sources": []}, "cards": {"cards": [{"kind": "cover", "title": "승인 없는 속도는 권한이 아니다", "body": "빠른 사람은 쉽게 칭찬받는다. 남들이 회의할 때 먼저 실행하고 문제가 생기면 또 먼저 고친다. 그러나 빠른 판단도 책임의 문턱을 지나야 오래간다."}, {"kind": "point", "title": "속도가 권한은 아니다", "small": "핵심", "body": "누가 무엇을 바꿀 수 있는지 합의되지 않은 조직에서 빠른 실행은 능력이 아닌 새로운 위험이 된다. 도착 시간만으로는 평가할 수 없다."}, {"kind": "point", "title": "끝난 뒤의 질문", "small": "기준", "body": "누가 바꿨는지보다 무엇이 바뀌었고 누가 영향을 받았는지 먼저 묻는다. 이 구분이 있으면 매번 허락을 구하지 않아도 자신의 범위를 안다."}, {"kind": "compare", "title": "되돌릴 수 있는가", "body": "되돌릴 수 있다: 짧은 기록만으로 충분하다\n오래 남는다: 고객과 동료와 데이터에 남는 변화라면 사전 확인이 필요하다"}, {"kind": "point", "title": "영웅담을 만들지 않기", "small": "한계", "body": "결과가 좋았다고 절차를 생략한 행동을 영웅담으로 만들면 다음 사람이 같은 위험을 진다. 작은 실패로 사람 전체를 낮게 평가해서도 안 된다."}, {"kind": "close", "title": "함께 감당하는 범위", "small": "개인의 해석을 담은 에세이이며 전문적 조언이 아닙니다.", "body": "권한은 성공의 보너스가 아니라 책임을 감당할 수 있도록 설계된 공간이다. 그 공간 안에서 속도는 비로소 팀의 자산이 된다."}], "source_line": "인재와평가"}}</script>
+<script>
+window.TPL={"kpTitle": "남겨 둘 문장", "splitLede": true, "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '개인의 해석을 담은 에세이이며 전문적 조언이 아닙니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
+<!-- hgcol build-id: hb-3b91369c91 -->
