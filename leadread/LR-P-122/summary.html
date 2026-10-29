@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>시간은 산출이 아니라 신호가 되는 순간</title>
+<meta name="description" content="장시간 노동을 둘러싼 논쟁은 '오래 일하는 것이 헌신인가'로 열리지만, 두 편의 연구는 같은 현상에서 다른 값을 봅니다. 하나는 산출의 값이고, 하나는 신호의 값입니다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="시간은 산출이 아니라 신호가 되는 순간">
+<meta property="og:description" content="장시간 노동을 둘러싼 논쟁은 '오래 일하는 것이 헌신인가'로 열리지만, 두 편의 연구는 같은 현상에서 다른 값을 봅니다. 하나는 산출의 값이고, 하나는 신호의 값입니다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;800;900&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S2 개념정의형 — 딥네이비 & 골드 / 사전식 좌우 배치 */
+:root{--bg:#f3f4f7;--ink:#141f38;--mute:#5d6577;--acc:#8f6a12;--gold:#c9a24b;--navy:#0f1c3a;--head:"Noto Serif KR","Nanum Myeongjo",serif;--body:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0a1122;--ink:#e6e9f1;--mute:#9aa3b8;--acc:#d8b25e;--navy:#0f1c3a}}
+body{font-size:16.5px;line-height:1.85}
+.page{max-width:none;padding:0}
+.hd{background:var(--navy);color:#f1eee4;padding:44px 20px 40px}
+.hd>*{max-width:900px;margin-left:auto;margin-right:auto}
+.kicker{display:block;color:var(--gold);margin-bottom:16px}
+.headline{font-weight:700;font-size:clamp(26px,5.6vw,46px);line-height:1.34;letter-spacing:-.015em;color:#fff}
+.lede{margin-top:26px;padding:20px 20px 20px 22px;border-left:3px solid var(--gold);background:rgba(255,255,255,.06)}
+.lede-label{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.16em;font-weight:700;color:var(--gold);margin-bottom:8px}
+.lede p{font-size:clamp(16px,2.3vw,18.5px);line-height:1.85;color:#ece9de}
+.meta{margin-top:20px;color:#a9b2c7}
+.pq,.secs,.ft{width:100%;max-width:900px;margin-left:auto;margin-right:auto;padding-left:20px;padding-right:20px}
+.pq{margin-top:44px}
+.pq p{font-family:var(--head);font-weight:600;font-size:clamp(19px,3.2vw,26px);line-height:1.6;color:var(--ink);padding:4px 0 4px 20px;border-left:3px solid var(--gold)}
+.secs{margin-top:34px}
+.sec{padding:26px 0;border-top:1px solid color-mix(in srgb,var(--ink) 20%,transparent)}
+.sec:first-child{border-top:0}
+.sec .num{display:block;font-family:var(--sans);font-weight:700;font-size:12px;letter-spacing:.14em;color:var(--acc);margin-bottom:6px}
+.sec h2{font-family:var(--head);font-weight:700;font-size:clamp(19px,3.2vw,23px);line-height:1.45;margin-bottom:12px;color:var(--ink)}
+.kp{background:var(--navy);color:#eee;margin-top:20px;padding:34px 20px 38px}
+.kp>*{max-width:860px;margin-left:auto;margin-right:auto}
+.kp-t{font-family:var(--head);font-size:20px;font-weight:700;color:var(--gold);margin-bottom:14px}
+.kp li{display:flex;gap:14px;padding:12px 0;border-top:1px solid rgba(255,255,255,.14)}
+.kp li:first-child{border-top:0}
+.kp-n{flex:none;width:9px;height:9px;margin-top:.72em;background:var(--gold);transform:rotate(45deg);font-size:0;overflow:hidden}
+.kp-x{line-height:1.7;color:#eef0f5}
+.ft{padding-top:32px;padding-bottom:72px}
+@media (min-width:820px){
+  .hd{padding:80px 40px 64px}
+  .pq,.secs,.ft{padding-left:40px;padding-right:40px}
+  .kp{padding:52px 40px 56px}
+  .sec{display:grid;grid-template-columns:230px 1fr;column-gap:44px;padding:34px 0}
+  .sec .num{grid-column:1;grid-row:1;margin:0 0 4px;align-self:start}
+  .sec .sec-in{display:contents}
+  .sec h2{grid-column:1;grid-row:1;margin:26px 0 0}
+  .sec-body{grid-column:2;grid-row:1/span 2;font-size:17px}
+}
+</style>
+</head>
+<body data-tpl="S2">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "LR-P-122", "title": "시간은 산출이 아니라 신호가 되는 순간", "col_type": "대립형", "kicker": "연구 노트 · 일과 성장", "byline": "조우성", "date": "2026-10-12", "summary": {"headline": "오래 일하는 이유는 산출이 아니라 신호에 남는다", "lede": "장시간 노동을 둘러싼 논쟁은 '오래 일하는 것이 헌신인가'로 열리지만, 두 편의 연구는 같은 현상에서 다른 값을 봅니다. 하나는 산출의 값이고, 하나는 신호의 값입니다.", "sections": [{"h": "프레임 — 시간의 한계선", "body": "펜캡벨은 탄약 공장의 기록에서 주당 48시간까지는 산출이 시간에 비례해 늘었지만, 그 선을 넘자 오히려 줄었다고 봤습니다. 피로가 누적되면 같은 사람이 같은 일을 해도 단위 시간의 결과가 달라집니다."}, {"h": "반증 — 시간은 선별 신호다", "body": "로펌 변호사를 살펴보니 능력이 있다는 평가를 받는 사람일수록 긴 시간을 택했습니다. 고용주는 능력을 바로 알아보기 어려워 일한 시간을 대신값으로 삼고, 그러면 시간을 줄이는 선택이 약점의 신호가 됩니다."}, {"h": "두 값이 갈리는 곳", "body": "한쪽은 긴 시간의 산출 값을, 다른 쪽은 신호 값을 봅니다. 산출의 값이 거의 없어도 신호의 값이 남아 있는 한 장시간 노동은 사라지지 않습니다."}, {"h": "실무 점검 다섯 항목", "body": "야근을 성실의 지표로 쓰지 않고, 무엇을 만들었는지를 시간과 분리해 적으며, 상한을 넘긴 원인을 업무 배분에서 찾고, 회복 시간을 일정에 먼저 놓고, 오래 남는 사람을 승진 기준으로 삼지 않습니다."}], "keypoints": ["주당 48시간을 넘어서면 산출은 오히려 줄어든다.", "긴 노동시간은 헌신의 증거가 아니라 계산의 오류일 수 있다.", "시간이 선별 신호가 되면 개인은 혼자 빠져나올 수 없다.", "근무표보다 먼저 바꿔야 하는 것은 평가 기준이다."], "pull_quote": "산출의 값이 거의 없어도 신호의 값이 남아 있는 한, 장시간 노동은 사라지지 않는다.", "sources": ["Pencavel (2015) The Productivity of Working Hours — The Economic Journal", "Landers, Rebitzer \u0026 Taylor (1996) Rat Race Redux — American Economic Review"]}, "cards": {"cards": [{"kind": "cover", "title": "시간은 산출이 아니라 신호가 되는 순간", "body": "펜캡벨의 시간-산출 관계, 랜더스 등의 선별 신호 가설. 오래 일하는 일을 둘러싼 두 연구가 같은 현상에서 정반대의 결론을 냅니다. 이 글은 그 갈림을 산출의 값과 신호의 값으로 나눠 봅니다.", "small": "연구 노트 · 일과 성장 · 2015·1996"}, {"kind": "point", "title": "시간의 한계선", "body": "펜캡벨은 탄약 공장의 기록에서 주당 48시간까지는 산출이 시간에 비례해 늘었지만, 그 선을 넘자 오히려 줄었다고 봤습니다. 하루 열두 시간을 이어 붙인 뒤의 한 시간은 앞의 한 시간과 같은 값을 내지 못합니다.", "small": "Pencavel (2015)"}, {"kind": "compare", "title": "반대편의 계산", "body": "로펌 변호사를 살펴보니 능력이 있다는 평가를 받는 사람일수록 긴 시간을 택했습니다. 고용주는 능력을 바로 알아보기 어려워 일한 시간을 대신값으로 삼고, 그러면 시간을 줄이는 선택이 약점의 신호가 됩니다.", "small": "Landers·Rebitzer·Taylor (1996)"}, {"kind": "point", "title": "균형은 아무도 원하지 않았다", "body": "개인은 남보다 적게 일하면 불리해질까 봐 시간을 늘리고, 고용주는 사람을 재는 다른 장치가 없어 그 신호를 계속 씁니다. 모두가 더 오래 일하는 균형이 만들어져도 개인은 혼자 빠져나올 수 없습니다.", "small": "갇힌 선택"}, {"kind": "quote", "title": "역량으로 읽는 시간", "body": "시간을 스스로 정할 수 없는 상태는 숫자보다 역량의 축소로 읽어야 합니다. 규제로 상한을 정하는 것만으로는 이 균형이 흔들리지 않는 이유도, 시간의 값이 신호로 남아 있기 때문입니다.", "small": "센의 관점을 이어 붙인 해석"}, {"kind": "close", "title": "실무 점검 다섯 항목", "body": "야근을 성실의 지표로 쓰지 않고, 무엇을 만들었는지를 시간과 분리해 적으며, 상한을 넘긴 원인을 업무 배분에서 찾고, 회복 시간을 일정에 먼저 놓고, 오래 남는 사람을 승진 기준으로 삼지 않습니다."}], "source_line": "Pencavel (2015) · Landers, Rebitzer \u0026 Taylor (1996)"}}</script>
+<script>
+window.TPL={"kpTitle": "핵심 정리", "ledeLabel": "핵심 정의", "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '독서·연구 노트이며 법률·투자 자문이 아닙니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
