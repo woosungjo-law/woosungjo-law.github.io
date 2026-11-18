@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>배신은 계산으로만 성립하지 않는다</title>
+<meta name="description" content="배신을 막으려면 가해자의 계산을 봐야 한다는 연구와, 그 계산만으로는 배신이 성립하지 않는다는 연구가 있다. 두 논문을 겹치면 리더가 찾아야 할 것이 숨은 음모자가 아니라 설명의 공백이라는 사실이 드러난다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="배신은 계산으로만 성립하지 않는다">
+<meta property="og:description" content="배신을 막으려면 가해자의 계산을 봐야 한다는 연구와, 그 계산만으로는 배신이 성립하지 않는다는 연구가 있다. 두 논문을 겹치면 리더가 찾아야 할 것이 숨은 음모자가 아니라 설명의 공백이라는 사실이 드러난다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;800;900&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S5 인용사색형 — 본화이트 & 와인 / 중앙 정렬·큰 여백·대형 인용 */
+:root{--bg:#f5f1ea;--ink:#2a2226;--mute:#7a6f74;--acc:#6e2b3a;--line:#c9bfb3;--head:"Noto Serif KR","Nanum Myeongjo",serif;--body:"Noto Serif KR","Nanum Myeongjo",serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#15111a;--ink:#e9e2e6;--mute:#a1949b;--acc:#d3919f;--line:#3a2f3c}}
+body{font-weight:300;font-size:17px;line-height:2}
+.page{max-width:660px;padding:56px 24px 100px;text-align:center}
+.kicker{display:block;font-weight:500}
+.headline{font-weight:400;font-size:clamp(16px,3vw,19px);line-height:1.6;color:var(--mute);letter-spacing:0;margin-top:14px}
+.meta{margin-top:10px;font-size:12px}
+.lede-x{order:3;text-align:left;margin:0 0 64px;font-size:17px;line-height:2.05;font-weight:300}
+.pq{order:2;margin:56px -4px 56px;padding:0;position:relative}
+.pq::before{content:"\201C";display:block;font-family:var(--head);font-size:96px;line-height:.7;color:var(--acc);opacity:.85;margin-bottom:14px;font-weight:400}
+.pq p{font-weight:300;font-size:clamp(23px,5.6vw,38px);line-height:1.6;letter-spacing:-.02em;color:var(--ink)}
+.pq::after{content:"";display:block;width:36px;height:1px;background:var(--acc);margin:42px auto 0}
+.secs{order:4}
+.sec{margin:0 0 56px;text-align:left}
+.sec .num{display:block;text-align:center;font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:.3em;color:var(--acc);margin-bottom:12px}
+.sec h2{text-align:center;font-weight:500;font-size:clamp(19px,3.2vw,22px);line-height:1.6;margin-bottom:16px;color:var(--ink)}
+.sec-body{font-size:16.5px;line-height:2.05}
+.sec:not(:last-child)::after{content:"";display:block;width:4px;height:4px;border-radius:50%;background:var(--acc);margin:56px auto 0;opacity:.7}
+.kp{order:5;margin:20px 0 0;padding:34px 0 0;border-top:1px solid var(--line);text-align:left}
+.kp-t{text-align:center;font-family:var(--sans);font-weight:500;font-size:11px;letter-spacing:.3em;color:var(--acc);margin-bottom:12px}
+.kp li{display:flex;gap:14px;padding:10px 0}
+.kp-n{flex:none;font-family:var(--sans);font-size:11px;letter-spacing:.1em;color:var(--acc);padding-top:.6em}
+.kp-x{font-weight:400;line-height:1.85}
+.ft{order:6;margin-top:56px;padding-top:24px;border-top:1px solid var(--line);text-align:center}
+.ft .src li{padding-left:0;text-indent:0}
+.ft .src li::before{content:""}
+@media (min-width:820px){
+  .page{padding:110px 24px 140px}
+  .pq{margin:80px -60px}
+  .pq p{font-size:40px}
+}
+</style>
+</head>
+<body data-tpl="S5">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "LR-P-131", "title": "배신은 계산으로만 성립하지 않는다", "col_type": "대립형", "kicker": "논문 대립 · 신뢰와 배신", "byline": "조우성", "date": "2026-11-12", "summary": {"headline": "믿음이 클수록 작은 어긋남도 배신으로 읽힌다", "lede": "배신을 막으려면 가해자의 계산을 봐야 한다는 연구와, 그 계산만으로는 배신이 성립하지 않는다는 연구가 있다. 두 논문을 겹치면 리더가 찾아야 할 것이 숨은 음모자가 아니라 설명의 공백이라는 사실이 드러난다.", "sections": [{"h": "프레임 · 배신자의 눈으로", "body": "배신은 우발적 실수와 다르다. 신뢰라는 자산을 기회주의적으로 전용하는 계산이 들어 있다. 유형은 기회주의적 배신이 가장 흔하고, 복수나 이념을 내세우는 형태가 뒤를 잇는다. 유형별로 다른 대응이 필요하다."}, {"h": "반증 · 기대가 배신을 완성한다", "body": "새로 입사한 관리자들을 추적한 연구에 따르면, 처음에 고용주를 깊이 신뢰했던 사람일수록 같은 사건을 계약 위반으로 읽었다. 신뢰가 위반을 만드는 역설이다. 배신은 피해자의 기대라는 렌즈를 통과해야 완성된다."}, {"h": "음모 없는 배신", "body": "드러난 사리사욕도, 밝혀진 계획도 없는데 수백 명이 배신을 느낀 사례가 있다. 설명의 공백과 기대의 붕괴가 만나면 음모 없는 배신이 완성된다. 기대의 원본이 없으면 위반의 판정도 없다."}], "keypoints": ["배신은 일탈이나 반사회적 행동과 구별되는 기회주의적 전용이다", "기회주의적 배신은 평소 성실해 보여 적발이 늦다", "신뢰가 큰 사람일수록 작은 어긋남을 위반으로 읽는다", "기대의 원본을 문서로 남기지 않으면 위반 판정의 기준이 없다", "배신자를 찾기 전에 배신으로 읽히는 눈을 먼저 점검한다"], "pull_quote": "기대의 원본이 없으면 위반의 판정도 없다.", "sources": ["Elangovan, A. R. \u0026 Shapiro, D. L. (1998) Betrayal of trust in organizations — Academy of Management Review 23(3)", "Robinson, S. L. (1996) Trust and breach of the psychological contract — Administrative Science Quarterly 41(4)"]}, "cards": {"cards": [{"kind": "cover", "title": "누구의 계산, 누구의 기대", "body": "배신이라 불린 일은 가해자의 계산이었는가, 피해자의 기대였는가. 전자라면 감시와 제도가 답이고, 후자라면 소통과 문서가 답이다.", "small": "프레임: Elangovan·Shapiro (1998) · 반증: Robinson (1996)"}, {"kind": "point", "title": "가장 흔한 유형", "body": "상황을 틈타 이익을 챙기는 기회주의적 배신이 가장 흔하다. 평소에는 성실해 보여 적발이 늦고, 확인의 주기가 길수록 틈이 넓어진다."}, {"kind": "compare", "title": "계산과 기대", "body": "한쪽은 가해자의 계산에서 배신이 완성된다고 보고, 다른 쪽은 피해자의 기대에서 완성된다고 본다. 두 처방은 배타적이지 않다."}, {"kind": "point", "title": "한 줄로 끝낸 결정", "body": "설명되지 않은 결정은 모든 해석을 배신으로 몰아간다. 사유를 한 줄로 끝내면 남는 것은 사실이 아니라 추측뿐이다."}, {"kind": "close", "title": "남는 질문", "body": "우리 조직에서 마지막으로 배신이라 불린 일은 누구의 계산이었고, 누구의 기대였는가. 그 둘을 가리지 않고 한쪽만 처방하면 다음 배신이 같은 자리에서 자란다."}], "source_line": "Elangovan \u0026 Shapiro (1998) Academy of Management Review · Robinson (1996) Administrative Science Quarterly를 재구성한 연구 노트"}}</script>
+<script>
+window.TPL={"kpTitle": "남겨 둘 문장", "splitLede": true, "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '독서·연구 노트이며 법률·투자 자문이 아닙니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
