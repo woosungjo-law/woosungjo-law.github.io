@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>소문을 지우면 조직이 마른다</title>
+<meta name="description" content="소문의 양을 계산하는 공식과, 소문이 조직의 신뢰를 드러낸다는 반론은 반대말이 아니다. 하나를 지우면 나머지 하나가 조직을 마르게 한다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="소문을 지우면 조직이 마른다">
+<meta property="og:description" content="소문의 양을 계산하는 공식과, 소문이 조직의 신뢰를 드러낸다는 반론은 반대말이 아니다. 하나를 지우면 나머지 하나가 조직을 마르게 한다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;800;900&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S5 인용사색형 — 본화이트 & 와인 / 중앙 정렬·큰 여백·대형 인용 */
+:root{--bg:#f5f1ea;--ink:#2a2226;--mute:#7a6f74;--acc:#6e2b3a;--line:#c9bfb3;--head:"Noto Serif KR","Nanum Myeongjo",serif;--body:"Noto Serif KR","Nanum Myeongjo",serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#15111a;--ink:#e9e2e6;--mute:#a1949b;--acc:#d3919f;--line:#3a2f3c}}
+body{font-weight:300;font-size:17px;line-height:2}
+.page{max-width:660px;padding:56px 24px 100px;text-align:center}
+.kicker{display:block;font-weight:500}
+.headline{font-weight:400;font-size:clamp(16px,3vw,19px);line-height:1.6;color:var(--mute);letter-spacing:0;margin-top:14px}
+.meta{margin-top:10px;font-size:12px}
+.lede-x{order:3;text-align:left;margin:0 0 64px;font-size:17px;line-height:2.05;font-weight:300}
+.pq{order:2;margin:56px -4px 56px;padding:0;position:relative}
+.pq::before{content:"\201C";display:block;font-family:var(--head);font-size:96px;line-height:.7;color:var(--acc);opacity:.85;margin-bottom:14px;font-weight:400}
+.pq p{font-weight:300;font-size:clamp(23px,5.6vw,38px);line-height:1.6;letter-spacing:-.02em;color:var(--ink)}
+.pq::after{content:"";display:block;width:36px;height:1px;background:var(--acc);margin:42px auto 0}
+.secs{order:4}
+.sec{margin:0 0 56px;text-align:left}
+.sec .num{display:block;text-align:center;font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:.3em;color:var(--acc);margin-bottom:12px}
+.sec h2{text-align:center;font-weight:500;font-size:clamp(19px,3.2vw,22px);line-height:1.6;margin-bottom:16px;color:var(--ink)}
+.sec-body{font-size:16.5px;line-height:2.05}
+.sec:not(:last-child)::after{content:"";display:block;width:4px;height:4px;border-radius:50%;background:var(--acc);margin:56px auto 0;opacity:.7}
+.kp{order:5;margin:20px 0 0;padding:34px 0 0;border-top:1px solid var(--line);text-align:left}
+.kp-t{text-align:center;font-family:var(--sans);font-weight:500;font-size:11px;letter-spacing:.3em;color:var(--acc);margin-bottom:12px}
+.kp li{display:flex;gap:14px;padding:10px 0}
+.kp-n{flex:none;font-family:var(--sans);font-size:11px;letter-spacing:.1em;color:var(--acc);padding-top:.6em}
+.kp-x{font-weight:400;line-height:1.85}
+.ft{order:6;margin-top:56px;padding-top:24px;border-top:1px solid var(--line);text-align:center}
+.ft .src li{padding-left:0;text-indent:0}
+.ft .src li::before{content:""}
+@media (min-width:820px){
+  .page{padding:110px 24px 140px}
+  .pq{margin:80px -60px}
+  .pq p{font-size:40px}
+}
+</style>
+</head>
+<body data-tpl="S5">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "LR-P-139", "title": "소문을 지우면 조직이 마른다", "col_type": "대립형", "kicker": "논문 · 소문의 두 계산법", "byline": "조우성", "date": "2026-11-19", "summary": {"headline": "소문은 상황의 산수이면서 조직의 상태다", "lede": "소문의 양을 계산하는 공식과, 소문이 조직의 신뢰를 드러낸다는 반론은 반대말이 아니다. 하나를 지우면 나머지 하나가 조직을 마르게 한다.", "sections": [{"h": "프레임 — 중요도 곱하기 공백", "body": "Allport·Postman은 전시의 유언비어에서 소문의 법칙을 세웠다. 사안의 중요도와 정보의 공백이 겹칠 때 소문이 커진다. 하나만으로는 걷지 않는다. 무관한 사안은 중요해도 퍼지지 않고, 속이 다 보이면 공백이 없어 퍼지지 않는다. 처방은 하나다. 중요도를 낮출 수 없다면 공백을 메워라."}, {"h": "반증 — 대사 활동으로서의 소문", "body": "Rosnow는 1991년 이 공식을 다시 열었다. 상수처럼 인용됐지만 실증적 뒷받침이 얇았다는 것이다. 소문은 조직이 서로를 잇는 대사 활동에 가깝다. 신뢰가 얇을수록 빨라지고, 정보의 공백은 절차가 불공정하다는 신호로 읽힌다. 불안이 소문을 밀지만 그 불안을 만드는 쪽은 조직이다."}, {"h": "갈리는 곳 — 제조원의 위치", "body": "한쪽은 소문의 제조원을 상황의 산수에서 찾고, 다른 쪽은 조직의 절차와 신뢰에서 찾는다. 그래서 처방도 갈린다. 공백을 줄이라는 쪽과, 공정하게 다뤄진다는 믿음을 먼저 만들라는 쪽이다."}, {"h": "사례 — 로고와 1,925만 달러", "body": "1980년 생활용품 기업의 달과 별 로고가 사탄의 표식이라는 이야기가 신문에 실렸다. 1982년 두 달 동안 15,000통이 넘는 전화와 편지가 몰렸다. 회사는 완성 연도가 1,882년이 아니라는 사실로 공백을 메웠다. 첫 처방은 작동했다. 그러나 의심하는 사람들을 향한 무뚝뚝한 침묵은 두 번째 처방을 놓쳤다. 1995년 배급사들이 이야기를 되살렸고 2007년 1,925만 달러를 물었다."}], "keypoints": ["소문의 양은 중요도와 정보 공백이 겹칠 때 커진다", "중요도를 못 낮춘다면 공백을 메우는 것이 처방이다", "신뢰가 얇으면 소문은 빨라지고, 그 신뢰를 만드는 쪽은 조직이다", "공식을 지우면 조직의 신뢰 문제를 못 보고, 신뢰만 보면 상황을 못 다룬다", "첫 소문이 잦아든 뒤 남는 것은 사실이 아니라 회사가 보인 태도다"], "pull_quote": "소문의 조건을 계산하지 않으면 소문이 걷고, 계산만 하면 조직이 마른다.", "sources": ["Allport·Postman (1947) The Psychology of Rumor — Henry Holt", "Rosnow (1991) Inside Rumor: A Personal Journey — American Psychologist 46(5)"]}, "cards": {"cards": [{"kind": "cover", "title": "없애기만 하면 마른다", "body": "소문을 다루는 일은 대개 없애기로 요약된다. 그러나 소문의 양을 계산하는 공식과 소문이 조직의 신뢰를 드러낸다는 반론은 같은 자리에서 갈린다. 하나를 지우면 나머지 하나가 조직을 마르게 한다.", "small": "Allport·Postman (1947) · Rosnow (1991)"}, {"kind": "point", "title": "중요도 곱하기 공백", "body": "사안의 중요도와 정보의 공백이 겹칠 때 소문이 커진다. 무관한 사안은 중요해도 퍼지지 않고, 속이 다 보이면 공백이 없어 퍼지지 않는다. 처방은 하나다. 중요도를 낮출 수 없다면 공백을 메워라.", "small": "프레임"}, {"kind": "point", "title": "불안을 만드는 쪽", "body": "소문은 조직이 서로를 잇는 대사 활동에 가깝다. 신뢰가 얇을수록 빨라지고, 정보의 공백은 절차가 불공정하다는 신호로 읽힌다. 불안이 소문을 밀지만 그 불안을 만드는 쪽은 조직이다.", "small": "Rosnow (1991)"}, {"kind": "compare", "title": "상황인가 절차인가", "body": "한쪽은 소문의 제조원을 상황의 산수에서, 다른 쪽은 조직의 절차와 신뢰에서 찾는다. 공백을 줄이라는 처방과 공정하게 다뤄진다는 믿음을 먼저 만들라는 처방이 여기서 갈린다.", "small": "두 논문이 갈리는 곳"}, {"kind": "close", "title": "점검 세 가지", "body": "소문의 분량과 조직의 태세를 한 칸에 두지 말고 나눠 본다. 소문의 출처 확인과 소문 대응을 같은 사람에게 맡기지 않는다. 신뢰가 얇다는 신호를 원인 항목으로 적어 두고, 소문이 잦아든 뒤에 다시 연다.", "small": "바로 쓸 점검"}], "source_line": "Allport·Postman (1947) · Rosnow (1991) 재구성"}}</script>
+<script>
+window.TPL={"kpTitle": "남겨 둘 문장", "splitLede": true, "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '독서·연구 노트이며 법률·투자 자문이 아닙니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>

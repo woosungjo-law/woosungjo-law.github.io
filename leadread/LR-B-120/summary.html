@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>유한한 시간은 삶을 줄이지 않고 우선순위를 선명하게 한다</title>
+<meta name="description" content="시간이 줄어들 때 사람은 대개 일정을 다시 짠다. 그러나 유한성이 바꾸는 것은 무엇을 남길지 정하는 판단이다. 남은 시간이 적다는 감각이 오히려 선택을 선명하게 한다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="유한한 시간은 삶을 줄이지 않고 우선순위를 선명하게 한다">
+<meta property="og:description" content="시간이 줄어들 때 사람은 대개 일정을 다시 짠다. 그러나 유한성이 바꾸는 것은 무엇을 남길지 정하는 판단이다. 남은 시간이 적다는 감각이 오히려 선택을 선명하게 한다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;800;900&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S2 개념정의형 — 딥네이비 & 골드 / 사전식 좌우 배치 */
+:root{--bg:#f3f4f7;--ink:#141f38;--mute:#5d6577;--acc:#8f6a12;--gold:#c9a24b;--navy:#0f1c3a;--head:"Noto Serif KR","Nanum Myeongjo",serif;--body:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0a1122;--ink:#e6e9f1;--mute:#9aa3b8;--acc:#d8b25e;--navy:#0f1c3a}}
+body{font-size:16.5px;line-height:1.85}
+.page{max-width:none;padding:0}
+.hd{background:var(--navy);color:#f1eee4;padding:44px 20px 40px}
+.hd>*{max-width:900px;margin-left:auto;margin-right:auto}
+.kicker{display:block;color:var(--gold);margin-bottom:16px}
+.headline{font-weight:700;font-size:clamp(26px,5.6vw,46px);line-height:1.34;letter-spacing:-.015em;color:#fff}
+.lede{margin-top:26px;padding:20px 20px 20px 22px;border-left:3px solid var(--gold);background:rgba(255,255,255,.06)}
+.lede-label{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.16em;font-weight:700;color:var(--gold);margin-bottom:8px}
+.lede p{font-size:clamp(16px,2.3vw,18.5px);line-height:1.85;color:#ece9de}
+.meta{margin-top:20px;color:#a9b2c7}
+.pq,.secs,.ft{width:100%;max-width:900px;margin-left:auto;margin-right:auto;padding-left:20px;padding-right:20px}
+.pq{margin-top:44px}
+.pq p{font-family:var(--head);font-weight:600;font-size:clamp(19px,3.2vw,26px);line-height:1.6;color:var(--ink);padding:4px 0 4px 20px;border-left:3px solid var(--gold)}
+.secs{margin-top:34px}
+.sec{padding:26px 0;border-top:1px solid color-mix(in srgb,var(--ink) 20%,transparent)}
+.sec:first-child{border-top:0}
+.sec .num{display:block;font-family:var(--sans);font-weight:700;font-size:12px;letter-spacing:.14em;color:var(--acc);margin-bottom:6px}
+.sec h2{font-family:var(--head);font-weight:700;font-size:clamp(19px,3.2vw,23px);line-height:1.45;margin-bottom:12px;color:var(--ink)}
+.kp{background:var(--navy);color:#eee;margin-top:20px;padding:34px 20px 38px}
+.kp>*{max-width:860px;margin-left:auto;margin-right:auto}
+.kp-t{font-family:var(--head);font-size:20px;font-weight:700;color:var(--gold);margin-bottom:14px}
+.kp li{display:flex;gap:14px;padding:12px 0;border-top:1px solid rgba(255,255,255,.14)}
+.kp li:first-child{border-top:0}
+.kp-n{flex:none;width:9px;height:9px;margin-top:.72em;background:var(--gold);transform:rotate(45deg);font-size:0;overflow:hidden}
+.kp-x{line-height:1.7;color:#eef0f5}
+.ft{padding-top:32px;padding-bottom:72px}
+@media (min-width:820px){
+  .hd{padding:80px 40px 64px}
+  .pq,.secs,.ft{padding-left:40px;padding-right:40px}
+  .kp{padding:52px 40px 56px}
+  .sec{display:grid;grid-template-columns:230px 1fr;column-gap:44px;padding:34px 0}
+  .sec .num{grid-column:1;grid-row:1;margin:0 0 4px;align-self:start}
+  .sec .sec-in{display:contents}
+  .sec h2{grid-column:1;grid-row:1;margin:26px 0 0}
+  .sec-body{grid-column:2;grid-row:1/span 2;font-size:17px}
+}
+</style>
+</head>
+<body data-tpl="S2">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "LR-B-120", "title": "유한한 시간은 삶을 줄이지 않고 우선순위를 선명하게 한다", "col_type": "개념정의형", "kicker": "책 · 시간과 선택", "byline": "조우성", "date": "2026-11-19", "summary": {"headline": "일정을 압축하는 것은 우선순위를 정하는 일이 아니다", "lede": "시간이 줄어들 때 사람은 대개 일정을 다시 짠다. 그러나 유한성이 바꾸는 것은 무엇을 남길지 정하는 판단이다. 남은 시간이 적다는 감각이 오히려 선택을 선명하게 한다.", "sections": [{"h": "구분 — 절약, 서두름, 우선순위", "body": "시간 절약은 같은 일을 더 짧게 끝내는 기술이다. 삶을 서두는 일은 남은 시간이 적다는 감각이 모든 선택을 급하게 만드는 상태다. 우선순위는 할 수 없는 것을 인정하고 남길 것을 고르는 판단이다. 효율을 높인다고 우선순위가 정해지지는 않는다."}, {"h": "적용 — 계획이 무너졌을 때", "body": "계획이 무너지면 사람은 먼저 일정을 다시 짠다. 그러나 시간이 한정되어 있다는 사실을 인정하면 중요하지 않은 약속과 자동적인 비교가 줄어든다. 유한성은 삶을 축소하는 사실이면서 선택을 선명하게 하는 조건이다."}, {"h": "한 단계 더 — 압축은 결정이 아니다", "body": "모든 프로젝트를 동시에 최고 우선순위로 둘 수는 없다. 이때 흔한 회피는 우선순위를 정하는 대신 일정을 압축하는 것이다. 압축은 결정을 미루는 방법이다. 권한이 없으면 사람은 우선순위 대신 자기 시간을 깎는다."}, {"h": "점검 — 질문을 바꾼다", "body": "이번 달에 무엇을 더 할 수 있는가가 아니라 무엇을 하지 않기로 정했는가를 먼저 묻는다. 하지 않기로 정한 것에 이유를 적어 두면 다음 달의 판단이 죄책감 대신 근거로 시작된다."}], "keypoints": ["시간 절약과 우선순위는 다른 일이다", "유한성은 삶을 줄이지 않고 비교를 줄인다", "일정 압축은 우선순위를 정하는 대신 미루는 방법이다", "하지 않을 것을 정하는 것도 책임 있는 선택이다", "우선순위는 고정된 명단이 아니라 다시 보는 지도다"], "pull_quote": "압축은 결정을 미루는 방법이지 결정이 아니다.", "sources": ["폴 칼라니티 (2016) 《숨결이 바람 될 때》 — 흐름출판"]}, "cards": {"cards": [{"kind": "cover", "title": "줄어든 시간이 바꾸는 것", "body": "시간이 줄면 사람은 대개 일정을 다시 짠다. 그러나 유한성이 바꾸는 것은 무엇을 남길지 정하는 판단이다. 남은 시간이 적다는 감각이 오히려 선택을 선명하게 한다.", "small": "《숨결이 바람 될 때》 (2016)"}, {"kind": "point", "title": "셋을 갈라 본다", "body": "시간 절약은 같은 일을 짧게 끝내는 기술이다. 서두름은 남은 시간이 적다는 감각이 모든 선택을 급하게 만드는 상태다. 우선순위는 할 수 없는 것을 인정하고 남길 것을 고르는 판단이다.", "small": "구분"}, {"kind": "point", "title": "계획이 무너진 자리", "body": "계획이 무너지면 사람은 먼저 일정을 다시 짠다. 그러나 시간이 한정되어 있다는 사실을 인정하면 중요하지 않은 약속과 자동적인 비교가 줄어든다. 유한성은 선택을 선명하게 하는 조건이다.", "small": "적용"}, {"kind": "compare", "title": "결정인가 미루기인가", "body": "우선순위를 정하는 일과 일정을 압축하는 일은 겉으로 비슷해 보인다. 그러나 압축은 결정을 미루는 방법이다. 무엇을 하지 않을지 말할 권한이 없으면 사람은 자기 시간을 깎는다.", "small": "한 단계 더"}, {"kind": "close", "title": "질문 하나 바꾸기", "body": "이번 달에 무엇을 더 할 수 있는가가 아니라, 무엇을 하지 않기로 정했는가를 먼저 묻는다. 정한 것에 이유를 적어 두면 다음 달의 판단이 죄책감 대신 근거로 시작된다.", "small": "바로 쓸 점검"}], "source_line": "폴 칼라니티 《숨결이 바람 될 때》 (2016) 재구성"}}</script>
+<script>
+window.TPL={"kpTitle": "핵심 정리", "ledeLabel": "핵심 정의", "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '독서·연구 노트이며 법률·투자 자문이 아닙니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
