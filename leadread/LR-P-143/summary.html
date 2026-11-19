@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>권고는 언제 현장의 판단을 바꾸는가</title>
+<meta name="description" content="조사 보고서에 권고 목록이 남았다고 해서 현장의 판단이 바뀌지는 않는다. 문서가 저장된 일과 누군가 다음번에 다르게 판단하는 일 사이에는 거리가 있다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="권고는 언제 현장의 판단을 바꾸는가">
+<meta property="og:description" content="조사 보고서에 권고 목록이 남았다고 해서 현장의 판단이 바뀌지는 않는다. 문서가 저장된 일과 누군가 다음번에 다르게 판단하는 일 사이에는 거리가 있다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;800;900&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S5 인용사색형 — 본화이트 & 와인 / 중앙 정렬·큰 여백·대형 인용 */
+:root{--bg:#f5f1ea;--ink:#2a2226;--mute:#7a6f74;--acc:#6e2b3a;--line:#c9bfb3;--head:"Noto Serif KR","Nanum Myeongjo",serif;--body:"Noto Serif KR","Nanum Myeongjo",serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#15111a;--ink:#e9e2e6;--mute:#a1949b;--acc:#d3919f;--line:#3a2f3c}}
+body{font-weight:300;font-size:17px;line-height:2}
+.page{max-width:660px;padding:56px 24px 100px;text-align:center}
+.kicker{display:block;font-weight:500}
+.headline{font-weight:400;font-size:clamp(16px,3vw,19px);line-height:1.6;color:var(--mute);letter-spacing:0;margin-top:14px}
+.meta{margin-top:10px;font-size:12px}
+.lede-x{order:3;text-align:left;margin:0 0 64px;font-size:17px;line-height:2.05;font-weight:300}
+.pq{order:2;margin:56px -4px 56px;padding:0;position:relative}
+.pq::before{content:"\201C";display:block;font-family:var(--head);font-size:96px;line-height:.7;color:var(--acc);opacity:.85;margin-bottom:14px;font-weight:400}
+.pq p{font-weight:300;font-size:clamp(23px,5.6vw,38px);line-height:1.6;letter-spacing:-.02em;color:var(--ink)}
+.pq::after{content:"";display:block;width:36px;height:1px;background:var(--acc);margin:42px auto 0}
+.secs{order:4}
+.sec{margin:0 0 56px;text-align:left}
+.sec .num{display:block;text-align:center;font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:.3em;color:var(--acc);margin-bottom:12px}
+.sec h2{text-align:center;font-weight:500;font-size:clamp(19px,3.2vw,22px);line-height:1.6;margin-bottom:16px;color:var(--ink)}
+.sec-body{font-size:16.5px;line-height:2.05}
+.sec:not(:last-child)::after{content:"";display:block;width:4px;height:4px;border-radius:50%;background:var(--acc);margin:56px auto 0;opacity:.7}
+.kp{order:5;margin:20px 0 0;padding:34px 0 0;border-top:1px solid var(--line);text-align:left}
+.kp-t{text-align:center;font-family:var(--sans);font-weight:500;font-size:11px;letter-spacing:.3em;color:var(--acc);margin-bottom:12px}
+.kp li{display:flex;gap:14px;padding:10px 0}
+.kp-n{flex:none;font-family:var(--sans);font-size:11px;letter-spacing:.1em;color:var(--acc);padding-top:.6em}
+.kp-x{font-weight:400;line-height:1.85}
+.ft{order:6;margin-top:56px;padding-top:24px;border-top:1px solid var(--line);text-align:center}
+.ft .src li{padding-left:0;text-indent:0}
+.ft .src li::before{content:""}
+@media (min-width:820px){
+  .page{padding:110px 24px 140px}
+  .pq{margin:80px -60px}
+  .pq p{font-size:40px}
+}
+</style>
+</head>
+<body data-tpl="S5">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "LR-P-143", "title": "권고는 언제 현장의 판단을 바꾸는가", "col_type": "대립형", "kicker": "논문 · 권고의 실행", "byline": "조우성", "date": "2026-11-19", "summary": {"headline": "권고는 약속이고 변화는 다른 사건이다", "lede": "조사 보고서에 권고 목록이 남았다고 해서 현장의 판단이 바뀌지는 않는다. 문서가 저장된 일과 누군가 다음번에 다르게 판단하는 일 사이에는 거리가 있다.", "sections": [{"h": "프레임 — 실행의 거리", "body": "Wrigstad 등(2014)은 스웨덴 대학병원의 조사 55건에서 권고 289개를 뽑았다. 권고의 70%는 미시적 수준을 겨냥했고 조치가 취해진 것은 45%였다. 문장의 정교함보다 권고가 업무 가까이에 있고, 기억이 살아 있는 시간에 논의되며, 실행 권한을 쥔 사람에게 닿는가가 갈랐다."}, {"h": "반증 — 근접성만으로는 부족하다", "body": "Health Quality Ontario(2017)의 체계적 검토는 비난과 법적 불이익의 두려움, 지원 부족, 돌아오는 피드백의 부재가 채택을 막는다고 본다. 담당자를 현장에 붙이고 마감일을 다는 처방은 필요하지만, 말할 수 있는 구조로 이어지지 않으면 행정 업무가 하나 더 늘 뿐이다."}, {"h": "갈리는 곳 — 순서 문제", "body": "한쪽은 실행의 거리를 좁히라 하고, 다른 쪽은 그 거리를 좁힐 조건을 먼저 세우라 한다. 근접성은 조건이 갖춰진 뒤에 힘을 얻고, 조건은 근접성 없이는 어디에 필요한지 알 수 없다. 두 처방은 배타적이지 않고 순서의 문제다."}, {"h": "점검 — 세 문턱", "body": "Bos 등(2020)은 네덜란드 대학병원 8곳 중 다섯 곳이 비슷한 중대 사건이 다시 일어난다고 답한 것을 보고했다. 권고가 사건의 조건을 바꾸는가, 누가 방해 요인을 치울 권한을 가졌는가, 언제 어떤 자료로 효과를 다시 볼 것인가를 문턱으로 세운다."}], "keypoints": ["권고는 변화의 예약이지 변화 자체가 아니다", "권고의 70%는 미시 수준, 실제 조치는 45%였다", "공간적·시간적 근접성이 실행을 가른다", "근접성은 심리적 안전과 피드백 구조가 받쳐야 작동한다", "고르지 않는 것도 자원을 지키는 결정이다"], "pull_quote": "문턱을 넘지 못한 권고는 버리거나 조사 질문으로 되돌리는 편이 정직하다.", "sources": ["Wrigstad·Bergström·Gustafson (2014) Mind the gap between recommendation and implementation — BMJ Open 4(5)", "Health Quality Ontario (2017) Patient Safety Learning Systems — Ontario Health Technology Assessment Series 17(3)", "Bos 등 (2020) The next step in learning from sentinel events in healthcare — BMJ Open Quality 9(1)"]}, "cards": {"cards": [{"kind": "cover", "title": "권고와 변화는 다르다", "body": "조사가 끝나면 권고 목록이 남는다. 원인을 짚고 담당 부서를 정했으니 다음 단계라고 여긴다. 그러나 문서가 저장된 일과 현장의 판단이 바뀌는 일은 다른 사건이다.", "small": "Wrigstad 등 (2014)"}, {"kind": "point", "title": "70%와 45%", "body": "스웨덴 대학병원 조사 55건의 권고 289개 중 70%는 미시적 수준을 겨냥했고, 실제 조치가 취해진 것은 45%였다. 실행된 조치도 대부분 미시 수준에 머물렀다.", "small": "프레임"}, {"kind": "point", "title": "가까이, 기억이 살아 있을 때", "body": "권고가 사건이 난 업무 가까이에 있고, 기억이 살아 있는 시간에 논의되며, 실행 권한을 쥔 사람에게 닿을 때 움직였다. 담당 관리자가 자리를 옮기면 후속 행동이 줄었다.", "small": "공간적·시간적 근접성"}, {"kind": "compare", "title": "거리인가 조건인가", "body": "한쪽은 실행의 거리를 좁히라 하고, 다른 쪽은 그 거리를 좁힐 조건을 먼저 세우라 한다. 근접성은 조건이 갖춰진 뒤에 힘을 얻고, 조건은 근접성 없이는 위치를 모른다.", "small": "두 논문이 갈리는 곳"}, {"kind": "point", "title": "여덟 곳 중 다섯", "body": "네덜란드 대학병원 8곳은 권고를 실행 목록에 넣는 기준이 제각각이었다. 여덟 곳 중 다섯 곳은 비슷한 중대 사건이 다시 일어난다고 답했다. 조사했다는 사실만으로 재발은 막히지 않는다.", "small": "Bos 등 (2020)"}, {"kind": "close", "title": "세 문턱", "body": "권고가 사건의 조건을 바꾸는가. 누가 실행하고 방해 요인을 치울 권한을 가졌는가. 언제 어떤 자료로 효과를 다시 볼 것인가. 넘지 못한 권고는 조사 질문으로 되돌린다.", "small": "바로 쓸 점검"}], "source_line": "Wrigstad 등 (2014) · Health Quality Ontario (2017) · Bos 등 (2020) 재구성"}}</script>
+<script>
+window.TPL={"kpTitle": "남겨 둘 문장", "splitLede": true, "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '독서·연구 노트이며 법률·투자 자문이 아닙니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
