@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>사건 회의는 언제 학습이 되고 언제 의례가 되는가</title>
+<meta name="description" content="사건 회의는 과거를 정리하는 의례가 될 수도, 조건을 바꾸는 장치가 될 수도 있다. 두 연구는 그 갈림길을 서로 다른 층위에서 보여준다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="사건 회의는 언제 학습이 되고 언제 의례가 되는가">
+<meta property="og:description" content="사건 회의는 과거를 정리하는 의례가 될 수도, 조건을 바꾸는 장치가 될 수도 있다. 두 연구는 그 갈림길을 서로 다른 층위에서 보여준다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;800;900&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S5 인용사색형 — 본화이트 & 와인 / 중앙 정렬·큰 여백·대형 인용 */
+:root{--bg:#f5f1ea;--ink:#2a2226;--mute:#7a6f74;--acc:#6e2b3a;--line:#c9bfb3;--head:"Noto Serif KR","Nanum Myeongjo",serif;--body:"Noto Serif KR","Nanum Myeongjo",serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#15111a;--ink:#e9e2e6;--mute:#a1949b;--acc:#d3919f;--line:#3a2f3c}}
+body{font-weight:300;font-size:17px;line-height:2}
+.page{max-width:660px;padding:56px 24px 100px;text-align:center}
+.kicker{display:block;font-weight:500}
+.headline{font-weight:400;font-size:clamp(16px,3vw,19px);line-height:1.6;color:var(--mute);letter-spacing:0;margin-top:14px}
+.meta{margin-top:10px;font-size:12px}
+.lede-x{order:3;text-align:left;margin:0 0 64px;font-size:17px;line-height:2.05;font-weight:300}
+.pq{order:2;margin:56px -4px 56px;padding:0;position:relative}
+.pq::before{content:"\201C";display:block;font-family:var(--head);font-size:96px;line-height:.7;color:var(--acc);opacity:.85;margin-bottom:14px;font-weight:400}
+.pq p{font-weight:300;font-size:clamp(23px,5.6vw,38px);line-height:1.6;letter-spacing:-.02em;color:var(--ink)}
+.pq::after{content:"";display:block;width:36px;height:1px;background:var(--acc);margin:42px auto 0}
+.secs{order:4}
+.sec{margin:0 0 56px;text-align:left}
+.sec .num{display:block;text-align:center;font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:.3em;color:var(--acc);margin-bottom:12px}
+.sec h2{text-align:center;font-weight:500;font-size:clamp(19px,3.2vw,22px);line-height:1.6;margin-bottom:16px;color:var(--ink)}
+.sec-body{font-size:16.5px;line-height:2.05}
+.sec:not(:last-child)::after{content:"";display:block;width:4px;height:4px;border-radius:50%;background:var(--acc);margin:56px auto 0;opacity:.7}
+.kp{order:5;margin:20px 0 0;padding:34px 0 0;border-top:1px solid var(--line);text-align:left}
+.kp-t{text-align:center;font-family:var(--sans);font-weight:500;font-size:11px;letter-spacing:.3em;color:var(--acc);margin-bottom:12px}
+.kp li{display:flex;gap:14px;padding:10px 0}
+.kp-n{flex:none;font-family:var(--sans);font-size:11px;letter-spacing:.1em;color:var(--acc);padding-top:.6em}
+.kp-x{font-weight:400;line-height:1.85}
+.ft{order:6;margin-top:56px;padding-top:24px;border-top:1px solid var(--line);text-align:center}
+.ft .src li{padding-left:0;text-indent:0}
+.ft .src li::before{content:""}
+@media (min-width:820px){
+  .page{padding:110px 24px 140px}
+  .pq{margin:80px -60px}
+  .pq p{font-size:40px}
+}
+</style>
+</head>
+<body data-tpl="S5">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "LR-P-151", "title": "사건 회의는 언제 학습이 되고 언제 의례가 되는가", "col_type": "대립형", "kicker": "논문 · 사건 회의", "byline": "조우성", "date": "2026-11-21", "summary": {"headline": "회의가 바꾼 것이 사람의 태도뿐이라면", "lede": "사건 회의는 과거를 정리하는 의례가 될 수도, 조건을 바꾸는 장치가 될 수도 있다. 두 연구는 그 갈림길을 서로 다른 층위에서 보여준다.", "sections": [{"h": "프레임 — 정보·동기·실현", "body": "학습은 회의의 완성도가 아니라 세 가지 연결에서 갈린다. 사건을 이해할 정보, 목표를 지지할 동기, 업무에서 옮길 여건이다. 셋이 끊기면 회의는 감정 해소로 끝난다."}, {"h": "반증 — 잠재력과 결과의 거리", "body": "사건 회의가 예방 가능한 위해를 줄였다는 근거는 기대보다 약하고, 교육적 효과 쪽에 더 나은 근거가 있다. 조건을 갖춘 회의가 결과를 반드시 바꾸지는 않는다."}, {"h": "적용 — 네 개의 질문", "body": "팀의 실수와 반복되는 위험을 구분했는가. 조치 권한이 담당자에게 있는가. 완료를 문서가 아니라 행동으로 보는가. 다른 팀이 같은 위험을 알아차리도록 무엇을 공유했는가."}, {"h": "인문 렌즈 — 희망과 충실성", "body": "마르셀의 희망은 막연한 낙관이 아니라 함께 미래를 열어 두는 충실성이다. 알 수 없는 위험을 인정하면서 서로의 경험을 다음 행동의 약속으로 옮기는 일이다."}], "keypoints": ["회의는 책임을 논의하면서 위험 구조를 보존할 수 있다", "정보와 동기와 실현이 끊기면 학습도 끊긴다", "팀 정신은 솔직함과 침묵을 함께 만든다", "잠재력과 실제 결과 사이에는 거리가 있다", "확인 권한을 현장에 돌려줄 때 회의가 학습이 된다"], "pull_quote": "회의는 사건을 이해하고 공동의 질문을 만드는 장치이지, 혼자서 시스템을 고치는 장치가 아니다.", "sources": ["de Vos 등 (2017) → George (2017) — TOPIC-225"]}, "cards": {"cards": [{"kind": "cover", "title": "남는 질문", "body": "사고 뒤 회의는 경과를 되짚고 대책을 적는다. 그러나 누가 더 잘했어야 했는가 외에 무엇을 알게 되었는지가 남지 않으면 회의는 의례가 된다.", "small": "TOPIC-225"}, {"kind": "point", "title": "세 가지 연결", "body": "사건을 이해할 정보, 목표를 지지할 동기, 업무에서 옮길 여건. 셋이 끊기면 회의는 지식 전달이나 감정 해소에 머문다.", "small": "프레임"}, {"kind": "compare", "title": "양면의 팀 정신", "body": "팀 정신은 서로의 방어막이 되어 솔직한 발언을 돕는다. 동시에 동료를 곤란하게 하지 않으려는 침묵도 만든다. 위계도 정리와 억제를 함께 한다.", "small": "프레임"}, {"kind": "point", "title": "거리", "body": "사건 회의가 위해를 줄였다는 근거는 기대보다 약하고, 교육적 효과 쪽에 더 나은 근거가 있다. 잠재력과 결과는 같은 말이 아니다.", "small": "반증"}, {"kind": "point", "title": "실행과 감소", "body": "새 교육을 했다는 기록은 실행의 증거일 뿐, 위험이 줄었다는 증거가 아니다. 두 증거를 같은 칸에 적으면 개선은 숫자로 착각된다.", "small": "적용"}, {"kind": "close", "title": "세 질문", "body": "최근 회의에서 개인의 주의가 아니라 바뀐 조건은 무엇인가. 실행의 증거와 감소의 증거를 구분했는가. 다른 팀과 무엇을 공유했는가.", "small": "바로 쓸 점검"}], "source_line": "de Vos 등 (2017) · George (2017) 재구성"}}</script>
+<script>
+window.TPL={"kpTitle": "남겨 둘 문장", "splitLede": true, "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '독서·연구 노트이며 법률·투자 자문이 아닙니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
