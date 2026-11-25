@@ -15,6 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;800;900&display=swap">
 <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
 *,*::before,*::after{box-sizing:border-box}
@@ -38,50 +39,53 @@ ol,ul{list-style:none}
 a{color:inherit}
 @media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
 
-/* S4 체크리스트형 — 페이퍼화이트 & 틸 / 산세리프 / 체크박스 */
-:root{--bg:#fafaf6;--ink:#1a2226;--mute:#5f6b70;--acc:#0e6b6b;--line:#d9ddd6;--soft:#eef2ee;--head:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--body:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0d1416;--ink:#e5eceb;--mute:#93a3a3;--acc:#4fc0b6;--line:#26353a;--soft:#141f22}}
-body{font-size:16.5px;line-height:1.8}
-.page{max-width:780px;padding:32px 20px 80px}
-.kicker{display:inline-block;align-self:flex-start;background:var(--acc);color:var(--bg);padding:4px 10px;letter-spacing:.06em;font-size:12px;border-radius:2px;margin-bottom:16px}
-.hd{padding-bottom:26px}
-.headline{font-weight:800;font-size:clamp(26px,6vw,42px);line-height:1.3;letter-spacing:-.035em}
-.lede{margin-top:16px;font-size:clamp(16px,2.3vw,18px);color:var(--mute);line-height:1.8}
-.meta{margin-top:14px}
-.pq{order:6;margin:8px 0 0;padding:18px 0 0;border-top:1px solid var(--line)}
-.pq p{font-weight:700;font-size:18px;color:var(--acc);line-height:1.6}
-.kp{order:2;margin:0 0 34px;padding:22px 18px 10px;background:var(--soft);border:1px solid var(--line);border-top:4px solid var(--acc);border-radius:4px}
-.kp-t{font-size:15px;font-weight:800;margin-bottom:6px}
-.kp-t::after{content:" · 눌러서 확인";font-weight:500;font-size:12px;color:var(--mute)}
-.kp li{display:flex;gap:14px;align-items:flex-start;padding:13px 4px;border-top:1px solid var(--line);cursor:pointer;-webkit-tap-highlight-color:transparent}
+/* S2 개념정의형 — 딥네이비 & 골드 / 사전식 좌우 배치 */
+:root{--bg:#f3f4f7;--ink:#141f38;--mute:#5d6577;--acc:#8f6a12;--gold:#c9a24b;--navy:#0f1c3a;--head:"Noto Serif KR","Nanum Myeongjo",serif;--body:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0a1122;--ink:#e6e9f1;--mute:#9aa3b8;--acc:#d8b25e;--navy:#0f1c3a}}
+body{font-size:16.5px;line-height:1.85}
+.page{max-width:none;padding:0}
+.hd{background:var(--navy);color:#f1eee4;padding:44px 20px 40px}
+.hd>*{max-width:900px;margin-left:auto;margin-right:auto}
+.kicker{display:block;color:var(--gold);margin-bottom:16px}
+.headline{font-weight:700;font-size:clamp(26px,5.6vw,46px);line-height:1.34;letter-spacing:-.015em;color:#fff}
+.lede{margin-top:26px;padding:20px 20px 20px 22px;border-left:3px solid var(--gold);background:rgba(255,255,255,.06)}
+.lede-label{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.16em;font-weight:700;color:var(--gold);margin-bottom:8px}
+.lede p{font-size:clamp(16px,2.3vw,18.5px);line-height:1.85;color:#ece9de}
+.meta{margin-top:20px;color:#a9b2c7}
+.pq,.secs,.ft{width:100%;max-width:900px;margin-left:auto;margin-right:auto;padding-left:20px;padding-right:20px}
+.pq{margin-top:44px}
+.pq p{font-family:var(--head);font-weight:600;font-size:clamp(19px,3.2vw,26px);line-height:1.6;color:var(--ink);padding:4px 0 4px 20px;border-left:3px solid var(--gold)}
+.secs{margin-top:34px}
+.sec{padding:26px 0;border-top:1px solid color-mix(in srgb,var(--ink) 20%,transparent)}
+.sec:first-child{border-top:0}
+.sec .num{display:block;font-family:var(--sans);font-weight:700;font-size:12px;letter-spacing:.14em;color:var(--acc);margin-bottom:6px}
+.sec h2{font-family:var(--head);font-weight:700;font-size:clamp(19px,3.2vw,23px);line-height:1.45;margin-bottom:12px;color:var(--ink)}
+.kp{background:var(--navy);color:#eee;margin-top:20px;padding:34px 20px 38px}
+.kp>*{max-width:860px;margin-left:auto;margin-right:auto}
+.kp-t{font-family:var(--head);font-size:20px;font-weight:700;color:var(--gold);margin-bottom:14px}
+.kp li{display:flex;gap:14px;padding:12px 0;border-top:1px solid rgba(255,255,255,.14)}
 .kp li:first-child{border-top:0}
-.kp li:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
-.kp-n{flex:none;position:relative;width:24px;height:24px;margin-top:2px;border:2px solid var(--acc);border-radius:5px;font-size:0;background:var(--bg);transition:background .15s}
-.kp-n::after{content:"";position:absolute;left:6px;top:1.5px;width:6px;height:11px;border:solid var(--bg);border-width:0 2.5px 2.5px 0;transform:rotate(45deg) scale(0);transition:transform .15s}
-.kp li[aria-checked=true] .kp-n{background:var(--acc)}
-.kp li[aria-checked=true] .kp-n::after{transform:rotate(45deg) scale(1)}
-.kp li[aria-checked=true] .kp-x{color:var(--mute)}
-.kp-x{font-weight:600;line-height:1.65}
-.secs{order:3}
-.sec{display:grid;grid-template-columns:52px 1fr;column-gap:14px;padding:22px 0;border-top:1px solid var(--line)}
-.sec .num{grid-row:1/span 2;font-weight:800;font-size:34px;line-height:1;letter-spacing:-.04em;color:var(--acc);opacity:.9;padding-top:2px}
-.sec h2{font-weight:800;font-size:clamp(18px,3vw,21px);line-height:1.45;letter-spacing:-.02em;margin-bottom:8px}
-.ft{margin-top:30px;padding-top:18px;border-top:1px solid var(--line)}
+.kp-n{flex:none;width:9px;height:9px;margin-top:.72em;background:var(--gold);transform:rotate(45deg);font-size:0;overflow:hidden}
+.kp-x{line-height:1.7;color:#eef0f5}
+.ft{padding-top:32px;padding-bottom:72px}
 @media (min-width:820px){
-  .page{padding:64px 32px 110px}
-  .kp{padding:28px 30px 14px}
-  .sec{grid-template-columns:76px 1fr;padding:28px 0}
-  .sec .num{font-size:48px}
-  .sec-body{font-size:17px}
+  .hd{padding:80px 40px 64px}
+  .pq,.secs,.ft{padding-left:40px;padding-right:40px}
+  .kp{padding:52px 40px 56px}
+  .sec{display:grid;grid-template-columns:230px 1fr;column-gap:44px;padding:34px 0}
+  .sec .num{grid-column:1;grid-row:1;margin:0 0 4px;align-self:start}
+  .sec .sec-in{display:contents}
+  .sec h2{grid-column:1;grid-row:1;margin:26px 0 0}
+  .sec-body{grid-column:2;grid-row:1/span 2;font-size:17px}
 }
 </style>
 </head>
-<body data-tpl="S4">
+<body data-tpl="S2">
 <main id="root" class="page"></main>
 <noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
 <script id="col-data" type="application/json">{"col_id": "LR-B-131", "title": "좋은 과제는 사람을 몰아붙이지 않는다", "col_type": "개념정의형", "kicker": "몰입 · 과제설계", "byline": "조우성", "date": "2026-11-26", "summary": {"headline": "몰입은 재능이 아니라 난도의 문제다", "lede": "목표가 능력보다 훨씬 크면 얼어붙고, 훨씬 작으면 감각이 잠든다. 두 경우 모두 의지의 문제로 보이지만 실제로는 설계의 문제다.", "sections": [{"h": "간격을 조율하는 일", "body": "칙센트미하이는 몰입을 재능의 증명이 아니라 도전과 능력 사이의 간격을 조율하는 일로 설명한다. 현재보다 조금 앞서 있으나 시도하면 닿을 수 있는 구간에서 주의가 한곳에 모인다."}, {"h": "처음의 저항", "body": "그는 가장 즐거운 활동도 처음에는 내키지 않는 노력을 요구한다고 말한다. 재미없는 일을 참는 것이 아니라, 처음의 저항을 넘을 만큼 간격이 맞아야 그 뒤의 몰입이 온다는 뜻이다."}, {"h": "수치가 감시가 될 때", "body": "능력과 성과를 촘촘히 수치화하면 도전은 감시로 바뀐다. 피드백이 순위를 매기는 장치가 되는 순간 사람은 배우는 대신 점수를 관리한다. 정답률만 보지 않고 중단 이유와 재시도, 설명의 질을 함께 봐야 한다."}, {"h": "공정함의 다른 뜻", "body": "같은 목표와 속도를 일괄로 적용하면 한쪽은 지루해지고 다른 쪽은 그만두게 된다. 공정함이란 모두에게 동일한 난도를 배정하는 일이 아니라, 각자가 성장할 지점을 찾아 주는 일이다."}], "keypoints": ["몰입은 재능의 증명이 아니라 간격의 조율이다", "너무 큰 목표는 불안을, 너무 작은 목표는 무감각을 만든다", "작은 피드백이 있어야 어디까지 왔는지 알 수 있다", "수치화가 지나치면 도전은 감시가 된다", "과제를 고르는 권한도 함께 나눠야 한다"], "pull_quote": "좋은 과제는 사람을 몰아붙이지 않고 다음 시도를 보이게 한다.", "sources": ["미하이 칙센트미하이, 《몰입 FLOW》 (한울림, 2004)"]}, "cards": {"cards": [{"kind": "cover", "title": "더 열심히의 실패", "body": "목표가 능력보다 훨씬 크면 사람은 얼어붙고, 훨씬 작으면 감각이 잠든다. 두 경우 모두 의지의 문제로 보이지만 실제로는 과제 크기를 잘못 잡은 설계의 문제다.", "small": "출발점"}, {"kind": "point", "title": "닿을 듯한 구간", "body": "현재보다 조금 앞서 있으나 시도하면 닿을 수 있는 정도, 그 좁은 구간에서 주의가 한곳에 모인다. 몰입은 쉼 없이 긴장하는 상태가 아니라, 도전과 회복이 번갈아 오는 리듬이다.", "small": "칙센트미하이"}, {"kind": "quote", "title": "처음의 저항", "body": "「가장 즐거운 활동은 자연스럽게 생기지 않으며, 처음에는 내키지 않는 노력을 요구한다.」 재미없는 일을 참는 것이 아니라, 저항을 넘을 만큼 간격이 맞아야 몰입이 온다.", "small": "《몰입 FLOW》"}, {"kind": "point", "title": "피드백이 순위가 되면", "body": "능력과 성과를 촘촘히 수치화하면 도전은 감시로 바뀐다. 피드백이 순위를 매기는 장치가 되는 순간, 사람은 배우는 대신 점수를 관리한다.", "small": "감시의 위험"}, {"kind": "compare", "title": "같은 난제와 맞는 난제", "body": "같은 난제: 모두에게 같은 목표와 속도를 요구한다||맞는 난제: 각자가 성장할 수 있는 과제를 준다. 공정함은 후자에 가깝다", "small": "공정함"}, {"kind": "close", "title": "조정 가능한 과제", "body": "결과를 한 번에 증명하려 하지 말고 다음에 확인할 신호를 만들어라. 너무 쉬웠는지, 너무 어려웠는지, 다음에 무엇을 바꿀지 묻는 회고가 간격을 조정한다.", "small": "점검"}], "source_line": "미하이 칙센트미하이 《몰입 FLOW》 (한울림, 2004) 재구성"}}</script>
 <script>
-window.TPL={"kpTitle": "체크리스트", "checkable": true, "srcTitle": "출처"};
+window.TPL={"kpTitle": "핵심 정리", "ledeLabel": "핵심 정의", "srcTitle": "출처"};
 (function () {
   var CFG = window.TPL || {};
   var root = document.getElementById('root');
