@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>윤리를 강조할수록 문제가 숨는 이유</title>
+<meta name="description" content="윤리는 리더의 인격만으로 지켜지지 않는다. 인격을 시스템으로 옮기는 일과 그 명성이 면죄부가 되지 않게 견제하는 일을 함께 설계해야 한다.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="윤리를 강조할수록 문제가 숨는 이유">
+<meta property="og:description" content="윤리는 리더의 인격만으로 지켜지지 않는다. 인격을 시스템으로 옮기는 일과 그 명성이 면죄부가 되지 않게 견제하는 일을 함께 설계해야 한다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="연구 노트">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ol,ul,blockquote{margin:0;padding:0}
+ol,ul{list-style:none}
+.page{display:flex;flex-direction:column;margin:0 auto;width:100%}
+.hd{order:1}.pq{order:2}.secs{order:3}.kp{order:4}.ft{order:5}
+.kicker{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--acc)}
+.headline{font-family:var(--head);word-break:keep-all;text-wrap:balance}
+.meta{font-family:var(--sans);font-size:13px;color:var(--mute);letter-spacing:.02em}
+.meta .dot{margin:0 .55em;opacity:.6}
+.sec-body p+p{margin-top:.9em}
+.ft{font-family:var(--sans);font-size:13px;line-height:1.7;color:var(--mute)}
+.ft h3{font-size:12px;letter-spacing:.14em;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.ft .src li{padding-left:1em;text-indent:-1em}
+.ft .src li::before{content:"· "}
+.ft .disc{margin-top:18px}
+.ft .by{margin-top:4px;color:var(--ink);font-weight:600}
+a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.page>*{animation:rise .5s ease both}.page>*:nth-child(2){animation-delay:.05s}.page>*:nth-child(3){animation-delay:.1s}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+
+/* S3 사례형 — 딥그린 & 클레이 / 세로 타임라인 */
+:root{--bg:#f1f3ea;--ink:#1c2a22;--mute:#5d6b60;--acc:#1f4d3a;--clay:#a4552b;--line:#1f4d3a;--soft:#e4e9da;--head:"Nanum Myeongjo","Noto Serif KR",serif;--body:"Nanum Myeongjo","Noto Serif KR",serif;--sans:"Pretendard Variable",Pretendard,-apple-system,"Noto Sans KR",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e1913;--ink:#dfe8de;--mute:#93a598;--acc:#86c4a2;--clay:#d98d63;--line:#86c4a2;--soft:#15251c}}
+body{font-size:17.5px;line-height:1.9}
+.page{max-width:760px;padding:36px 20px 80px}
+.kicker{color:var(--clay);display:block;margin-bottom:14px}
+.headline{font-weight:800;font-size:clamp(27px,6vw,44px);line-height:1.34;letter-spacing:-.02em;color:var(--acc)}
+.hd::before{content:"";display:block;width:44px;height:4px;background:var(--clay);margin-bottom:24px}
+.lede{margin-top:22px;font-size:clamp(17px,2.4vw,19.5px);line-height:1.9;color:var(--ink);opacity:.9}
+.meta{margin-top:18px}
+.pq{margin:34px 0 0;padding:22px 24px;background:var(--soft);border-radius:2px}
+.pq p{font-weight:800;font-size:clamp(18px,3vw,23px);line-height:1.6;color:var(--acc)}
+.secs{margin:44px 0 0;position:relative}
+.secs::before{content:"";position:absolute;left:19px;top:14px;bottom:20px;width:2px;background:repeating-linear-gradient(to bottom,var(--line) 0 8px,transparent 8px 14px);opacity:.55}
+.sec{position:relative;padding:0 0 42px 62px}
+.sec:last-child{padding-bottom:6px}
+.sec .num{position:absolute;left:0;top:-2px;width:40px;height:40px;border-radius:50%;background:var(--acc);color:var(--bg);display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:700;font-size:14px;box-shadow:0 0 0 6px var(--bg)}
+.sec h2{font-weight:800;font-size:clamp(20px,3.4vw,24px);line-height:1.45;margin-bottom:10px;padding-top:4px;color:var(--ink)}
+.sec-body{font-size:17px}
+.kp{margin:40px 0 0;padding:26px 22px;border:2px solid var(--acc);border-radius:2px}
+.kp-t{font-family:var(--sans);font-size:13px;letter-spacing:.14em;font-weight:700;color:var(--clay);margin-bottom:12px}
+.kp li{display:flex;gap:14px;padding:9px 0}
+.kp-n{flex:none;font-family:var(--sans);font-weight:700;font-size:13px;color:var(--clay);padding-top:.4em}
+.kp-x{font-weight:700;line-height:1.7}
+.ft{margin-top:44px;padding-top:18px;border-top:1px solid color-mix(in srgb,var(--ink) 25%,transparent)}
+@media (min-width:820px){
+  .page{padding:72px 32px 110px}
+  .secs::before{left:23px}
+  .sec{padding-left:84px}
+  .sec .num{width:48px;height:48px;font-size:16px}
+  .sec h2{padding-top:9px}
+}
+</style>
+</head>
+<body data-tpl="S3">
+<main id="root" class="page"></main>
+<noscript><p style="padding:24px">이 페이지는 JavaScript가 필요합니다.</p></noscript>
+<script id="col-data" type="application/json">{"col_id": "LR-P-209", "title": "윤리를 강조할수록 문제가 숨는 이유", "col_type": "대립형", "kicker": "윤리 · 구조", "byline": "조우성", "date": "2026-11-27", "summary": {"headline": "청렴함이 면허가 되는 순간", "lede": "윤리는 리더의 인격만으로 지켜지지 않는다. 인격을 시스템으로 옮기는 일과 그 명성이 면죄부가 되지 않게 견제하는 일을 함께 설계해야 한다.", "sections": [{"h": "인격과 관리자", "body": "윤리적 리더는 정직한 사람이면서 기준을 전달하고 보상과 제재를 연결하는 사람이다. 착하기만 해서는 윤리적 리더로 인식되지 않았다."}, {"h": "도덕적 자격", "body": "자기가 도덕적이라는 이미지를 세운 뒤 편견을 덜 자제하는 결과가 실험에서 나왔다. 악의가 아니라 자기 검열의 느슨함에서 생긴다."}, {"h": "준법과 통합", "body": "준법 기반은 금지와 처벌에 무게를 둔다. 통합 기반은 가치를 채용과 평가와 의사결정에 연결하고 회색지대의 판단을 함께 연습한다."}, {"h": "정직과 유익", "body": "정직과 유익을 갈라 놓으면 둘 다 잃는다. 문제를 숨긴 관리자와 그를 떠받친 청렴함이 같은 구조의 양쪽이었다."}], "keypoints": ["인격을 기준·보상·제재로 옮긴다", "도덕적 명성이 면허가 되지 않게 한다", "준법 목록을 넘어 판단을 연습한다", "실패를 말할 통로를 둔다", "정직과 이익을 같은 구조에 놓는다"], "pull_quote": "윤리를 크게 말할수록 문제가 작게 적히는 조직이 있다.", "sources": ["Treviño, Brown \u0026 Hartman (2003) Human Relations 56(1), 5–37", "Monin \u0026 Miller (2001) Journal of Personality and Social Psychology 81(1), 33–43", "Paine (1994) 경영전문지 3·4월호"]}, "cards": {"cards": [{"kind": "cover", "title": "착함의 역설", "body": "청렴을 강조한 대표 아래에서 분식이 오래 숨겨졌다. 문제를 알던 사람들은 실망시키고 싶지 않아 말하지 않았다. 인격만으로는 윤리가 작동하지 않는다.", "small": "출발점"}, {"kind": "point", "title": "두 층의 리더십", "body": "도덕적 인격과 도덕적 관리자를 겸비한 사람이 윤리적 리더로 인식됐다. 착하지만 기준을 말하지 않는 리더는 그 자리에서 인정받지 못했다.", "small": "Treviño 등 (2003)"}, {"kind": "compare", "title": "인격과 면허", "body": "인격: 기준을 말하고 모범을 보인다||면허: 이미 도덕적이라는 이미지가 다음 행동의 검열을 느슨하게 만든다. 같은 청렴이 두 방향으로 작동한다", "small": "Monin \u0026 Miller (2001)"}, {"kind": "point", "title": "규정과 판단", "body": "준법 기반에서는 규정에 없는 일이 윤리 밖으로 밀려난다. 통합 기반은 가치를 채용과 평가에 연결하고 회색지대의 판단을 함께 연습한다.", "small": "Paine (1994)"}, {"kind": "close", "title": "남길 장치", "body": "윤리를 규정이 아니라 판단으로 남기는 장치를 적어 보라. 실패를 말해도 불이익이 없는 통로가 없다면 헌장은 인격의 장식에 그친다.", "small": "점검"}], "source_line": "Treviño 등 (2003) · Monin \u0026 Miller (2001) · Paine (1994) 토픽 재구성"}}</script>
+<script>
+window.TPL={"kpTitle": "이야기에서 건진 것", "srcTitle": "출처"};
+(function () {
+  var CFG = window.TPL || {};
+  var root = document.getElementById('root');
+  var D;
+  try {
+    D = JSON.parse(document.getElementById('col-data').textContent);
+  } catch (e) {
+    root.textContent = '데이터를 불러오지 못했습니다. (템플릿 단독 열람 시 정상)';
+    return;
+  }
+  var S = D.summary || {};
+  function el(t, c, x) {
+    var e = document.createElement(t);
+    if (c) e.className = c;
+    if (x != null && x !== '') e.textContent = x;
+    return e;
+  }
+  function ok(v) { return typeof v === 'string' && v.trim().length > 0; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function paras(parent, text) {
+    String(text || '').split(/\n+/).forEach(function (p) {
+      if (p.trim()) parent.appendChild(el('p', null, p.trim()));
+    });
+  }
+  var secs = Array.isArray(S.sections) ? S.sections.filter(function (s) { return s && (ok(s.h) || ok(s.body)); }) : [];
+  var kps = Array.isArray(S.keypoints) ? S.keypoints.filter(ok) : [];
+  var srcs = Array.isArray(S.sources) ? S.sources.filter(ok) : [];
+  var headline = ok(S.headline) ? S.headline : (D.title || '');
+  var by = ok(D.byline) ? D.byline : '조우성';
+  var date = ok(D.date) ? D.date.replace(/-/g, '.') : '';
+
+  var chars = (S.lede || '').length;
+  secs.forEach(function (s) { chars += (s.h || '').length + (s.body || '').length; });
+  kps.forEach(function (k) { chars += k.length; });
+  var mins = Math.max(1, Math.round(chars / 550));
+
+  /* header */
+  var hd = el('header', 'hd');
+  if (ok(D.kicker)) hd.appendChild(el('p', 'kicker', D.kicker));
+  hd.appendChild(el('h1', 'headline', headline));
+  if (ok(S.lede)) {
+    var lede = el('div', 'lede');
+    if (CFG.ledeLabel) lede.appendChild(el('span', 'lede-label', CFG.ledeLabel));
+    lede.appendChild(el('p', null, S.lede.trim()));
+    if (CFG.splitLede) { lede.classList.add('lede-x'); root.appendChild(lede); } else { hd.appendChild(lede); }
+  }
+  var meta = el('p', 'meta');
+  var parts = [by];
+  if (date) parts.push(date);
+  parts.push('읽는 시간 약 ' + mins + '분');
+  parts.forEach(function (t, i) {
+    if (i) meta.appendChild(el('span', 'dot', '·'));
+    meta.appendChild(el('span', null, t));
+  });
+  hd.appendChild(meta);
+  root.appendChild(hd);
+
+  /* pull quote */
+  if (ok(S.pull_quote)) {
+    var pq = el('blockquote', 'pq');
+    pq.appendChild(el('p', null, S.pull_quote.trim()));
+    root.appendChild(pq);
+  }
+
+  /* sections */
+  if (secs.length) {
+    var wrap = el('section', 'secs');
+    secs.forEach(function (s, i) {
+      var sec = el('article', 'sec');
+      sec.appendChild(el('span', 'num', pad2(i + 1)));
+      var box = el('div', 'sec-in');
+      if (ok(s.h)) box.appendChild(el('h2', null, s.h.trim()));
+      var b = el('div', 'sec-body');
+      paras(b, s.body);
+      box.appendChild(b);
+      sec.appendChild(box);
+      wrap.appendChild(sec);
+    });
+    root.appendChild(wrap);
+  }
+
+  /* keypoints */
+  if (kps.length) {
+    var kp = el('aside', 'kp');
+    kp.appendChild(el('h2', 'kp-t', CFG.kpTitle || '핵심 정리'));
+    var ol = el('ol');
+    kps.forEach(function (k, i) {
+      var li = el('li');
+      li.appendChild(el('span', 'kp-n', pad2(i + 1)));
+      li.appendChild(el('span', 'kp-x', k.trim()));
+      if (CFG.checkable) {
+        li.tabIndex = 0;
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        var tg = function () {
+          var on = li.getAttribute('aria-checked') !== 'true';
+          li.setAttribute('aria-checked', on ? 'true' : 'false');
+        };
+        li.addEventListener('click', tg);
+        li.addEventListener('keydown', function (e) {
+          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); tg(); }
+        });
+      }
+      ol.appendChild(li);
+    });
+    kp.appendChild(ol);
+    root.appendChild(kp);
+  }
+
+  /* footer */
+  var ft = el('footer', 'ft');
+  if (srcs.length) {
+    var sd = el('div', 'src');
+    sd.appendChild(el('h3', null, CFG.srcTitle || '출처'));
+    var ul = el('ul');
+    srcs.forEach(function (s) { ul.appendChild(el('li', null, s.trim())); });
+    sd.appendChild(ul);
+    ft.appendChild(sd);
+  }
+  ft.appendChild(el('p', 'disc', '독서·연구 노트이며 법률·투자 자문이 아닙니다.'));
+  ft.appendChild(el('p', 'by', by + (date ? ' · ' + date : '')));
+  root.appendChild(ft);
+  document.body.setAttribute('data-ready', '1');
+})();
+</script>
+</body>
+</html>
